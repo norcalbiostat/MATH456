@@ -1,18 +1,24 @@
 name: Robin Donatello
 output_dir: .
 navbar:
-  title: Applied Statistics II (MATH 456)
+  title: MATH 456
   left:
+  - text: Schedule
+    icon: fa-calendar
+    href: schedule.html
+  - text: Notes
+    icon: fa-book
+    href: notes.html
   - text: Data
     icon: fa-database
     href: http://www.norcalbiostat.com/data/
-  - text: Help/FAQ
-    icon: fa-question
-    href: faq.html
   right:
   - text: Syllabus
     icon: fa-info-circle
     href: syllabus.html
+  - text: Help/FAQ
+    icon: fa-question
+    href: faq.html
   - text: Contact
     icon: fa-envelope-o
     href: mailto:rdonatello@csuchico.edu
