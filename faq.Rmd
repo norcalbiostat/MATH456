@@ -1,0 +1,39 @@
+---
+title: "Frequently Asked Questions"
+date: "Last Updated `r Sys.time()`"
+output: html_document
+---
+
+# Where can I get help using R outside of class time? 
+
+### Online
+* Chico [R User Group](https://groups.google.com/forum/#!forum/chico-rug) Google L-serv. 
+    - Contribute your own solutions and advice as you can. 
+* Stack Overflow using the `R` tag https://stackoverflow.com/questions/tagged/r 
+    - Both of these are most helpful when you prepare a [minimal working example](http://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example) of your problem for the other users. 
+* UCLA IDRE https://stats.idre.ucla.edu/r/ 
+* Cookbook for R http://www.cookbook-r.com/
+* R Examples repository http://dwoll.de/rexrepos/index.html 
+
+
+### In Person: 
+
+* **Math Learning Lab (MLIB 4th floor)** [[Tutor Schedule]](https://docs.google.com/spreadsheets/d/1xNQMfxpnIiS5bUCS9jB2_EE1Sc4C06JRaw6jyEO3nVE/edit#gid=0)
+    - Mariby Cruz, Mitch Borgert, Matt Sterkel, Jerry Tucay
+
+* **Community Coding Hour** - Spring hours TBD
+
+* **Robin Donatello** - Stat professor. Holt 202. rdonatello@csuchico.edu 
+    - Spring hours TBD
+* **Edward Roualdes** - Stat professor. Holt 204. eroualdes@csuchico.edu
+    - Spring hours TBD
+* **Eduardo Gomez** - peer mentor. egomez42@mail.csuchico.edu
+    - Spring hours TBD
+* **Ricardo Aguilar** - peer mentor. raguilar11@mail.csuchico.edu
+    - Spring hours TBD
+* **Mariby Cruz** - peer mentor.  mcruz27@mail.csuchico.edu
+    - available for personal tutoring, including weekends
+    - Spring hours TBD
+
+
+    

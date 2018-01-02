@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Frequently Asked Questions</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/journal.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 61px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+
+.section h2 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h3 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h4 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h5 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+.section h6 {
+  padding-top: 66px;
+  margin-top: -66px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Applied Statistics II (MATH 456)</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="http://www.norcalbiostat.com/data/">
+    <span class="fa fa-database"></span>
+     
+    Data
+  </a>
+</li>
+<li>
+  <a href="faq.html">
+    <span class="fa fa-question"></span>
+     
+    Help/FAQ
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="syllabus.html">
+    <span class="fa fa-info-circle"></span>
+     
+    Syllabus
+  </a>
+</li>
+<li>
+  <a href="mailto:rdonatello@csuchico.edu">
+    <span class="fa fa-envelope-o"></span>
+     
+    Contact
+  </a>
+</li>
+<li>
+  <a href="http://www.norcalbiostat.com/">
+    <span class="fa fa-paw"></span>
+     
+    Dr. D's Website
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Frequently Asked Questions</h1>
+<h4 class="date"><em>Last Updated 2018-01-01 21:49:30</em></h4>
+
+</div>
+
+
+<div id="where-can-i-get-help-using-r-outside-of-class-time" class="section level1">
+<h1>Where can I get help using R outside of class time?</h1>
+<div id="online" class="section level3">
+<h3>Online</h3>
+<ul>
+<li>Chico <a href="https://groups.google.com/forum/#!forum/chico-rug">R User Group</a> Google L-serv.
+<ul>
+<li>Contribute your own solutions and advice as you can.</li>
+</ul></li>
+<li>Stack Overflow using the <code>R</code> tag <a href="https://stackoverflow.com/questions/tagged/r" class="uri">https://stackoverflow.com/questions/tagged/r</a>
+<ul>
+<li>Both of these are most helpful when you prepare a <a href="http://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example">minimal working example</a> of your problem for the other users.</li>
+</ul></li>
+<li>UCLA IDRE <a href="https://stats.idre.ucla.edu/r/" class="uri">https://stats.idre.ucla.edu/r/</a></li>
+<li>Cookbook for R <a href="http://www.cookbook-r.com/" class="uri">http://www.cookbook-r.com/</a></li>
+<li>R Examples repository <a href="http://dwoll.de/rexrepos/index.html" class="uri">http://dwoll.de/rexrepos/index.html</a></li>
+</ul>
+</div>
+<div id="in-person" class="section level3">
+<h3>In Person:</h3>
+<ul>
+<li><strong>Math Learning Lab (MLIB 4th floor)</strong> <a href="https://docs.google.com/spreadsheets/d/1xNQMfxpnIiS5bUCS9jB2_EE1Sc4C06JRaw6jyEO3nVE/edit#gid=0">[Tutor Schedule]</a>
+<ul>
+<li>Mariby Cruz, Mitch Borgert, Matt Sterkel, Jerry Tucay</li>
+</ul></li>
+<li><p><strong>Community Coding Hour</strong> - Spring hours TBD</p></li>
+<li><strong>Robin Donatello</strong> - Stat professor. Holt 202. <a href="mailto:rdonatello@csuchico.edu">rdonatello@csuchico.edu</a>
+<ul>
+<li>Spring hours TBD</li>
+</ul></li>
+<li><strong>Edward Roualdes</strong> - Stat professor. Holt 204. <a href="mailto:eroualdes@csuchico.edu">eroualdes@csuchico.edu</a>
+<ul>
+<li>Spring hours TBD</li>
+</ul></li>
+<li><strong>Eduardo Gomez</strong> - peer mentor. <a href="mailto:egomez42@mail.csuchico.edu">egomez42@mail.csuchico.edu</a>
+<ul>
+<li>Spring hours TBD</li>
+</ul></li>
+<li><strong>Ricardo Aguilar</strong> - peer mentor. <a href="mailto:raguilar11@mail.csuchico.edu">raguilar11@mail.csuchico.edu</a>
+<ul>
+<li>Spring hours TBD</li>
+</ul></li>
+<li><strong>Mariby Cruz</strong> - peer mentor. <a href="mailto:mcruz27@mail.csuchico.edu">mcruz27@mail.csuchico.edu</a>
+<ul>
+<li>available for personal tutoring, including weekends</li>
+<li>Spring hours TBD</li>
+</ul></li>
+</ul>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
