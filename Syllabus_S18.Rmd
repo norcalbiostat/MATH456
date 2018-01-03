@@ -1,0 +1,81 @@
+---
+title: "California State University Chico \n Department of Mathematics and Statistics"
+output:
+  pdf_document: default
+  html_document:
+    highlight: pygments
+---
+
+# MATH 456, Applied Statistics II, Section 01, Spring 2018
+
+### Course Information
+**Instructor:** Dr. Robin Donatello  
+**Office Location:** Holt 202  
+**Telephone:** 898-5767    
+**E-mail:** rdonatello@csuchico.edu    
+**Office Hours:** TBD Week 2  
+**Class days and times:** MWF 9-10:50, Holt 155  
+**Prerequisites:** MATH 315/615 at Chico State or instructor permission.  
+**Course Website:** http://norcalbiostat.github.io/MATH456/ 
+
+## Course Description and Goals
+From the CSUC Course Catalog: Advanced topics in applied statistics including multiple regression, multivariate methods, nonparametrics, analysis of covariance, bootstrap methods and others as appropriate. Statistical computer packages are introduced and used. Appropriate for biology, agriculture, nutrition, business, psychology, social science and other maojrs. 3 hours discussion.
+
+
+## Course Content Learning Outcomes
+Upon successful completion of this course, students will be able to:  
+
+* Translate a research question into an appropriate statistical analysis plan. 
+* Prepare data for analysis by cleaning and transforming raw data. 
+* Perform research in a reproducible manner. 
+* Build statistical models to examine real processes. 
+* Report the results of the analysis in plain language. 
+
+
+## Required Materials
+#### Textbooks
+Practical Multivariate Analysis 5th Edition. Afifi, May, Clark ISBN 9781439816806  
+You can use the promo code **LEARN** at www.crcpress.com  to save 25% off of the textbook or any other CRC Press book they need for the semester. This special, student discount is only available through this offer for the upcoming spring semester.
+
+#### Computer Hardware and Software 
+We will be using the statistical programming language R. You are expected to have prior experience with this language. 
+Loaner laptops will be available for you to use during class time only. These systems will be set up properly and ready to go on day 1. You will eventually have to set up and bring your own laptop to class. There will not be sufficient time during class for you to complete the necessary work. All software programs we will use are free.  
+
+
+**If you have no prior experience with R you have some choices.**
+
+1) Go through any number of self-paced free online tutorials. Recommended ones are [DataCamp](https://www.datacamp.com/courses/free-introduction-to-r), [TryR](http://tryr.codeschool.com/), and [R Tutorial](http://www.r-tutor.com/r-introduction).
+2) Enroll in MATH 130 (Math 130-01 - Week 1-5 only TR 9:30-11am BUTTE 211)
+
+
+## Online Component
+* All course materials can be found on the [course website](http://norcalbiostat.github.io/MATH456/). 
+* You are responsible for regularly checking this website for updates and announcements.
+* The daily class [schedule](Schedule.html) can be found on the class website.
+* It is your responsibility to be aware of the current schedule.
+
+# Tentative topic list
+
+* Multiple Linear Regression (partial review)
+    - Model building / fit
+    - log transforming outcomes
+    - moderators, confounders, interactions, stratification
+    - categorical variables, reference coding, contrasts
+    - Two way ANOVA as a GLM
+* Logistic Regression
+    - Odds Ratios and Risk Ratios
+    - Used as a classifier
+    - Sensitivity/specificity/accuracy
+* Missing Data: Identification & Imputation
+* Multilevel (hierarchical) models
+    - Clustered sampling
+    - Spatial modeling
+* Multivariable statistics / Dimension Reduction
+    - Principle Component Analysis
+    - Factor Analysis
+
+    
+    
+    
+    
+    
