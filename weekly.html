@@ -11,7 +11,7 @@
 
 
 
-<title></title>
+<title>Week 1: Jan 22 - Jan 28</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,6 +19,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/font-awesome-4.5.0/css/font-awesome.min.css" rel="stylesheet" />
 
@@ -148,6 +151,101 @@ $(document).ready(function () {
 
 
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
 
 
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
@@ -222,197 +320,153 @@ $(document).ready(function () {
 
 
 
+<h1 class="title toc-ignore">Week 1: Jan 22 - Jan 28</h1>
 
 </div>
 
 
 <p><br></p>
-<p><em>Last Updated: Tue Jan 09 2:54:16 PM </em> <br></p>
-<table class="table table-hover table-striped table-responsive table-bordered" style="margin-left: auto; margin-right: auto;">
-<thead>
-<tr>
-<th style="text-align:left;">
-Link
-</th>
-<th style="text-align:left;">
-Topics
-</th>
-<th style="text-align:left;">
-Assignments
-</th>
-</tr>
-</thead>
+<p><em>Last Updated: Tue Jan 09 2:52:43 PM </em> <br></p>
+<hr />
+<div id="learning-objectives" class="section level1">
+<h1>Learning Objectives</h1>
+<table class="table table-striped" style="width: auto !important; ">
 <tbody>
 <tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk01.html">Week 01: Jan 22</a>
-</td>
-<td style="text-align:left;width: 30%; ">
-New tools, Multiple Regression, ?
-</td>
-<td style="text-align:left;width: 40%; ">
+<td style="text-align:left;">
+<ul>
+<li>Learn how to develop good questions
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk02.html">Week 02: Jan 29</a>
-</td>
-<td style="text-align:left;width: 30%; ">
-</td>
-<td style="text-align:left;width: 40%; ">
+<td style="text-align:left;">
+<ul>
+<li>Get connected with modern collaboration tools
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk03.html">Week 03: Feb 05</a>
+<td style="text-align:left;">
+<ul>
+<li>Review data types and analysis setup
 </td>
-<td style="text-align:left;width: 30%; ">
-</td>
-<td style="text-align:left;width: 40%; ">
+</tr>
+</tbody>
+</table></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div id="how-to-prepare" class="section level1">
+<h1>How to Prepare</h1>
+<table class="table table-striped" style="width: auto !important; ">
+<tbody>
+<tr>
+<td style="text-align:left;">
+<ul>
+<li>Join our Slack Channel
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk04.html">Week 04: Feb 12</a>
-</td>
-<td style="text-align:left;width: 30%; ">
-Classification
-</td>
-<td style="text-align:left;width: 40%; ">
+<td style="text-align:left;">
+<ul>
+<li>Install the Slack app for your phone
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk05.html">Week 05: Feb 19</a>
-</td>
-<td style="text-align:left;width: 30%; ">
-</td>
-<td style="text-align:left;width: 40%; ">
+<td style="text-align:left;">
+<ul>
+<li>Update R Studio
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk06.html">Week 06: Feb 26</a>
-</td>
-<td style="text-align:left;width: 30%; ">
-Multivariable Statistics: Principle Components
-</td>
-<td style="text-align:left;width: 40%; ">
+<td style="text-align:left;">
+<ul>
+<li>Read Afifi Ch 1-5
 </td>
 </tr>
+</tbody>
+</table></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div id="materials" class="section level1">
+<h1>Materials</h1>
+<table class="table table-striped" style="width: auto !important; ">
+<tbody>
 <tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk07.html">Week 07: Mar 05</a>
-</td>
-<td style="text-align:left;width: 30%; ">
-Factor Analysis
-</td>
-<td style="text-align:left;width: 40%; ">
+<td style="text-align:left;">
+<ul>
+<li>PMA5 Ch 1-5
 </td>
 </tr>
+</tbody>
+</table></li>
+</ul>
+<div id="assignments" class="section level5">
+<h5>Assignments</h5>
+<table class="table table-striped" style="width: auto !important; ">
+<tbody>
 <tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk08.html">Week 08: Mar 12</a>
-</td>
-<td style="text-align:left;width: 30%; ">
-Exam 1
-</td>
-<td style="text-align:left;width: 40%; ">
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 15%; ">
-Spring Break
-</td>
-<td style="text-align:left;width: 30%; ">
-</td>
-<td style="text-align:left;width: 40%; ">
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk09.html">Week 09: Mar 26</a>
-</td>
-<td style="text-align:left;width: 30%; ">
-Multilevel (Hierarchical) Modeling
-</td>
-<td style="text-align:left;width: 40%; ">
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk10.html">Week 10: Apr 02</a>
-</td>
-<td style="text-align:left;width: 30%; ">
-Clustering
-</td>
-<td style="text-align:left;width: 40%; ">
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk11.html">Week 11: Apr 09</a>
-</td>
-<td style="text-align:left;width: 30%; ">
-Spatial Modeling
-</td>
-<td style="text-align:left;width: 40%; ">
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk12.html">Week 12: Apr 16</a>
-</td>
-<td style="text-align:left;width: 30%; ">
-Time Series
-</td>
-<td style="text-align:left;width: 40%; ">
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk13.html">Week 13: Apr 23</a>
-</td>
-<td style="text-align:left;width: 30%; ">
-Missing Data
-</td>
-<td style="text-align:left;width: 40%; ">
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk14.html">Week 14: Apr 30</a>
-</td>
-<td style="text-align:left;width: 30%; ">
-Imputation
-</td>
-<td style="text-align:left;width: 40%; ">
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 15%; ">
-<a href="wk15.html">Week 15: May 07</a>
-</td>
-<td style="text-align:left;width: 30%; ">
-</td>
-<td style="text-align:left;width: 40%; ">
-</td>
-</tr>
-<tr>
-<td style="text-align:left;width: 15%; ">
-Finals
-</td>
-<td style="text-align:left;width: 30%; ">
-Final Exam
-</td>
-<td style="text-align:left;width: 40%; ">
+<td style="text-align:left;">
 </td>
 </tr>
 </tbody>
 </table>
+<hr />
+</div>
+</div>
+<div id="monday-new-tools" class="section level1">
+<h1>Monday: New tools</h1>
+<table class="table table-striped" style="width: auto !important; ">
+<tbody>
+<tr>
+<td style="text-align:left;">
+<ul>
+<li>Orientation to the class
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<ul>
+<li>QFT
+</td>
+</tr>
+</tbody>
+</table></li>
+</ul></li>
+</ul>
+<hr />
+</div>
+<div id="wednesday-multiple-regression" class="section level1">
+<h1>Wednesday: Multiple Regression</h1>
+<table class="table table-striped" style="width: auto !important; ">
+<tbody>
+<tr>
+<td style="text-align:left;">
+</td>
+</tr>
+</tbody>
+</table>
+<hr />
+</div>
+<div id="friday" class="section level1">
+<h1>Friday: ?</h1>
+<table class="table table-striped" style="width: auto !important; ">
+<tbody>
+<tr>
+<td style="text-align:left;">
+</td>
+</tr>
+</tbody>
+</table>
+</div>
 
 
 
+</div>
+</div>
 
 </div>
 

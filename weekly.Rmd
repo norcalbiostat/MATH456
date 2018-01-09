@@ -1,0 +1,88 @@
+---
+output:
+  html_document:
+    highlight: tango
+    theme: journal
+    toc: yes
+    toc_float: yes
+css: css/style.css
+params:
+    w: 1
+    d1: '010118'
+    d2: '010118'
+title: "Week `r params$w`: `r format(params$d1, '%b %d')` - `r format(params$d2, '%b %d')`"
+---
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(dplyr);library(readxl); library(knitr)
+library(kableExtra); library(stringr)
+knitr::opts_chunk$set(echo = FALSE)
+options(knitr.table.format = "html", knitr.kable.NA = '') 
+```
+<br>
+
+_Last Updated: `r format(Sys.time(), "%a %b %d %X")` _
+<br>
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+raw <- read_excel("schedule_456.xlsx")
+week.w <- filter(raw, Week==params$w)
+
+topics <- str_split(week.w$Topics, ",", simplify=TRUE)
+SLO    <- t(str_split(week.w$SLO, "\r\n", simplify=TRUE))
+prep   <- t(str_split(week.w$Prepare, "\r\n", simplify=TRUE))
+mats   <- t(str_split(week.w$Materials, "\r\n", simplify=TRUE))
+hw     <- t(str_split(week.w$Assignments, "\r\n", simplify=TRUE))
+mon    <- t(str_split(week.w$Monday, "\r\n", simplify=TRUE))
+wed    <- t(str_split(week.w$Wednesday, "\r\n", simplify=TRUE))
+fri    <- t(str_split(week.w$Friday, "\r\n", simplify=TRUE))
+```
+
+----
+
+# Learning Objectives
+```{r}
+kable(SLO) %>% kable_styling(bootstrap_options = "striped", full_width = F, position="left")
+```
+
+# How to Prepare
+```{r}
+kable(prep) %>% kable_styling(bootstrap_options = "striped", full_width = F, position="left")
+```
+
+# Materials
+```{r}
+kable(mats) %>% kable_styling(bootstrap_options = "striped", full_width = F, position="left")
+```
+
+##### Assignments
+```{r}
+kable(hw) %>% kable_styling(bootstrap_options = "striped", full_width = F, position="left")
+```
+
+----
+
+# Monday: `r topics[1]`
+
+```{r}
+kable(mon) %>% kable_styling(bootstrap_options = "striped", full_width = F, position="left")
+```
+
+----
+
+# Wednesday: `r topics[2]`
+
+```{r}
+kable(wed) %>% kable_styling(bootstrap_options = "striped", full_width = F, position="left")
+```
+
+----
+
+# Friday: `r topics[3]`
+
+```{r}
+kable(fri) %>% kable_styling(bootstrap_options = "striped", full_width = F, position="left")
+```
+
+

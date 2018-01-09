@@ -1,70 +1,56 @@
-/*  
- *  colors
- */
-:root {
-  /* site colors */
-  --light-blue: #0DC8F6;a
-  --ruby: #E71B23;
-  --pale-red: #E55743;
-  --dark-grey: #626262;
-  --light-grey: #767F7F;
-  --pale-black: #212121;
-  --white: #FFFFFF;
-  --nav-shadow: 0px 3px 15px 0px rgba(0,0,0,0.1);
-  --footer-shadow: 0px 3px 50px 0px rgba(43,45,66,0.4);
-  /* syntax highlight */
-  --base03: #002b36;  /* background */
-  --base02: #073642;  /* other background */
-  --base01: #586e75;  /* comments / secondary content */
-  --base1: #93a1a1;  /* body text / default code / primary content */
-  --yellow: #b58900;  /* keyword */
-  --orange: #cb4b16;  /* constants */
-  --red: #dc322f;  /* regex, special keywords */
-  --magenta: #d33682;  /* not sure what to do with this color yet */
-  --violet: #6c71c4;  /* not sure what to do with this color yet */
-  --blue: #268bd2;  /* reserved keywords */
-  --cyan: #2aa198;  /* strings, numbers */
-  --green: #859900;  /* operators, other keywords */
+
+h5 {
+    color: blue;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 /* build navbar: https://work.smarchal.com/twbscolor/index.php*/ 
+
+TWBSColor
+TWBSColor
+Generate your own Bootstrap navbar
+Select your Bootstrap version
+
+
+You would like a specific version? Ask me on Twitter!
+
+Select your colors
+Default background  Active background  Default color  Active color  
+Colorize dropdown  
+
+Bookmark your permalink
+https://work.smarchal.com/twbscolor/4.0.0-beta/css/a5d6a71b5e2033333300e6760
+Include Bootstrap assets
+//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js
+//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css
+//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js
+Copy the generated SCSS/SASS/LESS/CSS
+SCSS
+SASS
+LESS
+CSS
 .navbar {
-  background-color: #0c6507;
+  background-color: #a5d6a7;
 }
 .navbar .navbar-brand {
-  color: #000000;
+  color: #333333;
 }
 .navbar .navbar-brand:hover,
 .navbar .navbar-brand:focus {
-  color: #1c615b;
+  color: #00e676;
 }
 .navbar .navbar-text {
-  color: #000000;
+  color: #333333;
 }
 .navbar .navbar-nav .nav-link {
-  color: #000000;
+  color: #333333;
   border-radius: .25rem;
   margin: 0 0.25em;
 }
 .navbar .navbar-nav .nav-link:not(.disabled):hover,
 .navbar .navbar-nav .nav-link:not(.disabled):focus {
-  color: #1c615b;
-}
-.navbar .navbar-nav .dropdown-menu {
-  background-color: #0c6507;
-  border-color: #28a573;
-}
-.navbar .navbar-nav .dropdown-menu .dropdown-item {
-  color: #000000;
-}
-.navbar .navbar-nav .dropdown-menu .dropdown-item:hover,
-.navbar .navbar-nav .dropdown-menu .dropdown-item:focus,
-.navbar .navbar-nav .dropdown-menu .dropdown-item.active {
-  color: #1c615b;
-  background-color: #28a573;
-}
-.navbar .navbar-nav .dropdown-menu .dropdown-divider {
-  border-top-color: #28a573;
+  color: #00e676;
 }
 .navbar .navbar-nav .nav-item.active .nav-link,
 .navbar .navbar-nav .nav-item.active .nav-link:hover,
@@ -72,94 +58,96 @@
 .navbar .navbar-nav .nav-item.show .nav-link,
 .navbar .navbar-nav .nav-item.show .nav-link:hover,
 .navbar .navbar-nav .nav-item.show .nav-link:focus {
-  color: #1c615b;
-  background-color: #28a573;
+  color: #00e676;
+  background-color: #1b5e20;
 }
 .navbar .navbar-toggle {
-  border-color: #28a573;
+  border-color: #1b5e20;
 }
 .navbar .navbar-toggle:hover,
 .navbar .navbar-toggle:focus {
-  background-color: #28a573;
+  background-color: #1b5e20;
 }
 .navbar .navbar-toggle .navbar-toggler-icon {
-  color: #000000;
+  color: #333333;
 }
 .navbar .navbar-collapse,
 .navbar .navbar-form {
-  border-color: #000000;
+  border-color: #333333;
 }
 .navbar .navbar-link {
-  color: #000000;
+  color: #333333;
 }
 .navbar .navbar-link:hover {
-  color: #1c615b;
+  color: #00e676;
 }
 
 @media (max-width: 575px) {
   .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item {
-    color: #000000;
+    color: #333333;
   }
   .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:hover,
   .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item:focus {
-    color: #1c615b;
+    color: #00e676;
   }
   .navbar-expand-sm .navbar-nav .show .dropdown-menu .dropdown-item.active {
-    color: #1c615b;
-    background-color: #28a573;
+    color: #00e676;
+    background-color: #1b5e20;
   }
 }
 
 @media (max-width: 767px) {
   .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item {
-    color: #000000;
+    color: #333333;
   }
   .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:hover,
   .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item:focus {
-    color: #1c615b;
+    color: #00e676;
   }
   .navbar-expand-md .navbar-nav .show .dropdown-menu .dropdown-item.active {
-    color: #1c615b;
-    background-color: #28a573;
+    color: #00e676;
+    background-color: #1b5e20;
   }
 }
 
 @media (max-width: 991px) {
   .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item {
-    color: #000000;
+    color: #333333;
   }
   .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:hover,
   .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item:focus {
-    color: #1c615b;
+    color: #00e676;
   }
   .navbar-expand-lg .navbar-nav .show .dropdown-menu .dropdown-item.active {
-    color: #1c615b;
-    background-color: #28a573;
+    color: #00e676;
+    background-color: #1b5e20;
   }
 }
 
 @media (max-width: 1199px) {
   .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item {
-    color: #000000;
+    color: #333333;
   }
   .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:hover,
   .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item:focus {
-    color: #1c615b;
+    color: #00e676;
   }
   .navbar-expand-xl .navbar-nav .show .dropdown-menu .dropdown-item.active {
-    color: #1c615b;
-    background-color: #28a573;
+    color: #00e676;
+    background-color: #1b5e20;
   }
 }
 
 .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item {
-  color: #000000;
+  color: #333333;
 }
 .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:hover,
 .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item:focus {
-  color: #1c615b;
+  color: #00e676;
 }
 .navbar-expand .navbar-nav .show .dropdown-menu .dropdown-item.active {
-  color: #1c615b;
-  background-color: #28a573;
+  color: #00e676;
+  background-color: #1b5e20;
 }
+
+

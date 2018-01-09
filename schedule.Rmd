@@ -9,39 +9,27 @@ _Last Updated: `r format(Sys.time(), "%a %b %d %X")` _
 <br>
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 rawdat <- read_excel("schedule_456.xlsx")
-cdat   <- rawdat %>% mutate(Topics = topic, Materials=materials, Evaluation = eval, 
+cdat   <- rawdat %>% select(-c(SLO:Friday)) %>% 
+                     mutate(wknum=Week,
                             wknum = str_pad(wknum, width=2, side="left", pad="0"),
                             link = paste0("wk", wknum, ".html"), 
-                            Week = paste0("Week ", wknum, ": ",format(date, format="%b %d")), 
+                            Week = paste0("Week ", wknum, ": ",format(Date, format="%b %d")), 
                             Link = sprintf("[%s](%s)",Week, link))
 
 cdat$Link[c(9,17)] <- c("Spring Break", "Finals")
 
-# parse topics
-topiclist <- which(!is.na(cdat$topic))
-cdat$Topics[topiclist] <- paste0("<ul><li>", cdat$topic[topiclist], "</li></ul>")
-cdat$Topics[topiclist] <- gsub("(+.)\\*", "</li><li>", cdat$Topics[topiclist])
-
-# parse notes
-mats <- which(!is.na(cdat$materials))
-cdat$Materials[mats] <- paste0("<ul><li>", cdat$materials[mats], "</li></ul>")
-cdat$Materials[mats] <- gsub("(+.)\\*", "</li><li>", cdat$Materials[mats])
-
-
-# parse evaluations
-evallist <- which(!is.na(cdat$eval))
-cdat$Evaluation[evallist] <- paste0("<ul><li>", cdat$eval[evallist], "</li></ul>")
-cdat$Evaluation[evallist] <- gsub("(+.)\\*", "</li><li>", cdat$Evaluation[evallist])
+# parse assignments
+evallist <- which(!is.na(cdat$Assignments))
+cdat$Assignments[evallist] <- paste0("<ul><li>", cdat$Assignments[evallist], "</li></ul>")
+cdat$Assignments[evallist] <- gsub("(+.)\\*", "</li><li>", cdat$Assignments[evallist])
 ```
 
 ```{r results='asis', echo=FALSE, message=FALSE, warning=FALSE}
-out <- select(cdat, Link, Topics, Materials, Evaluation)
+out <- select(cdat, Link, Topics, Assignments)
 
 knitr::kable(out, align="l", escape=FALSE) %>% 
   kable_styling(bootstrap_options = c("hover", "striped", "responsive", "bordered")) %>% 
-  column_spec(1, width="10%") %>% column_spec(2, width="20%") %>% 
-  column_spec(3, width="30%") %>% column_spec(4, width="30%")
+  column_spec(1, width="15%") %>% column_spec(2, width="30%") %>% 
+  column_spec(3, width="40%")
 ```
-
-
 
