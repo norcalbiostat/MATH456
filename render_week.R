@@ -10,4 +10,4 @@ w <- 1
 d1 <- raw$Date[w]
 d2 <- d1 + duration(6, 'days')
 
-render("weekly.Rmd", params=list(w=w, d1=d1, d2=d2))
+render("_weekly.Rmd", params=list(w=w, d1=d1, d2=d2))

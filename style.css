@@ -7,29 +7,6 @@ h5 {
 
 /* build navbar: https://work.smarchal.com/twbscolor/index.php*/ 
 
-TWBSColor
-TWBSColor
-Generate your own Bootstrap navbar
-Select your Bootstrap version
-
-
-You would like a specific version? Ask me on Twitter!
-
-Select your colors
-Default background  Active background  Default color  Active color  
-Colorize dropdown  
-
-Bookmark your permalink
-https://work.smarchal.com/twbscolor/4.0.0-beta/css/a5d6a71b5e2033333300e6760
-Include Bootstrap assets
-//cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js
-//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css
-//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js
-Copy the generated SCSS/SASS/LESS/CSS
-SCSS
-SASS
-LESS
-CSS
 .navbar {
   background-color: #a5d6a7;
 }
@@ -41,7 +18,7 @@ CSS
   color: #00e676;
 }
 .navbar .navbar-text {
-  color: #333333;
+  color: #000000;
 }
 .navbar .navbar-nav .nav-link {
   color: #333333;
@@ -79,7 +56,7 @@ CSS
   color: #333333;
 }
 .navbar .navbar-link:hover {
-  color: #00e676;
+  color: #2e7d32;
 }
 
 @media (max-width: 575px) {
