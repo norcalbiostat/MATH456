@@ -20,7 +20,7 @@ cdat$Link[c(9,17)] <- c("Spring Break", "Finals")
 
 # parse assignments
 evallist <- which(!is.na(cdat$Assignments))
-cdat$Assignments[evallist] <- paste0("<ul><li>", cdat$Assignments[evallist], "</li></ul>")
+cdat$Assignments[evallist] <- paste0("<ul>", cdat$Assignments[evallist], "</li></ul>")
 cdat$Assignments[evallist] <- gsub("(+.)\\*", "</li><li>", cdat$Assignments[evallist])
 ```
 
