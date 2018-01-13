@@ -169,42 +169,117 @@ $(document).ready(function () {
     Schedule
   </a>
 </li>
-<li>
-  <a href="notes.html">
-    <span class="fa fa-book"></span>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-folder-open"></span>
      
-    Notes
+    Materials
+     
+    <span class="caret"></span>
   </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://norcalbiostat.github.io/MATH456_notes/">
+        <span class="fa fa-book"></span>
+         
+        Notes
+      </a>
+    </li>
+    <li>
+      <a href="http://www.norcalbiostat.com/data/">
+        <span class="fa fa-database"></span>
+         
+        Data
+      </a>
+    </li>
+    <li>
+      <a href="syllabus.html">
+        <span class="fa fa-info-circle"></span>
+         
+        Syllabus
+      </a>
+    </li>
+  </ul>
 </li>
-<li>
-  <a href="http://www.norcalbiostat.com/data/">
-    <span class="fa fa-database"></span>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-wrench"></span>
      
-    Data
+    Tools
+     
+    <span class="caret"></span>
   </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://hackmd.io/">
+        <span class="fa fa-code"></span>
+         
+        Hack-MD (code sharing)
+      </a>
+    </li>
+    <li>
+      <a href="https://slack.com/">
+        <span class="fa fa-slack"></span>
+         
+        Slack (class discussions)
+      </a>
+    </li>
+    <li>
+      <a href="https://csuchico.zoom.us/">
+        <span class="fa fa-video-camera"></span>
+         
+        Zoom (video conference)
+      </a>
+    </li>
+  </ul>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li>
-  <a href="syllabus.html">
-    <span class="fa fa-info-circle"></span>
-     
-    Syllabus
-  </a>
-</li>
-<li>
-  <a href="faq.html">
+        <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     <span class="fa fa-question"></span>
      
-    Help/FAQ
-  </a>
-</li>
-<li>
-  <a href="mailto:rdonatello@csuchico.edu">
-    <span class="fa fa-envelope-o"></span>
+    Help
      
-    Contact
+    <span class="caret"></span>
   </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="faq.html">
+        <span class="fa fa-group"></span>
+         
+        On campus help
+      </a>
+    </li>
+    <li>
+      <a href="https://www.rstudio.com/online-learning/">
+        <span class="fa fa-registered"></span>
+         
+        R Studio Tutorials
+      </a>
+    </li>
+    <li>
+      <a href="https://stackoverflow.com/questions/tagged/r">
+        <span class="fa fa-stack-overflow"></span>
+         
+        Stack Overflow/r
+      </a>
+    </li>
+    <li>
+      <a href="http://www.cookbook-r.com/">
+        <span class="fa fa-area-chart"></span>
+         
+        R Cookbook
+      </a>
+    </li>
+    <li>
+      <a href="mailto:rdonatello@csuchico.edu">
+        <span class="fa fa-envelope-o"></span>
+         
+        Email Robin (last resort)
+      </a>
+    </li>
+  </ul>
 </li>
 <li>
   <a href="http://www.norcalbiostat.com/">
@@ -227,7 +302,7 @@ $(document).ready(function () {
 
 
 <p><br></p>
-<p><em>Last Updated: Wed Jan 10 7:47:04 AM </em> <br></p>
+<p><em>Last Updated: Fri Jan 12 8:55:41 PM </em> <br></p>
 <table class="table table-hover table-striped table-responsive table-bordered" style="margin-left: auto; margin-right: auto;">
 <thead>
 <tr>
@@ -263,6 +338,9 @@ Introduce yourself to the class (who/year/major/non-stat interests)
 <li>
 2-3 min video Project Proposal. Post link to YouTube in #projects channel by Friday EOD.
 </li>
+<li>
+Data Camp
+</li>
 </ul>
 </td>
 </tr>
@@ -271,7 +349,7 @@ Introduce yourself to the class (who/year/major/non-stat interests)
 <a href="wk02.html">Week 02: Jan 29</a>
 </td>
 <td style="text-align:left;width: 30%; ">
-Model Building, Moderation, Interactions
+Model Building, Moderation &amp; Interactions, Model fit &amp; variable selection
 </td>
 <td style="text-align:left;width: 40%; ">
 <ul>
@@ -288,9 +366,16 @@ Model building homework (Due 2/11)
 <a href="wk03.html">Week 03: Feb 05</a>
 </td>
 <td style="text-align:left;width: 30%; ">
-Confounding &amp; Variable Selection, Model Selection &amp; Special Considerations
+Special Considerations, , Team Check ins
 </td>
 <td style="text-align:left;width: 40%; ">
+<ul>
+<li>
+</li>
+<li>
+Model building homework (Due 2/11)
+</li>
+</ul>
 </td>
 </tr>
 <tr>
@@ -298,14 +383,14 @@ Confounding &amp; Variable Selection, Model Selection &amp; Special Consideratio
 <a href="wk04.html">Week 04: Feb 12</a>
 </td>
 <td style="text-align:left;width: 30%; ">
-Logistic Regression, Classification, Accuracy
+Generalized Linear Models, Fitted Probabilities, Classification
 </td>
 <td style="text-align:left;width: 40%; ">
 <ul>
 <li>
 </li>
 <li>
-Logistic regression and classification assignment (Due 2/18)
+Logistic regression and classification assignment (Due 2/25)
 </li>
 </ul>
 </td>
@@ -315,17 +400,14 @@ Logistic regression and classification assignment (Due 2/18)
 <a href="wk05.html">Week 05: Feb 19</a>
 </td>
 <td style="text-align:left;width: 30%; ">
-Project Updates, Exam Review, Exam 1
+Accuracy
 </td>
 <td style="text-align:left;width: 40%; ">
 <ul>
 <li>
 </li>
 <li>
-Project Update Presentations (Mon)
-</li>
-<li>
-Exam 1 (Fri)
+Logistic regression and classification assignment (Due 2/25)
 </li>
 </ul>
 </td>
