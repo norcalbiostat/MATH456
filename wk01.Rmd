@@ -5,12 +5,8 @@ output:
     theme: journal
     toc: yes
     toc_float: yes
-css: style.css
-params:
-    w: 1
-    d1: '010118'
-    d2: '010118'
-title: "Week `r params$w`: `r format(params$d1, '%b %d')` - `r format(params$d2, '%b %d')`"
+css: css/style.css
+title: "Week 1: Jan 22 - Jan 28"
 ---
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
@@ -27,7 +23,7 @@ _Last Updated: `r format(Sys.time(), "%a %b %d %X")` _
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 raw <- read_excel("schedule_456.xlsx")
-week.w <- filter(raw, Week==params$w)
+week.w <- filter(raw, Week==1)
 
 topics <- str_split(week.w$Topics, ",", simplify=TRUE)
 SLO    <- t(str_split(week.w$SLO, "\r\n", simplify=TRUE))
@@ -46,10 +42,13 @@ fri    <- t(str_split(week.w$Friday, "\r\n", simplify=TRUE))
 kable(SLO) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
 ```
 
-#Prepare
+# Prepare
 ```{r}
 kable(prep) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
 ```
+
+The Slack phone app is technically optional, but really really helpful/handy. Students historically have stated it's much easier to work with. If you opt out of the phone app, make sure the program is installed onto your laptop. You need to be connected throughout the semester, not just when you remember to log in. 
+
 
 # Materials
 ```{r}
@@ -69,13 +68,19 @@ kable(hw) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
 kable(mon) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
 ```
 
+Rules for producing questions: 
+
+1.	Ask as many questions as you can
+2.	Do not stop to answer, judge or to discuss the questions
+3.	Write down every question _exactly_ as it is stated
+4.	Change any statement into a question
+
 
 # Wednesday: `r topics[2]`
 
 ```{r}
 kable(wed) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
 ```
-
 
 # Friday: `r topics[3]`
 

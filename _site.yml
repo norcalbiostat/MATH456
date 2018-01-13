@@ -8,10 +8,11 @@ navbar:
     href: schedule.html
   - text: Notes
     icon: fa-book
-    href: notes.html
+    href: https://norcalbiostat.github.io/MATH456_notes/
   - text: Data
     icon: fa-database
     href: http://www.norcalbiostat.com/data/
+    
   right:
   - text: Syllabus
     icon: fa-info-circle
