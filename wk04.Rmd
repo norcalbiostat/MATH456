@@ -5,8 +5,8 @@ output:
     theme: journal
     toc: yes
     toc_float: yes
-css: css/style.css
-title: "Week 1: Jan 22 - Jan 28"
+css: style.css
+title: "Week 4: Feb 12 - Feb 18"
 ---
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
@@ -23,7 +23,7 @@ _Last Updated: `r format(Sys.time(), "%a %b %d %X")` _
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 raw <- read_excel("schedule_456.xlsx")
-week.w <- filter(raw, Week==1)
+week.w <- filter(raw, Week==4)
 
 topics <- str_split(week.w$Topics, ",", simplify=TRUE)
 SLO    <- t(str_split(week.w$SLO, "\r\n", simplify=TRUE))
@@ -42,16 +42,10 @@ fri    <- t(str_split(week.w$Friday, "\r\n", simplify=TRUE))
 kable(SLO) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
 ```
 
-# Prepare
+#Prepare
 ```{r}
 kable(prep) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
 ```
-
-* If your Slack account uses your @csuchico.edu email, you should be able to search for the workspace and add yourself. If you have a different email address then use the following 
-[[Slack Invitation Link]](https://join.slack.com/t/math456/shared_invite/enQtMzAwMzEyNDA2NTUxLWQyZTc1NDM2NzZiMGQ5MjVhODRhZjIyM2QxMGZlMDJhNjY0ZTRhODhiMTg5YWU0ZDAzZThhYjcwMDBhOGRiNjY) to join. 
-* The Slack phone app is technically optional, but really really helpful/handy. Students historically have stated it's much easier to work with. If you opt out of the phone app, make sure the program is installed onto your laptop. You need to be connected throughout the semester, not just when you remember to log in. 
-
-<br>
 
 # Materials
 ```{r}
@@ -63,6 +57,13 @@ kable(mats) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
 kable(hw) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
 ```
 
+**GLM Assignment**
+
+* Playing Hookey: 12.23-12.26
+* Northridge Earthquake: 12.27-12.32
+
+This assignment will be Peer Reviewed. Upload a PDF copy to the `GLM Assignment` folder in our Google Drive. 
+
 ----
 
 # Monday: `r topics[1]`
@@ -71,19 +72,13 @@ kable(hw) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
 kable(mon) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
 ```
 
-Rules for producing questions: 
-
-1.	Ask as many questions as you can
-2.	Do not stop to answer, judge or to discuss the questions
-3.	Write down every question _exactly_ as it is stated
-4.	Change any statement into a question
-
 
 # Wednesday: `r topics[2]`
 
 ```{r}
 kable(wed) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
 ```
+
 
 # Friday: `r topics[3]`
 

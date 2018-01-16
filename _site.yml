@@ -12,6 +12,9 @@ navbar:
     - text: Notes
       icon: fa-book
       href: https://norcalbiostat.github.io/MATH456_notes/
+    - text: Google Drive
+      icon: fa-google
+      href: https://drive.google.com/drive/folders/0B83Z8_sNw3KPcnVrYzVFRHUtcHM?usp=sharing 
     - text: Data
       icon: fa-database
       href: http://www.norcalbiostat.com/data/
@@ -26,7 +29,7 @@ navbar:
       href: https://hackmd.io/
     - text: Slack (class discussions)
       icon: fa-slack
-      href: https://slack.com/
+      href: https://math456.slack.com/
     - text: Zoom (video conference)
       icon: fa-video-camera
       href: https://csuchico.zoom.us/
