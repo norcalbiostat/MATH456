@@ -1,14 +1,11 @@
 ---
-title: "California State University Chico \n Department of Mathematics and Statistics"
+title: "MATH 456: Applied Statistics II (Sp18) Syllabus"
 output:
   pdf_document: default
-  html_document:
-    highlight: pygments
 ---
 
-# MATH 456, Applied Statistics II, Section 01, Spring 2018
+# Course Information
 
-### Course Information
 **Instructor:** Dr. Robin Donatello  
 **Office Location:** Holt 202  
 **Telephone:** 898-5767    
@@ -21,6 +18,7 @@ output:
 ## Course Description and Goals
 From the CSUC Course Catalog: Advanced topics in applied statistics including multiple regression, multivariate methods, nonparametrics, analysis of covariance, bootstrap methods and others as appropriate. Statistical computer packages are introduced and used. Appropriate for biology, agriculture, nutrition, business, psychology, social science and other maojrs. 3 hours discussion.
 
+Click [[here]](Syllabus_S18.pdf) for a PDF version of this syllabus. 
 
 ## Course Content Learning Outcomes
 Upon successful completion of this course, students will be able to:  
@@ -61,21 +59,44 @@ Loaner laptops will be available for you to use during class time only. These sy
     - log transforming outcomes
     - moderators, confounders, interactions, stratification
     - categorical variables, reference coding, contrasts
-    - Two way ANOVA as a GLM
 * Logistic Regression
     - Odds Ratios and Risk Ratios
     - Used as a classifier
     - Sensitivity/specificity/accuracy
-* Missing Data: Identification & Imputation
-* Multilevel (hierarchical) models
-    - Clustered sampling
-    - Spatial modeling
 * Multivariable statistics / Dimension Reduction
     - Principle Component Analysis
     - Factor Analysis
+* Multilevel (hierarchical) models
+    - Clustered data
+    - Longitudinal data
+    - Spatial data
+* Missing Data: Identification & Imputation
+    
+    
+# Grading
 
-    
-    
-    
+* There are 460 points available. The breakdown is as follows: 
+    - Assignments (120), Learning (90), 2 Exams (200), Project (50)
+    - Both exams will be broken into part take home and part in class. 
+    - **Any cheating observed on the take home portion of either exam will result in a 0 score**
+    _ _points are subject to change_
+* I use a standard grade cutoff of 100-90%: A, 89-80%: B, 79-70%: C, 69-60%: D, 0-59%: F Plusses and minuses will be as displayed on Blackboard Learn. 
+
+# Other Logistics
+
+## Adding and Dropping the course
+The last day to drop or add a course is 2/16/18. After this date, withdraws will only be allowed for serious and compelling reasons subject to department chair approval.
+
+## Americans with Disabilities Act
+If you need course adaptations or accommodations because of a disability or chronic illness,  or if you need to make special arrangements in case the building must be evacuated, please make an appointment with me as soon as possible, or see me during office hours. Please also contact Accessibility Resource Center (ARC) as they are the designated department responsible for approving and coordinating reasonable accommodations and services for students with disabilities. ARC will help you understand your rights and responsibilities under the Americans with Disabilities Act and provide you further assistance with requesting and arranging accommodations.
+
+Accessibility Resource Center  
+530-898-5959   
+Student Services Center 170  
+arcdept@csuchico.edu  
+
+
+_Last updated: `r format(Sys.time(), "%a %b %d %Y %X")`_
+
     
     

@@ -63,6 +63,13 @@ kable(mats) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
 kable(hw) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
 ```
 
+### Data Camp Assignment
+* Your goal is to collect around 25,000 XP from any course in Data Camp. This is approximately 5 clases. 
+* You have all semsester to do so. I will assign midterm progress points around Spring Break. 
+* Your past work does not count. 
+* I highly recommend that you engage in a skill track to do this.  https://www.datacamp.com/tracks/skill 
+* You are not limited to learning R! Use this time to pick up on Python if you like.
+
 ----
 
 # Monday: `r topics[1]`
