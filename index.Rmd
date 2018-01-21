@@ -8,3 +8,16 @@ This is the landing page for <span style="color:blue">**Applied Statistics II**<
 # Announcements
 
 ### Week 1 (1/22 - 1/28): Welcome!
+
+* Welcome to spring semester in statistics with your host, Dr. Robin Donatello. 
+* Make sure you aquaint yourself with this website, it will be your guide for the next 16 weeks. 
+* We will use several online tools throughout this class, try to get signed up for all of them before Monday. 
+    - Look under `materials` and `tools` links in the navbar for the list. 
+    - Update your version of `R studio` for sure. Update R if you're running < 3.4. 
+        - Go to `[Tools]` --> `[Global Options]` to check the version of R that R Studio is using. 
+        - Reinstall your commonly used packages.(Can be painfull. Esp for `Rcpp`)
+* If you've had me in a class before, you know that there *will* be typos and broken links on this webpage. 
+    - 1) breath, and recognize that i'm human too.
+    - 2) good: tell me then email me (this second step is pretty critical unless you witness me fix the code right then.)
+    - 2) better: open up an Issue in Github
+    - 2) best: fork the repo and submit a PR with the fix!

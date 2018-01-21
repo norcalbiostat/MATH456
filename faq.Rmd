@@ -21,7 +21,9 @@ output: html_document
 * **Math Learning Lab (MLIB 4th floor)** [[Tutor Schedule]](https://docs.google.com/spreadsheets/d/1xNQMfxpnIiS5bUCS9jB2_EE1Sc4C06JRaw6jyEO3nVE/edit#gid=0)
     - Mariby Cruz, Mitch Borgert, Matt Sterkel, Jerry Tucay
 
-* **Community Coding Hour** - Spring hours TBD
+* **Community Coding Hour** - TR 2-4pm. Location TBD. 
+    - Tuesday may start at week 1
+    - Thursday won't start until week 6
 
 * **Robin Donatello** - Stat professor. Holt 202. rdonatello@csuchico.edu 
     - Spring hours TBD
@@ -34,6 +36,3 @@ output: html_document
 * **Mariby Cruz** - peer mentor.  mcruz27@mail.csuchico.edu
     - available for personal tutoring, including weekends
     - Spring hours TBD
-
-
-    

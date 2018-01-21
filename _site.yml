@@ -6,6 +6,39 @@ navbar:
   - text: Schedule
     icon: fa-calendar
     href: schedule.html
+  - text: Weekly
+    icon: fa-folder-open
+    menu:
+    - text: Week 01 - Jan 22
+      href: wk01.html
+    - text: Week 02 - Jan 29
+      href: wk02.html
+    - text: Week 03 - Feb 05
+      href: wk03.html
+    - text: Week 04 - Feb 12
+      href: wk04.html
+    - text: Week 05 - Feb 19
+      href: wk05.html
+    - text: Week 06 - Feb 26
+      href: wk06.html
+    - text: Week 07 - Mar 05
+      href: wk07.html
+    - text: Week 08 - Mar 12
+      href: wk08.html
+    - text: Week 09 - Mar 26
+      href: wk09.html
+    - text: Week 10 - Apr 02
+      href: wk10.html 
+    - text: Week 11 - Apr 09
+      href: wk11.html
+    - text: Week 12 - Apr 16
+      href: wk12.html
+    - text: Week 13 - Apr 23
+      href: wk13.html
+    - text: Week 14 - Apr 30
+      href: wk14.html
+    - text: Week 15 - May 07
+      href: wk15.html
   - text: Materials
     icon: fa-folder-open
     menu:
@@ -18,9 +51,9 @@ navbar:
     - text: Data
       icon: fa-database
       href: http://www.norcalbiostat.com/data/
-    - text: Syllabus
+    - text: Syllabus 
       icon: fa-info-circle
-      href: syllabus.html
+      href: Syllabus_S18.html
   - text: Tools
     icon: fa-wrench
     menu:
