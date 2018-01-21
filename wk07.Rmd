@@ -6,7 +6,7 @@ output:
     toc: yes
     toc_float: yes
 css: style.css
-title: "Week 2: Jan 29- Feb 4"
+title: "Week 7: Mar 5 - Mar 11"
 ---
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
@@ -23,7 +23,7 @@ _Last Updated: `r format(Sys.time(), "%a %b %d %X")` _
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 raw <- read_excel("schedule_456.xlsx")
-week.w <- filter(raw, Week==2)
+week.w <- filter(raw, Week==7)
 
 topics <- str_split(week.w$Topics, ",", simplify=TRUE)
 SLO    <- t(str_split(week.w$SLO, "\r\n", simplify=TRUE))
@@ -57,28 +57,6 @@ kable(mats) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
 kable(hw) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
 ```
 
-**Multiple Regression assignment:**
-
-* Using the NCbirths data set
-    * Model birthweight using mothers age, smoking habit, and number of visits. 
-    * Calculate and interpret a 95% prediction interval for a 30-year old smoking mother with 16 visits to the doctor during her pregnancy. 
-    * Does smoking habit affect the relationship between age and birth weight? 
-* PMA5: Ex 7.5, 7.6, 7.15, 7.17
-* Knit to Word or PDF and submit through Blackboard learn by the due date. 
-
-**Model Building Report:**
-
-In a separate RMD document: 
-
-* Build a model to predict the age in which an adolescent starts smoking. 
-    - Come up with two competing models and compare them on at least two measures of fit. 
-* Describe your steps along the way as if you were writing a report. 
-    - This includes describing any data management along the way. 
-* Knit to PDF, use section level headers to organize your report. 
-* This will be peer reviewed. 
-* Upload your final PDF document to the `Model Building` folder in our class Google Drive. Name your file with your username. e.g. _modeling_startsmoke_rdonatello.pdf_
-
-
 ----
 
 # Monday: `r topics[1]`
@@ -88,13 +66,11 @@ kable(mon) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
 ```
 
 
-
 # Wednesday: `r topics[2]`
 
 ```{r}
 kable(wed) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
 ```
-
 
 
 # Friday: `r topics[3]`
