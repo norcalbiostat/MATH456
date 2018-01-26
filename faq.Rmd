@@ -21,14 +21,17 @@ output: html_document
 * **Math Learning Lab (MLIB 4th floor)** [[Tutor Schedule]](https://docs.google.com/spreadsheets/d/1xNQMfxpnIiS5bUCS9jB2_EE1Sc4C06JRaw6jyEO3nVE/edit#gid=0)
     - Mariby Cruz, Mitch Borgert, Matt Sterkel, Jerry Tucay
 
-* **Community Coding Hour** - TR 2-4pm. Location TBD. 
-    - Tuesday may start at week 1
-    - Thursday won't start until week 6
+* **Community Coding Sessions** - TR 2-4pm Location TBD
+
+> _Come code with us! Bring your Data Science and coding questions, data, and projects. We aim to provide a helpful and friendly working environment where you can work, ask questions or discuss ideas related to R, Python, Data Science, or more generally data visualization and analysis._
 
 * **Robin Donatello** - Stat professor. Holt 202. rdonatello@csuchico.edu 
-    - Spring hours TBD
+    - MW 11-12 pm. Holt 155. 
+    - Most community coding sessions. 
 * **Edward Roualdes** - Stat professor. Holt 204. eroualdes@csuchico.edu
-    - Spring hours TBD
+    - TR 1-2pm
+    - F 3-4pm
+    - Community Coding T 2-4 and R 3-4. 
 * **Eduardo Gomez** - peer mentor. egomez42@mail.csuchico.edu
     - Spring hours TBD
 * **Ricardo Aguilar** - peer mentor. raguilar11@mail.csuchico.edu

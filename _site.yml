@@ -93,6 +93,4 @@ output:
     theme: journal
     highlight: tango
     css: style.css
-    lib_dir: site_libs
-    self_contained: no
 
