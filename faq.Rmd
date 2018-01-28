@@ -30,12 +30,7 @@ output: html_document
     - Most community coding sessions. 
 * **Edward Roualdes** - Stat professor. Holt 204. eroualdes@csuchico.edu
     - TR 1-2pm
-    - F 3-4pm
     - Community Coding T 2-4 and R 3-4. 
 * **Eduardo Gomez** - peer mentor. egomez42@mail.csuchico.edu
-    - Spring hours TBD
 * **Ricardo Aguilar** - peer mentor. raguilar11@mail.csuchico.edu
-    - Spring hours TBD
-* **Mariby Cruz** - peer mentor.  mcruz27@mail.csuchico.edu
-    - available for personal tutoring, including weekends
-    - Spring hours TBD
+

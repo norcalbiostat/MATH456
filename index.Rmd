@@ -7,6 +7,12 @@ This is the landing page for <span style="color:blue">**Applied Statistics II**<
 
 # Announcements
 
+### Week 2 (1/29 - 2/4)
+
+* The main goal this week is to talk about model building. What to look for, how to compare between models or variables, when to stop. 
+* Review the course notes and corresponding textbook chapters,and be prepared to answer the questions in the notebook. 
+* You'll also form project teams on Monday. Be sure to have your preferences submitted to me via Slack DM by Sunday EOD. 
+
 ### Week 1 (1/22 - 1/28): Welcome!
 
 * Welcome to spring semester in statistics with your host, Dr. Robin Donatello. 
