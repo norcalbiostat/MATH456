@@ -66,6 +66,9 @@ navbar:
     - text: Zoom (video conference)
       icon: fa-video-camera
       href: https://csuchico.zoom.us/
+    - text: Data Camp (Learn to code)
+      icon: fa-institution
+      href: https://www.datacamp.com/
   right:
   - text: Help
     icon: fa-question
