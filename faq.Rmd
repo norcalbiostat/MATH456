@@ -7,7 +7,7 @@ output: html_document
 # Where can I get help using R outside of class time? 
 
 ### Online
-* Chico [R User Group](https://groups.google.com/forum/#!forum/chico-rug) Google L-serv. 
+* Chico [R User Group](https://groups.google.com/forum/#!forum/chico-rug) Google email list and discussion board. 
     - Contribute your own solutions and advice as you can. 
 * Stack Overflow using the `R` tag https://stackoverflow.com/questions/tagged/r 
     - Both of these are most helpful when you prepare a [minimal working example](http://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example) of your problem for the other users. 
@@ -18,10 +18,11 @@ output: html_document
 
 ### In Person: 
 
-* **Math Learning Lab (MLIB 4th floor)** [[Tutor Schedule]](https://docs.google.com/spreadsheets/d/1xNQMfxpnIiS5bUCS9jB2_EE1Sc4C06JRaw6jyEO3nVE/edit#gid=0)
-    - Mariby Cruz, Mitch Borgert, Matt Sterkel, Jerry Tucay
+* [**Math Learning Lab**](http://www.csuchico.edu/math/Tutoring.shtml)
+    - MLIB 4th floor
+    - Mariby Cruz, Mitch Borgert, Matt Sterkel, Jerry Tucay 
 
-* **Community Coding Sessions** - TR 2-4pm Location TBD
+* **Community Coding Sessions** - TR 2-4pm MLIB 442
 
 > _Come code with us! Bring your Data Science and coding questions, data, and projects. We aim to provide a helpful and friendly working environment where you can work, ask questions or discuss ideas related to R, Python, Data Science, or more generally data visualization and analysis._
 
