@@ -20,7 +20,7 @@ output: html_document
 
 * [**Math Learning Lab**](http://www.csuchico.edu/math/Tutoring.shtml)
     - MLIB 4th floor
-    - Mariby Cruz, Mitch Borgert, Matt Sterkel, Jerry Tucay 
+    - Mariby Cruz, Mitch Borgert, Jerry Tucay 
 
 * **Community Coding Sessions** - TR 2-4pm MLIB 442
 
