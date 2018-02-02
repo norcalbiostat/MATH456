@@ -84,7 +84,7 @@ kable(mon) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
 ```
 
 
-# Wednesday: No Class Meeting 
+# Wednesday: `r topics[2]`
 
 ```{r}
 kable(wed) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
