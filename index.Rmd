@@ -7,6 +7,13 @@ This is the landing page for <span style="color:blue">**Applied Statistics II**<
 
 # Announcements
 
+### Week 3 (2/5 - 2/11)
+
+* Recap of the process of building a model
+* Team check in - Tell me where you are at and what you are working on this week. How can the class help you make progress? 
+* Reminders: Regression assignment due Wed, Model building due Friday. 
+
+
 ### Week 2 (1/29 - 2/4)
 
 * The main goal this week is to talk about model building. What to look for, how to compare between models or variables, when to stop. 
