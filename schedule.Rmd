@@ -22,6 +22,9 @@ cdat$Link[c(9,17)] <- c("Spring Break", "Finals")
 evallist <- which(!is.na(cdat$Assignments))
 cdat$Assignments[evallist] <- paste0("<ul>", cdat$Assignments[evallist], "</li></ul>")
 cdat$Assignments[evallist] <- gsub("(+.)\\*", "</li><li>", cdat$Assignments[evallist])
+cdat$Assignments[evallist] <- gsub("(", "(<b>", cdat$Assignments[evallist], fixed=TRUE)
+cdat$Assignments[evallist] <- gsub(")", "</b>)", cdat$Assignments[evallist], fixed=TRUE)
+
 ```
 
 ```{r results='asis', echo=FALSE, message=FALSE, warning=FALSE}
