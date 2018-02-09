@@ -44,7 +44,7 @@ navbar:
     menu:
     - text: Notes
       icon: fa-book
-      href: https://norcalbiostat.github.io/MATH456_notes/
+      href: https://norcalbiostat.github.io/MATH456_notes/index.html
     - text: Google Drive
       icon: fa-google
       href: https://drive.google.com/drive/folders/0B83Z8_sNw3KPcnVrYzVFRHUtcHM?usp=sharing 
