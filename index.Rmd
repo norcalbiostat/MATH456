@@ -7,6 +7,13 @@ This is the landing page for <span style="color:blue">**Applied Statistics II**<
 
 # Announcements
 
+### Week 4 (2/12 - 2/18)
+
+* Solutions to MLR assignment uploaded to Google Drive. I'll be working my way through the grading this week. 
+* This week -- Generalized Linear Models. What to do when your outcome isn't continuous. 
+* We'll talk about 2 cases, binary and count data. Just how to fit and interpret Logistic and Poisson models. 
+* New GLM assignment starting, all reviews for Model building are done by Sunday (tonight) EOD. 
+
 ### Week 3 (2/5 - 2/11)
 
 * Recap of the process of building a model

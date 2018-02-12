@@ -6,7 +6,7 @@ output:
     toc: yes
     toc_float: yes
 css: style.css
-title: "Week 5: Feb 29 - Feb 25)`"
+title: "Week 5: Feb 29 - Feb 25"
 ---
 
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
