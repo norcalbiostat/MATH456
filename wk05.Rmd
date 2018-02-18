@@ -57,18 +57,6 @@ kable(mats) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
 kable(hw) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
 ```
 
-**Peer Review instructions**
-
-* Use the `Peer Review Rotation` spreadsheet in our class Google Drive to find out who you are assigned to review. 
-    - Download those reports and read through them.
-    - Provide 4 total comments using the commenting feature directly in Adobe. 
-        - Two things that they could have done better. 
-        - Two things that they did well. 
-* Name your reviewed copy with your username and upload back to the GLM Assignments folder. 
-
-> glm_rdonatello_reviewername.pdf
-
-* After the peer review due date you should download your reviewed assignments and read the comments.
 
 ----
 
@@ -86,7 +74,7 @@ kable(wed) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
 ```
 
 
-# Friday: `r topics[3]`
+# Friday: Open Work Day
 
 ```{r}
 kable(fri) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
