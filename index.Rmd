@@ -7,6 +7,12 @@ This is the landing page for <span style="color:blue">**Applied Statistics II**<
 
 # Announcements
 
+### Week 5 (2/19 - 2/25)
+
+* No new content this week. Working/practicing your model writing and calculating various classification measurements. 
+* Friday will be an open project work day. 
+
+
 ### Week 4 (2/12 - 2/18)
 
 * Solutions to MLR assignment uploaded to Google Drive. I'll be working my way through the grading this week. 
