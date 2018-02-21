@@ -73,7 +73,6 @@ kable(mon) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
 kable(wed) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
 ```
 
-
 # Friday: Open Work Day
 
 ```{r}

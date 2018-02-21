@@ -10,6 +10,7 @@ This is the landing page for <span style="color:blue">**Applied Statistics II**<
 ### Week 5 (2/19 - 2/25)
 
 * No new content this week. Working/practicing your model writing and calculating various classification measurements. 
+* Wednesday worksheet: [Classifying Glass](notes/classifying glass.Rmd)
 * Friday will be an open project work day. 
 
 
