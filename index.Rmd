@@ -7,6 +7,21 @@ This is the landing page for <span style="color:blue">**Applied Statistics II**<
 
 # Announcements
 
+### Week 8 (3/12 - 3/16)
+* Fast forwarding...
+* **Midterm** this week! 60% in class, 40% take home. 
+    - Midterm review on Monday. 
+    - Class generated using QFT model of question formulation
+    - This is worth participation points, so be there and contribute!
+* Take home portion with instructions posted in Slack `#assignments` channel by EOB (end of business).
+* **Project updates** - this is worth 20 pts, so make it good. You have 4-5 minutes and 3-4 slides to show me that
+    - you know what your data consists of
+    - you have gotten it into R and started exploring/visualizing/cleaning
+    - you should be starting to do bivariate comparisons at this point
+    - you have a clear idea of what model you are working towards
+    - and that EVERYONE is contributing. Everyone must share in the presentation
+  
+
 ### Week 5 (2/19 - 2/25)
 
 * No new content this week. Working/practicing your model writing and calculating various classification measurements. 
