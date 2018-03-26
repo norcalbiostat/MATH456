@@ -7,6 +7,12 @@ This is the landing page for <span style="color:blue">**Applied Statistics II**<
 
 # Announcements
 
+### Week 9 (3/26 - 4/1)
+* Exam corrections - Must use error assessment document. A copy can be found [[here]](notes/analyzingexamerrors.pdf) and also in the #general channel in Slack. 
+* Starting a section on correlated data. QFT on Monday, lecture wed, open work day Friday. 
+* Grading status: Gradebook will be fully updated by Tuesday. 
+
+
 ### Week 8 (3/12 - 3/16)
 * Fast forwarding...
 * **Midterm** this week! 60% in class, 40% take home. 
