@@ -7,6 +7,16 @@ This is the landing page for <span style="color:blue">**Applied Statistics II**<
 
 # Announcements
 
+### Week 10 (4/2 - 4/8)
+* Abstract submissions for the [[College of Natural Science Poster Session]](https://www.csuchico.edu/nsci/event/poster.shtml) are open until April 16th 
+    - Submission is a mandatory assignment for this class
+* We're going to finish talking about the Random Intercept model this week
+    - the common methods of fitting these models in R
+    - and some common methods of handling covariates in multilevel models. 
+* The schedule has been updated to reflect the "surprise" holiday last Friday, and the change in poster session date. 
+    - The final date has been posted, along with information about the take home portion of the final. 
+    
+
 ### Week 9 (3/26 - 4/1)
 * Exam corrections - Must use error assessment document. A copy can be found [[here]](notes/analyzingexamerrors.pdf) and also in the #general channel in Slack. 
 * Starting a section on correlated data. QFT on Monday, lecture wed, open work day Friday. 
