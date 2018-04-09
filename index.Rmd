@@ -7,6 +7,15 @@ This is the landing page for <span style="color:blue">**Applied Statistics II**<
 
 # Announcements
 
+### Week 11 (4/9 - 4/15)
+* We're going through a superficial treatment of longitudinal data.
+* This topic is worthy of it's own 10 week course and the topic of NUMEROUS texts. 
+* This is also SET week - we will be doing ours in person on Friday. 
+    - Attendance is mandatory and will count towards your grade. 
+* Next week is Spatial modeling - so my advice is to get started on the assignment ASAP. 
+    - I will try to leave time during class for open work this week but cannot guarantee it. I don't want to rush through the material. 
+    
+
 ### Week 10 (4/2 - 4/8)
 * Abstract submissions for the [[College of Natural Science Poster Session]](https://www.csuchico.edu/nsci/event/poster.shtml) are open until April 16th 
     - Submission is a mandatory assignment for this class
