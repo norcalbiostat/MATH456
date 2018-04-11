@@ -61,10 +61,11 @@ kable(hw) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
 
 #### Spatio-Temporal Assignment: Part I
 
-
-
-
-
+1. Replicate Figure 18.4 in the PMAS textbook on pg 483. Either color the points or change the shape of the points depending on the group. 
+2. How often are the mice weighed? Does the variable `day` represent nominal or actual time? Why do you think the times are setup this way (i.e. would you expect the mice to be weighed at different times)? 
+3. Visualize the correlation of weight between time points using a correlation matrix. Does it appear that the correlation is lower between further away time points? 
+4. Model the weight of a mouse using day as a predictor and using a random intercept model to account for the correlation within mouse. Use three different correlation structures: Independent, CS, and AR(1). Using AIC/BIC, which model provides the best fit? _Hint: Use can use the `AIC()` and `BIC()` functions on the model objects you create to calculate these measurs of fit_
+5. For your best model, what is the estimate of the proportion of variance that is explained by the clusters? What is this term called? Is the correlation of weights within mouse high enough to warrent a random intercept model? **Print the raw R output of your chosen model here. Don't use stargazer/sjplot. I want to confirm that the model was fit correctly.**
 
 ----
 
