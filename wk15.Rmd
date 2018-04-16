@@ -1,0 +1,82 @@
+---
+output:
+  html_document:
+    highlight: tango
+    theme: journal
+    toc: yes
+    toc_float: yes
+css: style.css
+title: "Week 15: May 7 - May 11"
+---
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(dplyr);library(readxl); library(knitr)
+library(kableExtra); library(stringr)
+knitr::opts_chunk$set(echo = FALSE)
+options(knitr.table.format = "html", knitr.kable.NA = '') 
+```
+<br>
+
+_Last Updated: `r format(Sys.time(), "%a %b %d %X")` _
+<br>
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+raw <- read_excel("schedule_456.xlsx")
+week.w <- filter(raw, Week==15)
+
+topics <- str_split(week.w$Topics, ",", simplify=TRUE)
+SLO    <- t(str_split(week.w$SLO, "\r\n", simplify=TRUE))
+prep   <- t(str_split(week.w$Prepare, "\r\n", simplify=TRUE))
+mats   <- t(str_split(week.w$Materials, "\r\n", simplify=TRUE))
+hw     <- t(str_split(week.w$Assignments, "\r\n", simplify=TRUE))
+mon    <- t(str_split(week.w$Monday, "\r\n", simplify=TRUE))
+wed    <- t(str_split(week.w$Wednesday, "\r\n", simplify=TRUE))
+fri    <- t(str_split(week.w$Friday, "\r\n", simplify=TRUE))
+```
+
+----
+
+# Learning Objectives
+```{r}
+kable(SLO) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
+```
+
+#Prepare
+```{r}
+kable(prep) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
+```
+
+# Materials
+```{r}
+kable(mats) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
+```
+
+# Assignments
+```{r}
+kable(hw) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
+```
+
+----
+
+# Monday: `r topics[1]`
+
+```{r}
+kable(mon) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
+```
+
+
+# Wednesday: `r topics[2]`
+
+```{r}
+kable(wed) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
+```
+
+
+# Friday: `r topics[3]`
+
+```{r}
+kable(fri) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
+```
+
+

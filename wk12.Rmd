@@ -1,0 +1,101 @@
+---
+output:
+  html_document:
+    highlight: tango
+    theme: journal
+    toc: yes
+    toc_float: yes
+css: style.css
+title: "Week 12: Apr 16 - Apr 22"
+---
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(dplyr);library(readxl); library(knitr)
+library(kableExtra); library(stringr)
+knitr::opts_chunk$set(echo = FALSE)
+options(knitr.table.format = "html", knitr.kable.NA = '') 
+```
+<br>
+
+_Last Updated: `r format(Sys.time(), "%a %b %d %X")` _
+<br>
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+raw <- read_excel("schedule_456.xlsx")
+week.w <- filter(raw, Week==12)
+
+topics <- str_split(week.w$Topics, ",", simplify=TRUE)
+SLO    <- t(str_split(week.w$SLO, "\r\n", simplify=TRUE))
+prep   <- t(str_split(week.w$Prepare, "\r\n", simplify=TRUE))
+mats   <- t(str_split(week.w$Materials, "\r\n", simplify=TRUE))
+hw     <- t(str_split(week.w$Assignments, "\r\n", simplify=TRUE))
+mon    <- t(str_split(week.w$Monday, "\r\n", simplify=TRUE))
+wed    <- t(str_split(week.w$Wednesday, "\r\n", simplify=TRUE))
+fri    <- t(str_split(week.w$Friday, "\r\n", simplify=TRUE))
+```
+
+----
+
+# Learning Objectives
+```{r}
+kable(SLO) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
+```
+
+#Prepare
+```{r}
+kable(prep) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
+```
+
+# Materials
+```{r}
+kable(mats) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
+```
+
+# Assignments
+```{r}
+kable(hw) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
+```
+
+
+#### Spatio-Temporal Assignment: Part II
+
+_Details forthcoming, but it will generally include the following items: _
+
+
+* Create a plot of ozone over time of day, paneled by city. 
+* Make a map centered around LA. Plot the ozone data cities as points on this map. 
+    - Size the points according to a) the average and b) the peak ozone levels in that area.  
+    - Place these plots side by side using `grid.arrange`
+    - Comment on if there appears to be any spatial trends or clustering. 
+* Identify neighbors as cities that are within 10 miles of each other. 
+    - Create a new plot that connects the neighboring cities with a line. 
+    - Comment on whether or not these neighbors seem to match with any ozone clustering seen in the first plot. 
+    - For this geographic region, is distance measured "as the crow flies" an appropriate way to identify neighbors?
+    - Hunt around on google for alternative ways to cluster these cities based on topography. 
+* [optional?] Analyze (using a plot, summary statistics and a statistical analysis) the relationship between altitude and ozone.
+
+
+----
+
+# Monday: `r topics[1]`
+
+```{r}
+kable(mon) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
+```
+
+
+# Wednesday: `r topics[2]`
+
+```{r}
+kable(wed) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
+```
+
+
+# Friday: `r topics[3]`
+
+```{r}
+kable(fri) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
+```
+
+
