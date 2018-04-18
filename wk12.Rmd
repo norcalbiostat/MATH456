@@ -58,23 +58,39 @@ kable(hw) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
 ```
 
 
-#### Spatio-Temporal Assignment: Part II
+#### Spatio-Temporal Assignment: Part II (Due Sunday 4/20. Peer Review Due Wed 4/22)
+This part of the assignment uses two data sets: 
 
-_Details forthcoming, but it will generally include the following items: _
+* `ozone.txt` contains hourly ozone levels for censor locations in Southern California measured on three different days. 
+* `ozone_cities.csv` contains polygon data for cities near the censor locations. 
 
+Data preparation steps: 
 
-* Create a plot of ozone over time of day, paneled by city. 
-* Make a map centered around LA. Plot the ozone data cities as points on this map. 
-    - Size the points according to a) the average and b) the peak ozone levels in that area.  
-    - Place these plots side by side using `grid.arrange`
-    - Comment on if there appears to be any spatial trends or clustering. 
-* Identify neighbors as cities that are within 10 miles of each other. 
-    - Create a new plot that connects the neighboring cities with a line. 
-    - Comment on whether or not these neighbors seem to match with any ozone clustering seen in the first plot. 
-    - For this geographic region, is distance measured "as the crow flies" an appropriate way to identify neighbors?
-    - Hunt around on google for alternative ways to cluster these cities based on topography. 
-* [optional?] Analyze (using a plot, summary statistics and a statistical analysis) the relationship between altitude and ozone.
+* Rename `oz_name` to `fullname` for merging purposes. 
+* In `ozone`, the longitude data is positive (wrong hemisphere.) Change these numbers to negative. 
+* Create a new data set called `sensors` from the `ozone` data , that only keeps one record for each site, and only keeps variables: `site`, `lat`, `long`. _Hint: The `unique()` function will be helpful here_
 
+1. Create a plot of SoCal with sensor locations, nearby cities, and the population of those cities.
+    a. Use `get_map` to download a raster (image) map centered around the average lat/long of the sensor location. A zoom of 9 is good.  
+    b. Use `ggmap` to create the plot, add points for stations, and polygons for the city shapes. (_Yes there will be wierd lines in here. I will talk about that in class_)
+    c. Fill the polygons by `log(Pop201)`. Set the `alpha` value in the polygons to be < 1 so that the shapes are translucent.  
+2. Calculate the max ozone level per region. 
+    - Join this new variable onto the polygon data frame. It is advised to make a new data frame for this point. 
+    - Map the max ozone level per region using a continuous scale that goes from red to black. 
+    - Add a title. 
+    - You don't need to add sensor points here. 
+    - **Describe any spatial patterns you see. What do you think is contributing to this pattern? **
+3. Calculate the max ozone per site, per hour for the following hours: 7am, 12 noon, 3pm 6pm. 
+    - _Hint: Filtering `ozone` prior to `group_by` will simplify the merging._
+    - Merge this summary data onto the sensor data 
+    - Create 4 plots (`morning`, `noon`, `afternoon`, `evening`) - on each one plot the max ozone for the specified time frame only. 
+    - Use `grid.arrange` to make a 2x2 grid of maps. 
+    - **Describe any spatial or temporal patterns you see. What do you think is contributing to this pattern? A few google searches here may be helpful: keywords topography, inversion layer, offshore winds, pollution, southern california**
+4. Look carefuly at the legends. Redraw the above group of plots on the same scale by providing a `limits=c(low, high)` argument to `scale_fill_continuous()`. **How does this change your answer to the above question? Is one display "better" than the other?**
+5. Identify neighbors as cities that have sensors within X miles of each other. 
+    - Use the functions found in notebook 13.3.3 and play around with X until you find a value that seems to match the patterns seen in the ozone plots. _Not all cities will connect_
+    - Create a new plot that connects the neighboring cities with a line. _Hint: You'll need to copy that `nb_to_df` function from the link in the notes._
+    - **For this geographic region, is distance measured "as the crow flies" an appropriate way to identify neighbors?**
 
 ----
 

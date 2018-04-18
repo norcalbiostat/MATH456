@@ -471,7 +471,7 @@ div.tocify {
 
 
 <p><br></p>
-<p><em>Last Updated: Mon Apr 16 9:46:26 AM </em> <br></p>
+<p><em>Last Updated: Tue Apr 17 8:34:41 PM </em> <br></p>
 <hr />
 <div id="learning-objectives" class="section level1">
 <h1>Learning Objectives</h1>
@@ -492,18 +492,11 @@ div.tocify {
 <tr>
 <td style="text-align:left;">
 <ul>
-<li>Use the Random Intercept model to account for geographically correlated data.
-</td>
-</tr>
-<tr>
-<td style="text-align:left;">
-<ul>
 <li>Plot the results of a model onto a map
 </td>
 </tr>
 </tbody>
 </table></li>
-</ul></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -553,27 +546,52 @@ div.tocify {
 </tr>
 </tbody>
 </table>
-<div id="spatio-temporal-assignment-part-ii" class="section level4">
-<h4>Spatio-Temporal Assignment: Part II</h4>
-<p><em>Details forthcoming, but it will generally include the following items: </em></p>
+<div id="spatio-temporal-assignment-part-ii-due-sunday-420.-peer-review-due-wed-422" class="section level4">
+<h4>Spatio-Temporal Assignment: Part II (Due Sunday 4/20. Peer Review Due Wed 4/22)</h4>
+<p>This part of the assignment uses two data sets:</p>
 <ul>
-<li>Create a plot of ozone over time of day, paneled by city.</li>
-<li>Make a map centered around LA. Plot the ozone data cities as points on this map.
-<ul>
-<li>Size the points according to a) the average and b) the peak ozone levels in that area.<br />
-</li>
-<li>Place these plots side by side using <code>grid.arrange</code></li>
-<li>Comment on if there appears to be any spatial trends or clustering.</li>
-</ul></li>
-<li>Identify neighbors as cities that are within 10 miles of each other.
-<ul>
-<li>Create a new plot that connects the neighboring cities with a line.</li>
-<li>Comment on whether or not these neighbors seem to match with any ozone clustering seen in the first plot.</li>
-<li>For this geographic region, is distance measured “as the crow flies” an appropriate way to identify neighbors?</li>
-<li>Hunt around on google for alternative ways to cluster these cities based on topography.</li>
-</ul></li>
-<li>[optional?] Analyze (using a plot, summary statistics and a statistical analysis) the relationship between altitude and ozone.</li>
+<li><code>ozone.txt</code> contains hourly ozone levels for censor locations in Southern California measured on three different days.</li>
+<li><code>ozone_cities.csv</code> contains polygon data for cities near the censor locations.</li>
 </ul>
+<p>Data preparation steps:</p>
+<ul>
+<li>Rename <code>oz_name</code> to <code>fullname</code> for merging purposes.</li>
+<li>In <code>ozone</code>, the longitude data is positive (wrong hemisphere.) Change these numbers to negative.</li>
+<li>Create a new data set called <code>sensors</code> from the <code>ozone</code> data , that only keeps one record for each site, and only keeps variables: <code>site</code>, <code>lat</code>, <code>long</code>. <em>Hint: The <code>unique()</code> function will be helpful here</em></li>
+</ul>
+<ol style="list-style-type: decimal">
+<li>Create a plot of SoCal with sensor locations, nearby cities, and the population of those cities.
+<ol style="list-style-type: lower-alpha">
+<li>Use <code>get_map</code> to download a raster (image) map centered around the average lat/long of the sensor location. A zoom of 9 is good.<br />
+</li>
+<li>Use <code>ggmap</code> to create the plot, add points for stations, and polygons for the city shapes. (<em>Yes there will be wierd lines in here. I will talk about that in class</em>)</li>
+<li>Fill the polygons by <code>log(Pop201)</code>. Set the <code>alpha</code> value in the polygons to be &lt; 1 so that the shapes are translucent.<br />
+</li>
+</ol></li>
+<li>Calculate the max ozone level per region.
+<ul>
+<li>Join this new variable onto the polygon data frame. It is advised to make a new data frame for this point.</li>
+<li>Map the max ozone level per region using a continuous scale that goes from red to black.</li>
+<li>Add a title.</li>
+<li>You don’t need to add sensor points here.</li>
+<li><strong>Describe any spatial patterns you see. What do you think is contributing to this pattern? </strong></li>
+</ul></li>
+<li>Calculate the max ozone per site, per hour for the following hours: 7am, 12 noon, 3pm 6pm.
+<ul>
+<li><em>Hint: Filtering <code>ozone</code> prior to <code>group_by</code> will simplify the merging.</em></li>
+<li>Merge this summary data onto the sensor data</li>
+<li>Create 4 plots (<code>morning</code>, <code>noon</code>, <code>afternoon</code>, <code>evening</code>) - on each one plot the max ozone for the specified time frame only.</li>
+<li>Use <code>grid.arrange</code> to make a 2x2 grid of maps.</li>
+<li><strong>Describe any spatial or temporal patterns you see. What do you think is contributing to this pattern? A few google searches here may be helpful: keywords topography, inversion layer, offshore winds, pollution, southern california</strong></li>
+</ul></li>
+<li>Look carefuly at the legends. Redraw the above group of plots on the same scale by providing a <code>limits=c(low, high)</code> argument to <code>scale_fill_continuous()</code>. <strong>How does this change your answer to the above question? Is one display “better” than the other?</strong></li>
+<li>Identify neighbors as cities that have sensors within X miles of each other.
+<ul>
+<li>Use the functions found in notebook 13.3.3 and play around with X until you find a value that seems to match the patterns seen in the ozone plots. <em>Not all cities will connect</em></li>
+<li>Create a new plot that connects the neighboring cities with a line. <em>Hint: You’ll need to copy that <code>nb_to_df</code> function from the link in the notes.</em></li>
+<li><strong>For this geographic region, is distance measured “as the crow flies” an appropriate way to identify neighbors?</strong></li>
+</ul></li>
+</ol>
 <hr />
 </div>
 </div>
@@ -595,8 +613,6 @@ div.tocify {
 </tr>
 <tr>
 <td style="text-align:left;">
-<ul>
-<li>How do we identify neighbors?
 </td>
 </tr>
 <tr>
@@ -605,7 +621,6 @@ div.tocify {
 </tr>
 </tbody>
 </table></li>
-</ul></li>
 </ul></li>
 </ul>
 </div>
@@ -616,7 +631,7 @@ div.tocify {
 <tr>
 <td style="text-align:left;">
 <ul>
-<li>We’ll explore the use of an extension of lme4 called lme4qtl to fit a random intercept to a spatial model, where we define the nearest neighbor matrix.
+<li>How do we identify neighbors? By distance or by borders?
 </td>
 </tr>
 </tbody>
