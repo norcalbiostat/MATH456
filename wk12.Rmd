@@ -58,7 +58,8 @@ kable(hw) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
 ```
 
 
-#### Spatio-Temporal Assignment: Part II (Due Sunday 4/20. Peer Review Due Wed 4/22)
+#### Spatio-Temporal Assignment: Part II 
+
 This part of the assignment uses two data sets: 
 
 * [[ozone.txt]](notes/ozone.txt) contains hourly ozone levels for censor locations in Southern California measured on three different days. 

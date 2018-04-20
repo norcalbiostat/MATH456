@@ -59,7 +59,7 @@ kable(hw) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
 <span style="color:red">**Don't forget to submit your poster abstract by 4/16!**</span>.
 
 
-#### Spatio-Temporal Assignment: Part I  (Due Sunday 4/20. Peer Review Due Wed 4/22)
+#### Spatio-Temporal Assignment: Part I 
 
 1. Replicate Figure 18.4 in the PMAS textbook on pg 483. Either color the points or change the shape of the points depending on the group. 
 2. How often are the mice weighed? Does the variable `day` represent nominal or actual time? Why do you think the times are setup this way (i.e. would you expect the mice to be weighed at different times)? 
