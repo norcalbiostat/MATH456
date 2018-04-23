@@ -7,6 +7,37 @@ This is the landing page for <span style="color:blue">**Applied Statistics II**<
 
 # Announcements
 
+
+### Week 13 (4/23 - 4/29)
+* **FINALLY** you get to learn why I harp on you about missing data. 
+* Monday: We'll use the QFT to develop questions about the impacts of missing data, and then talk about how to identify when data are missing. 
+* Wednesday we'll discuss the mechanisms in which data can dissapear, and some common methods to address/eliminate the bias created due to missing data. 
+* Friday is an open work day because I want to see a draft of your posters by Friday EOD. 
+  - Poster Prep Guidance: 
+      - https://www.csuchico.edu/nsci/event/poster.shtml 
+      - https://norcalbiostat.netlify.com/lec/poster_guidelines/
+    
+ 
+#### POSTER PRESENTATION HELD ON MONDAY
+* Yes they must be printed. Use a template provided on either of the guideline pages. 
+* Yes this is a serious professional event that can go on your CV. 
+* Yes you must dress professionally.
+* Yes your poster will be judged by peers and professionals alike. 
+* Yes I must see the poster before printing. 
+* Yes at least one person must be at your poster between 12:30 and 2:30 pm. 
+    - Whomever is putting up the poster between 10 and 11 that morning must check in with me and provide me your group's presentation schedule. Each person should plan to stand at their poster for at minimum 30 minutes. 
+    - I **will** check up on you. Unless previously cleared by me, this should not fall to one person. 
+* Upload the PDF or PPT of your poster _as printed_ to the Projects/NSC Posters folder in our Google Drive. 
+
+
+> Blackboard gradebook has been updated to include poster session attendance. 
+> Final grade breakdown is 500 pts, 24% homework, 20% learning (peer review, QFT), 40% exams, 16% project. 
+     
+
+
+
+
+
 ### Week 12 (4/16 - 4/22)
 * Spatial data analysis!
 * Making maps is probably the most fun part.
