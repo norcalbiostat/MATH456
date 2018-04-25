@@ -1,0 +1,113 @@
+---
+title: "Missing Data Assignment"
+author: "NAME"
+date: "May XX, 2018"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r, include=FALSE, warning=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE, fig.align = 'center')
+lib <- c("VIM", "dplyr", "mice", "missForest", "ggplot2", "gridExtra", "knitr", "scales", "lattice")
+invisible(lapply(lib, library, character.only=T))
+theme_set(theme_bw())
+```
+
+_Show your R code in this assignment. Delete this line before submitting._
+
+---
+
+1. **Describe how missing completely at random affects the estimates for the mean for each of the four distributions listed below.**
+    - $X \sim \mathbf{Normal}(10,4)$ _shown below_
+    - $Y \sim \mathbf{Poisson}(10)$ _use `rpois(N,10)`_
+    - $B \sim \mathbf{Binomial}(10, .5)$ _use `rbinom(N,size=10,.5)`_
+    - $F \sim \mathbf{Binomial}(10, .9)$ _use `rbinom(N,size=10,.9)`_
+    
+    a. **Describe the distribution of the population data in paragraph form using full english sentences. Calculate and report the population mean in your description. Include an appropriate visualization and don't forget to talk about the shape of the distribution. Put all 4 graphics into one plot using `grid.arrange` then have one paragraph to describe each one in sequence.** 
+    b. **Using the functions provided below and the normal example as a template to copy and modify, simulate population data (`pop.data`) by using the `r` functions to draw a random sample of $n=100$ and delete $p$=20% of the data completely at random (MCAR) and calculate the observed (complete case) mean. Do this $M=500$ times to create a sampling distribution of the means. _(Flashback to the Central Limit Theorem! Oh no!)_**
+    c. **Use the `ggplot2` template provided to create a histrogram of the sampling distribution, with a green vertical line for the true population mean and a red vertical line for the mean of the sampling distribution under the specified missing data mechanism and missing data %.**
+        - **Repeat the same description and plot organization as instruction in part a). Make sure to update the titles.** 
+    d. **Describe the bias of the data under MCAR. Does the shape of the distribution of the data affect this bias?**
+
+
+```{r}
+# do not modify this function (you can roll your own if you like)
+create.MCAR <- function(pop.data, pmiss){ 
+                     # randomly sample rows to exclude(drop) from the data vector
+    observed.data <- pop.data[-sample(1:N, size=pmiss*N, replace=FALSE)] 
+    samp.mean <- mean(observed.data) # calculate the complete case sample mean
+    return(samp.mean)
+}
+```
+
+```{r, fig.width=4, fig.height = 3,}
+set.seed(1067) # Use this seed so that the results are reproducible. 
+N=100; M=500; p=.2 # define parameters up front. Makes it easier to change.
+normal.pop.data <- data.frame(x=rnorm(n=N, mean=10, sd=2)) # Create population data
+norm.mcar <- data.frame(x.bar=rep(NA, M)) # initialize the holding vector at size M
+
+# resample a new observed data subset and recalculate bias. 
+for(i in 1:M){ 
+  norm.mcar$x.bar[i] <- create.MCAR(pop.data=normal.pop.data$x, pmiss=p)
+  # Hint - create all population data outside this loop, then repeatedly call 
+  # this function for the other distributions inside this loop. So you only loop once. 
+}
+
+p1 <- ggplot(norm.mcar, aes(x=x.bar)) + geom_histogram(fill="grey") +
+        geom_vline(xintercept=mean(normal.pop.data$x), col="darkgreen") + 
+        geom_vline(xintercept=mean(norm.mcar$x), col="red") + 
+        ggtitle("MCAR:Normal, 20% missing")
+p1
+```
+
+
+
+2. **Pick a new distribution and create a new set of population data. The shape and parameters of the data set are up to you. Then choose 4 different proportions to make the data missing (`pmiss`). Again, create a 2x2 grid of plots, describe each one, and discuss how the proportion of missing data affects the bias.**
+
+3. **Using one of the constructed population data sets from #1, repeat steps 1b,1c, and 1d but use the following function to set the missing data mechanism to NMAR, where $p$ is positively correlated with the data. Each data point has anywhere from 0 to $p$% chance of being missing, where the higher values of x have a higher probability of being missing. Change $M=200$ for this problem (because it takes longer). Also _once you get it finalized and working_ set `cache=TRUE` in your code chunk options to skip running this code chunk each time you knit (unless you change the contents of that code chunk).**
+
+```{r}
+# do not modify this function
+create.NMAR <- function(pop.data, pmiss){
+    observed.data <- pop.data %>% arrange(x) %>% 
+                  mutate(prop.miss=seq(0, pmiss, length.out=N), 
+                         flag.miss = rbinom(N, 1, prop.miss)) %>%
+                  filter(flag.miss==0)
+    samp.mean <- mean(observed.data$x) 
+    return(samp.mean)
+}
+# Example of use (notice the change in pop.data=):  
+# norm.nmar$x.bar[i] <- create.NMAR(pop.data=pois.pop.data, pmiss=p)
+# don't forget to initialize new holding data frames 
+```
+
+
+4. **What do you think would happen if the missing data mechanism was negatively correlated with the value of x?**
+
+5. **Using the Parental HIV data set, consider only the following variables: `Age`, `Gender`, `livwith`, `BSI_overall`, `Frnds`, and `Hookey`.**
+
+
+    a. **What percent of the data set overall is missing?**
+
+    b. **How much missing data is there per variable?**
+
+    c. **Describe the missing data pattern. (_Hint: Use `aggr` from the `VIM` package for part b and c_)**  
+
+    d. **Describe the relationship of missing data between Age and BSI overall.**
+    
+    
+6. **Multiply impute this data set $m=5$ times. State the imputation models used for each variable.**  
+
+
+7. **After controlling for age, who the student lives with, their overall friendships, and overall BSI score, what is the effect of gender on the likelihood a student will skip school? (I.e. Fit a logistic regression model using `hookey` as the outcome and all other covariates as predictors. Calculate the OR and 95% CI for the effect of gender)**
+   
+    a. **Fit this model on the complete cases (no imputation).**
+
+    b. **Fit this model on the multiply imputed data sets and pool the results.**
+
+    c. **Compare these two intervals. Which one is wider? Why?**
+
+    d. **Discuss the amount of information lost (in terms of sample size and varance) using the complete case method.**
+   
+

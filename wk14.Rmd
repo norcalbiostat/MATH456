@@ -42,20 +42,6 @@ fri    <- t(str_split(week.w$Friday, "\r\n", simplify=TRUE))
 kable(SLO) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
 ```
 
-#Prepare
-```{r}
-kable(prep) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
-```
-
-# Materials
-```{r}
-kable(mats) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
-```
-
-# Assignments
-```{r}
-kable(hw) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
-```
 
 ----
 

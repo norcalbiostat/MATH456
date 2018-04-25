@@ -53,9 +53,9 @@ kable(mats) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
 ```
 
 # Assignments
-```{r}
-kable(hw) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
-```
+Use the following template for this assignment. 
+
+[[Missing Data Assignment RMD File]](notes/Missing Data Assignment.rmd)
 
 ----
 
