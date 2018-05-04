@@ -7,6 +7,25 @@ This is the landing page for <span style="color:blue">**Applied Statistics II**<
 
 # Announcements
 
+### Week 15 (5/7 - 5/11) -- Dead Week
+* No new content!
+* Monday - open work day on presentations
+    - File type doesn't matter: Powerpoint, Rpres, slidly, beamer, Google slides.
+    - Just make sure your graphics render at a decent quality. 
+* Wednesday - all presentations have to be done & turned in. Groups randomly drawn to present Wed/Friday
+    - Upload final version to our Google Drive folder: [Projects/Final Presentations](https://drive.google.com/open?id=10tfxAz6zZMDOlKdcQqxIT0XNPhPp8qow)
+    - Weekly overview has full details of expectations for presentation. 
+* Final review sessions to be done on Mon/Tue of finals week. 
+    - Attending at least one session will earn credit towards your grade. 
+    - Fill out [this survey](https://goo.gl/forms/dXUP2YevwGfbsbVM2) to tell me when you are free. 
+
+
+### Week 14 (4/30 - 5/6)
+* Poster Session on Monday
+* Upload final poster (as printed) to the Projects/CNS Posters FINAL folder in Google Drive
+* Wed/Friday continue with Missing Data lecture
+
+
 
 ### Week 13 (4/23 - 4/29)
 * **FINALLY** you get to learn why I harp on you about missing data. 

@@ -47,15 +47,23 @@ kable(SLO) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
 kable(prep) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
 ```
 
-# Materials
-```{r}
-kable(mats) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
-```
+#### Presentation Content
+This is about the statistical methodological process, not results. Your goal is to fully explain to me the following: 
 
-# Assignments
-```{r}
-kable(hw) %>% kable_styling(bootstrap_options = c("striped", "condensed"))
-```
+* What your research question is. 
+* What general type of data you used to answer this question (i.e. survey data, fly counts, state characteristics)
+    - where the data came from
+    - any concerns/problems with the data. 
+* What pre-processing you had to do and why what you did was justified. I do not want to hear "We turned missing data into NA's". `NA` is R code terminology. Tell me *what* you did with the missing data (if any) and why your actions were justified. 
+* Explain your primary outcome variable, and primary covariates (if any). 
+* What exploratory analysis did you perform to understand the data. 
+    - Show an example (univariate and bivariate) and explain what you learned from them. 
+    - What decisions did you make based on these findings? 
+* What statistical model(s) did you employ to answer your research question? 
+    - Why were they appropriate/justified. Don't give me stuff about residuals here, those are for post modeling validation. 
+* What were the important/meaningful results obtained? 
+* What conclusions did you come to based on those results? 
+
 
 ----
 
