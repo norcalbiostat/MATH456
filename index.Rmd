@@ -1,11 +1,14 @@
+---
+title: "Math 456 homepage"
+---
 
-<br><br>
+This is the landing page for <span style="color:blue">**Applied Statistics II**</span> course taught by [Dr. Robin Donatello](http://www.norcalbiostat.com) for <span style="color:blue">**Spring 2020**</span>.  This page is used for posting of regular announcements and information for students of the class. 
 
-This is the landing page for <span style="color:blue">**Applied Statistics II**</span>. This page is used for posting of regular announcements and information for students of the class. 
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+wk1.date <- as.Date("2020-01-21")
+```
 
-----
-
-# Announcements
+<!---
 
 ### Week 15 (5/7 - 5/11) -- Dead Week
 * No new content!
@@ -132,17 +135,23 @@ This is the landing page for <span style="color:blue">**Applied Statistics II**<
 * Review the course notes and corresponding textbook chapters,and be prepared to answer the questions in the notebook. 
 * You'll also form project teams on Monday. Be sure to have your preferences submitted to me via Slack DM by Sunday EOD. 
 
-### Week 1 (1/22 - 1/28): Welcome!
+--->
+
+### `r format(wk1.date, "%m-%d-%Y")`: Welcome!
 
 * Welcome to spring semester in statistics with your host, Dr. Robin Donatello. 
 * Make sure you acquaint yourself with this website, it will be your guide for the next 16 weeks. 
-* We will use several online tools throughout this class, try to get signed up for all of them before Monday. 
-    - Look under `materials` and `tools` links in the navbar for the list. 
-    - Update your version of `R studio` for sure. Update R if you're running < 3.4. 
-        - Go to `[Tools]` --> `[Global Options]` to check the version of R that R Studio is using. 
-        - Re-install your commonly used packages.(Can be painful. Esp for `Rcpp`)
-* If you've had me in a class before, you know that there *will* be typos and broken links on this webpage. 
-    - 1) breath, and recognize that I'm human too.
-    - 2) good: tell me then email me (this second step is pretty critical unless you witness me fix the code right then.)
-    - 2) better: open up an Issue in Github
-    - 2) best: fork the repo and submit a PR with the fix!
+* We will use Google Drive for homework submission. 
+    - You will be added using your @mail.csuchico.edu email address. 
+    - I recommend you `r emo::ji("star")` the folder in your drive so you can find it easier. 
+* We will use Slack for all outside of class communication. 
+    - Do not email me with questions relating to the class. 
+    - You must download the desktop app, or phone app (or both). Do not rely on logging into the web browser version. You will miss timely information. 
+    - You will be sent an invite link to your @mail.csuchico.edu email address. Accept and join the workspace by Wednesday. 
+    
+* Software Updates: 
+    - Update your version of `R studio` for sure. Update R if you're running < 3.5. 
+* If you've had me in a class before, you know that there *will* be typos and broken links on this webpage. Here is how you can contribute to the fix.
+    - good: Notify me in the `#general` channel in Slack. That way I can confirm in public when the issue is resolved. 
+    - better: open up an Issue in Github
+    - best: fork the repo and submit a PR with the fix!

@@ -1,38 +1,632 @@
-
-```{r echo=FALSE, message=FALSE, warning=FALSE}
-library(dplyr);library(readxl); library(kableExtra); library(stringr)
+---
+title: "Schedule"
+output: html_document
+---
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(dplyr);library(readxl); library(kableExtra);library(stringr); library(pander)
 options(knitr.table.format = "html", knitr.kable.NA = '') 
-```
-<br>
-
-_Last Updated: `r format(Sys.time(), "%a %b %d %X")` _
-<br>
-```{r echo=FALSE, message=FALSE, warning=FALSE}
-rawdat <- read_excel("schedule_456.xlsx")
-cdat   <- rawdat %>% select(-c(SLO:Friday)) %>% 
-                     mutate(wknum=Week,
-                            wknum = str_pad(wknum, width=2, side="left", pad="0"),
-                            link = paste0("wk", wknum, ".html"), 
-                            Week = paste0("Week ", wknum, ": ",format(Date, format="%b %d")), 
-                            Link = sprintf("[%s](%s)",Week, link))
-
-cdat$Link[c(9,17)] <- c("Spring Break", "Finals")
-
-# parse assignments
-evallist <- which(!is.na(cdat$Assignments))
-cdat$Assignments[evallist] <- paste0("<ul>", cdat$Assignments[evallist], "</li></ul>")
-cdat$Assignments[evallist] <- gsub("(+.)\\*", "</li><li>", cdat$Assignments[evallist])
-cdat$Assignments[evallist] <- gsub("(", "(<b>", cdat$Assignments[evallist], fixed=TRUE)
-cdat$Assignments[evallist] <- gsub(")", "</b>)", cdat$Assignments[evallist], fixed=TRUE)
-
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE) 
 ```
 
-```{r results='asis', echo=FALSE, message=FALSE, warning=FALSE}
-out <- select(cdat, Link, Topics, Assignments)
+# Last Updated: `r format(Sys.time(), "%a %b %d %X")` {.tabset .tabset-fade .tabset-pills}
 
-knitr::kable(out, align="l", escape=FALSE) %>% 
+## Overview
+
+<p>
+Unless specified otherwise, all assignments are due at midnight on the due date listed.  
+
+Don't forget to check the weekly details for information on how to prepare and links to other materials. 
+</p>
+```{r}
+# Read in schedule
+rawdat <- read_xlsx("schedule_456.xlsx", sheet='weekly_schedule')
+
+# Set semester start date and format weeks nicely
+start.date <- as.Date("2020-01-21")
+
+# which rows have week numbers (manually add line number for break week and finals)
+wn <- c(which(!is.na(rawdat$wknum)),8, 17) %>% sort() 
+
+# generate list of weekdates
+wkdt <- seq.Date(start.date, start.date+7*16, by='week')
+
+# format for display
+weekdates <- paste0("Week ", rawdat$wknum[wn], " (", format(wkdt, "%m/%d") , ")") 
+weekdates[8] <- "Spring Break (03/16)"
+weekdates[17] <- "Finals Week (05/12)"
+
+# Filter columns to display on schedule
+out <- rawdat %>% select(Topic:Project)
+
+# add bold to due dates
+out$Assignments <- gsub(" (", " (<b>", out$Assignments, fixed=TRUE)
+out$Assignments <- gsub(" )", "</b>)", out$Assignments, fixed=TRUE)
+out$Quiz <- gsub(" (", " (<b>", out$Quiz, fixed=TRUE)
+out$Quiz <- gsub(" )", "</b>)", out$Quiz, fixed=TRUE)
+
+wk.labs <-  "background-color: #4d6600; color: #fff;"
+hlt.wks <-  "background-color: #754b13; color: #fff;"
+```
+
+```{r, results='asis'}
+out %>% 
+  kable(align="lccclc", escape=FALSE) %>% 
   kable_styling(bootstrap_options = c("hover", "striped", "responsive", "bordered")) %>% 
-  column_spec(1, width="15%") %>% column_spec(2, width="30%") %>% 
-  column_spec(3, width="40%")
+  pack_rows(weekdates[1], wn[1],  wn[2]-1, label_row_css =wk.labs) %>%
+  pack_rows(weekdates[2], wn[2],  wn[3]-1, label_row_css =wk.labs) %>%
+  pack_rows(weekdates[3], wn[3],  wn[4]-1, label_row_css =wk.labs) %>%
+  pack_rows(weekdates[4], wn[4],  wn[5]-1, label_row_css =wk.labs) %>%
+  pack_rows(weekdates[5], wn[5],  wn[6]-1, label_row_css =wk.labs) %>%
+  pack_rows(weekdates[6], wn[6],  wn[7]-1, label_row_css =wk.labs) %>%
+  pack_rows(weekdates[7], wn[7],  wn[8]-1, label_row_css =wk.labs) %>%
+  pack_rows(weekdates[8], wn[8],  wn[9]-1, label_row_css =hlt.wks) %>%
+  pack_rows(weekdates[9], wn[9],  wn[10]-1, label_row_css =wk.labs) %>%
+  pack_rows(weekdates[10], wn[10],  wn[11]-1, label_row_css =wk.labs) %>%
+  pack_rows(weekdates[11], wn[11],  wn[12]-1, label_row_css =wk.labs) %>%
+  pack_rows(weekdates[12], wn[12],  wn[13]-1, label_row_css =wk.labs) %>%
+  pack_rows(weekdates[13], wn[13],  wn[14]-1, label_row_css =wk.labs) %>%
+  pack_rows(weekdates[14], wn[14],  wn[15]-1, label_row_css =wk.labs) %>%
+  pack_rows(weekdates[15], wn[15],  wn[16]-1, label_row_css =wk.labs) %>%
+  pack_rows(weekdates[16], wn[16],  wn[17]-1, label_row_css =wk.labs) %>%
+  pack_rows(weekdates[17], wn[17],  wn[17], label_row_css =hlt.wks) %>%
+  column_spec(1, width = "35%") %>% 
+  column_spec(2, width = "6%") %>%
+  column_spec(3, width = "6%") %>%
+  column_spec(4, width = "18%") %>% 
+  column_spec(5, width = "35%")
 ```
+
+## Details
+
+Click each link to expand or contract the details for that week. 
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+# Read in schedule
+raw_detail <- read_excel("schedule_456.xlsx", sheet="slo_detail")
+
+# Function to extract week and display data
+details <- function(w){
+  wd <- filter(raw_detail, wk==w) %>% select(Topics, SLO, Prepare, Monday, Wednesday, Friday)  
+  # strip data columns into separate lists
+  Topic <- gsub("\r\n", "", wd$Topics)
+  SLO  <- as.list(str_split(wd$SLO, "\r\n", simplify=TRUE))
+  prep <- as.list(str_split(wd$Prepare, "\r\n", simplify=TRUE))
+  mon  <- as.list(str_split(wd$Monday, "\r\n", simplify=TRUE))
+  wed  <- as.list(str_split(wd$Wednesday, "\r\n", simplify=TRUE))
+  fri  <- as.list(str_split(wd$Friday, "\r\n", simplify=TRUE))
+  
+  return(list(Topic=Topic, SLO=SLO, prep=prep, mon=mon, wed=wed, fri=fri))
+}
+
+```
+
+```{r}
+w1 <- details(1)
+```
+### <a href="#week1" data-toggle="collapse">Week 1: `r w1$Topic`</a>
+<div id="week1" class="collapse">
+
+#### Learning Objectives
+By the end of the week, learners will be able to: 
+```{r}
+pander(w1$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w1$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w1$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w1$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w1$fri)
+```
+
+</div>
+
+
+
+```{r}
+w2 <- details(2)
+```
+### <a href="#week2" data-toggle="collapse">Week 2: `r w2$Topic`</a>
+<div id="week2" class="collapse">
+
+#### Learning Objectives
+```{r}
+pander(w2$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w2$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w2$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w2$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w2$fri)
+```
+
+</div>
+
+
+
+
+
+```{r}
+w3 <- details(3)
+```
+
+### <a href="#week3" data-toggle="collapse">Week 3: `r w3$Topic`</a>
+<div id="week3" class="collapse">
+
+#### Learning Objectives
+```{r}
+pander(w3$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w3$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w3$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w3$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w3$fri)
+```
+
+</div>
+
+```{r}
+w4 <- details(4)
+```
+### <a href="#week4" data-toggle="collapse">Week 4: `r w4$Topic`</a>
+<div id="week4" class="collapse">
+
+#### Learning Objectives
+```{r}
+pander(w4$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w4$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w4$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w4$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w4$fri)
+```
+
+</div>
+
+```{r}
+w5 <- details(5)
+```
+### <a href="#week5" data-toggle="collapse">Week 5: `r w5$Topic`</a>
+<div id="week5" class="collapse">
+
+#### Learning Objectives
+```{r}
+pander(w5$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w5$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w5$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w5$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w5$fri)
+```
+
+</div>
+
+```{r}
+w6 <- details(6)
+```
+### <a href="#week6" data-toggle="collapse">Week 6: `r w6$Topic`</a>
+<div id="week6" class="collapse">
+
+#### Learning Objectives
+```{r}
+pander(w6$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w6$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w6$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w6$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w6$fri)
+```
+
+</div>
+
+```{r}
+w7 <- details(7)
+```
+### <a href="#week7" data-toggle="collapse">Week 7: `r w7$Topic`</a>
+<div id="week7" class="collapse">
+
+#### Learning Objectives
+```{r}
+pander(w7$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w7$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w7$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w7$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w7$fri)
+```
+
+</div>
+
+```{r}
+w8 <- details(8)
+```
+
+### <a href="#week8" data-toggle="collapse">Week 8: `r w8$Topic`</a>
+<div id="week8" class="collapse">
+
+#### Learning Objectives
+```{r}
+pander(w8$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w8$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w8$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w8$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w8$fri)
+```
+
+</div>
+
+
+
+```{r}
+w9 <- details(9)
+```
+### <a href="#week9" data-toggle="collapse">Week 9: `r w9$Topic`</a>
+<div id="week9" class="collapse">
+
+#### Learning Objectives
+```{r}
+pander(w9$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w9$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w9$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w9$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w9$fri)
+```
+
+</div>
+
+
+```{r}
+w10 <- details(10)
+```
+
+### <a href="#week10" data-toggle="collapse">Week 10: `r w10$Topic`</a>
+<div id="week10" class="collapse">
+
+#### Learning Objectives
+```{r}
+pander(w10$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w10$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w10$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w10$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w10$fri)
+```
+
+</div>
+
+
+```{r}
+w11 <- details(11)
+```
+
+### <a href="#week11" data-toggle="collapse">Week 11: `r w11$Topic`</a>
+<div id="week11" class="collapse">
+
+#### Learning Objectives
+```{r}
+pander(w11$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w11$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w11$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w11$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w11$fri)
+```
+
+</div>
+
+
+
+```{r}
+w12 <- details(12)
+```
+### <a href="#week12" data-toggle="collapse">Week 12: `r w12$Topic`</a>
+<div id="week12" class="collapse">
+
+#### Learning Objectives
+```{r}
+pander(w12$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w12$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w12$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w12$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w12$fri)
+```
+
+</div>
+
+
+
+```{r}
+w13 <- details(13)
+```
+### <a href="#week13" data-toggle="collapse">Week 13: `r w13$Topic`</a>
+<div id="week13" class="collapse">
+
+#### Learning Objectives
+```{r}
+pander(w13$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w13$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w13$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w13$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w13$fri)
+```
+
+</div>
+
+
+
+```{r}
+w14 <- details(14)
+```
+### <a href="#week14" data-toggle="collapse">Week 14: `r w14$Topic`</a>
+<div id="week14" class="collapse">
+
+#### Learning Objectives
+```{r}
+pander(w14$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w14$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w14$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w14$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w14$fri)
+```
+
+</div>
+
+
+
+```{r}
+w15 <- details(15)
+```
+### <a href="#week15" data-toggle="collapse">Week 15: `r w15$Topic`</a>
+<div id="week15" class="collapse">
+
+#### Learning Objectives
+```{r}
+pander(w15$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w15$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w15$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w15$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w15$fri)
+```
+
+</div>
+
+
+
+
+
+## Calendar
+
+For those of you that like the calendar view of your schedule. Due to schedule adjustments during
+the semester these dates may not match exactly with the schedule. In those cases please bring any 
+descrepencies to my attention via Slack. 
+
+<iframe src="https://calendar.google.com/calendar/b/1/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=bWFpbC5jc3VjaGljby5lZHVfYTRwbXF2NzdqOG45NnM4Yjd0bzM3ZmhiMTRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=bWFpbC5jc3VjaGljby5lZHVfOTNyMXBmOThxZ2VzNzlsa2dkb3FpcGV1YW9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23AA5A00&amp;color=%231B887A" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 

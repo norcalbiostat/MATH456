@@ -1,0 +1,106 @@
+---
+title: 'Syllabus for MATH 456 - Applied Statistics II'
+author: "Spring 2020"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+
+# Course Description
+_Advanced topics in applied statistics including multiple regression, multivariate methods, nonparametrics, analysis of covariance, bootstrap methods and others as appropriate. Statistical computer packages are introduced and used. Appropriate for biology, agriculture, nutrition, business, psychology, social science and other maojrs. 3 hours discussion._
+
+# Logistics
+
+**Instructor:** Dr. Robin Donatello  
+**Office Location:** Holt 202  
+**Telephone:** 898-5767    
+**E-mail:** rdonatello@csuchico.edu    
+**Office Hours:** TBD Week 2  
+**Class days and times:** MWF 2-2:50, Glenn 102   
+**Prerequisites:** MATH 314/315/615 at Chico State or instructor permission.  
+**Course Website:** http://norcalbiostat.github.io/MATH456/  
+**Slack Channel**  http://math456.slack.com  You will be sent an email invitation to your campus email.   
+**Google Drive**  You will be added to the Math 456 Google drive using your campus email. 
+
+
+You can download the Syllabus in PDF form by clicking [[this link]](syllabus_456_S20.pdf).
+
+# Learning Outcomes
+Upon successful completion of this course, students will be able to:  
+
+* Prepare data for analysis by cleaning and transforming raw data. 
+* Perform research in a reproducible manner. 
+* Apply advanced statistical analysis methodologies to complex and multivariate data. 
+* Appropriately conduct an analysis in the presence of missing data. 
+* Report the results of the analysis in plain language. 
+
+
+# Required Materials
+* **Textbook**: _Practical Multivariate Analysis 6th Edition_. Afifi, May, Donatello, Clark ISBN-13: 978-1138702226 
+  - 6th edition is necessary
+  - Several copies are available in the library
+* **Reliable Laptop**: Expect to bring often. Contact me if this poses a problem or concern for you. 
+* **Reliable internet** connection while on and off campus. ITSS can help you get this setup. 
+* **Computer Software:** Unless you have been granted an exception, all work is be done in R. Exceptions are granted on an individual basis after demonstration of proficiency in an alternate language and the ability to produce a reproducible report similar to a R Markdown file.
+
+# Tentative topic list
+
+* Multiple Linear Regression Model building 
+    - moderators, confounders, interactions, stratification
+    - categorical variables, reference coding, contrasts
+* Variable selection methods
+* Multivariate statistics / Dimension Reduction
+    - Principle Component Analysis
+    - Factor Analysis
+* Missing Data: Identification & Imputation
+* Classification & Prediction
+    - Sensitivity/specificity/accuracy
+* Optional Topics. At least one of the following topics will also be covered. 
+    - Cluster analysis
+    - Analysis of Survival Data
+    - Generalized linear models / modeling of count data. 
+    
+# Grading
+
+Your final grade will be a straight sum of points earned and will be displayed as a running total in Blackboard Learn. 
+
+There are XXX points available. _(Points are subject to modification)_. The approximate contributions per category are: 
+
+* Active Learning XX%: Slack usage, Peer reviews, Journaling
+* Assignments XX%: Submitted in Google Drive
+* Quizzes XX%: Google Forms. 
+* Exams XX%: Exam 1 and 2. Not cumulative.   
+
+
+I use a standard grade cutoff of 100-90%: A, 89-80%: B, 79-70%: C, 69-60%: D, 0-59%: F  
+
+# Policies
+
+## Adding and Dropping the course
+The last day to add or drop classes without special permission by the instructor is 1/31/20. No adds or drops are allowed after 2/14/20 without a serious and compelling reason approved by the instructor, department chair, and college dean.
+
+## Americans with Disabilities Act
+
+If you need course adaptations or accommodations because of a disability or chronic illness,  or if you need to make special arrangements in case the building must be evacuated, please make an appointment with me as soon as possible, or see me during office hours. Please also contact Accessibility Resource Center (ARC) as they are the designated department responsible for approving and coordinating reasonable accommodations and services for students with disabilities. ARC will help you understand your rights and responsibilities under the Americans with Disabilities Act and provide you further assistance with requesting and arranging accommodations.
+
+Accessibility Resource Center  
+530-898-5959   
+Student Services Center 170  
+arcdept@csuchico.edu  
+
+
+## Chico State Basic Needs Project
+
+The **Hungry Wildcat Food Pantry** provides supplemental food, fresh produce, CalFresh application assistance and basic needs referral services for students experiencing food and housing insecurity.
+
+All students are welcomed to visit the Pantry located in the Student Service Center 196, open Monday-Friday, 11am-4pm or call 530-898-4098. 
+
+Please visit the Chico State Basic Needs website http://www.csuchico.edu/basic-needs for more information.
+
+-----
+
+_Last updated: `r format(Sys.time(), "%a %b %d %Y %X")`_
+
+    
+    

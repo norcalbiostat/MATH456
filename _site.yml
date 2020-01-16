@@ -6,39 +6,6 @@ navbar:
   - text: Schedule
     icon: fa-calendar
     href: schedule.html
-  - text: Weekly
-    icon: fa-folder-open
-    menu:
-    - text: Week 01 - Jan 22
-      href: wk01.html
-    - text: Week 02 - Jan 29
-      href: wk02.html
-    - text: Week 03 - Feb 05
-      href: wk03.html
-    - text: Week 04 - Feb 12
-      href: wk04.html
-    - text: Week 05 - Feb 19
-      href: wk05.html
-    - text: Week 06 - Feb 26
-      href: wk06.html
-    - text: Week 07 - Mar 05
-      href: wk07.html
-    - text: Week 08 - Mar 12
-      href: wk08.html
-    - text: Week 09 - Mar 26
-      href: wk09.html
-    - text: Week 10 - Apr 02
-      href: wk10.html 
-    - text: Week 11 - Apr 09
-      href: wk11.html
-    - text: Week 12 - Apr 16
-      href: wk12.html
-    - text: Week 13 - Apr 23
-      href: wk13.html
-    - text: Week 14 - Apr 30
-      href: wk14.html
-    - text: Week 15 - May 07
-      href: wk15.html
   - text: Materials
     icon: fa-folder-open
     menu:
@@ -47,35 +14,26 @@ navbar:
       href: https://norcalbiostat.github.io/AppliedStatistics_notes/index.html
     - text: Google Drive
       icon: fa-google
-      href: https://drive.google.com/drive/folders/0B83Z8_sNw3KPcnVrYzVFRHUtcHM?usp=sharing 
-    - text: Data
-      icon: fa-database
-      href: http://www.norcalbiostat.com/data/
+      href: https://drive.google.com/drive/folders/0B83Z8_sNw3KPcnVrYzVFRHUtcHM?usp=sharing
     - text: Syllabus 
       icon: fa-info-circle
-      href: Syllabus_S18.html
+      href: Syllabus_S20.html
   - text: Tools
     icon: fa-wrench
     menu:
-    - text: Hack-MD (code sharing)
-      icon: fa-code
-      href: https://hackmd.io/
     - text: Slack (class discussions)
       icon: fa-slack
       href: https://math456.slack.com/
     - text: Zoom (video conference)
       icon: fa-video-camera
       href: https://csuchico.zoom.us/
-    - text: Data Camp (Learn to code)
-      icon: fa-institution
-      href: https://www.datacamp.com/
   right:
   - text: Help
     icon: fa-question
     menu:
-    - text: On campus help
+    - text: Community Coding
       icon: fa-group
-      href: faq.html
+      href: http://bit.ly/cc_hours
     - text: R Studio Tutorials
       icon: fa-registered
       href: https://www.rstudio.com/online-learning/
@@ -85,9 +43,6 @@ navbar:
     - text: R Cookbook
       icon: fa-area-chart
       href: http://www.cookbook-r.com/
-    - text: Email Robin (last resort)
-      icon: fa-envelope-o
-      href: mailto:rdonatello@csuchico.edu
   - text: Dr. D's Website
     icon: fa-paw
     href: http://www.norcalbiostat.com/
@@ -95,5 +50,6 @@ output:
   html_document:
     theme: journal
     highlight: tango
+    lib_dir: site_libs
+    self_contained: no
     css: style.css
-

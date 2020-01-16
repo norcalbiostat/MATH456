@@ -9,9 +9,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
+<meta name="author" content="Spring 2020" />
 
 
-<title>Math 456 homepage</title>
+<title>Syllabus for MATH 456 - Applied Statistics II</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,6 +21,8 @@
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
+<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
@@ -288,6 +291,13 @@ $(document).ready(function () {
       </a>
     </li>
     <li>
+      <a href="http://www.norcalbiostat.com/data/">
+        <span class="fa fa-database"></span>
+         
+        Data
+      </a>
+    </li>
+    <li>
       <a href="Syllabus_S20.html">
         <span class="fa fa-info-circle"></span>
          
@@ -305,6 +315,13 @@ $(document).ready(function () {
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://hackmd.io/">
+        <span class="fa fa-code"></span>
+         
+        Hack-MD (code sharing)
+      </a>
+    </li>
     <li>
       <a href="https://math456.slack.com/">
         <span class="fa fa-slack"></span>
@@ -378,167 +395,118 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">Math 456 homepage</h1>
+<h1 class="title toc-ignore">Syllabus for MATH 456 - Applied Statistics II</h1>
+<h4 class="author">Spring 2020</h4>
 
 </div>
 
 
-<p>This is the landing page for <span style="color:blue"><strong>Applied Statistics II</strong></span> course taught by <a href="http://www.norcalbiostat.com">Dr. Robin Donatello</a> for <span style="color:blue"><strong>Spring 2020</strong></span>. This page is used for posting of regular announcements and information for students of the class.</p>
-<!---
-
-### Week 15 (5/7 - 5/11) -- Dead Week
-* No new content!
-* Monday - open work day on presentations
-    - File type doesn't matter: Powerpoint, Rpres, slidly, beamer, Google slides.
-    - Just make sure your graphics render at a decent quality. 
-* Wednesday - all presentations have to be done & turned in. Groups randomly drawn to present Wed/Friday
-    - Upload final version to our Google Drive folder: [Projects/Final Presentations](https://drive.google.com/open?id=10tfxAz6zZMDOlKdcQqxIT0XNPhPp8qow)
-    - Weekly overview has full details of expectations for presentation. 
-* Final review sessions to be done on Mon/Tue of finals week. 
-    - Attending at least one session will earn credit towards your grade. 
-    - Fill out [this survey](https://goo.gl/forms/dXUP2YevwGfbsbVM2) to tell me when you are free. 
-
-
-### Week 14 (4/30 - 5/6)
-* Poster Session on Monday
-* Upload final poster (as printed) to the Projects/CNS Posters FINAL folder in Google Drive
-* Wed/Friday continue with Missing Data lecture
-
-
-
-### Week 13 (4/23 - 4/29)
-* **FINALLY** you get to learn why I harp on you about missing data. 
-* Monday: We'll use the QFT to develop questions about the impacts of missing data, and then talk about how to identify when data are missing. 
-* Wednesday we'll discuss the mechanisms in which data can dissapear, and some common methods to address/eliminate the bias created due to missing data. 
-* Friday is an open work day because I want to see a draft of your posters by Friday EOD. 
-  - Poster Prep Guidance: 
-      - https://www.csuchico.edu/nsci/event/poster.shtml 
-      - https://norcalbiostat.netlify.com/lec/poster_guidelines/
-    
- 
-#### POSTER PRESENTATION HELD ON MONDAY
-* Yes they must be printed. Use a template provided on either of the guideline pages. 
-* Yes this is a serious professional event that can go on your CV. 
-* Yes you must dress professionally.
-* Yes your poster will be judged by peers and professionals alike. 
-* Yes I must see the poster before printing. 
-* Yes at least one person must be at your poster between 12:30 and 2:30 pm. 
-    - Whomever is putting up the poster between 10 and 11 that morning must check in with me and provide me your group's presentation schedule. Each person should plan to stand at their poster for at minimum 30 minutes. 
-    - I **will** check up on you. Unless previously cleared by me, this should not fall to one person. 
-* Upload the PDF or PPT of your poster _as printed_ to the Projects/NSC Posters folder in our Google Drive. 
-
-
-> Blackboard gradebook has been updated to include poster session attendance. 
-> Final grade breakdown is 500 pts, 24% homework, 20% learning (peer review, QFT), 40% exams, 16% project. 
-     
-
-
-
-
-
-### Week 12 (4/16 - 4/22)
-* Spatial data analysis!
-* Making maps is probably the most fun part.
-    - Of course there is a bazillion ways & packages to accomplish this task. 
-* Want more? Check out courses in our Geography department. 
-
-
-### Week 11 (4/9 - 4/15)
-* We're going through a superficial treatment of longitudinal data.
-* This topic is worthy of it's own 10 week course and the topic of NUMEROUS texts. 
-* This is also SET week - we will be doing ours in person on Friday. 
-    - Attendance is mandatory and will count towards your grade. 
-* Next week is Spatial modeling - so my advice is to get started on the assignment ASAP. 
-    - I will try to leave time during class for open work this week but cannot guarantee it. I don't want to rush through the material. 
-    
-
-### Week 10 (4/2 - 4/8)
-* Abstract submissions for the [[College of Natural Science Poster Session]](https://www.csuchico.edu/nsci/event/poster.shtml) are open until April 16th 
-    - Submission is a mandatory assignment for this class
-* We're going to finish talking about the Random Intercept model this week
-    - the common methods of fitting these models in R
-    - and some common methods of handling covariates in multilevel models. 
-* The schedule has been updated to reflect the "surprise" holiday last Friday, and the change in poster session date. 
-    - The final date has been posted, along with information about the take home portion of the final. 
-    
-
-### Week 9 (3/26 - 4/1)
-* Exam corrections - Must use error assessment document. A copy can be found [[here]](notes/analyzingexamerrors.pdf) and also in the #general channel in Slack. 
-* Starting a section on correlated data. QFT on Monday, lecture wed, open work day Friday. 
-* Grading status: Gradebook will be fully updated by Tuesday. 
-
-
-### Week 8 (3/12 - 3/16)
-* Fast forwarding...
-* **Midterm** this week! 60% in class, 40% take home. 
-    - Midterm review on Monday. 
-    - Class generated using QFT model of question formulation
-    - This is worth participation points, so be there and contribute!
-    - Midterm materials allowed: 2 pages of notes & a calculator. 
-* Take home portion with instructions posted in Slack `#assignments` channel by EOB (end of business).
-* **Project updates** - this is worth 20 pts, so make it good. You have 4-5 minutes and 3-4 slides to show me that
-    - you know what your data consists of
-    - you have gotten it into R and started exploring/visualizing/cleaning
-    - you should be starting to do bivariate comparisons at this point
-    - you have a clear idea of what model you are working towards
-    - and that EVERYONE is contributing. Everyone must share in the presentation
-  
-
-### Week 5 (2/19 - 2/25)
-
-* No new content this week. Working/practicing your model writing and calculating various classification measurements. 
-* Wednesday worksheet: [Classifying Glass](notes/classifying glass.Rmd)
-* Friday will be an open project work day. 
-
-
-### Week 4 (2/12 - 2/18)
-
-* Solutions to MLR assignment uploaded to Google Drive. I'll be working my way through the grading this week. 
-* This week -- Generalized Linear Models. What to do when your outcome isn't continuous. 
-* We'll talk about 2 cases, binary and count data. Just how to fit and interpret Logistic and Poisson models. 
-* New GLM assignment starting, all reviews for Model building are done by Sunday (tonight) EOD. 
-
-### Week 3 (2/5 - 2/11)
-
-* Recap of the process of building a model
-* Team check in - Tell me where you are at and what you are working on this week. How can the class help you make progress? 
-* Reminders: Regression assignment due Wed, Model building due Friday. 
-
-
-### Week 2 (1/29 - 2/4)
-
-* The main goal this week is to talk about model building. What to look for, how to compare between models or variables, when to stop. 
-* Review the course notes and corresponding textbook chapters,and be prepared to answer the questions in the notebook. 
-* You'll also form project teams on Monday. Be sure to have your preferences submitted to me via Slack DM by Sunday EOD. 
-
---->
-<div id="welcome" class="section level3">
-<h3>01-21-2020: Welcome!</h3>
+<div id="course-description" class="section level1">
+<h1>Course Description</h1>
+<p><em>Advanced topics in applied statistics including multiple regression, multivariate methods, nonparametrics, analysis of covariance, bootstrap methods and others as appropriate. Statistical computer packages are introduced and used. Appropriate for biology, agriculture, nutrition, business, psychology, social science and other maojrs. 3 hours discussion.</em></p>
+</div>
+<div id="logistics" class="section level1">
+<h1>Logistics</h1>
+<p><strong>Instructor:</strong> Dr. Robin Donatello<br />
+<strong>Office Location:</strong> Holt 202<br />
+<strong>Telephone:</strong> 898-5767<br />
+<strong>E-mail:</strong> <a href="mailto:rdonatello@csuchico.edu">rdonatello@csuchico.edu</a><br />
+<strong>Office Hours:</strong> TBD Week 2<br />
+<strong>Class days and times:</strong> MWF 2-2:50, Glenn 102<br />
+<strong>Prerequisites:</strong> MATH 314/315/615 at Chico State or instructor permission.<br />
+<strong>Course Website:</strong> <a href="http://norcalbiostat.github.io/MATH456/" class="uri">http://norcalbiostat.github.io/MATH456/</a><br />
+<strong>Slack Channel</strong> <a href="http://math456.slack.com" class="uri">http://math456.slack.com</a> You will be sent an email invitation to your campus email.<br />
+<strong>Google Drive</strong> You will be added to the Math 456 Google drive using your campus email.</p>
+<p>You can download the Syllabus in PDF form by clicking <a href="syllabus_456_S20.pdf">[this link]</a>.</p>
+</div>
+<div id="learning-outcomes" class="section level1">
+<h1>Learning Outcomes</h1>
+<p>Upon successful completion of this course, students will be able to:</p>
 <ul>
-<li>Welcome to spring semester in statistics with your host, Dr. Robin Donatello.</li>
-<li>Make sure you acquaint yourself with this website, it will be your guide for the next 16 weeks.</li>
-<li>We will use Google Drive for homework submission.
+<li>Prepare data for analysis by cleaning and transforming raw data.</li>
+<li>Perform research in a reproducible manner.</li>
+<li>Apply advanced statistical analysis methodologies to complex and multivariate data.</li>
+<li>Appropriately conduct an analysis in the presence of missing data.</li>
+<li>Report the results of the analysis in plain language.</li>
+</ul>
+</div>
+<div id="required-materials" class="section level1">
+<h1>Required Materials</h1>
 <ul>
-<li>You will be added using your <span class="citation">@mail.csuchico.edu</span> email address.</li>
-<li>I recommend you ⭐ the folder in your drive so you can find it easier.</li>
+<li><strong>Textbook</strong>: <em>Practical Multivariate Analysis 6th Edition</em>. Afifi, May, Donatello, Clark ISBN-13: 978-1138702226</li>
+<li>6th edition is necessary</li>
+<li>Several copies are available in the library</li>
+<li><strong>Reliable Laptop</strong>: Expect to bring often. Contact me if this poses a problem or concern for you.</li>
+<li><strong>Reliable internet</strong> connection while on and off campus. ITSS can help you get this setup.</li>
+<li><strong>Computer Software:</strong> Unless you have been granted an exception, all work is be done in R. Exceptions are granted on an individual basis after demonstration of proficiency in an alternate language and the ability to produce a reproducible report similar to a R Markdown file.</li>
+</ul>
+</div>
+<div id="tentative-topic-list" class="section level1">
+<h1>Tentative topic list</h1>
+<ul>
+<li>Multiple Linear Regression Model building
+<ul>
+<li>moderators, confounders, interactions, stratification</li>
+<li>categorical variables, reference coding, contrasts</li>
 </ul></li>
-<li>We will use Slack for all outside of class communication.
+<li>Variable selection methods</li>
+<li>Classification &amp; Prediction
 <ul>
-<li>Do not email me with questions relating to the class.</li>
-<li>You must download the desktop app, or phone app (or both). Do not rely on logging into the web browser version. You will miss timely information.</li>
-<li>You will be sent an invite link to your <span class="citation">@mail.csuchico.edu</span> email address. Accept and join the workspace by Wednesday.</li>
+<li>Sensitivity/specificity/accuracy</li>
 </ul></li>
-<li>Software Updates:
+<li>Multivariate statistics / Dimension Reduction
 <ul>
-<li>Update your version of <code>R studio</code> for sure. Update R if you’re running &lt; 3.5.</li>
+<li>Principle Component Analysis</li>
+<li>Factor Analysis</li>
 </ul></li>
-<li>If you’ve had me in a class before, you know that there <em>will</em> be typos and broken links on this webpage. Here is how you can contribute to the fix.
+<li>Missing Data: Identification &amp; Imputation</li>
+<li>Optional Topics. At least one of the following topics will also be covered.
 <ul>
-<li>good: Notify me in the <code>#general</code> channel in Slack. That way I can confirm in public when the issue is resolved.</li>
-<li>better: open up an Issue in Github</li>
-<li>best: fork the repo and submit a PR with the fix!</li>
+<li>Cluster analysis</li>
+<li>Analysis of Survival Data</li>
+<li>Generalized linear models / modeling of count data.</li>
 </ul></li>
 </ul>
+</div>
+<div id="grading" class="section level1">
+<h1>Grading</h1>
+<p>Your final grade will be a straight sum of points earned and will be displayed as a running total in Blackboard Learn.</p>
+<p>There are XXX points available. (<em>Points are subject to modification)</em>. The approximate contributions per category are:</p>
+<ul>
+<li>Participation XX%: Slack usage, Peer reviews<br />
+</li>
+<li>Assignments XX%: Submitted in Google Drive</li>
+<li>Quizzes XX%: Google Forms.</li>
+<li>Exams XX%: Exam 1 and 2. Not cumulative.
+<ul>
+<li>Both exams will be broken into part take home and part in class.</li>
+<li><strong>Any cheating observed on the take home portion of either exam will result in a 0 score</strong></li>
+</ul></li>
+</ul>
+<p>I use a standard grade cutoff of 100-90%: A, 89-80%: B, 79-70%: C, 69-60%: D, 0-59%: F</p>
+</div>
+<div id="policies" class="section level1">
+<h1>Policies</h1>
+<div id="adding-and-dropping-the-course" class="section level2">
+<h2>Adding and Dropping the course</h2>
+<p>The last day to add or drop classes without special permission by the instructor is 1/31/20. No adds or drops are allowed after 2/14/20 without a serious and compelling reason approved by the instructor, department chair, and college dean.</p>
+</div>
+<div id="americans-with-disabilities-act" class="section level2">
+<h2>Americans with Disabilities Act</h2>
+<p>If you need course adaptations or accommodations because of a disability or chronic illness, or if you need to make special arrangements in case the building must be evacuated, please make an appointment with me as soon as possible, or see me during office hours. Please also contact Accessibility Resource Center (ARC) as they are the designated department responsible for approving and coordinating reasonable accommodations and services for students with disabilities. ARC will help you understand your rights and responsibilities under the Americans with Disabilities Act and provide you further assistance with requesting and arranging accommodations.</p>
+<p>Accessibility Resource Center<br />
+530-898-5959<br />
+Student Services Center 170<br />
+<a href="mailto:arcdept@csuchico.edu">arcdept@csuchico.edu</a></p>
+</div>
+<div id="chico-state-basic-needs-project" class="section level2">
+<h2>Chico State Basic Needs Project</h2>
+<p>The <strong>Hungry Wildcat Food Pantry</strong> provides supplemental food, fresh produce, CalFresh application assistance and basic needs referral services for students experiencing food and housing insecurity.</p>
+<p>All students are welcomed to visit the Pantry located in the Student Service Center 196, open Monday-Friday, 11am-4pm or call 530-898-4098.</p>
+<p>Please visit the Chico State Basic Needs website <a href="http://www.csuchico.edu/basic-needs" class="uri">http://www.csuchico.edu/basic-needs</a> for more information.</p>
+<hr />
+<p><em>Last updated: Thu Jan 09 2020 08:37:40</em></p>
+</div>
 </div>
 
 
