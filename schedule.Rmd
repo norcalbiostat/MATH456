@@ -86,7 +86,8 @@ raw_detail <- read_excel("schedule_456.xlsx", sheet="slo_detail")
 
 # Function to extract week and display data
 details <- function(w){
-  wd <- filter(raw_detail, wk==w) %>% select(Topics, SLO, Prepare, Monday, Wednesday, Friday)  
+  wd <- filter(raw_detail, wk==w) %>% 
+        select(Topics, SLO, Prepare, Monday, Wednesday, Friday)  
   # strip data columns into separate lists
   Topic <- gsub("\r\n", "", wd$Topics)
   SLO  <- as.list(str_split(wd$SLO, "\r\n", simplify=TRUE))
@@ -94,10 +95,9 @@ details <- function(w){
   mon  <- as.list(str_split(wd$Monday, "\r\n", simplify=TRUE))
   wed  <- as.list(str_split(wd$Wednesday, "\r\n", simplify=TRUE))
   fri  <- as.list(str_split(wd$Friday, "\r\n", simplify=TRUE))
-  
+ 
   return(list(Topic=Topic, SLO=SLO, prep=prep, mon=mon, wed=wed, fri=fri))
 }
-
 ```
 
 ```{r}
@@ -620,8 +620,6 @@ pander(w15$fri)
 
 
 
-
-
 ## Calendar
 
 For those of you that like the calendar view of your schedule. Due to schedule adjustments during
@@ -629,4 +627,3 @@ the semester these dates may not match exactly with the schedule. In those cases
 descrepencies to my attention via Slack. 
 
 <iframe src="https://calendar.google.com/calendar/b/1/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=bWFpbC5jc3VjaGljby5lZHVfYTRwbXF2NzdqOG45NnM4Yjd0bzM3ZmhiMTRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=bWFpbC5jc3VjaGljby5lZHVfOTNyMXBmOThxZ2VzNzlsa2dkb3FpcGV1YW9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23AA5A00&amp;color=%231B887A" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
-

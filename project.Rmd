@@ -1,0 +1,42 @@
+---
+title: "Class Projects"
+output: html_document
+---
+
+Projects this semester will be user generated. They must entail a sufficient amount of data exploration and modeling, and require some sort of modeling technique that we cover in this class (missing data, survival data, clustered or correlated data, classification/prediction, multivariate analysis.)
+
+* Graduate research? 
+* Senior project? 
+* Have an advisor with data/questions to ask and not enough time to investigate?
+* The subject field is up to you! It does not have to be biological/natural sciences related. 
+
+
+# Team Recruitment
+
+Proposers must create a 2-3 minute "elevator pitch" video about their data and project. Post this video on youtube and put the link in the `#projects` Slack channel by the due date. 
+
+* Then everyone else reviews the proposals and submit their desired project rankings/preferences that they would like to work on. 
+* I will post at least one proposal to ensure that there are enough projects to go around. Mine may be the most difficult given that you won't have a subject matter expert as the data owner directly in your group. 
+
+Small teams (2-3) will be formed to work on these projects throughout the semester. 
+
+* I will try my absolute best to assign people to the project they are most interested in. 
+    - I will create your own private slack channel for you to collaborate in.  
+* The project lead (the person with the data) is responsible for keeping the analysis moving forward, educating their teammates on the scientific context of the research, responsible for the majority of the contextual writing, and will be first author on the poster for the CNS poster session May. 
+* Project members are responsible for asking questions to understand the scientific context, providing assistance with programming and analysis, writing the data analysis and results sections of the poster. 
+
+You will mostly work independently on your projects throughout the semester, but there will be some class sessions that are set aside as open work time.  
+
+# Deliverables
+
+* Proposal due to Dr. D for approval
+* Team recruitment video created & published somewhere accessible
+* Students select projects
+* Groups write up team agreements, task distributions, and a project timeline. 
+* Week 8: Project update (1 pg summary + 5 min presentation by project lead)
+* Week 12: Draft report
+* Week 15: Project presentations, Final report
+
+
+----
+_Last Updated: `r format(Sys.time(), "%a %b %d %X")`_

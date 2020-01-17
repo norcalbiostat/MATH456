@@ -1,0 +1,42 @@
+---
+title: 'HW 00: Getting Started'
+output:
+  html_document:
+    toc: yes
+    toc_float: yes
+  pdf_document:
+    toc: no
+---
+
+[[Download this file as PDF]](hw00-getting-started.pdf)
+
+# Preparing class materials
+
+1. Join our Slack workspace. You will be emailed a link to your @mail.csuchico.edu email address. 
+    - Download the Desktop app. You are not allowed to rely on remembering to login using the web version. The Slack phone app is technically optional, but really really helpful/handy. Students historically have stated it's much easier to work with.
+    - Post an introduction in the `#introductions` channel. Tell us a little about you! Year, major, hometown, any extracurricular activities, what do you hope to get out of this class, how will you ensure your success in this class. Oh.. and of course any mention of pets should include a photo!
+  
+2. Join our class Google Drive. You will be added to this manually using your @mail.csuchico.edu email address. 
+    - Star this folder to make it easier to find. 
+    
+3. Create an electronic Learning Journal (LJ). This could be a Google Document, or a document in Dropbox or Box. 
+    - PM the URL link to Dr. D in Slack. If you are using Google Docs make sure the permissions on the document are set to _anyone with the link can view_
+    
+4. Update your R (3.5+) and R Studio (latest). 
+
+5. Project Overview: If you have your own data or topic that you would like to research this semester, you will have this chance. Review the Projects page on the class website to see what is expected. 
+    
+    
+# Preparing yourself to Learn
+
+1. Write your first LJ Entry: What is self-regulated learning? What is the benefit to you? Find a good diagram that you think captures this idea and draw it in your LJ. 
+
+
+# Preparing Data for Analysis
+
+1. Read PMA6 Chapter 3 before Friday. 
+
+
+
+
+

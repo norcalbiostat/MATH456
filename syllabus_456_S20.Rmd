@@ -34,6 +34,7 @@ Upon successful completion of this course, students will be able to:
 * Apply advanced statistical analysis methodologies to complex and multivariate data. 
 * Appropriately conduct an analysis in the presence of missing data. 
 * Report the results of the analysis in plain language. 
+* Work collaboratively on a team based project. 
 
 
 # Required Materials
@@ -60,18 +61,16 @@ Upon successful completion of this course, students will be able to:
     - Cluster analysis
     - Analysis of Survival Data
     - Generalized linear models / modeling of count data. 
-    
+
 # Grading
 
-Your final grade will be a straight sum of points earned and will be displayed as a running total in Blackboard Learn. 
+Your final grade will be a straight sum of points earned and will be displayed as a running total in Blackboard Learn. The approximate contributions per category are: 
 
-There are XXX points available. _(Points are subject to modification)_. The approximate contributions per category are: 
-
-* Active Learning XX%: Slack usage, Peer reviews, Journaling
-* Assignments XX%: Submitted in Google Drive
-* Quizzes XX%: Google Forms. 
-* Exams XX%: Exam 1 and 2. Not cumulative.   
-
+* Active Learning 25%: Slack usage, Peer reviews, Journaling
+* Assignments 25%: Submitted in Google Drive
+* Quizzes 15%: Google Forms. 
+* Exams 20%: Exam 1 and 2. Not cumulative.   
+* Project 15% 
 
 I use a standard grade cutoff of 100-90%: A, 89-80%: B, 79-70%: C, 69-60%: D, 0-59%: F  
 

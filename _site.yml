@@ -9,24 +9,27 @@ navbar:
   - text: Materials
     icon: fa-folder-open
     menu:
-    - text: Notes
-      icon: fa-book
+    - text: Course Notes
       href: https://norcalbiostat.github.io/AppliedStatistics_notes/index.html
-    - text: Google Drive
-      icon: fa-google
-      href: https://drive.google.com/drive/folders/0B83Z8_sNw3KPcnVrYzVFRHUtcHM?usp=sharing
+    - text: Learning Techniques
+      href: learning_tools.html
     - text: Syllabus 
-      icon: fa-info-circle
-      href: Syllabus_S20.html
+      href: syllabus_456_S20.html
   - text: Tools
     icon: fa-wrench
     menu:
+    - text: Google Drive
+      icon: fa-google
+      href: https://drive.google.com/drive/folders/0B83Z8_sNw3KPcnVrYzVFRHUtcHM?usp=sharing
     - text: Slack (class discussions)
       icon: fa-slack
       href: https://math456.slack.com/
     - text: Zoom (video conference)
       icon: fa-video-camera
       href: https://csuchico.zoom.us/
+  - text: Project 
+    icon: fa-group
+    href: project.html
   right:
   - text: Help
     icon: fa-question
