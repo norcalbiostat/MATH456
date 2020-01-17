@@ -1,6 +1,7 @@
-# Activities to enhance student learning. 
-
-----
+---
+title: "Learning Tools"
+output: html_document
+---
 
 ## Learning Journals (LJ)
 An electronic document where you will be writing responses and reflections to certain in-class activities. This will be checked off periodically for quality and completeness. 
@@ -42,6 +43,4 @@ Quizzes are a great way to test yourself, enhance recall, and self-assess your c
 1. **Individual**: First try to answer as many questions without looking at your notes. Then use your notes to answer the rest. 
 
 2. **Group**: After the individual quiz closes I will choose 1-4 questions that scored the lowest. We will do a class-wide discussion of those topics, then you will work in groups to redo the selected questions for half credit. 
-
-
 
