@@ -1,11 +1,11 @@
 ---
 title: 'HW 00: Getting Started'
 output:
+  pdf_document:
+    toc: no
   html_document:
     toc: yes
     toc_float: yes
-  pdf_document:
-    toc: no
 ---
 
 [[Download this file as PDF]](hw00-getting-started.pdf)
@@ -25,7 +25,10 @@ output:
 4. Update your R (3.5+) and R Studio (latest). 
 
 5. Project Overview: If you have your own data or topic that you would like to research this semester, you will have this chance. Review the Projects page on the class website to see what is expected. 
-    
+
+6. Fill ou this form to help me figure out when to hold Office Hours. 
+https://forms.gle/pXvCs3D1SjQoJRgt9
+
     
 # Preparing yourself to Learn
 
