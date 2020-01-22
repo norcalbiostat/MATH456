@@ -30,16 +30,30 @@ output:
 https://forms.gle/pXvCs3D1SjQoJRgt9
 
     
-# Preparing yourself to Learn
-
-1. Write your first LJ Entry: What is self-regulated learning? What is the benefit to you? Find a good diagram that you think captures this idea and draw it in your LJ. 
-
-
 # Preparing Data for Analysis
 
-1. Read PMA6 Chapter 3 before Friday. 
+Read PMA6 Chapter 3 before Friday. 
+
+# Preparing yourself to Learn
+
+Write your first LJ Entry: What is self-regulated learning? What is the benefit to you? Find a good diagram that you think captures this idea and draw it in your LJ. 
+
+# Data Preparation Flowchart
+
+Create a flowchart / reference sheet for the process of preparing data for analysis. If you were handed a data set, what are the first things you need to do? 
 
 
+You can use any type of media you like
 
+* paper/pencil 
+* mind mapping/flowchart software
+* Simple text
+* Other? 
+
+Create a PDF of this file to Google Drive by the due date. If you are working with paper/pencil, take a picture and insert it into a document (i.e. Google docs), then export/save as PDF. 
+
+This assignment will be subject to Peer Review, but no draft/revision cycle.
+
+You are welcome (encouraged) to work on this flowchart after the official due date. Especially after you view other's submissions. Very likely they included something that you didn't think of! The intent is to create something useful for yourself. 
 
 

@@ -8,7 +8,7 @@ output:
 ---
 
 # Course Description
-_Advanced topics in applied statistics including multiple regression, multivariate methods, nonparametrics, analysis of covariance, bootstrap methods and others as appropriate. Statistical computer packages are introduced and used. Appropriate for biology, agriculture, nutrition, business, psychology, social science and other maojrs. 3 hours discussion._
+_Advanced topics in applied statistics including multiple regression, multivariate methods, nonparametrics, analysis of covariance, bootstrap methods and others as appropriate. Statistical computer packages are introduced and used. Appropriate for biology, agriculture, nutrition, business, psychology, social science and other majors. 3 hours discussion._
 
 # Logistics
 
@@ -40,10 +40,10 @@ Upon successful completion of this course, students will be able to:
 # Required Materials
 * **Textbook**: _Practical Multivariate Analysis 6th Edition_. Afifi, May, Donatello, Clark ISBN-13: 978-1138702226 
   - 6th edition is necessary
-  - Several copies are available in the library
+  - Several copies are available in the library. More can be made available if needed. 
 * **Reliable Laptop**: Expect to bring often. Contact me if this poses a problem or concern for you. 
 * **Reliable internet** connection while on and off campus. ITSS can help you get this setup. 
-* **Computer Software:** Unless you have been granted an exception, all work is be done in R. Exceptions are granted on an individual basis after demonstration of proficiency in an alternate language and the ability to produce a reproducible report similar to a R Markdown file.
+* **Computer Software:** Unless you have been granted an exception, all work is be done in R. Exceptions are granted on an individual basis after demonstration of proficiency in an alternate language and the ability to produce a reproducible PDF report similar to a R Markdown file.
 
 # Tentative topic list
 
@@ -62,19 +62,56 @@ Upon successful completion of this course, students will be able to:
     - Analysis of Survival Data
     - Generalized linear models / modeling of count data. 
 
+
+# Assignments / graded items
+I will endeavor to have these items loaded into the gradebook in Blackboard Learn ASAP so you can use that as a manner to "check off" the assignments. 
+
+* 2 Exams (midterm/final, not cumulative). [Error Assessment Form](notes/Analyzing exam errors.pdf) available for midterm. 
+* 6 standard homework assignments on the topics listed above. Submitted through Google Drive. 
+    - Peer reviews (PR) of these assignments. 
+* 7 Individual + Group quizzes. Administered through Google Forms, lowest score dropped. 
+* Some in-class worksheets on an as-needed basis. 
+* Various active or reflective [learning activities](learning_tools.html) during/outside of class.
+* Attending [Community Coding](http://bit.ly/cc_hours.html) and/or Office Hours **4** times
+* Attending an internal/external seminar talk on a topic in Applied Statistics, or a Data analysis-centric seminar talk, writing a 1 page summary about the talk, and sharing this summary in the #external-learning Slack channel.
+* Contribute to the [Applied Statistics Course Notes](https://norcalbiostat.github.io/AppliedStatistics_notes/). This could be a new example, enhancing/fixing an old example, 
+    - Once you identify the piece you want to work on, PM me the section in Slack. I will send you the relevant code/data. 
+    - Any student in my ADS class must make their edits using a PR. (If you use GitHub but are not in 485, you are free to use a PR as well.)
+* Student Group led analysis [project](project.html). 
+* Slack participation. There are 30+ of you, and only 1 of me. Contributing to our learning community by asking and answering questions about assignments, code, etc in Slack is required to make this class run smoothly. And in the end, you are the ones that will benefit from it the most. Don't spend more than 20 min banging your head on the proverbial wall before you reach out and ask for help. 
+
+
 # Grading
 
 Your final grade will be a straight sum of points earned and will be displayed as a running total in Blackboard Learn. The approximate contributions per category are: 
 
-* Active Learning 25%: Slack usage, Peer reviews, Journaling
-* Assignments 25%: Submitted in Google Drive
-* Quizzes 15%: Google Forms. 
-* Exams 20%: Exam 1 and 2. Not cumulative.   
+* Active Learning 25% (Slack, PR, LJ)
+* Assignments 25%
+* Quizzes 15%
+* Exams 20%
 * Project 15% 
 
 I use a standard grade cutoff of 100-90%: A, 89-80%: B, 79-70%: C, 69-60%: D, 0-59%: F  
 
+----
+
 # Policies
+
+## Code of Conduct
+
+Short version:
+
+I am dedicated to providing a welcoming and supportive environment for all people, regardless of background or identity. By participating in this class, students accept to abide by the The Carpentries’ Code of Conduct and accept the [appropriately modified for our campus] procedures by which any Code of Conduct incidents are resolved. Any form of behavior to exclude, intimidate, or cause discomfort is a violation of the Code of Conduct. In order to foster a positive and professional learning environment we encourage the following kinds of behaviors in all platforms and events:
+
+
+* Use welcoming and inclusive language
+* Be respectful of different viewpoints and experiences
+* Gracefully accept constructive criticism
+* Focus on what is best for the class
+* Show courtesy and respect towards your peers
+
+Excerpted from the [Carpentries Code of Conduct](https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html). Please read the full version linked here for a detailed list of acceptable and unacceptable behaviors. 
+
 
 ## Adding and Dropping the course
 The last day to add or drop classes without special permission by the instructor is 1/31/20. No adds or drops are allowed after 2/14/20 without a serious and compelling reason approved by the instructor, department chair, and college dean.

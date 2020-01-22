@@ -148,10 +148,10 @@ wk1.date <- as.Date("2020-01-21")
     - Do not email me with questions relating to the class. 
     - You must download the desktop app, or phone app (or both). Do not rely on logging into the web browser version. You will miss timely information. 
     - You will be sent an invite link to your @mail.csuchico.edu email address. Accept and join the workspace by Wednesday. 
-    
 * Software Updates: 
     - Update your version of `R studio` for sure. Update R if you're running < 3.5. 
 * If you've had me in a class before, you know that there *will* be typos and broken links on this webpage. Here is how you can contribute to the fix.
     - good: Notify me in the `#general` channel in Slack. That way I can confirm in public when the issue is resolved. 
     - better: open up an Issue in Github
     - best: fork the repo and submit a PR with the fix!
+    

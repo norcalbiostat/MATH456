@@ -6,6 +6,7 @@ output: html_document
 ## Learning Journals (LJ)
 An electronic document where you will be writing responses and reflections to certain in-class activities. This will be checked off periodically for quality and completeness. 
 
+https://www.teachthought.com/literacy/20-types-of-learning-journals-that-help-students-think/
 
 ## Question Formulation Technique (QFT)
 The backbone of the scientific process is asking and trying to answer questions. This activity will help students learn how to brainstorm and ask questions freely, how to work with open and close ended questions, and what they can learn from asking questions. 
@@ -18,17 +19,20 @@ The backbone of the scientific process is asking and trying to answer questions.
 4. As a group you will prioritize questions. 
 5. Share your top 3 questions in a shared group document. 
     - with rational why they are your top 3 
-6. (After class) Reflect on the activity. 
+6. (After class) Reflect on the activity in your Learning Journal. 
     - Review the class-wide responses and comment on similarities and differences between your group and other groups top 3.
     - What did you learn during this exercise? 
     - How did you learn that? 
 
 
 ## 3-2-1 Bridge (Bridge)
+This activity is designed for you to visualize and reflect on how your thinking and perceptions on a specific topic change throughout a module, or course. 
+
+https://norcalbiostat.github.io/MATH315/lecture/321_Bridge.html
 
 
 ## Quick Writes (QW)
-* One minute writing about a question or prompt given
+* One minute writing about a question or prompt
 * One minute sharing with your neighbor
 * Class discussion
 
@@ -36,9 +40,14 @@ The backbone of the scientific process is asking and trying to answer questions.
 
 ## Peer Review (PR)
 
+No matter what you end up doing after graduation, the quality of your ideas and work will be judged, in a large measure, by how well you can communicate in writing to diverse audiences. Participating in peer review can help you learn to shape their written language as a medium of communication with readers. [ref](https://teachingcenter.wustl.edu/resources/writing-assignments-feedback/using-peer-review-to-help-students-improve-their-writing/)
+ 
 https://teaching.cornell.edu/teaching-resources/assessment-evaluation/peer-assessment
 
+You will be providing peer reviews on each other's homework. 
+Homework assignments will have a Draft due date. Then a period of peer review for approx 2 days, where your job is to help your classmate get the best score possible. Then after the peer review window has closed, you have another 1-2 days to make corrections and submit your final version. 
 
+Peer reviews are done directly in google drive, by commenting on the PDF itself. 
 
 
 
@@ -49,3 +58,7 @@ Quizzes are a great way to test yourself, enhance recall, and self-assess your c
 
 2. **Group**: After the individual quiz closes I will choose 1-4 questions that scored the lowest. We will do a class-wide discussion of those topics, then you will work in groups to redo the selected questions for half credit. 
 
+
+## Exam Error Assessment
+
+For the midterm you will have an opportunity assess your errors on the midterm, make corrections, review the corrections with me, for a partial return of the credit lost. [Error Assessment Form](notes/Analyzing exam errors.pdf)
