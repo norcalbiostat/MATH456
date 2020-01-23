@@ -72,7 +72,7 @@ I will endeavor to have these items loaded into the gradebook in Blackboard Lear
 * 7 Individual + Group quizzes. Administered through Google Forms, lowest score dropped. 
 * Some in-class worksheets on an as-needed basis. 
 * Various active or reflective [learning activities](learning_tools.html) during/outside of class.
-* Attending [Community Coding](http://bit.ly/cc_hours.html) and/or Office Hours **4** times
+* Attending [Community Coding](http://bit.ly/cc_hours) and/or Office Hours **4** times
 * Attending an internal/external seminar talk on a topic in Applied Statistics, or a Data analysis-centric seminar talk, writing a 1 page summary about the talk, and sharing this summary in the #external-learning Slack channel.
 * Contribute to the [Applied Statistics Course Notes](https://norcalbiostat.github.io/AppliedStatistics_notes/). This could be a new example, enhancing/fixing an old example, 
     - Once you identify the piece you want to work on, PM me the section in Slack. I will send you the relevant code/data. 
