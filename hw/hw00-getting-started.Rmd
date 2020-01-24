@@ -1,14 +1,21 @@
 ---
 title: 'HW 00: Getting Started'
 output:
-  pdf_document:
-    toc: no
   html_document:
     toc: yes
     toc_float: yes
+  pdf_document:
+    toc: no
 ---
 
 [[Download this file as PDF]](hw00-getting-started.pdf)
+
+# Submission Instructions
+ 
+* Upload your flowchart as a PDF to our shared Google Drive folder `HW00: Data Prep flowchart`. 
+* This file must be named "hw00_dataprep_userid" where `userid` is your chico state user id, (i.e. the first part of your email.)
+
+---
 
 # Preparing class materials
 
@@ -40,17 +47,11 @@ Write your first LJ Entry: What is self-regulated learning? What is the benefit 
 
 # Data Preparation Flowchart
 
-Create a flowchart / reference sheet for the process of preparing data for analysis. If you were handed a data set, what are the first things you need to do? 
+In class you will work with a partner to create a flowchart / reference sheet for the process of preparing data for analysis. E.g.: If you were handed a data set, what are the first things you need to do? 
 
+Work up a draft with your partner, then snap a picture. 
 
-You can use any type of media you like
-
-* paper/pencil 
-* mind mapping/flowchart software
-* Simple text
-* Other? 
-
-Create a PDF of this file to Google Drive by the due date. If you are working with paper/pencil, take a picture and insert it into a document (i.e. Google docs), then export/save as PDF. 
+Later, outside of class, transfer your diagram into an electronic program. There are many different mind mapping / flowchart software programs out there, e.g. Lucid chart is available in Google Drive, but you can also insert images into a normal word document. 
 
 This assignment will be subject to Peer Review, but no draft/revision cycle.
 
