@@ -139,6 +139,11 @@ wk1.date <- as.Date("2020-01-21")
 
 ### `r format(wk1.date, "%m-%d-%Y")`: Welcome!
 
+#### Office Hours Scheduled
+
+[Click this link](OH_Viz.html) to see the R code I use to choose office hours. 
+
+
 * Welcome to spring semester in statistics with your host, Dr. Robin Donatello. 
 * Make sure you acquaint yourself with this website, it will be your guide for the next 16 weeks. 
 * We will use Google Drive for homework submission. 
