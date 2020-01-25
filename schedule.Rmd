@@ -15,7 +15,9 @@ knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
 <p>
 Unless specified otherwise, all assignments are due at midnight on the due date listed.  
 
-Don't forget to check the weekly details for information on how to prepare and links to other materials. 
+Don't forget to check the weekly details for information on how to prepare and links to other materials.   
+**PMA6**: Practical Multivariate Analysis 6th edition  
+**ASCN**: Applied Stats Course Notes (linked in nav bar under Materials)
 </p>
 ```{r}
 # Read in schedule

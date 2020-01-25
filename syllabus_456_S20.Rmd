@@ -16,7 +16,7 @@ _Advanced topics in applied statistics including multiple regression, multivaria
 **Office Location:** Holt 202  
 **Telephone:** 898-5767    
 **E-mail:** rdonatello@csuchico.edu    
-**Office Hours:** TBD Week 2  
+**Office Hours:** M 11-12, W 10-12 Tehama 116. R 1-2 Holt 202, or by appointment.  
 **Class days and times:** MWF 2-2:50, Glenn 102   
 **Prerequisites:** MATH 314/315/615 at Chico State or instructor permission.  
 **Course Website:** http://norcalbiostat.github.io/MATH456/  

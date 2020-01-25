@@ -53,12 +53,17 @@ Short summary of your research topic that includes:
 * What statistical analyses topic that we cover this semester is this aligned with? 
 * What you hope to accomplish, i.e. how will you use your team time? 
 
-## Written proposal due to Dr. D for approval
+## Team Recruitment Video 
 
-* Create a video and post on YouTube. Link this in the #projects slack channel. 
+* Create a <5 minute video and post on YouTube. Link this in the #projects slack channel. 
   - Need help finding video equipment? Ask in the #projects channel. 
   
-  
+## Project Selection
+
+* Use this link [(TBD)]() to choose your top three projects. 
+    - Everyone (proposers and non-proposers) must make this selection. 
+* Not all projects will be "funded" 
+    - not all projects will have enough interest from other students to warrant a team
 
 _Detailed instructions in progress_
 
