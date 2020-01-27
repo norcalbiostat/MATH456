@@ -9,7 +9,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="STUDENT NAME" />
+<meta name="author" content="MATH 456 - Spring 2020" />
 
 
 <title>HW01 - Statistical Modeling</title>
@@ -1634,83 +1634,62 @@ summary {
 
 
 <h1 class="title toc-ignore">HW01 - Statistical Modeling</h1>
-<h4 class="author">STUDENT NAME</h4>
+<h4 class="author">MATH 456 - Spring 2020</h4>
 
 </div>
 
 
-<pre class="r"><code>knitr::opts_chunk$set(warning=FALSE, message=FALSE)
-# load appropriate libraries and import data here
-
-# For this assignment, to get you started, I have included code to directly import 
-# data sets from my website. 
-# After you create your own data management files, this approach should not be used. 
-
-fev &lt;- read.delim(&quot;https://norcalbiostat.netlify.com/data/Lung_081217.txt&quot;, 
-                  sep=&quot;\t&quot;, header=TRUE)
-names(fev) &lt;- tolower(names(fev))
-hiv &lt;- read.delim(&quot;https://norcalbiostat.netlify.com/data/PARHIV_081217.txt&quot;, 
-                  sep=&quot;\t&quot;, stringsAsFactors = FALSE, header=TRUE)
-names(hiv) &lt;- tolower(names(hiv))
-dep &lt;- read.delim(&quot;https://norcalbiostat.netlify.com/data/depress_081217.txt&quot;, 
-                  sep=&quot;\t&quot;, header=TRUE)
-names(dep) &lt;- tolower(names(dep))</code></pre>
+<div id="submission-instructions." class="section level1">
+<h1>Submission Instructions.</h1>
+<ul>
+<li><a href="hw01-modeling-template.Rmd">[Right click this link to download the R Markdown template for this homework.]</a> This template is required.
+<ul>
+<li>Rename this file with your username. I.e. <code>hw01-modeling-template.Rmd</code> becomes <code>hw01-modeling-rdonatello.Rmd</code></li>
+</ul></li>
+<li>Knit to PDF and submit to Google Drive: <code>HW01: Statistical Modeling/Draft</code> folder by the due date.</li>
+<li>This is a peer reviewed assignment. After the PR period, you should update your assignment with corrections by your peers, and submit a final version into the <code>HW01: Statistical Modeling/Final</code> Google folder.</li>
+</ul>
+<p><a href="hw01.pdf">[Click here to download this file as a PDF]</a></p>
+</div>
 <div id="part-i-statistical-modeling" class="section level1">
 <h1>Part I: Statistical Modeling</h1>
-<div id="fit-a-linear-regression-model" class="section level2">
-<h2>1. Fit a linear regression model</h2>
-<div id="a.-analyze-the-residuals" class="section level3">
-<h3>a. Analyze the residuals</h3>
-</div>
-<div id="b.-interpret-each-coefficient" class="section level3">
-<h3>b. Interpret each coefficient</h3>
-</div>
-</div>
-<div id="test-gender-as-a-moderator-using-a-using-a-stratified-model" class="section level2">
-<h2>2. Test gender as a moderator using a) using a stratified model</h2>
-<div id="b-using-an-interaction-model." class="section level3">
-<h3>b) using an interaction model.</h3>
-</div>
-</div>
-<div id="which-of-the-two-models-in-question-2-assumes-that-the-affect-of-income-on-depression-is-constant-does-not-change-between-males-and-females" class="section level2">
-<h2>3. Which of the two models in question 2 assumes that the affect of income on depression is constant (does not change) between males and females?</h2>
-</div>
-<div id="determine-whether-the-regression-plane-can-be-improved-by-also-including-weight.-use-two-measures-of-model-fit-to-justify-your-answer-to-this-question" class="section level2">
-<h2>4. Determine whether the regression plane can be improved by also including <code>weight</code>. Use two measures of model fit to justify your answer to this question</h2>
-</div>
-<div id="does-weight-confound-the-relationship-between-age-or-height-and-fev1" class="section level2">
-<h2>5. Does weight <em>confound</em> the relationship between age or height and FEV1?</h2>
-</div>
-<div id="fit-a-model-of-income-using-age-sex-educational-level-and-religion-as-predictors." class="section level2">
-<h2>6. Fit a model of income using age, sex, educational level and religion as predictors.</h2>
-<div id="a.-use-a-general-f-test-to-determine-whether-religion-has-an-effect-on-income." class="section level3">
-<h3>a. Use a general F test to determine whether religion has an effect on income.</h3>
-</div>
-<div id="b.-state-the-reference-categories-for-both-relition-and-educational-level." class="section level3">
-<h3>b. State the reference categories for both relition and educational level.</h3>
-</div>
-<div id="c.-interpret-the-coefficient-for-each-level-of-educational-level" class="section level3">
-<h3>c. Interpret the coefficient for each level of educational level</h3>
-</div>
-</div>
+<ol style="list-style-type: decimal">
+<li>From the depression data set, fit a linear regression model on depression as given by <code>cesd</code>, using <code>income</code> and <code>age</code> as independent variables. (PMA6 problem 8.5, modified)
+<ol style="list-style-type: lower-alpha">
+<li>Analyze the residuals and decide whether or not it is reasonable to assume that they follow a normal distribution.</li>
+<li>Interpret each coefficient (including the intercept) in full context of the problem. You must include the point estimate (<span class="math inline">\(\hat{\beta}\)</span>), a 95% confidence interval for that estimate, and a p-value in your conclusion.</li>
+</ol></li>
+</ol>
+<p><br></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Does gender (<code>sex</code>) modify the relationship between age and depression? Don’t forget to recode <code>sex</code> into a categorical variable before you begin. Answer this question in two ways: a) using a stratified model b) using an interaction model.</li>
+</ol>
+<p><br></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Which of the two models in question 2 assumes that the affect of income on depression is constant (does not change) between males and females?</li>
+</ol>
+<p><br></p>
+<ol start="4" style="list-style-type: decimal">
+<li>For adult males it has been demonstrated that <code>age</code> and <code>height</code> are useful in predicting <code>FEV1</code>. Using the lung function data set, determine whether the regression plane can be improved by also including <code>weight</code>. Use two measures of model fit to justify your answer to this question (PMA6 problem 9.4, Ref PMA6 section 9.4). Note: all variables for adult males start with the letter <code>F</code> (<code>FAGE</code>, <code>FFEV1</code>, <code>FHEIGHT</code>, etc.)</li>
+</ol>
+<p><br></p>
+<ol start="5" style="list-style-type: decimal">
+<li>For adult males, does weight <em>confound</em> the relationship between age or height and FEV1? You must show relevant model output and explain how you came to your conclusion.</li>
+</ol>
+<p><br></p>
+<ol start="6" style="list-style-type: decimal">
+<li>Using the depression data set, fit a model of income using age, sex, educational level and religion as predictors. (PMA6 problem 10.3 modified)
+<ol style="list-style-type: lower-alpha">
+<li>Use a general F test to determine whether religion has an effect on income.</li>
+<li>State the reference categories for both relition and educational level.</li>
+<li>Interpret the coefficient for each level of educational level in full context of the problem, being sure to include the comparison group. You must include the point estimate (<span class="math inline">\(\hat{\beta}\)</span>), a 95% confidence interval for that estimate, and a p-value in your conclusion.</li>
+</ol></li>
+</ol>
+<p><br></p>
 </div>
 <div id="part-ii-variable-selection" class="section level1">
 <h1>Part II: Variable Selection</h1>
-<div id="pma6-9.9" class="section level2">
-<h2>1. PMA6 9.9</h2>
-</div>
-<div id="pma6-9.11" class="section level2">
-<h2>2. PMA6 9.11</h2>
-</div>
-<div id="pma6-9.12" class="section level2">
-<h2>3. PMA6 9.12</h2>
-</div>
-<div id="pma6-9.13" class="section level2">
-<h2>4. PMA6 9.13</h2>
-</div>
-<div id="pma6-9.14" class="section level2">
-<h2>4. PMA6 9.14</h2>
-</div>
+<p>PMA6 problems 9.9, 9.11, 9.12, 9.13, 9.14</p>
 </div>
 
 
