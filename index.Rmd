@@ -129,13 +129,52 @@ wk1.date <- as.Date("2020-01-21")
 * Reminders: Regression assignment due Wed, Model building due Friday. 
 
 
-### Week 2 (1/29 - 2/4)
-
-* The main goal this week is to talk about model building. What to look for, how to compare between models or variables, when to stop. 
-* Review the course notes and corresponding textbook chapters,and be prepared to answer the questions in the notebook. 
-* You'll also form project teams on Monday. Be sure to have your preferences submitted to me via Slack DM by Sunday EOD. 
-
 --->
+
+### `r format(wk1.date+1*7, "%m-%d-%Y")`: Refresher on Linear regression modeling.
+
+
+* The main goal this week is to refresh/learn how to interpret all types of predictors in a linear regression model. 
+* You'll get your first experience conducting a peer review also this wek. 
+* Review the course notes and corresponding textbook chapters before class.
+
+HW01 is not a "linear" homework in that early questions are on topics early in the module, and later questions on later topics. Questions have various parts, some of which aren't discussed directly in class until later. You may not be able to complete all parts of all questions until the end of this module. Do what you can. 
+
+**General Guidance on Homework**  
+
+* Start early and do what you can. If you have any question about the length, or difficulty of my homework assignments and why you should procrastinate at your own peril, just ask any of my prior students. 
+* Don't be afraid to ask questions. It is essential to your learning. This is a judgement free class as clearly stated in the [[code of conduct]](https://norcalbiostat.github.io/MATH456/syllabus_456_S20.html#policies) section of the syllabus. 
+* Spell check your work, and for petes sake look at your work before you turn it in and imagine if you had to print it out. 
+    - No 100 page documents because you accidentally printed out the whole data set. 
+    - Make sure all code is showing and readable
+    - Make sure all text is readable and not sucked into a table or wrapping off the page. 
+* All data sets referenced for the homework can be obtained from Dr. D's [[data website]](https://norcalbiostat.netlify.com/data/cleaned_data/). 
+* Don't assume the data are clean. 
+    - Check the data type in R, versus the codebook.
+* We will be using the following data sets regularly: Depression, Lung function, Parental HIV. 
+    - For each data set we use you should maintain:
+        1. the raw data
+        2. the codebook
+        3. a data management file
+        4. a clean data set that is used for homework
+
+The following file organization is recommended. Another option could be to have a subfolder for each data set.
+
+```
+math456/
+  | - data/
+        | - lung_081217.txt
+        | - dm_lung.R (or .Rmd)
+        | - lung_clean.Rdata
+        | - depress_081217.txt
+        | - dm_depress.R
+        | - depress_clean.Rdata
+  | - hw/
+      | - hw01-modeling-userid.Rmd
+      | - hw01-modeling-userid.pdf
+```
+
+
 
 ### `r format(wk1.date, "%m-%d-%Y")`: Welcome!
 

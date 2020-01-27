@@ -40,14 +40,13 @@ https://norcalbiostat.github.io/MATH315/lecture/321_Bridge.html
 
 ## Peer Review (PR)
 
-No matter what you end up doing after graduation, the quality of your ideas and work will be judged, in a large measure, by how well you can communicate in writing to diverse audiences. Participating in peer review can help you learn to shape their written language as a medium of communication with readers. [ref](https://teachingcenter.wustl.edu/resources/writing-assignments-feedback/using-peer-review-to-help-students-improve-their-writing/)
- 
-https://teaching.cornell.edu/teaching-resources/assessment-evaluation/peer-assessment
+No matter what you end up doing after graduation, the quality of your ideas and work will be judged, in a large measure, by how well you can communicate in writing to diverse audiences. Participating in peer review can help you learn to shape their written language as a medium of communication with readers. [[Ref.]](https://teachingcenter.wustl.edu/resources/writing-assignments-feedback/using-peer-review-to-help-students-improve-their-writing/)
 
-You will be providing peer reviews on each other's homework. 
-Homework assignments will have a Draft due date. Then a period of peer review for approx 2 days, where your job is to help your classmate get the best score possible. Then after the peer review window has closed, you have another 1-2 days to make corrections and submit your final version. 
+You will be providing peer reviews on different assignments, including homework and project assignments. 
 
-Peer reviews are done directly in google drive, by commenting on the PDF itself. 
+Most assignments will have a Draft due date. Then a period of peer review for approx 2 days, where your job is to help your classmate get the best score possible. Then after the peer review window has closed, you have another 1-2 days to make corrections and submit your final version. 
+
+Details on requirements, and grading of reviews can be found in this [linked Google Document](https://drive.google.com/open?id=1eAe2joBOQ_RGkYi9k3LPBAiaclhjLoXBJdsOu1f4xrs)
 
 
 
