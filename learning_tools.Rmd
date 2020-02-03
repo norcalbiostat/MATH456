@@ -14,15 +14,18 @@ The backbone of the scientific process is asking and trying to answer questions.
 **General process**: 
 
 1. You will be presented with a Question Focus. 
-2. In a group you will produce questions about the focus topic using some guiding rules (displayed overhead during the activity). 
-3. Work with closed and open ended questions. 
-4. As a group you will prioritize questions. 
-5. Share your top 3 questions in a shared group document. 
-    - with rational why they are your top 3 
+2. In a group you will produce questions about the focus topic using some guiding rules. 
+3. Identify closed and open ended questions, practice converting between the two. 
+4. Prioritize questions (Mark with an "X")
+5. In a shared Google document: 
+    - Share questions converted from open to closed, and closed to open format. 
+    - Your top 3 questions, with rational for their ranking. 
 6. (After class) Reflect on the activity in your Learning Journal. 
     - Review the class-wide responses and comment on similarities and differences between your group and other groups top 3.
+    - Think about the work that you have done, what you have learned and its value. 
     - What did you learn during this exercise? 
-    - How did you learn that? 
+    - What is the value of learning to ask your own questions? 
+    - How can you use what you learned? 
 
 
 ## 3-2-1 Bridge (Bridge)
