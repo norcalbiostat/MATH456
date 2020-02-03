@@ -122,14 +122,16 @@ wk1.date <- as.Date("2020-01-21")
 * We'll talk about 2 cases, binary and count data. Just how to fit and interpret Logistic and Poisson models. 
 * New GLM assignment starting, all reviews for Model building are done by Sunday (tonight) EOD. 
 
-### Week 3 (2/5 - 2/11)
-
-* Recap of the process of building a model
-* Team check in - Tell me where you are at and what you are working on this week. How can the class help you make progress? 
-* Reminders: Regression assignment due Wed, Model building due Friday. 
-
-
 --->
+
+### `r format(wk1.date+2*7, "%m-%d-%Y")`: Variable Selection
+
+* I will be reviewing and commenting on project proposals this week. Approved proposals will have until Saturday to create and post a video "pitch" to recruit other students to join their project. 
+* Due to the lack of proposals submitted so far, I am extending the proposal deadline until Monday EOD. 
+    - Everyone has to work on a project. 
+    - I will have several projects proposals for you to choose from. These won't nearly be as much fun or interesting compared to ones that you would choose. 
+* You should have started HW1 already. In fact, you should be done with a portion of HW 1 already. Quiz 1 is based on the content covered in HW1, will open Saturday, and close on Sunday EOD. 
+
 
 ### `r format(wk1.date+1*7, "%m-%d-%Y")`: Refresher on Linear regression modeling.
 
