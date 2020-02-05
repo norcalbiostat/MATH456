@@ -19,6 +19,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
@@ -234,6 +237,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -241,6 +307,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -385,6 +461,8 @@ $(document).ready(function () {
 </div>
 
 
+<div id="overview" class="section level2">
+<h2>Overview</h2>
 <p>Projects this semester will be user generated. They must entail a sufficient amount of data exploration and modeling, and require some sort of modeling technique that we cover in this class (missing data, survival data, clustered or correlated data, classification/prediction, multivariate analysis.)</p>
 <ul>
 <li>Graduate research?</li>
@@ -393,77 +471,98 @@ $(document).ready(function () {
 <li>Just want to poke around with some data and see what you can find out?</li>
 <li>The subject field is up to you!</li>
 </ul>
-<div id="team-recruitment" class="section level1">
-<h1>Team Recruitment</h1>
-<p>Proposers must create a 2-3 minute “elevator pitch” video about their data and project. Post this video on youtube and put the link in the <code>#projects</code> Slack channel by the due date.</p>
-<ul>
-<li>Then everyone else reviews the proposals and submit their desired project rankings/preferences that they would like to work on.</li>
-<li>I will post at least one external collaborator proposal to ensure that there are enough projects to go around. These may be slightly more “work intensive” given that you won’t have a subject matter expert as a team lead, but you will benefit from engaging in a much more realistic consulting experience. This is what you will often experience in the workforce as an analyst.</li>
-</ul>
-<p>Small teams (2-3) will be formed to work on these projects throughout the semester.</p>
-<ul>
-<li>I will try my absolute best to assign people to the project they are most interested in.</li>
-<li>You will have your own private Slack channel for you to collaborate in.<br />
-</li>
-<li>The project lead (the person with the data) is responsible for keeping the analysis moving forward, educating their teammates on the scientific context of the research, responsible for the majority of the contextual writing.</li>
-<li>Project members are responsible for asking questions to understand the scientific context, providing assistance with programming and analysis, writing the data analysis and results sections of the report</li>
-<li>If you are working with an external collaborator there is a slightly reduced expectation for a clear explanation as to the implications of your research (and other domain specific information). You will need to arrange regular meeting times with them. I will facilitate the initial meeting to make some ground rules clear that protect both them, and your, expectations and workload.</li>
-</ul>
-<p>You will mostly work independently on your projects throughout the semester, but I will try to set aside some class sessions that are set aside as open work time.</p>
 </div>
-<div id="deliverables" class="section level1">
-<h1>Deliverables</h1>
-<p>Summary</p>
+<div id="deliverables" class="section level2">
+<h2>Deliverables</h2>
+<p>This is a birds eye check list. Details for each stage are below.</p>
 <ul>
-<li>Project proposal to Dr. D.</li>
-<li>Team recruitment video</li>
-<li>Students select projects</li>
-<li>Groups write up team agreements, task distributions, and a project timeline.</li>
+<li>Week 2: ✔️ Project proposal to Dr. D.</li>
+<li>Week 3: Team recruitment video</li>
+<li>Week 4: Project selection</li>
+<li>Week 5: Team formation. Groups write up team agreements, task distributions, and a project timeline.</li>
 <li>Week 8: Project update (1 pg summary + 5 min presentation by project lead)</li>
 <li>Week 12: Draft report</li>
 <li>Week 15: Project presentations, Final report</li>
 </ul>
-<div id="written-proposal-due-to-dr.-d-for-approval" class="section level2">
-<h2>Written proposal due to Dr. D for approval</h2>
-<p>Short summary of your research topic that includes:</p>
+</div>
+<div id="learning-objectives" class="section level2">
+<h2>Learning objectives</h2>
+<p>Participating in this project will provide practical experiences in</p>
+<ul>
+<li>Practice team collaboration skills.</li>
+<li>Writing project proposals, explaining your ideas to others</li>
+<li>Convincing others your idea is worth their time.</li>
+<li>Data wrangling</li>
+<li>Advanced statistical analysis topics</li>
+<li>Presentation (oral and written)</li>
+<li>Creating a project timeline/deadlines. Meeting deliverable deadlines</li>
+</ul>
+<hr />
+</div>
+<div id="written-proposal" class="section level1">
+<h1>Written Proposal</h1>
+<p>A 1 page written summary of your research topic due to Dr. D for approval that includes the following information.</p>
 <ul>
 <li>Purpose: Senior project, graduate thesis, independent research, just for fun</li>
 <li>How much work you have done already on this analysis.</li>
 <li>Data source: If the internet, you must provide a link, a codebook and/or a sample of the data.</li>
+<li>Data sample: I want to <em>see</em> the raw data you intend to analyze.</li>
 <li>The research question(s) at hand</li>
 <li>What statistical analyses topic that we cover this semester is this aligned with?</li>
 <li>What you hope to accomplish, i.e. how will you use your team time?</li>
 </ul>
 </div>
-<div id="team-recruitment-video" class="section level2">
-<h2>Team Recruitment Video</h2>
+<div id="team-recruitment" class="section level1">
+<h1>Team Recruitment</h1>
+<div id="recruitment-pitch-video" class="section level2">
+<h2>Recruitment pitch video</h2>
 <ul>
-<li>Create a &lt;5 minute video and post on YouTube. Link this in the #projects slack channel.
+<li>Put any supplemental materials (such as your edited/revised project proposal and any sample data) in an appropriately named folder in our shared Google Drive (under <code>projects</code>)</li>
+<li>Create a ~5 minute “elevator pitch” video about your data and project. Be very clear what your goals are.</li>
+<li>Upload this video to either A) our google drive or B) YouTube
 <ul>
-<li>Need help finding video equipment? Ask in the #projects channel.</li>
+<li>Send the link in the <code>#projects</code> Slack channel by the due date.</li>
 </ul></li>
 </ul>
+<p>I will post at least one external collaborator proposal to ensure that there are enough projects to go around. These may be slightly more “work intensive” given that you won’t have a subject matter expert as a team lead, but you will benefit from engaging in a much more realistic consulting experience. This is what you will often experience in the workforce as an analyst.</p>
 </div>
 <div id="project-selection" class="section level2">
 <h2>Project Selection</h2>
 <ul>
 <li>Use this link <a href="">(TBD)</a> to choose your top three projects.
 <ul>
-<li>Everyone (proposers and non-proposers) must make this selection.</li>
+<li><strong>All students</strong> must select three projects to work on.</li>
 </ul></li>
 <li>Not all projects will be “funded”
 <ul>
 <li>not all projects will have enough interest from other students to warrant a team</li>
 </ul></li>
 </ul>
+</div>
+<div id="team-assignment" class="section level2">
+<h2>Team assignment</h2>
+<p>Small teams (2-3) will be formed to work on these projects throughout the semester.</p>
+<ul>
+<li>I will try my absolute best to assign people to the project they are most interested in.</li>
+<li>You will have your own private Slack channel, and a Google Drive folder for you to collaborate in.</li>
+<li>The project lead (the person with the data) is responsible for keeping the analysis moving forward, educating their teammates on the scientific context of the research, responsible for the majority of the contextual writing.</li>
+<li>Project members are responsible for asking questions to understand the scientific context, providing assistance with programming and analysis, writing the data analysis and results sections of the report</li>
+<li>If you are working with an external collaborator there is a slightly reduced expectation for a clear explanation as to the implications of your research (and other domain specific information). You will need to arrange regular meeting times with them. I will facilitate the initial meeting to make some ground rules clear that protect both them, and your, expectations and workload.</li>
+</ul>
+<p>You will mostly work independently on your projects throughout the semester, but I will try to set aside some class sessions that are set aside as open work time.</p>
+</div>
+</div>
+<div id="team-agreements" class="section level1">
+<h1>Team Agreements</h1>
 <p><em>Detailed instructions in progress</em></p>
 <hr />
-<p><em>Last Updated: Fri Jan 24 9:43:04 PM</em></p>
+<p><em>Last Updated: Tue Feb 04 9:19:48 PM</em></p>
+</div>
+
+
+
 </div>
 </div>
-
-
-
 
 </div>
 
@@ -496,6 +595,32 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
