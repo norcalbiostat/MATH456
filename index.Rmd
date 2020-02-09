@@ -114,15 +114,19 @@ wk1.date <- as.Date("2020-01-21")
 * Wednesday worksheet: [Classifying Glass](notes/classifying glass.Rmd)
 * Friday will be an open project work day. 
 
-
-### Week 4 (2/12 - 2/18)
-
-* Solutions to MLR assignment uploaded to Google Drive. I'll be working my way through the grading this week. 
-* This week -- Generalized Linear Models. What to do when your outcome isn't continuous. 
-* We'll talk about 2 cases, binary and count data. Just how to fit and interpret Logistic and Poisson models. 
-* New GLM assignment starting, all reviews for Model building are done by Sunday (tonight) EOD. 
-
 --->
+
+### `r format(wk1.date+3*7, "%m-%d-%Y")`: Modeling Binary Outcomes
+
+* Little bit of recap on regression modeling for a continuous outcome, before we get into what to do when your outcome isn't continuous. 
+* We are going to only discuss the case when your outcome is binary, by fitting a Logistic regression model.
+
+
+* Quiz 1 is due by Monday 1pm
+* Draft of HW1 is due by Sunday EOD
+* Peer review opens Monday morning, due Wednesday
+    - You have 2 assignments to peer review. The rotation sheet has been updated. 
+
 
 ### `r format(wk1.date+2*7, "%m-%d-%Y")`: Variable Selection
 
