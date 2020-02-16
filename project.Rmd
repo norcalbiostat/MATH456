@@ -22,12 +22,12 @@ Projects this semester will be user generated. They must entail a sufficient amo
 This is a birds eye check list. Details for each stage are below. 
 
 * Week 2: `r emo::ji("heavy_check_mark")` Project proposal to Dr. D.
-* Week 3: Team recruitment video
-* Week 4: Project selection
+* Week 3: `r emo::ji("heavy_check_mark")` Team recruitment video
+* Week 4: `r emo::ji("heavy_check_mark")` [Project selection](https://forms.gle/27dgotMRy61DSgtr6).
 * Week 5: Team formation. Groups write up team agreements, task distributions, and a project timeline. 
-* Week 8: Project update (1 pg summary + 5 min presentation by project lead)
-* Week 12: Draft report
-* Week 15: Project presentations, Final report
+* Week 8: Project update (1 pg summary + 5 min presentation by project lead), Evaluation of progress towards effective team functioning
+* Week 12: Draft report, Evaluation of progress towards effective team functioning, Team member evaluation
+* Week 15: Project presentations, Final report, Peer rating of team members
 
 ## Learning objectives
 
@@ -40,6 +40,14 @@ Participating in this project will provide practical experiences in
 * Advanced statistical analysis topics
 * Presentation (oral and written)
 * Creating a project timeline/deadlines. Meeting deliverable deadlines
+
+## Reading
+
+* [Being an effective group member](notes/Being-an-Effective-Group-Member.pdf)
+* [Turning Student Groups into Effective Teams](notes/Effective-Teams.pdf)
+* [Giving constructive feedback](notes/giving-feedback/pdf)
+* [The psychology of Criticism](notes/psychology-of-criticism.pdf)
+* [Effective phrase templates to give criticism](notes/eff-phrase-template-criticism.pdf)
 
 ----
 
@@ -62,14 +70,14 @@ A 1 page written summary of your research topic due to Dr. D for approval that i
 
 * Put any supplemental materials (such as your edited/revised project proposal and any sample data) in an appropriately named folder in our shared Google Drive (under `projects`)
 * Create a ~5 minute "elevator pitch" video about your data and project. Be very clear what your goals are. 
-* Upload this video to either A) our google drive or B) YouTube
+* Upload this video to either A) our Google drive or B) YouTube
     - Send the link in the `#projects` Slack channel by the due date. 
   
 I will post at least one external collaborator proposal to ensure that there are enough projects to go around. These may be slightly more "work intensive" given that you won't have a subject matter expert as a team lead, but you will benefit from engaging in a much more realistic consulting experience. This is what you will often experience in the workforce as an analyst.
 
 ## Project Selection
 
-* Use this link [(TBD)]() to choose your top three projects. 
+* Use this link [this](https://forms.gle/27dgotMRy61DSgtr6) to choose your top six projects. 
     - **All students** must select three projects to work on. 
 * Not all projects will be "funded" 
     - not all projects will have enough interest from other students to warrant a team
@@ -80,17 +88,59 @@ I will post at least one external collaborator proposal to ensure that there are
 Small teams (2-3) will be formed to work on these projects throughout the semester. 
 
 * I will try my absolute best to assign people to the project they are most interested in. 
-* You will have your own private Slack channel, and a Google Drive folder for you to collaborate in. 
+* **Create your own private Slack channel, and a Google Drive folder for you to collaborate in.**
 * The project lead (the person with the data) is responsible for keeping the analysis moving forward, educating their teammates on the scientific context of the research, responsible for the majority of the contextual writing. 
 * Project members are responsible for asking questions to understand the scientific context, providing assistance with programming and analysis, writing the data analysis and results sections of the report 
 * If you are working with an external collaborator there is a slightly reduced expectation for a clear explanation as to the implications of your research (and other domain specific information). You will need to arrange regular meeting times with them. I will facilitate the initial meeting to make some ground rules clear that protect both them, and your, expectations and workload. 
 
-You will mostly work independently on your projects throughout the semester, but I will try to set aside some class sessions that are set aside as open work time.  
+You will mostly work outside of class on your projects throughout the semester, but I will try to schedule some collaboration time in class. 
 
 
-# Team Agreements
+# Team Agreements (Wk 5)
 
-_Detailed instructions in progress_
+First read the teamwork papers linked at the top of this page. Then complete the following: 
+
+1. Create a folder in Google Drive under Projects, for your project. 
+2. Create a Slack channel for your team to collaborate asynchronously. 
+3. Using the template form in the back of the Effective Team paper, submit a _Team expectations agreement_ to your project folder in Google Drive. 
+4. Write a detailed project timeline using the Gantt chart template provided. 
+  - Copy this template into your project folder. 
+  - Include all major tasks (minor tasks and/or adjustments can be modified later) and deadlines. 
+
+
+A Gantt chart's visual timeline allows you to see details about each task as well as project dependencies.
+
+The team as a whole is responsible for: 
+
+* Identifying tasks, setting dates and assigning members. 
+* Balancing workload among team members.
+
+Individuals are responsible for: 
+
+* Updating the chart with task completion status (%) every few days
+* Adding colored boxes for their assigned tasks
+* Ensuring their time on tasks are accurately reflected. 
+* Talking with the group if behind on task.
+
+
+
+# Project Update (Wk 8)
+
+This week you will  
+
+1) Submit a 1 page project update summary to your project folder in Google Drive
+2) Submit an evaluation of progress towards effective team functioning to your project folder in Google Drive
+3) Present a 5 minute project presentation (by the project lead) to your classmates. 
+
+
+# Report Draft (Wk 12)
+
+Submit an evaluation of progress towards effective team functioning to your project folder in Google Drive
+
+# Final Report (Wk 15)
+
+* Peer rating of team member
+
 
 
 ----
