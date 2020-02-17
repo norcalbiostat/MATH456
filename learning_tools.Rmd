@@ -4,9 +4,17 @@ output: html_document
 ---
 
 ## Learning Journals (LJ)
-An electronic document where you will be writing responses and reflections to certain in-class activities. This will be checked off periodically for quality and completeness. 
+An electronic document where you will be writing responses and reflections to certain in-class activities. This will be checked off quarterly for quality and completeness. 
 
 https://www.teachthought.com/literacy/20-types-of-learning-journals-that-help-students-think/
+
+* Date each entry. Write entries in chronoligcal order, from oldest at the top to newest at the bottom. 
+* If you find it getting lengthy, you can use first or second level headers to create a navigation bar/outline view to the left side to help find specific entries. 
+
+
+[[Here is the list]](../hw/lj-entries.html) of LJ entries to date. 
+
+
 
 ## Question Formulation Technique (QFT)
 The backbone of the scientific process is asking and trying to answer questions. This activity will help students learn how to brainstorm and ask questions freely, how to work with open and close ended questions, and what they can learn from asking questions. 

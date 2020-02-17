@@ -1,0 +1,47 @@
+---
+title: "HW02 - Logistic Regression & Classification"
+author: "MATH 456 - Spring 2020"
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+---
+
+# Submission Instructions. 
+
+* I am no longer providing homework templates. 
+* Submit your draft PDF to the Google Drive: `HW02: Logistic regression and classification/Draft` folder by the due date. 
+* This is a peer reviewed assignment. After the PR period, you should update your assignment with corrections by your peers, and submit a final version into the `HW02: Logistic regression and classification/Final` Google folder. 
+
+
+# Part I: Logistic Regression
+
+1. Playing with odds: PMA6 12.1
+2. Logistic Regression modeling: PMA6 12.7, 12.8
+    - Compare the model for acute vs chronic illness. Are the measures that are important in explaining the outcome similar? 
+    - For covariates that are the same, compare the effect of that covariate on each of the outcomes. 
+3. Northridge Earthquake: (PMA6 12.22-12.29 modified). This problem use the Northridge earthquake data set. [[See here for more info about this event.]](https://www.google.com/search?client=firefox-b-1-d&q=northridge+earthquake+1994) We are interested in knowing if homeowners (`V449`) were more likely than renters to report emotional injuries (`W238`) as a result of the Northridge earthquake, controlling for age (`RAGE`), gender (`RSEX`), and ethnicity (`NEWETHN`). 
+    a. Explore all measures in question using summary tables. Comment on any unusual values. 
+    b. Fit a logistic regression model on emotional injury as the outcome using the variables listed above as predictors. 
+    Create a table of odds ratios with 95% confidence intervals for each predictor. Interpret each (except the intercept).
+    c. Is there an interaction effect between gender and home ownership? That is, are the estimated effects of home ownership upon rpeortin emotional injuries different for men and women, controlling for age and ethnicity? 
+    d. Build a model to predict whether or not the home was evacuated (`V173`). Choose from the following predictor variables:
+    `MMI` (localized measure of earthquake strength), home damage (`V127`), physical injuries (`W220`), emotional injuries
+    (`W238`), age (`RAGE`), sex (`RSEX`), education (`V461`), etnicity (`NEWETHN`), marital status (`V455`), home owner status
+    (`V449`). You may or may not want to categorize some of the continuous measurements. Where appropriate, 
+    consider interaction terms as well. Feel free to look at additional predictors. 
+    
+
+# Part II: Binary Classification
+Playing Hookey (PMA6 12.18-12.19 modified)
+
+1. Perform a binary logistic regression analysis using the Parental HIV data to model the probability of having been absent from school without a reason (variable `HOOKEY`). Find the variables that best predict whether an adolescent had been absent without a reason or not. Use a hefty dose of common sense here, not all variables are reasonable to use (e.g. using the # of times a student skips school to predict whether or not they will predict school)
+2. Use the default value for the `predict()` function to create a vector of predictions for each student. 
+3. Create a confusion matrix for these predictions and interpret: accuracy, balanced accuracy, sensitivity, specificity, PPV, NPV.
+4. Describe the distribution of predicted probabilities by true group membership. Use a violin + jitter plot as shown in the notes. What do you notice? 
+5. Find the best cutoff point to discriminate between adolescents who were absent without a reason and those who were not by using an ROC curve and maximizing accuracy. 
+6. Create a confusion matrix for these predictions and interpret: accuracy, balanced accuracy, sensitivity, specificity, PPV, NPV.
+
+
+
+   

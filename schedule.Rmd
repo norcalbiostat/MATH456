@@ -27,14 +27,14 @@ rawdat <- read_xlsx("schedule_456.xlsx", sheet='weekly_schedule')
 start.date <- as.Date("2020-01-21")
 
 # which rows have week numbers (manually add line number for break week and finals)
-wn <- c(which(!is.na(rawdat$wknum)),8, 17) %>% sort() 
+wn <- c(which(!is.na(rawdat$wknum)),9) %>% sort() 
 
 # generate list of weekdates
 wkdt <- seq.Date(start.date, start.date+7*16, by='week')
 
 # format for display
 weekdates <- paste0("Week ", rawdat$wknum[wn], " (", format(wkdt, "%m/%d") , ")") 
-weekdates[8] <- "Spring Break (03/16)"
+weekdates[9] <- "Spring Break (03/16)"
 weekdates[17] <- "Finals Week (05/12)"
 
 # Filter columns to display on schedule
@@ -61,8 +61,8 @@ out %>%
   pack_rows(weekdates[5], wn[5],  wn[6]-1, label_row_css =wk.labs) %>%
   pack_rows(weekdates[6], wn[6],  wn[7]-1, label_row_css =wk.labs) %>%
   pack_rows(weekdates[7], wn[7],  wn[8]-1, label_row_css =wk.labs) %>%
-  pack_rows(weekdates[8], wn[8],  wn[9]-1, label_row_css =hlt.wks) %>%
-  pack_rows(weekdates[9], wn[9],  wn[10]-1, label_row_css =wk.labs) %>%
+  pack_rows(weekdates[8], wn[8],  wn[9]-1, label_row_css =wk.labs) %>%
+  pack_rows(weekdates[9], wn[9],  wn[10]-1, label_row_css =hlt.wks) %>%
   pack_rows(weekdates[10], wn[10],  wn[11]-1, label_row_css =wk.labs) %>%
   pack_rows(weekdates[11], wn[11],  wn[12]-1, label_row_css =wk.labs) %>%
   pack_rows(weekdates[12], wn[12],  wn[13]-1, label_row_css =wk.labs) %>%
