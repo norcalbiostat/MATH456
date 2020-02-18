@@ -12,7 +12,7 @@ https://www.teachthought.com/literacy/20-types-of-learning-journals-that-help-st
 * If you find it getting lengthy, you can use first or second level headers to create a navigation bar/outline view to the left side to help find specific entries. 
 
 
-[[Here is the list]](../hw/lj-entries.html) of LJ entries to date. 
+[[Here is the list]](hw/lj-entries.html) of LJ entries to date. 
 
 
 
