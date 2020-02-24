@@ -26,8 +26,8 @@ rawdat <- read_xlsx("schedule_456.xlsx", sheet='weekly_schedule')
 # Set semester start date and format weeks nicely
 start.date <- as.Date("2020-01-21")
 
-# which rows have week numbers (manually add line number for break week and finals)
-wn <- c(which(!is.na(rawdat$wknum)),9) %>% sort() 
+# which rows have week numbers 
+wn <- c(which(!is.na(rawdat$wknum))) %>% sort() 
 
 # generate list of weekdates
 wkdt <- seq.Date(start.date, start.date+7*16, by='week')
@@ -72,10 +72,10 @@ out %>%
   pack_rows(weekdates[16], wn[16],  wn[17]-1, label_row_css =wk.labs) %>%
   pack_rows(weekdates[17], wn[17],  wn[17], label_row_css =hlt.wks) %>%
   column_spec(1, width = "25%") %>% 
-  column_spec(2, width = "20%") %>%
+  column_spec(2, width = "15%") %>%
   column_spec(3, width = "10%") %>%
   column_spec(4, width = "25%") %>% 
-  column_spec(5, width = "20%")
+  column_spec(5, width = "25%")
 ```
 
 ## Details
