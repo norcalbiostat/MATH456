@@ -107,7 +107,19 @@ wk1.date <- as.Date("2020-01-20")
     - you have a clear idea of what model you are working towards
     - and that EVERYONE is contributing. Everyone must share in the presentation
   
+  
+  
+  
 --->
+
+
+### `r format(wk1.date+6*7, "%m-%d-%Y")`: Missing Data: Multiple Imputation with Chained Equations
+
+* Video on Multiple Imputation in Physics Education Research https://media.csuchico.edu/media/0_tgnydpgf
+* There is so much to cover regarding how to treat missing data, we could have an entire class on it. For more details please refer to the textbook by a current leading researcher in this area and the creator of `mice`: Flexible Imputation of Missing Data, 2nd Ed, by Stef van Buuren: https://stefvanbuuren.name/fimd/
+* Quiz 3 has been posted. Due Thursday, group quiz on Friday. 
+* Short turn around time for HW3. Solutions will be posted on Monday, no late assignments will be collected. 
+* We have some open work days built into the schedule this week. That does not imply that you can skip class time. 
 
 ### `r format(wk1.date+5*7, "%m-%d-%Y")`: Missing Data: Identification and Imputation
 
