@@ -103,7 +103,12 @@ wk1.date <- as.Date("2020-01-20")
 * We have some open work days built into the schedule this week. That does not imply that you can skip class time. 
 
 
-> HW 1 notes: Please read these. They contain response to common problems throughout the homework. 
+#### HW 1 grading done. 
+
+* Please read the HW 1 feedback in Google Drive. It contains response to common problems throughout the homework. 
+* If you got a 0, but submitted something, my guess is that you didn't put the file into the `final` folder.
+    - If this is the case, go ahead and resubmit and i'll work on grading it when i have time, but it will be considered late. 
+* HW 2 solutions will be posted shortly. 
 
 #### Status of analysis data sets
 By now you should have: 
@@ -111,6 +116,8 @@ By now you should have:
 1. a `data` folder in your `math456` folder containing all the data sets we work on in class and for homework.
 2. a data management (`dm`) file that reads in these data sets, performs some cleaning actions on it (e.g. converting to factors, collapsing levels). [See examples here](https://norcalbiostat.netlify.com/data/raw_data/). 
 3. a `clean` data set, dated with the date that you last peformed cleaning on (i.e. `lung_03012020.csv`). This is the one you use in analysis. 
+
+For the full experience that is more similar to what you're doing on your project, and what you will encounter in real world analysis, you should download the raw data files from the link above and make your own DM file. You can use the ones I have linked as starter code. 
 
 
 
