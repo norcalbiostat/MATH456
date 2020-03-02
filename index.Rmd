@@ -57,25 +57,6 @@ wk1.date <- as.Date("2020-01-20")
      
 
 
-
-
-
-### Week 12 (4/16 - 4/22)
-* Spatial data analysis!
-* Making maps is probably the most fun part.
-    - Of course there is a bazillion ways & packages to accomplish this task. 
-* Want more? Check out courses in our Geography department. 
-
-
-### Week 11 (4/9 - 4/15)
-* We're going through a superficial treatment of longitudinal data.
-* This topic is worthy of it's own 10 week course and the topic of NUMEROUS texts. 
-* This is also SET week - we will be doing ours in person on Friday. 
-    - Attendance is mandatory and will count towards your grade. 
-* Next week is Spatial modeling - so my advice is to get started on the assignment ASAP. 
-    - I will try to leave time during class for open work this week but cannot guarantee it. I don't want to rush through the material. 
-    
-
 ### Week 10 (4/2 - 4/8)
 * Abstract submissions for the [[College of Natural Science Poster Session]](https://www.csuchico.edu/nsci/event/poster.shtml) are open until April 16th 
     - Submission is a mandatory assignment for this class
@@ -120,6 +101,18 @@ wk1.date <- as.Date("2020-01-20")
 * Quiz 3 has been posted. Due Thursday, group quiz on Friday. 
 * Short turn around time for HW3. Solutions will be posted on Monday, no late assignments will be collected. 
 * We have some open work days built into the schedule this week. That does not imply that you can skip class time. 
+
+
+> HW 1 notes: Please read these. They contain response to common problems throughout the homework. 
+
+#### Status of analysis data sets
+By now you should have: 
+
+1. a `data` folder in your `math456` folder containing all the data sets we work on in class and for homework.
+2. a data management (`dm`) file that reads in these data sets, performs some cleaning actions on it (e.g. converting to factors, collapsing levels). [See examples here](https://norcalbiostat.netlify.com/data/raw_data/). 
+3. a `clean` data set, dated with the date that you last peformed cleaning on (i.e. `lung_03012020.csv`). This is the one you use in analysis. 
+
+
 
 ### `r format(wk1.date+5*7, "%m-%d-%Y")`: Missing Data: Identification and Imputation
 
