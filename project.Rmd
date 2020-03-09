@@ -24,8 +24,8 @@ This is a birds eye check list. Details for each stage are below.
 * Week 2: `r emo::ji("heavy_check_mark")` Project proposal to Dr. D.
 * Week 3: `r emo::ji("heavy_check_mark")` Team recruitment video
 * Week 4: `r emo::ji("heavy_check_mark")` [Project selection](https://forms.gle/27dgotMRy61DSgtr6).
-* Week 5: Team formation. Groups write up team agreements, task distributions, and a project timeline. 
-* Week 8: Project update (1 pg summary + 5 min presentation by project lead), Evaluation of progress towards effective team functioning
+* Week 5: `r emo::ji("heavy_check_mark")` Team formation. Groups write up team agreements, task distributions, and a project timeline. 
+* Week 8: Project update (1 pg summary + 5 min presentation by project lead), [Evaluation of progress towards effective team functioning](https://norcalbiostat.github.io/MATH456/notes/Effective-Teams.pdf)
 * Week 12: Draft report, Evaluation of progress towards effective team functioning, Team member evaluation
 * Week 15: Project presentations, Final report, Peer rating of team members
 
@@ -129,7 +129,8 @@ Individuals are responsible for:
 This week you will  
 
 1) Submit a 1 page project update summary to your project folder in Google Drive
-2) Submit an evaluation of progress towards effective team functioning to your project folder in Google Drive
+2) Submit an evaluation of progress towards effective team functioning. 
+    - Hard copy handed in to Dr. D.
 3) Present a 5 minute project presentation (by the project lead) to your classmates. 
 
 

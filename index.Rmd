@@ -92,6 +92,14 @@ wk1.date <- as.Date("2020-01-20")
   
   
 --->
+### `r format(wk1.date+6*8, "%m-%d-%Y")`: Midterm, Project updates. 
+
+* Monday review for midterm. 
+* HW02 PR will be regraded (later)
+* HW03 Solutions will be posted Monday evening
+* Friday
+    - LJ check in
+    - Project check in. See deliverable page. 
 
 
 ### `r format(wk1.date+6*7, "%m-%d-%Y")`: Missing Data: Multiple Imputation with Chained Equations

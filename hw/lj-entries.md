@@ -12,3 +12,9 @@ If you did not attend class that day, just say so. Don't try to make up an entry
 
 -- Check in 1 --
 
+
+* QFT 02/25 - Missing Data
+* 3/9 0 Midterm preparation
+
+
+-- Check in 2 (Fri 2/13) --
