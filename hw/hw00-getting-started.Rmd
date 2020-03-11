@@ -1,14 +1,21 @@
 ---
 title: 'HW 00: Getting Started'
 output:
-  pdf_document:
-    toc: no
   html_document:
     toc: yes
     toc_float: yes
+  pdf_document:
+    toc: no
 ---
 
 [[Download this file as PDF]](hw00-getting-started.pdf)
+
+# Submission Instructions
+ 
+* Upload your flowchart as a PDF to our shared Google Drive folder `HW00: Data Prep flowchart`. 
+* This file must be named "hw00_dataprep_userid" where `userid` is your chico state user id, (i.e. the first part of your email.)
+
+---
 
 # Preparing class materials
 
@@ -26,20 +33,28 @@ output:
 
 5. Project Overview: If you have your own data or topic that you would like to research this semester, you will have this chance. Review the Projects page on the class website to see what is expected. 
 
-6. Fill ou this form to help me figure out when to hold Office Hours. 
+6. Fill out this form to help me figure out when to hold Office Hours. 
 https://forms.gle/pXvCs3D1SjQoJRgt9
 
     
-# Preparing yourself to Learn
-
-1. Write your first LJ Entry: What is self-regulated learning? What is the benefit to you? Find a good diagram that you think captures this idea and draw it in your LJ. 
-
-
 # Preparing Data for Analysis
 
-1. Read PMA6 Chapter 3 before Friday. 
+Read PMA6 Chapter 3 before Friday. 
 
+# Preparing yourself to Learn
 
+Write your first LJ Entry: What is self-regulated learning? What is the benefit to you? Find a good diagram that you think captures this idea and draw it in your LJ. 
 
+# Data Preparation Flowchart
+
+In class you will work with a partner to create a flowchart / reference sheet for the process of preparing data for analysis. E.g.: If you were handed a data set, what are the first things you need to do? 
+
+Work up a draft with your partner, then snap a picture. 
+
+Later, outside of class, transfer your diagram into an electronic program. There are many different mind mapping / flowchart software programs out there, e.g. Lucid chart is available in Google Drive, but you can also insert images into a normal word document. 
+
+This assignment will be subject to Peer Review, but no draft/revision cycle.
+
+You are welcome (encouraged) to work on this flowchart after the official due date. Especially after you view other's submissions. Very likely they included something that you didn't think of! The intent is to create something useful for yourself. 
 
 
