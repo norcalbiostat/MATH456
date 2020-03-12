@@ -4,6 +4,13 @@ title: "Math 456 homepage"
 
 This is the landing page for <span style="color:blue">**Applied Statistics II**</span> course taught by [Dr. Robin Donatello](http://www.norcalbiostat.com) for <span style="color:blue">**Spring 2020**</span>.  This page is used for posting of regular announcements and information for students of the class. 
 
+
+<center><span style="color:#cc3300;font-size:24pt;text-align:center">In person classes are cancelled March 13-24.</span></center>
+<center><span style="color:#cc3300;font-size:24pt;text-align:center">Online classes are not affected.</span></center>
+
+Chico State COVID-19 News & Information page: https://www.csuchico.edu/coronavirus/index.shtml
+
+
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 wk1.date <- as.Date("2020-01-20")
 ```
@@ -97,9 +104,30 @@ wk1.date <- as.Date("2020-01-20")
 * Monday review for midterm. 
 * HW02 PR will be regraded (later)
 * HW03 Solutions will be posted Monday evening
-* Friday
-    - LJ check in
-    - Project check in. See deliverable page. 
+
+## `r emo::ji("warning")` <span style="color:red">UPDATE</span>
+
+* We will be transitioning to holding classes online until further notice. 
+    - I am aware that Chico State is not officially mandating that classes be held online. It is still up to the instructor.
+* This page will become more important as a central point of information. 
+    - Some info will still be reposted in Slack. Check in here daily.
+    - The link in the top right has been updated to contact me via zoom easier. 
+* Class is still held at the same time: 2-3pm MWF. 
+    - We will meet via Zoom. 
+    - Treat this time as if you were coming to an in person clas. See the [[Online Classroom Expecations]](http://sites.ischool.berkeley.edu/remote-teaching/2020/03/09/for-students-online-classroom-expectations/)
+    - This means expect to take notes as if you were in class. Expect to participate in discussion, verbally, in groups, and through Slack. 
+
+#### Thursday
+* I still have OH at 1-2pm on Thursday. 
+* This is a good time to test out making sure you know how to work Zoom. 
+
+#### Friday
+- We will continue with the plan to present the week 8 update. 
+- See the [[project]](project.html) page for specifics and logistical updates. 
+
+
+Have a GOOD break! Use lots of `r emo::ji("soap")` and stay away from `r emo::ji("mask")`. I hope to see you all again in person real soon. 
+
 
 
 ### `r format(wk1.date+6*7, "%m-%d-%Y")`: Missing Data: Multiple Imputation with Chained Equations

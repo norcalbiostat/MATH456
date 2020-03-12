@@ -46,9 +46,14 @@ navbar:
     - text: R Cookbook
       icon: fa-area-chart
       href: http://www.cookbook-r.com/
-  - text: Dr. D's Website
-    icon: fa-paw
-    href: http://www.norcalbiostat.com/
+  - text: Contact Dr. D
+    menu:
+    - text: Website
+      icon: fa-paw
+      href: http://www.norcalbiostat.com/
+    - text: Zoom Me!
+      icon: fa-video-camera
+      href: https://csuchico.zoom.us/my/rdonatello
 output:
   html_document:
     theme: journal
