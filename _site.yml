@@ -54,6 +54,7 @@ navbar:
     - text: Zoom Me!
       icon: fa-video-camera
       href: https://csuchico.zoom.us/my/rdonatello
+      
 output:
   html_document:
     theme: journal
