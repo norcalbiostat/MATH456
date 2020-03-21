@@ -96,9 +96,28 @@ wk1.date <- as.Date("2020-01-20")
     - and that EVERYONE is contributing. Everyone must share in the presentation
   
   
-  
-  
 --->
+
+
+### `r format(wk1.date+6*10, "%m-%d-%Y")`: Getting back to business, Long but important notice about class changes. 
+
+Changes to our class structure and expectations got long, so I moved it to another document. You can read it [here](notes/class_structure_changes.html). 
+
+#### Gradebook
+
+* I switched priorities and will finish the exam before I go back to the homework and peer reviews. 
+* Now that every educational tool is free, I'm testing out Gradescope to grade your exams. 
+* You still have an opportunity to do an [Exam error assessment](learning_tools.html#exam_error_assessment).
+* I have added columns in the Blackboard gradebook to reflect assignments and points available for the rest of the semester. 
+
+    
+#### Project Timeline Updates
+
+* Project presentation that we were going to do the Friday before finals, will now be due this Friday. 
+* See the [project page](project.html#project_update_I) for more details as there has been changes to the delivery requirements. 
+  
+
+
 ### `r format(wk1.date+6*8, "%m-%d-%Y")`: Midterm, Project updates. 
 
 * Monday review for midterm. 
