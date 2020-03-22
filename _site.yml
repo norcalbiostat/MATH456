@@ -9,6 +9,8 @@ navbar:
   - text: Materials
     icon: fa-folder-open
     menu:
+    - text: Updated procedures
+      href: class_structure_changes.html
     - text: Course Notes
       href: https://norcalbiostat.github.io/AppliedStatistics_notes/index.html
     - text: Learning Techniques

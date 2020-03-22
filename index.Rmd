@@ -5,9 +5,6 @@ title: "Math 456 homepage"
 This is the landing page for <span style="color:blue">**Applied Statistics II**</span> course taught by [Dr. Robin Donatello](http://www.norcalbiostat.com) for <span style="color:blue">**Spring 2020**</span>.  This page is used for posting of regular announcements and information for students of the class. 
 
 
-<center><span style="color:#cc3300;font-size:24pt;text-align:center">In person classes are cancelled March 13-24.</span></center>
-<center><span style="color:#cc3300;font-size:24pt;text-align:center">Online classes are not affected.</span></center>
-
 Chico State COVID-19 News & Information page: https://www.csuchico.edu/coronavirus/index.shtml
 
 
@@ -15,106 +12,27 @@ Chico State COVID-19 News & Information page: https://www.csuchico.edu/coronavir
 wk1.date <- as.Date("2020-01-20")
 ```
 
-<!---
-
-### Week 15 (5/7 - 5/11) -- Dead Week
-* No new content!
-* Monday - open work day on presentations
-    - File type doesn't matter: Powerpoint, Rpres, slidly, beamer, Google slides.
-    - Just make sure your graphics render at a decent quality. 
-* Wednesday - all presentations have to be done & turned in. Groups randomly drawn to present Wed/Friday
-    - Upload final version to our Google Drive folder: [Projects/Final Presentations](https://drive.google.com/open?id=10tfxAz6zZMDOlKdcQqxIT0XNPhPp8qow)
-    - Weekly overview has full details of expectations for presentation. 
-* Final review sessions to be done on Mon/Tue of finals week. 
-    - Attending at least one session will earn credit towards your grade. 
-    - Fill out [this survey](https://goo.gl/forms/dXUP2YevwGfbsbVM2) to tell me when you are free. 
-
-
-### Week 14 (4/30 - 5/6)
-* Poster Session on Monday
-* Upload final poster (as printed) to the Projects/CNS Posters FINAL folder in Google Drive
-* Wed/Friday continue with Missing Data lecture
-
-
-
-### Week 13 (4/23 - 4/29)
-* **FINALLY** you get to learn why I harp on you about missing data. 
-* Monday: We'll use the QFT to develop questions about the impacts of missing data, and then talk about how to identify when data are missing. 
-* Wednesday we'll discuss the mechanisms in which data can dissapear, and some common methods to address/eliminate the bias created due to missing data. 
-* Friday is an open work day because I want to see a draft of your posters by Friday EOD. 
-  - Poster Prep Guidance: 
-      - https://www.csuchico.edu/nsci/event/poster.shtml 
-      - https://norcalbiostat.netlify.com/lec/poster_guidelines/
-    
- 
-#### POSTER PRESENTATION HELD ON MONDAY
-* Yes they must be printed. Use a template provided on either of the guideline pages. 
-* Yes this is a serious professional event that can go on your CV. 
-* Yes you must dress professionally.
-* Yes your poster will be judged by peers and professionals alike. 
-* Yes I must see the poster before printing. 
-* Yes at least one person must be at your poster between 12:30 and 2:30 pm. 
-    - Whomever is putting up the poster between 10 and 11 that morning must check in with me and provide me your group's presentation schedule. Each person should plan to stand at their poster for at minimum 30 minutes. 
-    - I **will** check up on you. Unless previously cleared by me, this should not fall to one person. 
-* Upload the PDF or PPT of your poster _as printed_ to the Projects/NSC Posters folder in our Google Drive. 
-
-
-> Blackboard gradebook has been updated to include poster session attendance. 
-> Final grade breakdown is 500 pts, 24% homework, 20% learning (peer review, QFT), 40% exams, 16% project. 
-     
-
-
-### Week 10 (4/2 - 4/8)
-* Abstract submissions for the [[College of Natural Science Poster Session]](https://www.csuchico.edu/nsci/event/poster.shtml) are open until April 16th 
-    - Submission is a mandatory assignment for this class
-* We're going to finish talking about the Random Intercept model this week
-    - the common methods of fitting these models in R
-    - and some common methods of handling covariates in multilevel models. 
-* The schedule has been updated to reflect the "surprise" holiday last Friday, and the change in poster session date. 
-    - The final date has been posted, along with information about the take home portion of the final. 
-    
-
-### Week 9 (3/26 - 4/1)
-* Exam corrections - Must use error assessment document. A copy can be found [[here]](notes/analyzingexamerrors.pdf) and also in the #general channel in Slack. 
-* Starting a section on correlated data. QFT on Monday, lecture wed, open work day Friday. 
-* Grading status: Gradebook will be fully updated by Tuesday. 
-
-
-### Week 8 (3/12 - 3/16)
-* Fast forwarding...
-* **Midterm** this week! 60% in class, 40% take home. 
-    - Midterm review on Monday. 
-    - Class generated using QFT model of question formulation
-    - This is worth participation points, so be there and contribute!
-    - Midterm materials allowed: 2 pages of notes & a calculator. 
-* Take home portion with instructions posted in Slack `#assignments` channel by EOB (end of business).
-* **Project updates** - this is worth 20 pts, so make it good. You have 4-5 minutes and 3-4 slides to show me that
-    - you know what your data consists of
-    - you have gotten it into R and started exploring/visualizing/cleaning
-    - you should be starting to do bivariate comparisons at this point
-    - you have a clear idea of what model you are working towards
-    - and that EVERYONE is contributing. Everyone must share in the presentation
-  
-  
---->
-
-
 ### `r format(wk1.date+6*10, "%m-%d-%Y")`: Getting back to business, Long but important notice about class changes. 
 
-Changes to our class structure and expectations got long, so I moved it to another document. You can read it [here](notes/class_structure_changes.html). 
+#### Changes due to Covid-19
+See [this page](class_structure_changes.html) for comprehensive details on changes to the structure of our class. 
+This is also linked under the 'Materials' tab in the navbar. 
 
-#### Gradebook
+
+#### Gradebook 
 
 * I switched priorities and will finish the exam before I go back to the homework and peer reviews. 
 * Now that every educational tool is free, I'm testing out Gradescope to grade your exams. 
 * You still have an opportunity to do an [Exam error assessment](learning_tools.html#exam_error_assessment).
+    - You have until the end of the semester to get this done with me. 
+    - You can earn up to half the points you missed back. This will be added directly to your midterm grade. 
 * I have added columns in the Blackboard gradebook to reflect assignments and points available for the rest of the semester. 
 
     
 #### Project Timeline Updates
 
-* Project presentation that we were going to do the Friday before finals, will now be due this Friday. 
-* See the [project page](project.html#project_update_I) for more details as there has been changes to the delivery requirements. 
+* Project presentation that we were going to do the Friday before finals, will now be due Friday 3/27. 
+* See the [project page](project.html#project_update) for more details as there has been changes to the delivery requirements. 
   
 
 
