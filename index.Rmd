@@ -14,6 +14,8 @@ wk1.date <- as.Date("2020-01-20")
 
 ### `r format(wk1.date+6*10, "%m-%d-%Y")`: Getting back to business, Long but important notice about class changes. 
 
+_Video version of this announcment available in our google drive ("week 9 announcement")_
+
 #### Changes due to Covid-19
 See [this page](class_structure_changes.html) for comprehensive details on changes to the structure of our class. 
 This is also linked under the 'Materials' tab in the navbar. 

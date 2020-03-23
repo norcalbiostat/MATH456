@@ -6,8 +6,6 @@ output:
     toc_float: yes
 ---
 
-[[Video version of this page]]()
-
 Please let me know if something changes in your schedule that make it difficult for you to attend the synchronous discussion. For example, if you or a family member gets sick.  If you believe that I have missed something important with these modifications please let me know. 
 
 # Policy changes
