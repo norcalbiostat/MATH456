@@ -128,20 +128,25 @@ Individuals are responsible for:
 By the due date, 
 
 1) Submit a 1-2 page project update summary to your project folder in Google Drive. 
+    - Name this file: `Project Update Summary` so we can find it easy. 
+        - If you have a slide presentation, you can name that `Project Update Summary presentation` so that they sort together. 
     - You can use either a Rmd --> PDF file, or a Google Doc. 
     - Briefly remind the reader what your project is about. 
     - Introduce the data, explain what you've done with it so far, and what you plan on doing with it in the next 4 weeks. 
     - Think of this as a script for your presentation. 
     - You can create slides if you think it will help your presentation. 
+    
   
 2) Present a 5-7 minute project presentation to your classmates.
     - You will be placed in 'breakout rooms' with 1-2 other groups. I will help you keep time. 
     - You will have 3 minutes for questions
     
-3) When not presenting, you will be responsible for writing up a brief summary (1 paragraph) of the other groups research. 
-    - Submit your review here: https://forms.gle/PmkDGTuphoSgqnfPA 
-    - Be prepared to ask them at least one question. Write this as a comment on their report/slides in Google Drive. 
+3) When not presenting, you will be responsible for writing up a brief summary (1 paragraph) of the other groups research. E.g. Summarize in your own words what research this team is doing. What are their goals, what is their progress to date, etc. 
+    - Submit your review using [[this form]](https://forms.gle/PmkDGTuphoSgqnfPA)
+    - Be prepared to ask them at least one question. You could write this as a comment on their report or slides in Google Drive. 
       You can also ask them during the presentation as long as you are under the time limit. 
+
+4) Each person individually submits [Evaluation of progress towards effective team functioning](https://norcalbiostat.github.io/MATH456/notes/Effective-Teams.pdf) using [[this form]](https://forms.gle/TjyqkDKbkM92zjDx6).
 
 
 # Report Draft
@@ -149,7 +154,8 @@ By the due date,
 1) Submit a 3-5 page draft report to your project folder in Google Drive. 
     - Incorporate suggestions made from the first round. 
     - This should be a cleaned up RMD --> PDF file, hide code, resize pictures, format tables. 
-2) Submit an evaluation of progress towards effective team functioning. Record responses [[at this link]](https://forms.gle/oigEGx2DhmnLzxd49).
+2) Each person individually submits another team effectiveness evaluation using [[this form]](https://forms.gle/TjyqkDKbkM92zjDx6).
+
 
 
 # Final Report
