@@ -18,3 +18,9 @@ If you did not attend class that day, just say so. Don't try to make up an entry
 
 
 -- Check in 2 (Fri 2/13) --
+
+# Second half of the term: 
+
+* One check in per topic, Modified QFT process. 
+* Generate questions in your learning journal (follow rules). 
+* Will be checked on the first Monday of the start of a topic. 

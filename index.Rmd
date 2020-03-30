@@ -7,12 +7,20 @@ This is the landing page for <span style="color:blue">**Applied Statistics II**<
 
 Chico State COVID-19 News & Information page: https://www.csuchico.edu/coronavirus/index.shtml
 
+----
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 wk1.date <- as.Date("2020-01-20")
 ```
 
-### `r format(wk1.date+6*10, "%m-%d-%Y")`: Getting back to business, Long but important notice about class changes. 
+### `r format(wk1.date+10*7, "%m-%d-%Y")`:
+
+* Dimension reduction via Principal Components and Factor Analysis. 
+* Mind the due dates, the schedule details has some reminders to help you stay on task. 
+* PCA videos are posted. FA videos will be posted before the end of the week. 
+
+
+### `r format(wk1.date+9*7, "%m-%d-%Y")`: Getting back to business, Long but important notice about class changes. 
 
 _Video version of this announcment available in our google drive ("week 9 announcement")_
 
@@ -36,9 +44,9 @@ This is also linked under the 'Materials' tab in the navbar.
 * Project presentation that we were going to do the Friday before finals, will now be due Friday 3/27. 
 * See the [project page](project.html#project_update) for more details as there has been changes to the delivery requirements. 
   
+----
 
-
-### `r format(wk1.date+6*8, "%m-%d-%Y")`: Midterm, Project updates. 
+### `r format(wk1.date+7*7, "%m-%d-%Y")`: Midterm, Project updates. 
 
 * Monday review for midterm. 
 * HW02 PR will be regraded (later)
