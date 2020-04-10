@@ -7,11 +7,29 @@ This is the landing page for <span style="color:blue">**Applied Statistics II**<
 
 Chico State COVID-19 News & Information page: https://www.csuchico.edu/coronavirus/index.shtml
 
-----
-
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 wk1.date <- as.Date("2020-01-20")
 ```
+
+----
+
+### `r format(wk1.date+11*7, "%m-%d-%Y")`:
+
+#### Asynchronous discussions: asking, answering & discussing questions in Slack.
+
+* Still required, but timeline has been removed. Just get your questions & discussion in before the HW is due. 
+* This is essential discussion for your learning. We don't have opportunities to talk to each other in class. 
+* You don't have to have "the" answer to contribute meaningfully & work towards a discussion.
+
+
+#### Office hours requirement
+Come check in with me! Drop into open class time and ask a question. Check in with me to let me know you're on track and making progress. This is not like coming to the principals office - you're not in trouble! I'm not gonna get on your case if you're behind. I want to help and support you, and it's important for me to know how you all are doing. 
+
+
+#### Don't forget about the exam error assessment. 
+
+
+----
 
 ### `r format(wk1.date+10*7, "%m-%d-%Y")`:
 
@@ -19,6 +37,7 @@ wk1.date <- as.Date("2020-01-20")
 * Mind the due dates, the schedule details has some reminders to help you stay on task. 
 * PCA videos are posted. FA videos will be posted before the end of the week. 
 
+----
 
 ### `r format(wk1.date+9*7, "%m-%d-%Y")`: Getting back to business, Long but important notice about class changes. 
 
