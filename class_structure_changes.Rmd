@@ -42,6 +42,16 @@ Please let me know if something changes in your schedule that make it difficult 
 * Topic quizzes point value has been doubled. 
     - I'll need to think on how to accomodate for the earlier policy of dropping the lowest quiz score. It will probably be only out of the first 3, since you had a midterm on that material. 
 
+
+**Updates 04/10/2020**
+
+* Asking, answering & discussing questions in Slack 
+    - Still required, but timeline has been removed. 
+    - This is essential discussion for your learning. We don't have opportunities to talk to each other in class. 
+    - you don't have to have "the" answer to contribute meaningfully & work towards a discussion.
+
+
+
 # Procedural changes
 
 We have 3 more topics left, each is schedule to take 2 weeks. Each topic consists of 5 graded items: A pre-topic QFT, a written assignment, peer review of the written assignment, asynchronous discussion in Slack, and a quiz. 
@@ -66,12 +76,12 @@ These are explained in detail below. Dates are noted as [Day][Week]. So Sun1 is 
     
 * Week 1 Asynchronous work
   - Start the topic homework assignment.
-  - Ask at least one question in the topic channel in Slack (Sat1)
+  - Ask at least one question in the topic channel in Slack
           
 * Week 2 topic "content delivery" via mini lecture videos. 
 
 * Week 2 Asynchronous work          
-  - Answer, or write comments on 2 other questions or posts in Slack (Tue2)
+  - Answer, or write comments on at least one other questions or posts in Slack (Sat2)
   - Homework assignment: draft due (Tue2), Peer review due (Thu2), Final due (Sat2)
   - Individual quiz (Thu 2)
 
