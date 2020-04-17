@@ -13,6 +13,14 @@ wk1.date <- as.Date("2020-01-20")
 
 ----
 
+### `r format(wk1.date+12*7, "%m-%d-%Y")`: Cluster Analysis
+
+* Lighter load week this week. 
+* [HW 05 posted](hw/hw05-cluster.html)
+* Project requirements adjusted. See the [project page](project.html).
+
+----
+
 ### `r format(wk1.date+11*7, "%m-%d-%Y")`:
 
 #### Asynchronous discussions: asking, answering & discussing questions in Slack.

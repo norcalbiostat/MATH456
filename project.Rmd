@@ -25,9 +25,9 @@ This is a birds eye check list. Details for each stage are below.
 * Week 3: `r emo::ji("heavy_check_mark")` Team recruitment video
 * Week 4: `r emo::ji("heavy_check_mark")` [Project selection](https://forms.gle/27dgotMRy61DSgtr6).
 * Week 5: `r emo::ji("heavy_check_mark")` Team formation. Groups write up team agreements, task distributions, and a project timeline. 
-* Week 10: Project update I (Written summary + Presentation), [Evaluation of progress towards effective team functioning](https://norcalbiostat.github.io/MATH456/notes/Effective-Teams.pdf)
-* Week 14: Draft report, Evaluation of progress towards effective team functioning, Team member evaluation
-* Week 16: Project presentations, Final report, Peer rating of team members
+* Week 10: `r emo::ji("heavy_check_mark")`  Project update I (Written summary + Presentation), [Evaluation of progress towards effective team functioning](https://norcalbiostat.github.io/MATH456/notes/Effective-Teams.pdf)
+* Week 14: Project presentation draft of slides + peer review
+* Week 16: Project presentations, participation during final, peer rating of individual team members
 
 ## Learning objectives
 
@@ -149,21 +149,30 @@ By the due date,
 4) Each person individually submits [Evaluation of progress towards effective team functioning](https://norcalbiostat.github.io/MATH456/notes/Effective-Teams.pdf) using [[this form]](https://forms.gle/TjyqkDKbkM92zjDx6).
 
 
-# Report Draft
+# Draft slides
 
-1) Submit a 3-5 page draft report to your project folder in Google Drive. 
-    - Incorporate suggestions made from the first round. 
-    - This should be a cleaned up RMD --> PDF file, hide code, resize pictures, format tables. 
-2) Each person individually submits another team effectiveness evaluation using [[this form]](https://forms.gle/TjyqkDKbkM92zjDx6).
+You will start drafting a set of presentation slides that you will present during finals week. 
+
+1) Create a slide deck in the `project/_Presentations` folder in Google Drive. 
+  - You could use [Rmarkdown to create a slide deck](https://support.rstudio.com/hc/en-us/articles/200486468-Authoring-R-Presentations), but you'll need to make sure there is a way to add comments. 
+  - Sections: 
+      - Intro/Background
+      - Research question/goal
+      - Data introduction
+      - Data preparation
+      - Analysis methods
+      - Results
+      - Conclusion
+2) Each person will review one group's slides and provide feedback using the same peer review guidelines that are used for the homework.
 
 
+# Final Presentation
 
-# Final Report
-
-1) Submit a 5-10 page report. 
-2) 10 minute presentation.
-    - Schedule a time with Dr. D. 
-    - All group members must be present (exceptions can apply)
+1) Each team will present their analysis as a 10-15 minute presentation with slides. 
+    - Presentation time will be scheduled during finals week. 
+    - Some presentations will occur during our regularly scheduled final time (Fri 12-2).
+    - All group members must be present and take part in the presentation. 
+2) When you are not presenting, you are expected to pay attention and ask relevant questions. If you don't get a chance to ask during the presentation, you will have to directly comment on their slides for credit. 
 3) Peer rating of each team member.
 
 

@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
@@ -221,6 +220,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -249,6 +249,12 @@ $(document).ready(function () {
 }
 }
 
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
 
 .toc-content {
   padding-left: 30px;
@@ -493,9 +499,9 @@ div.tocify {
 <li>Week 3: ✔️ Team recruitment video</li>
 <li>Week 4: ✔️ <a href="https://forms.gle/27dgotMRy61DSgtr6">Project selection</a>.</li>
 <li>Week 5: ✔️ Team formation. Groups write up team agreements, task distributions, and a project timeline.</li>
-<li>Week 10: Project update I (Written summary + Presentation), <a href="https://norcalbiostat.github.io/MATH456/notes/Effective-Teams.pdf">Evaluation of progress towards effective team functioning</a></li>
-<li>Week 14: Draft report, Evaluation of progress towards effective team functioning, Team member evaluation</li>
-<li>Week 16: Project presentations, Final report, Peer rating of team members</li>
+<li>Week 10: ✔️ Project update I (Written summary + Presentation), <a href="https://norcalbiostat.github.io/MATH456/notes/Effective-Teams.pdf">Evaluation of progress towards effective team functioning</a></li>
+<li>Week 14: Project presentation draft of slides + peer review</li>
+<li>Week 16: Project presentations, participation during final, peer rating of individual team members</li>
 </ul>
 </div>
 <div id="learning-objectives" class="section level2">
@@ -631,30 +637,43 @@ div.tocify {
 <li>Each person individually submits <a href="https://norcalbiostat.github.io/MATH456/notes/Effective-Teams.pdf">Evaluation of progress towards effective team functioning</a> using <a href="https://forms.gle/TjyqkDKbkM92zjDx6">[this form]</a>.</li>
 </ol>
 </div>
-<div id="report-draft" class="section level1">
-<h1>Report Draft</h1>
+<div id="draft-slides" class="section level1">
+<h1>Draft slides</h1>
+<p>You will start drafting a set of presentation slides that you will present during finals week.</p>
 <ol style="list-style-type: decimal">
-<li>Submit a 3-5 page draft report to your project folder in Google Drive.
+<li>Create a slide deck in the <code>project/_Presentations</code> folder in Google Drive.</li>
+</ol>
 <ul>
-<li>Incorporate suggestions made from the first round.</li>
-<li>This should be a cleaned up RMD –&gt; PDF file, hide code, resize pictures, format tables.</li>
+<li>You could use <a href="https://support.rstudio.com/hc/en-us/articles/200486468-Authoring-R-Presentations">Rmarkdown to create a slide deck</a>, but you’ll need to make sure there is a way to add comments.</li>
+<li>Sections:
+<ul>
+<li>Intro/Background</li>
+<li>Research question/goal</li>
+<li>Data introduction</li>
+<li>Data preparation</li>
+<li>Analysis methods</li>
+<li>Results</li>
+<li>Conclusion</li>
 </ul></li>
-<li>Each person individually submits another team effectiveness evaluation using <a href="https://forms.gle/TjyqkDKbkM92zjDx6">[this form]</a>.</li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li>Each person will review one group’s slides and provide feedback using the same peer review guidelines that are used for the homework.</li>
 </ol>
 </div>
-<div id="final-report" class="section level1">
-<h1>Final Report</h1>
+<div id="final-presentation" class="section level1">
+<h1>Final Presentation</h1>
 <ol style="list-style-type: decimal">
-<li>Submit a 5-10 page report.</li>
-<li>10 minute presentation.
+<li>Each team will present their analysis as a 10-15 minute presentation with slides.
 <ul>
-<li>Schedule a time with Dr. D.</li>
-<li>All group members must be present (exceptions can apply)</li>
+<li>Presentation time will be scheduled during finals week.</li>
+<li>Some presentations will occur during our regularly scheduled final time (Fri 12-2).</li>
+<li>All group members must be present and take part in the presentation.</li>
 </ul></li>
+<li>When you are not presenting, you are expected to pay attention and ask relevant questions. If you don’t get a chance to ask during the presentation, you will have to directly comment on their slides for credit.</li>
 <li>Peer rating of each team member.</li>
 </ol>
 <hr />
-<p><em>Last Updated: Fri Mar 27 8:56:42 AM</em></p>
+<p><em>Last Updated: Fri Apr 17 4:08:21 PM</em></p>
 </div>
 
 
