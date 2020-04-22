@@ -13,6 +13,18 @@ wk1.date <- as.Date("2020-01-20")
 
 ----
 
+### `r format(wk1.date+13*7, "%m-%d-%Y")`: End of new content. 
+
+* I'm throwing in the towel. I can't keep up. 
+* Topic 06 (Correlated Outcomes) is not required. I will gladly work with you/your group on this topic. 
+* Still meeting as a class on Fridays - this is important time to work with each other and with me. Very important for class cohesion and for a small sense of normalcy. 
+* All groups must check in with me, after your draft slides have been reviewed. 
+* Don't forget to get the exam error analysis finished and meet with me on that. 
+
+
+
+----
+
 ### `r format(wk1.date+12*7, "%m-%d-%Y")`: Cluster Analysis
 
 * Lighter load week this week. 
