@@ -27,8 +27,17 @@ Enough with the sappy end of the semester closing monologue, here's the things w
     - Lastly, and this is for my future course development. Answer the following two questions: 
         - What is one thing you are glad you learned in this class? 
         - What is one thing you wished you had learned in this class? 
-        
-        
+3. Stat modeling in the wild. Can we mathematically model when this pandemic will end? 
+
+> ".. Referred to in the original Post report as the "cubic model," it was attributed to former Council of Economic Advisers Chair Kevin Hassett, and the Post reported that "people with knowledge of that model say it shows deaths dropping precipitously in May — and essentially going to zero by May 15."
+
+```{r, out.width = "400px", echo=FALSE} 
+knitr::include_graphics("cubic.png")
+```
+    
+Discuss as a group what you think about this model. *AFTER* you talk with each other, google around to see what the scientific community think of this model. Here are a few places to start:  [[1]](https://twitter.com/LucyStats/status/1257787850260656128) [[2]](https://twitter.com/natesilver538/status/1257476755574718470)
+
+
 ----
 
 ### `r format(wk1.date+13*7, "%m-%d-%Y")`: End of new content. 
