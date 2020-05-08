@@ -13,6 +13,24 @@ wk1.date <- as.Date("2020-01-20")
 
 ----
 
+### `r format(wk1.date+15*7, "%m-%d-%Y")`: We made it to the end. 
+
+And i'm super sad that it ended virtually. This class was the highlight of my days. I throughougly enjoyed having each and every one of you with me on this ride this semester. I wish you all the best of luck in your future adventures, and know that i'll keep our Slack channel open for a while (probably a year or so) in case you ever want to get a hold of me or someone else from the class. I'm also lurking around on [Twitter](https://twitter.com/norcalbiostat) if you use that media.I hope that you had a chance to work with existing friends, and make new ones as part of our time together. I hope you feel proud of your accomplishments this semester. This class is an elective for most of you, even the minor is technically an elective for your program. You've chosen to invest in building your analytical skills, and I know it will benefit you in your career.
+
+When this is all over and we're allowed to meet up again, I'm always up for a chat over coffee. I truly love to hear how former students are doing. 
+
+Enough with the sappy end of the semester closing monologue, here's the things we're going to work on today. 
+
+1. Presentation expectations
+2. End of the semester Learning Journal entries: Reflections on the past 16 weeks. 
+    - Thinking Routine [I used to Think... Now I think...](hw/used_to_think.html)
+    - Lastly, and this is for my future course development. Answer the following two questions: 
+        - What is one thing you are glad you learned in this class? 
+        - What is one thing you wished you had learned in this class? 
+        
+        
+----
+
 ### `r format(wk1.date+13*7, "%m-%d-%Y")`: End of new content. 
 
 * I'm throwing in the towel. I can't keep up. 
