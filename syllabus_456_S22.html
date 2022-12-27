@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="Spring 2022" />
+
+
+<title>Syllabus for MATH 456 - Applied Statistics II</title>
+
+<script src="site_libs/header-attrs-2.19/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/journal.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
+<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">MATH 456</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="schedule.html">
+    <span class="fa fa-calendar"></span>
+     
+    Schedule
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="fa fa-folder-open"></span>
+     
+    Materials
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="https://norcalbiostat.github.io/AppliedStatistics_notes/index.html">Course Notes</a>
+    </li>
+    <li>
+      <a href="learning_tools.html">Learning Techniques</a>
+    </li>
+    <li>
+      <a href="syllabus_456_S22.html">Syllabus</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="project.html">
+    <span class="fa fa-group"></span>
+     
+    Project
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="fa fa-question"></span>
+     
+    Help
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="http://bit.ly/cc_hours">
+        <span class="fa fa-group"></span>
+         
+        Community Coding
+      </a>
+    </li>
+    <li>
+      <a href="https://stackoverflow.com/questions/tagged/r">
+        <span class="fa fa-stack-overflow"></span>
+         
+        Stack Overflow/r
+      </a>
+    </li>
+    <li>
+      <a href="http://www.cookbook-r.com/">
+        <span class="fa fa-area-chart"></span>
+         
+        R Cookbook
+      </a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    Contact Dr. D
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="http://www.norcalbiostat.com/">
+        <span class="fa fa-paw"></span>
+         
+        Her website
+      </a>
+    </li>
+    <li>
+      <a href="https://dr-donatello.youcanbook.me/">
+        <span class="fa fa-calendar-check-o"></span>
+         
+        Request Appointment
+      </a>
+    </li>
+  </ul>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Syllabus for MATH 456 - Applied Statistics
+II</h1>
+<h4 class="author">Spring 2022</h4>
+
+</div>
+
+
+<div id="course-description" class="section level1">
+<h1>Course Description</h1>
+<p><em>Advanced topics in applied statistics including multiple
+regression, multivariate methods, nonparametrics, analysis of
+covariance, bootstrap methods and others as appropriate. Statistical
+computer packages are introduced and used. Appropriate for biology,
+agriculture, nutrition, business, psychology, social science and other
+majors.</em></p>
+</div>
+<div id="logistics" class="section level1">
+<h1>Logistics</h1>
+<p><strong>Instructor:</strong> Dr. Robin Donatello (Dr. D,
+she/her/hers)<br />
+<strong>Office Location:</strong> Holt 202<br />
+<strong>Telephone:</strong> 898-5767<br />
+<strong>E-mail:</strong> <a href="mailto:rdonatello@csuchico.edu"
+class="email">rdonatello@csuchico.edu</a><br />
+<strong>Office Hours:</strong> MWF 1-2pm Holt 202, or <a
+href="https://dr-donatello.youcanbook.me/">by appointment</a>.<br />
+<strong>Class days and times:</strong> MWF 3-3:50, Holt 291<br />
+<strong>Prerequisites:</strong> MATH 314/315/615 at Chico State or
+instructor permission.<br />
+<strong>Course Website:</strong> <a
+href="http://norcalbiostat.github.io/MATH456/"
+class="uri">http://norcalbiostat.github.io/MATH456/</a><br />
+<strong>Class chat</strong> Chico State Math &amp; Stats Discord server.
+Hw0 has the sign up instructions<br />
+<strong>Google Drive</strong> You will be added to the Math 456 Google
+drive using your campus email.</p>
+<p>This is an in person class with no expectation for hybrid learning.
+Synchronous zoom room can be setup (link in Canvas) in case of illness
+(Please don’t come to class sick), but you may miss out on in class
+activities.</p>
+<p>You can download the Syllabus in PDF form by clicking <a
+href="syllabus_456_S22.pdf">[this link]</a>.</p>
+</div>
+<div id="learning-outcomes" class="section level1">
+<h1>Learning Outcomes</h1>
+<p>Upon successful completion of this course, students will be able
+to:</p>
+<ul>
+<li>Prepare data for analysis by cleaning and transforming raw
+data.</li>
+<li>Perform research in a reproducible manner.</li>
+<li>Apply advanced statistical analysis methodologies to complex and
+multivariate data.</li>
+<li>Appropriately conduct an analysis in the presence of missing
+data.</li>
+<li>Report the results of the analysis in plain language.</li>
+<li>Work collaboratively on a team based project.</li>
+</ul>
+</div>
+<div id="required-materials" class="section level1">
+<h1>Required Materials</h1>
+<ul>
+<li><strong>Textbook</strong>: <em>Practical Multivariate Analysis 6th
+Edition</em>. Afifi, May, Donatello, Clark ISBN-13: 978-1138702226
+<ul>
+<li>6th edition is necessary</li>
+<li>Several copies are available in the library. More can be made
+available if needed.</li>
+</ul></li>
+<li><strong>Reliable Laptop</strong>: Expect to bring often. Contact me
+if this poses a problem or concern for you.</li>
+<li><strong>Reliable internet</strong> connection while on and off
+campus. ITSS can help you get this setup.</li>
+<li><strong>Computer Software:</strong> Unless you have been granted an
+exception, all work is be done in R. Exceptions are granted on an
+individual basis after demonstration of proficiency in an alternate
+language and the ability to produce a reproducible PDF report similar to
+a R Markdown file.</li>
+</ul>
+</div>
+<div id="tentative-topic-list" class="section level1">
+<h1>Tentative topic list</h1>
+<ul>
+<li>Multiple Linear Regression Model building
+<ul>
+<li>moderators, confounders, interactions, stratification</li>
+<li>categorical variables, reference coding, contrasts</li>
+</ul></li>
+<li>Variable selection methods</li>
+<li>Classification &amp; Prediction
+<ul>
+<li>Sensitivity/specificity/accuracy</li>
+</ul></li>
+<li>Multivariate statistics / Dimension Reduction
+<ul>
+<li>Principle Component Analysis</li>
+<li>Factor Analysis</li>
+</ul></li>
+<li>Missing Data: Identification &amp; Imputation</li>
+<li>Optional Topics. At least one of the following topics will also be
+covered.
+<ul>
+<li>Cluster analysis</li>
+<li>Analysis of Survival Data</li>
+<li>Generalized linear models / modeling of count data.</li>
+</ul></li>
+</ul>
+</div>
+<div id="assignments-graded-items" class="section level1">
+<h1>Assignments / graded items</h1>
+<p>Your final grade will be a straight sum of points earned and will be
+displayed as a running total in Canvas. I use a standard grade cutoff of
+100-90%: A, 89-80%: B, 79-70%: C, 69-60%: D, 0-59%: F</p>
+<div id="exams-xx" class="section level4">
+<h4>Exams (XX%)</h4>
+<ul>
+<li>2 Exams (midterm/final, not cumulative). <a
+href="notes/Analyzing%20exam%20errors.pdf">Error Assessment Form</a>
+available for midterm.</li>
+</ul>
+</div>
+<div id="assignments-xx" class="section level4">
+<h4>Assignments (XX%)</h4>
+<ul>
+<li>6 standard homework assignments on the topics listed above.
+Submitted through <TBD>.</li>
+<li>Peer reviews (PR) of these assignments.</li>
+</ul>
+</div>
+<div id="quizzes-xx" class="section level4">
+<h4>Quizzes (XX%)</h4>
+<ul>
+<li>7 Individual + Group quizzes. Administered through Google
+Forms.</li>
+</ul>
+</div>
+<div id="active-learning-xx" class="section level4">
+<h4>Active Learning (XX%)</h4>
+<ul>
+<li>Various active or reflective <a href="learning_tools.html">learning
+activities</a> during/outside of class.</li>
+<li>Attending <a href="http://bit.ly/cc_hours">Community Coding</a>
+and/or Office Hours <strong>3</strong> times. This can be to check in on
+your grade, ask clarifying questions, or chat about life and graduate
+school.</li>
+<li>Discord participation. Contributing to our learning community by
+asking and answering questions about assignments, code, etc in Discord
+is required to make this class run smoothly. And in the end, you are the
+ones that will benefit from it the most. Don’t spend more than 20 min
+banging your head on the proverbial wall before you reach out and ask
+for help.</li>
+<li>External/ongoing learning. No academic topic only lives in the
+classroom. You are required to do <strong>1</strong> of them.
+<ul>
+<li>Attending an internal/external seminar talk on a topic in Applied
+Statistics, or a Data analysis-centric seminar talk, writing a 1 page
+summary about the talk, and sharing this summary in the
+#external-learning Discord channel.</li>
+<li>Contribute to the <a
+href="https://norcalbiostat.github.io/AppliedStatistics_notes/">Applied
+Statistics Course Notes</a>. This could be a new example,
+enhancing/fixing an old example,
+<ul>
+<li>Once you identify the piece you want to work on, PM me the section
+in Discord I will send you the relevant code/data.</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div id="project-xx" class="section level4">
+<h4>Project (XX%)</h4>
+<ul>
+<li>Student Group led analysis <a href="project.html">project</a>.</li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="policies" class="section level1">
+<h1>Policies</h1>
+<div id="code-of-conduct" class="section level2">
+<h2>Code of Conduct</h2>
+<p>Short version:</p>
+<p>I am dedicated to providing a welcoming and supportive environment
+for all people, regardless of background or identity. By participating
+in this class, students accept to abide by the The Carpentries’ Code of
+Conduct and accept the [appropriately modified for our campus]
+procedures by which any Code of Conduct incidents are resolved. Any form
+of behavior to exclude, intimidate, or cause discomfort is a violation
+of the Code of Conduct. In order to foster a positive and professional
+learning environment we encourage the following kinds of behaviors in
+all platforms and events:</p>
+<ul>
+<li>Use welcoming and inclusive language</li>
+<li>Be respectful of different viewpoints and experiences</li>
+<li>Gracefully accept constructive criticism</li>
+<li>Focus on what is best for the class</li>
+<li>Show courtesy and respect towards your peers</li>
+</ul>
+<p>Excerpted from the <a
+href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html">Carpentries
+Code of Conduct</a>. Please read the full version linked here for a
+detailed list of acceptable and unacceptable behaviors.</p>
+</div>
+<div id="adding-and-dropping-the-course" class="section level2">
+<h2>Adding and Dropping the course</h2>
+<p>The last day to add or drop classes without special permission by the
+instructor is 2/03/23. No adds or drops are allowed after 2/17/23
+without a serious and compelling reason approved by the instructor,
+department chair, and college dean.</p>
+</div>
+<div id="americans-with-disabilities-act" class="section level2">
+<h2>Americans with Disabilities Act</h2>
+<p>If you need course adaptations or accommodations because of a
+disability or chronic illness, or if you need to make special
+arrangements in case the building must be evacuated, please make an
+appointment with me as soon as possible, or see me during office hours.
+Please also contact Accessibility Resource Center (ARC) as they are the
+designated department responsible for approving and coordinating
+reasonable accommodations and services for students with disabilities.
+ARC will help you understand your rights and responsibilities under the
+Americans with Disabilities Act and provide you further assistance with
+requesting and arranging accommodations.</p>
+<p>Accessibility Resource Center<br />
+530-898-5959<br />
+Student Services Center 170<br />
+<a href="mailto:arcdept@csuchico.edu"
+class="email">arcdept@csuchico.edu</a></p>
+</div>
+<div id="chico-state-basic-needs-project" class="section level2">
+<h2>Chico State Basic Needs Project</h2>
+<p>The <strong>Hungry Wildcat Food Pantry</strong> provides supplemental
+food, fresh produce, CalFresh application assistance and basic needs
+referral services for students experiencing food and housing
+insecurity.</p>
+<p>All students are welcomed to visit the Pantry located in the Student
+Service Center 196, open Monday-Friday</p>
+<p>Please visit the Chico State Basic Needs website <a
+href="http://www.csuchico.edu/basic-needs"
+class="uri">http://www.csuchico.edu/basic-needs</a> for more
+information.</p>
+<hr />
+<p><em>Last updated: Mon Dec 26 2022 5:34:31 PM</em></p>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

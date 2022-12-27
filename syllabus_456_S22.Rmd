@@ -1,0 +1,142 @@
+---
+title: 'Syllabus for MATH 456 - Applied Statistics II'
+author: "Spring 2022"
+output:
+  pdf_document: default
+  html_document:
+    df_print: paged
+---
+
+# Course Description
+_Advanced topics in applied statistics including multiple regression, multivariate methods, nonparametrics, analysis of covariance, bootstrap methods and others as appropriate. Statistical computer packages are introduced and used. Appropriate for biology, agriculture, nutrition, business, psychology, social science and other majors._
+
+# Logistics
+
+**Instructor:** Dr. Robin Donatello  (Dr. D, she/her/hers)  
+**Office Location:** Holt 202  
+**Telephone:** 898-5767    
+**E-mail:** rdonatello@csuchico.edu    
+**Office Hours:** MWF 1-2pm Holt 202, or [by appointment](https://dr-donatello.youcanbook.me/).  
+**Class days and times:** MWF 3-3:50, Holt 291  
+**Prerequisites:** MATH 314/315/615 at Chico State or instructor permission.  
+**Course Website:** http://norcalbiostat.github.io/MATH456/  
+**Class chat** Chico State Math & Stats Discord server. Hw0 has the sign up instructions  
+**Google Drive**  You will be added to the Math 456 Google drive using your campus email. 
+
+This is an in person class with no expectation for hybrid learning. Synchronous zoom room can be setup (link in Canvas) in case of illness (Please don't come to class sick), but you may miss out on in class activities. 
+
+You can download the Syllabus in PDF form by clicking [[this link]](syllabus_456_S22.pdf).
+
+# Learning Outcomes
+Upon successful completion of this course, students will be able to:  
+
+* Prepare data for analysis by cleaning and transforming raw data. 
+* Perform research in a reproducible manner. 
+* Apply advanced statistical analysis methodologies to complex and multivariate data. 
+* Appropriately conduct an analysis in the presence of missing data. 
+* Report the results of the analysis in plain language. 
+* Work collaboratively on a team based project. 
+
+
+# Required Materials
+* **Textbook**: _Practical Multivariate Analysis 6th Edition_. Afifi, May, Donatello, Clark ISBN-13: 978-1138702226 
+  - 6th edition is necessary
+  - Several copies are available in the library. More can be made available if needed. 
+* **Reliable Laptop**: Expect to bring often. Contact me if this poses a problem or concern for you. 
+* **Reliable internet** connection while on and off campus. ITSS can help you get this setup. 
+* **Computer Software:** Unless you have been granted an exception, all work is be done in R. Exceptions are granted on an individual basis after demonstration of proficiency in an alternate language and the ability to produce a reproducible PDF report similar to a R Markdown file.
+
+# Tentative topic list
+
+* Multiple Linear Regression Model building 
+    - moderators, confounders, interactions, stratification
+    - categorical variables, reference coding, contrasts
+* Variable selection methods
+* Classification & Prediction
+    - Sensitivity/specificity/accuracy
+* Multivariate statistics / Dimension Reduction
+    - Principle Component Analysis
+    - Factor Analysis
+* Missing Data: Identification & Imputation
+* Optional Topics. At least one of the following topics will also be covered. 
+    - Cluster analysis
+    - Analysis of Survival Data
+    - Generalized linear models / modeling of count data. 
+
+
+# Assignments / graded items 
+Your final grade will be a straight sum of points earned and will be displayed as a running total in Canvas. 
+I use a standard grade cutoff of 100-90%: A, 89-80%: B, 79-70%: C, 69-60%: D, 0-59%: F  
+
+
+#### Exams (XX%)
+* 2 Exams (midterm/final, not cumulative). [Error Assessment Form](notes/Analyzing exam errors.pdf) available for midterm. 
+
+#### Assignments (XX%)
+* 6 standard homework assignments on the topics listed above. Submitted through <TBD>. 
+* Peer reviews (PR) of these assignments. 
+
+#### Quizzes (XX%)
+* 7 Individual + Group quizzes. Administered through Google Forms. 
+
+#### Active Learning (XX%)
+* Various active or reflective [learning activities](learning_tools.html) during/outside of class.
+* Attending [Community Coding](http://bit.ly/cc_hours) and/or Office Hours **3** times. This can be to check in on your grade, ask clarifying questions, or chat about life and graduate school.
+* Discord participation. Contributing to our learning community by asking and answering questions about assignments, code, etc in Discord is required to make this class run smoothly. And in the end, you are the ones that will benefit from it the most. Don't spend more than 20 min banging your head on the proverbial wall before you reach out and ask for help. 
+* External/ongoing learning. No academic topic only lives in the classroom. You are required to do **1** of them. 
+    -  Attending an internal/external seminar talk on a topic in Applied Statistics, or a Data analysis-centric seminar talk,         writing a 1 page summary about the talk, and sharing this summary in the #external-learning Discord channel.
+    - Contribute to the [Applied Statistics Course Notes](https://norcalbiostat.github.io/AppliedStatistics_notes/). This could be a new example, enhancing/fixing an old example, 
+        - Once you identify the piece you want to work on, PM me the section in Discord I will send you the relevant code/data. 
+
+#### Project (XX%)
+* Student Group led analysis [project](project.html). 
+
+
+
+----
+
+# Policies
+
+## Code of Conduct
+
+Short version:
+
+I am dedicated to providing a welcoming and supportive environment for all people, regardless of background or identity. By participating in this class, students accept to abide by the The Carpentries’ Code of Conduct and accept the [appropriately modified for our campus] procedures by which any Code of Conduct incidents are resolved. Any form of behavior to exclude, intimidate, or cause discomfort is a violation of the Code of Conduct. In order to foster a positive and professional learning environment we encourage the following kinds of behaviors in all platforms and events:
+
+
+* Use welcoming and inclusive language
+* Be respectful of different viewpoints and experiences
+* Gracefully accept constructive criticism
+* Focus on what is best for the class
+* Show courtesy and respect towards your peers
+
+Excerpted from the [Carpentries Code of Conduct](https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html). Please read the full version linked here for a detailed list of acceptable and unacceptable behaviors. 
+
+
+## Adding and Dropping the course
+The last day to add or drop classes without special permission by the instructor is 2/03/23. No adds or drops are allowed after 2/17/23 without a serious and compelling reason approved by the instructor, department chair, and college dean.
+
+## Americans with Disabilities Act
+
+If you need course adaptations or accommodations because of a disability or chronic illness,  or if you need to make special arrangements in case the building must be evacuated, please make an appointment with me as soon as possible, or see me during office hours. Please also contact Accessibility Resource Center (ARC) as they are the designated department responsible for approving and coordinating reasonable accommodations and services for students with disabilities. ARC will help you understand your rights and responsibilities under the Americans with Disabilities Act and provide you further assistance with requesting and arranging accommodations.
+
+Accessibility Resource Center  
+530-898-5959   
+Student Services Center 170  
+arcdept@csuchico.edu  
+
+
+## Chico State Basic Needs Project
+
+The **Hungry Wildcat Food Pantry** provides supplemental food, fresh produce, CalFresh application assistance and basic needs referral services for students experiencing food and housing insecurity.
+
+All students are welcomed to visit the Pantry located in the Student Service Center 196, open Monday-Friday
+
+Please visit the Chico State Basic Needs website http://www.csuchico.edu/basic-needs for more information.
+
+-----
+
+_Last updated: `r format(Sys.time(), "%a %b %d %Y %X")`_
+
+    
+    

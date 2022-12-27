@@ -13,12 +13,22 @@
 
 <title>Class Projects</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.19/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/journal.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
@@ -26,35 +36,20 @@
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
-
-
-
 <style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+
+
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 
@@ -65,10 +60,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -85,40 +76,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 61px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 66px;
-  margin-top: -66px;
-}
-.section h2 {
-  padding-top: 66px;
-  margin-top: -66px;
-}
-.section h3 {
-  padding-top: 66px;
-  margin-top: -66px;
-}
-.section h4 {
-  padding-top: 66px;
-  margin-top: -66px;
-}
-.section h5 {
-  padding-top: 66px;
-  margin-top: -66px;
-}
-.section h6 {
-  padding-top: 66px;
-  margin-top: -66px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -146,7 +113,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -158,7 +125,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -168,11 +135,28 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.parent().addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -184,13 +168,12 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -198,16 +181,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -310,7 +286,7 @@ div.tocify {
 
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
+<div class="row">
 <div class="col-xs-12 col-sm-4 col-md-3">
 <div id="TOC" class="tocify">
 </div>
@@ -324,7 +300,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -341,7 +317,7 @@ div.tocify {
   </a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-folder-open"></span>
      
     Materials
@@ -350,48 +326,13 @@ div.tocify {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="class_structure_changes.html">Updated procedures</a>
-    </li>
-    <li>
       <a href="https://norcalbiostat.github.io/AppliedStatistics_notes/index.html">Course Notes</a>
     </li>
     <li>
       <a href="learning_tools.html">Learning Techniques</a>
     </li>
     <li>
-      <a href="syllabus_456_S20.html">Syllabus</a>
-    </li>
-  </ul>
-</li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    <span class="fa fa-wrench"></span>
-     
-    Tools
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="https://drive.google.com/drive/folders/0B83Z8_sNw3KPcnVrYzVFRHUtcHM?usp=sharing">
-        <span class="fa fa-google"></span>
-         
-        Google Drive
-      </a>
-    </li>
-    <li>
-      <a href="https://math456.slack.com/">
-        <span class="fa fa-slack"></span>
-         
-        Slack (class discussions)
-      </a>
-    </li>
-    <li>
-      <a href="https://csuchico.zoom.us/">
-        <span class="fa fa-video-camera"></span>
-         
-        Zoom (video conference)
-      </a>
+      <a href="syllabus_456_S22.html">Syllabus</a>
     </li>
   </ul>
 </li>
@@ -405,7 +346,7 @@ div.tocify {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-question"></span>
      
     Help
@@ -418,13 +359,6 @@ div.tocify {
         <span class="fa fa-group"></span>
          
         Community Coding
-      </a>
-    </li>
-    <li>
-      <a href="https://www.rstudio.com/online-learning/">
-        <span class="fa fa-registered"></span>
-         
-        R Studio Tutorials
       </a>
     </li>
     <li>
@@ -444,7 +378,7 @@ div.tocify {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Contact Dr. D
      
     <span class="caret"></span>
@@ -454,14 +388,14 @@ div.tocify {
       <a href="http://www.norcalbiostat.com/">
         <span class="fa fa-paw"></span>
          
-        Website
+        Her website
       </a>
     </li>
     <li>
-      <a href="https://csuchico.zoom.us/my/rdonatello">
-        <span class="fa fa-video-camera"></span>
+      <a href="https://dr-donatello.youcanbook.me/">
+        <span class="fa fa-calendar-check-o"></span>
          
-        Zoom Me!
+        Request Appointment
       </a>
     </li>
   </ul>
@@ -471,7 +405,7 @@ div.tocify {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -482,12 +416,18 @@ div.tocify {
 
 <div id="overview" class="section level2">
 <h2>Overview</h2>
-<p>Projects this semester will be user generated. They must entail a sufficient amount of data exploration and modeling, and require some sort of modeling technique that we cover in this class (missing data, survival data, clustered or correlated data, classification/prediction, multivariate analysis.)</p>
+<p>Projects this semester will be user generated. They must entail a
+sufficient amount of data exploration and modeling, and require some
+sort of modeling technique that we cover in this class (missing data,
+survival data, clustered or correlated data, classification/prediction,
+multivariate analysis.)</p>
 <ul>
 <li>Graduate research?</li>
 <li>Senior project?</li>
-<li>Have an advisor with data/questions to ask and not enough time to investigate?</li>
-<li>Just want to poke around with some data and see what you can find out?</li>
+<li>Have an advisor with data/questions to ask and not enough time to
+investigate?</li>
+<li>Just want to poke around with some data and see what you can find
+out?</li>
 <li>The subject field is up to you!</li>
 </ul>
 </div>
@@ -495,18 +435,23 @@ div.tocify {
 <h2>Deliverables</h2>
 <p>This is a birds eye check list. Details for each stage are below.</p>
 <ul>
-<li>Week 2: ✔️ Project proposal to Dr. D.</li>
-<li>Week 3: ✔️ Team recruitment video</li>
-<li>Week 4: ✔️ <a href="https://forms.gle/27dgotMRy61DSgtr6">Project selection</a>.</li>
-<li>Week 5: ✔️ Team formation. Groups write up team agreements, task distributions, and a project timeline.</li>
-<li>Week 10: ✔️ Project update I (Written summary + Presentation), <a href="https://norcalbiostat.github.io/MATH456/notes/Effective-Teams.pdf">Evaluation of progress towards effective team functioning</a></li>
+<li>Week 2:⌛ Project proposal to Dr. D.</li>
+<li>Week 3: Team recruitment video</li>
+<li>Week 4: Project selection</li>
+<li>Week 5: Team formation. Groups write up team agreements, task
+distributions, and a project timeline</li>
+<li>Week 10: Project update I (Written summary + Presentation), <a
+href="https://norcalbiostat.github.io/MATH456/notes/Effective-Teams.pdf">Evaluation
+of progress towards effective team functioning</a></li>
 <li>Week 14: Project presentation draft of slides + peer review</li>
-<li>Week 16: Project presentations, participation during final, peer rating of individual team members</li>
+<li>Week 16: Project presentations, participation during final, peer
+rating of individual team members</li>
 </ul>
 </div>
 <div id="learning-objectives" class="section level2">
 <h2>Learning objectives</h2>
-<p>Participating in this project will provide practical experiences in</p>
+<p>Participating in this project will provide practical experiences
+in</p>
 <ul>
 <li>Practice team collaboration skills.</li>
 <li>Writing project proposals, explaining your ideas to others</li>
@@ -514,31 +459,43 @@ div.tocify {
 <li>Data wrangling</li>
 <li>Advanced statistical analysis topics</li>
 <li>Presentation (oral and written)</li>
-<li>Creating a project timeline/deadlines. Meeting deliverable deadlines</li>
+<li>Creating a project timeline/deadlines. Meeting deliverable
+deadlines</li>
 </ul>
 </div>
 <div id="reading" class="section level2">
 <h2>Reading</h2>
 <ul>
-<li><a href="notes/Being-an-Effective-Group-Member.pdf">Being an effective group member</a></li>
-<li><a href="notes/Effective-Teams.pdf">Turning Student Groups into Effective Teams</a></li>
-<li><a href="notes/giving-feedback/pdf">Giving constructive feedback</a></li>
-<li><a href="notes/psychology-of-criticism.pdf">The psychology of Criticism</a></li>
-<li><a href="notes/eff-phrase-template-criticism.pdf">Effective phrase templates to give criticism</a></li>
+<li><a href="notes/Being-an-Effective-Group-Member.pdf">Being an
+effective group member</a></li>
+<li><a href="notes/Effective-Teams.pdf">Turning Student Groups into
+Effective Teams</a></li>
+<li><a href="notes/giving-feedback/pdf">Giving constructive
+feedback</a></li>
+<li><a href="notes/psychology-of-criticism.pdf">The psychology of
+Criticism</a></li>
+<li><a href="notes/eff-phrase-template-criticism.pdf">Effective phrase
+templates to give criticism</a></li>
 </ul>
 <hr />
 </div>
 <div id="written-proposal" class="section level1">
 <h1>Written Proposal</h1>
-<p>A 1 page written summary of your research topic due to Dr. D for approval that includes the following information.</p>
+<p>A 1 page written summary of your research topic due to Dr. D for
+approval that includes the following information.</p>
 <ul>
-<li>Purpose: Senior project, graduate thesis, independent research, just for fun</li>
+<li>Purpose: Senior project, graduate thesis, independent research, just
+for fun</li>
 <li>How much work you have done already on this analysis.</li>
-<li>Data source: If the internet, you must provide a link, a codebook and/or a sample of the data.</li>
-<li>Data sample: I want to <em>see</em> the raw data you intend to analyze.</li>
+<li>Data source: If the internet, you must provide a link, a codebook
+and/or a sample of the data.</li>
+<li>Data sample: I want to <em>see</em> the raw data you intend to
+analyze.</li>
 <li>The research question(s) at hand</li>
-<li>What statistical analyses topic that we cover this semester is this aligned with?</li>
-<li>What you hope to accomplish, i.e. how will you use your team time?</li>
+<li>What statistical analyses topic that we cover this semester is this
+aligned with?</li>
+<li>What you hope to accomplish, i.e. how will you use your team
+time?</li>
 </ul>
 </div>
 <div id="team-recruitment" class="section level1">
@@ -546,105 +503,139 @@ div.tocify {
 <div id="recruitment-pitch-video" class="section level2">
 <h2>Recruitment pitch video</h2>
 <ul>
-<li>Put any supplemental materials (such as your edited/revised project proposal and any sample data) in an appropriately named folder in our shared Google Drive (under <code>projects</code>)</li>
-<li>Create a ~5 minute “elevator pitch” video about your data and project. Be very clear what your goals are.</li>
+<li>Put any supplemental materials (such as your edited/revised project
+proposal and any sample data) in an appropriately named folder in our
+shared Google Drive (under <code>projects</code>)</li>
+<li>Create a ~5 minute “elevator pitch” video about your data and
+project. Be very clear what your goals are.</li>
 <li>Upload this video to either A) our Google drive or B) YouTube
 <ul>
-<li>Send the link in the <code>#projects</code> Slack channel by the due date.</li>
+<li>Post the link in the #project Discord channel by the due date.</li>
 </ul></li>
 </ul>
-<p>I will post at least one external collaborator proposal to ensure that there are enough projects to go around. These may be slightly more “work intensive” given that you won’t have a subject matter expert as a team lead, but you will benefit from engaging in a much more realistic consulting experience. This is what you will often experience in the workforce as an analyst.</p>
+<p>I will post at least one external collaborator proposal to ensure
+that there are enough projects to go around. These may be slightly more
+“work intensive” given that you won’t have a subject matter expert as a
+team lead, but you will benefit from engaging in a much more realistic
+consulting experience. This is what you will often experience in the
+workforce as an analyst.</p>
 </div>
 <div id="project-selection" class="section level2">
 <h2>Project Selection</h2>
 <ul>
-<li>Use this link <a href="https://forms.gle/27dgotMRy61DSgtr6">this</a> to choose your top six projects.
+<li>Use this link <a href="">this</a> to choose your top six projects.
 <ul>
-<li><strong>All students</strong> must select three projects to work on.</li>
+<li><strong>All students</strong> must select three projects to work
+on.</li>
 </ul></li>
 <li>Not all projects will be “funded”
 <ul>
-<li>not all projects will have enough interest from other students to warrant a team</li>
+<li>not all projects will have enough interest from other students to
+warrant a team</li>
 </ul></li>
 </ul>
 </div>
 <div id="team-assignment" class="section level2">
 <h2>Team assignment</h2>
-<p>Small teams (2-3) will be formed to work on these projects throughout the semester.</p>
+<p>Small teams (2-3) will be formed to work on these projects throughout
+the semester.</p>
 <ul>
-<li>I will try my absolute best to assign people to the project they are most interested in.</li>
-<li><strong>Create your own private Slack channel, and a Google Drive folder for you to collaborate in.</strong></li>
-<li>The project lead (the person with the data) is responsible for keeping the analysis moving forward, educating their teammates on the scientific context of the research, responsible for the majority of the contextual writing.</li>
-<li>Project members are responsible for asking questions to understand the scientific context, providing assistance with programming and analysis, writing the data analysis and results sections of the report</li>
-<li>If you are working with an external collaborator there is a slightly reduced expectation for a clear explanation as to the implications of your research (and other domain specific information). You will need to arrange regular meeting times with them. I will facilitate the initial meeting to make some ground rules clear that protect both them, and your, expectations and workload.</li>
+<li>I will try my absolute best to assign people to the project they are
+most interested in.</li>
+<li>You will have your own private Discord channel and a Google Drive
+folder for you to collaborate in.</li>
+<li>The project lead (the person with the data) is responsible for
+keeping the analysis moving forward, educating their teammates on the
+scientific context of the research, responsible for the majority of the
+contextual writing.</li>
+<li>Project members are responsible for asking questions to understand
+the scientific context, providing assistance with programming and
+analysis, writing the data analysis and results sections of the
+report</li>
+<li>If you are working with an external collaborator there is a slightly
+reduced expectation for a clear explanation as to the implications of
+your research (and other domain specific information). You will need to
+arrange regular meeting times with them. I will facilitate the initial
+meeting to make some ground rules clear that protect both them, and
+your, expectations and workload.</li>
 </ul>
-<p>You will mostly work outside of class on your projects throughout the semester, but I will try to schedule some collaboration time in class.</p>
+<p>You will mostly work outside of class on your projects throughout the
+semester, but I will try to schedule some collaboration time in
+class.</p>
 </div>
 </div>
 <div id="team-agreements" class="section level1">
 <h1>Team Agreements</h1>
-<p>First read the teamwork papers linked at the top of this page. Then complete the following:</p>
+<p>First read the teamwork papers linked at the top of this page. Then
+complete the following:</p>
 <ol style="list-style-type: decimal">
-<li>Create a folder in Google Drive under Projects, for your project.</li>
-<li>Create a Slack channel for your team to collaborate asynchronously.</li>
-<li>Using the template form in the back of the Effective Team paper, submit a <em>Team expectations agreement</em> to your project folder in Google Drive.</li>
-<li>Write a detailed project timeline using the Gantt chart template provided.</li>
+<li>Create a folder in Google Drive under Projects, for your
+project.</li>
+<li>Using the template form in the back of the Effective Team paper,
+submit a <em>Team expectations agreement</em> to your project folder in
+Google Drive.</li>
+<li><strong><em>something about milestones</em></strong></li>
 </ol>
-<ul>
-<li>Copy this template into your project folder.</li>
-<li>Include all major tasks (minor tasks and/or adjustments can be modified later) and deadlines.</li>
-</ul>
-<p>A Gantt chart’s visual timeline allows you to see details about each task as well as project dependencies.</p>
-<p>The team as a whole is responsible for:</p>
-<ul>
-<li>Identifying tasks, setting dates and assigning members.</li>
-<li>Balancing workload among team members.</li>
-</ul>
-<p>Individuals are responsible for:</p>
-<ul>
-<li>Updating the chart with task completion status (%) every few days</li>
-<li>Adding colored boxes for their assigned tasks</li>
-<li>Ensuring their time on tasks are accurately reflected.</li>
-<li>Talking with the group if behind on task.</li>
-</ul>
 </div>
 <div id="project-update" class="section level1">
 <h1>Project Update</h1>
 <p>By the due date,</p>
 <ol style="list-style-type: decimal">
-<li>Submit a 1-2 page project update summary to your project folder in Google Drive.
+<li>Submit a 1-2 page project update summary to your project folder in
+Google Drive.
 <ul>
-<li>Name this file: <code>Project Update Summary</code> so we can find it easy.
+<li>Name this file: <code>Project Update Summary</code> so we can find
+it easy.
 <ul>
-<li>If you have a slide presentation, you can name that <code>Project Update Summary presentation</code> so that they sort together.</li>
+<li>If you have a slide presentation, you can name that
+<code>Project Update Summary presentation</code> so that they sort
+together.</li>
 </ul></li>
 <li>You can use either a Rmd –&gt; PDF file, or a Google Doc.</li>
 <li>Briefly remind the reader what your project is about.</li>
-<li>Introduce the data, explain what you’ve done with it so far, and what you plan on doing with it in the next 4 weeks.</li>
+<li>Introduce the data, explain what you’ve done with it so far, and
+what you plan on doing with it in the next 4 weeks.</li>
 <li>Think of this as a script for your presentation.</li>
-<li>You can create slides if you think it will help your presentation.</li>
+<li>You can create slides if you think it will help your
+presentation.</li>
 </ul></li>
 <li>Present a 5-7 minute project presentation to your classmates.
 <ul>
-<li>You will be placed in ‘breakout rooms’ with 1-2 other groups. I will help you keep time.</li>
+<li>You will be placed in ‘breakout rooms’ with 1-2 other groups. I will
+help you keep time.</li>
 <li>You will have 3 minutes for questions</li>
 </ul></li>
-<li>When not presenting, you will be responsible for writing up a brief summary (1 paragraph) of the other groups research. E.g. Summarize in your own words what research this team is doing. What are their goals, what is their progress to date, etc.
+<li>When not presenting, you will be responsible for writing up a brief
+summary (1 paragraph) of the other groups research. E.g. Summarize in
+your own words what research this team is doing. What are their goals,
+what is their progress to date, etc.
 <ul>
-<li>Submit your review using <a href="https://forms.gle/PmkDGTuphoSgqnfPA">[this form]</a></li>
-<li>Be prepared to ask them at least one question. You could write this as a comment on their report or slides in Google Drive. You can also ask them during the presentation as long as you are under the time limit.</li>
+<li>Submit your review using <a
+href="https://forms.gle/PmkDGTuphoSgqnfPA">[this form]</a></li>
+<li>Be prepared to ask them at least one question. You could write this
+as a comment on their report or slides in Google Drive. You can also ask
+them during the presentation as long as you are under the time
+limit.</li>
 </ul></li>
-<li>Each person individually submits <a href="https://norcalbiostat.github.io/MATH456/notes/Effective-Teams.pdf">Evaluation of progress towards effective team functioning</a> using <a href="https://forms.gle/TjyqkDKbkM92zjDx6">[this form]</a>.</li>
+<li>Each person individually submits <a
+href="https://norcalbiostat.github.io/MATH456/notes/Effective-Teams.pdf">Evaluation
+of progress towards effective team functioning</a> using <a
+href="https://forms.gle/TjyqkDKbkM92zjDx6">[this form]</a>.</li>
 </ol>
 </div>
 <div id="draft-slides" class="section level1">
 <h1>Draft slides</h1>
-<p>You will start drafting a set of presentation slides that you will present during finals week.</p>
+<p>You will start drafting a set of presentation slides that you will
+present during finals week.</p>
 <ol style="list-style-type: decimal">
-<li>Create a slide deck in the <code>project/_Presentations</code> folder in Google Drive.</li>
+<li>Create a slide deck in the <code>project/_Presentations</code>
+folder in Google Drive.</li>
 </ol>
 <ul>
-<li>You could use <a href="https://support.rstudio.com/hc/en-us/articles/200486468-Authoring-R-Presentations">Rmarkdown to create a slide deck</a>, but you’ll need to make sure there is a way to add comments.</li>
+<li>You could use <a
+href="https://support.rstudio.com/hc/en-us/articles/200486468-Authoring-R-Presentations">Rmarkdown
+to create a slide deck</a>, but you’ll need to make sure there is a way
+to add comments.</li>
 <li>Sections:
 <ul>
 <li>Intro/Background</li>
@@ -657,23 +648,31 @@ div.tocify {
 </ul></li>
 </ul>
 <ol start="2" style="list-style-type: decimal">
-<li>Each person will review one group’s slides and provide feedback using the same peer review guidelines that are used for the homework.</li>
+<li>Each person will review one group’s slides and provide feedback
+using the same peer review guidelines that are used for the
+homework.</li>
 </ol>
 </div>
 <div id="final-presentation" class="section level1">
 <h1>Final Presentation</h1>
 <ol style="list-style-type: decimal">
-<li>Each team will present their analysis as a 10-15 minute presentation with slides.
+<li>Each team will present their analysis as a 10-15 minute presentation
+with slides.
 <ul>
 <li>Presentation time will be scheduled during finals week.</li>
-<li>Some presentations will occur during our regularly scheduled final time (Fri 12-2).</li>
-<li>All group members must be present and take part in the presentation.</li>
+<li>Some presentations will occur during our regularly scheduled final
+time (Fri 12-2).</li>
+<li>All group members must be present and take part in the
+presentation.</li>
 </ul></li>
-<li>When you are not presenting, you are expected to pay attention and ask relevant questions. If you don’t get a chance to ask during the presentation, you will have to directly comment on their slides for credit.</li>
+<li>When you are not presenting, you are expected to pay attention and
+ask relevant questions. If you don’t get a chance to ask during the
+presentation, you will have to directly comment on their slides for
+credit.</li>
 <li>Peer rating of each team member.</li>
 </ol>
 <hr />
-<p><em>Last Updated: Fri Apr 17 4:08:21 PM</em></p>
+<p><em>Last Updated: Mon Dec 26 5:34:26 PM</em></p>
 </div>
 
 
@@ -687,7 +686,7 @@ div.tocify {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -705,7 +704,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
@@ -714,6 +713,9 @@ $(document).ready(function () {
 
 <script>
 $(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
 
     // move toc-ignore selectors from section div to header
     $('div.section.toc-ignore')
@@ -726,7 +728,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0

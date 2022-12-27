@@ -1,5 +1,5 @@
 ---
-title: "Schedule"
+title: Schedule
 output: html_document
 ---
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
@@ -9,6 +9,8 @@ knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
 ```
 
 # Last Updated: `r format(Sys.time(), "%a %b %d %X")` {.tabset .tabset-fade .tabset-pills}
+
+**THIS PAGE IS NOT UPDATED FOR SPRING 23**
 
 ## Overview
 
@@ -24,7 +26,7 @@ Don't forget to check the weekly details for information on how to prepare and l
 rawdat <- read_xlsx("schedule_456.xlsx", sheet='weekly_schedule')
 
 # Set semester start date and format weeks nicely
-start.date <- as.Date("2020-01-21")
+start.date <- as.Date("2023-01-23")
 
 # which rows have week numbers 
 wn <- c(which(!is.na(rawdat$wknum))) %>% sort() 

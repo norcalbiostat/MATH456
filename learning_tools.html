@@ -13,12 +13,22 @@
 
 <title>Learning Tools</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/header-attrs-2.19/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/journal.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
 <script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
 <link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
 <script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
@@ -26,35 +36,20 @@
 <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
-
-
-
 <style type="text/css">
-h1 {
-  font-size: 34px;
-}
-h1.title {
-  font-size: 38px;
-}
-h2 {
-  font-size: 30px;
-}
-h3 {
-  font-size: 24px;
-}
-h4 {
-  font-size: 18px;
-}
-h5 {
-  font-size: 16px;
-}
-h6 {
-  font-size: 12px;
-}
-.table th:not([align]) {
-  text-align: left;
-}
-</style>
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+
+
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 
@@ -65,10 +60,6 @@ h6 {
   max-width: 940px;
   margin-left: auto;
   margin-right: auto;
-}
-code {
-  color: inherit;
-  background-color: rgba(0, 0, 0, 0.04);
 }
 img {
   max-width:100%;
@@ -85,40 +76,16 @@ button.code-folding-btn:focus {
 summary {
   display: list-item;
 }
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
 </style>
 
 
 <style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 61px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 66px;
-  margin-top: -66px;
-}
-.section h2 {
-  padding-top: 66px;
-  margin-top: -66px;
-}
-.section h3 {
-  padding-top: 66px;
-  margin-top: -66px;
-}
-.section h4 {
-  padding-top: 66px;
-  margin-top: -66px;
-}
-.section h5 {
-  padding-top: 66px;
-  margin-top: -66px;
-}
-.section h6 {
-  padding-top: 66px;
-  margin-top: -66px;
-}
 .dropdown-submenu {
   position: relative;
 }
@@ -146,7 +113,7 @@ body {
   margin-right: -10px;
 }
 .dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
+  border-left-color: #adb5bd;
 }
 .dropdown-submenu.pull-left {
   float: none;
@@ -158,7 +125,7 @@ body {
 }
 </style>
 
-<script>
+<script type="text/javascript">
 // manage active state of menu based on current page
 $(document).ready(function () {
   // active menu anchor
@@ -168,11 +135,28 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.parent().addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
 });
 </script>
 
@@ -184,13 +168,12 @@ $(document).ready(function () {
   max-height: 500px;
   min-height: 44px;
   overflow-y: auto;
-  background: white;
   border: 1px solid #ddd;
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -198,16 +181,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -310,7 +286,7 @@ div.tocify {
 
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row-fluid">
+<div class="row">
 <div class="col-xs-12 col-sm-4 col-md-3">
 <div id="TOC" class="tocify">
 </div>
@@ -324,7 +300,7 @@ div.tocify {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -341,7 +317,7 @@ div.tocify {
   </a>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-folder-open"></span>
      
     Materials
@@ -350,48 +326,13 @@ div.tocify {
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a href="class_structure_changes.html">Updated procedures</a>
-    </li>
-    <li>
       <a href="https://norcalbiostat.github.io/AppliedStatistics_notes/index.html">Course Notes</a>
     </li>
     <li>
       <a href="learning_tools.html">Learning Techniques</a>
     </li>
     <li>
-      <a href="syllabus_456_S20.html">Syllabus</a>
-    </li>
-  </ul>
-</li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-    <span class="fa fa-wrench"></span>
-     
-    Tools
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="https://drive.google.com/drive/folders/0B83Z8_sNw3KPcnVrYzVFRHUtcHM?usp=sharing">
-        <span class="fa fa-google"></span>
-         
-        Google Drive
-      </a>
-    </li>
-    <li>
-      <a href="https://math456.slack.com/">
-        <span class="fa fa-slack"></span>
-         
-        Slack (class discussions)
-      </a>
-    </li>
-    <li>
-      <a href="https://csuchico.zoom.us/">
-        <span class="fa fa-video-camera"></span>
-         
-        Zoom (video conference)
-      </a>
+      <a href="syllabus_456_S22.html">Syllabus</a>
     </li>
   </ul>
 </li>
@@ -405,7 +346,7 @@ div.tocify {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     <span class="fa fa-question"></span>
      
     Help
@@ -418,13 +359,6 @@ div.tocify {
         <span class="fa fa-group"></span>
          
         Community Coding
-      </a>
-    </li>
-    <li>
-      <a href="https://www.rstudio.com/online-learning/">
-        <span class="fa fa-registered"></span>
-         
-        R Studio Tutorials
       </a>
     </li>
     <li>
@@ -444,7 +378,7 @@ div.tocify {
   </ul>
 </li>
 <li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
     Contact Dr. D
      
     <span class="caret"></span>
@@ -454,14 +388,14 @@ div.tocify {
       <a href="http://www.norcalbiostat.com/">
         <span class="fa fa-paw"></span>
          
-        Website
+        Her website
       </a>
     </li>
     <li>
-      <a href="https://csuchico.zoom.us/my/rdonatello">
-        <span class="fa fa-video-camera"></span>
+      <a href="https://dr-donatello.youcanbook.me/">
+        <span class="fa fa-calendar-check-o"></span>
          
-        Zoom Me!
+        Request Appointment
       </a>
     </li>
   </ul>
@@ -471,7 +405,7 @@ div.tocify {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div id="header">
 
 
 
@@ -482,32 +416,48 @@ div.tocify {
 
 <div id="learning-journals-lj" class="section level2">
 <h2>Learning Journals (LJ)</h2>
-<p>An electronic document where you will be writing responses and reflections to certain in-class activities. This will be checked off quarterly for quality and completeness.</p>
-<p><a href="https://www.teachthought.com/literacy/20-types-of-learning-journals-that-help-students-think/" class="uri">https://www.teachthought.com/literacy/20-types-of-learning-journals-that-help-students-think/</a></p>
+<p>An electronic document where you will be writing responses and
+reflections to certain in-class activities. This will be checked off
+quarterly for quality and completeness.</p>
+<p><a
+href="https://www.teachthought.com/literacy/20-types-of-learning-journals-that-help-students-think/"
+class="uri">https://www.teachthought.com/literacy/20-types-of-learning-journals-that-help-students-think/</a></p>
 <ul>
-<li>Date each entry. Write entries in chronoligcal order, from oldest at the top to newest at the bottom.</li>
-<li>If you find it getting lengthy, you can use first or second level headers to create a navigation bar/outline view to the left side to help find specific entries.</li>
+<li>Date each entry. Write entries in chronoligcal order, from oldest at
+the top to newest at the bottom.</li>
+<li>If you find it getting lengthy, you can use first or second level
+headers to create a navigation bar/outline view to the left side to help
+find specific entries.</li>
 </ul>
-<p><a href="hw/lj-entries.html">[Here is the list]</a> of LJ entries to date.</p>
+<p><a href="hw/lj-entries.html">[Here is the list]</a> of LJ entries to
+date.</p>
 </div>
 <div id="question-formulation-technique-qft" class="section level2">
 <h2>Question Formulation Technique (QFT)</h2>
-<p>The backbone of the scientific process is asking and trying to answer questions. This activity will help students learn how to brainstorm and ask questions freely, how to work with open and close ended questions, and what they can learn from asking questions.</p>
+<p>The backbone of the scientific process is asking and trying to answer
+questions. This activity will help students learn how to brainstorm and
+ask questions freely, how to work with open and close ended questions,
+and what they can learn from asking questions.</p>
 <p><strong>General process</strong>:</p>
 <ol style="list-style-type: decimal">
 <li>You will be presented with a Question Focus.</li>
-<li>In a group you will produce questions about the focus topic using some guiding rules.</li>
-<li>Identify closed and open ended questions, practice converting between the two.</li>
+<li>In a group you will produce questions about the focus topic using
+some guiding rules.</li>
+<li>Identify closed and open ended questions, practice converting
+between the two.</li>
 <li>Prioritize questions (Mark with an “X”)</li>
 <li>In a shared Google document:
 <ul>
-<li>Share questions converted from open to closed, and closed to open format.</li>
+<li>Share questions converted from open to closed, and closed to open
+format.</li>
 <li>Your top 3 questions, with rational for their ranking.</li>
 </ul></li>
 <li>(After class) Reflect on the activity in your Learning Journal.
 <ul>
-<li>Review the class-wide responses and comment on similarities and differences between your group and other groups top 3.</li>
-<li>Think about the work that you have done, what you have learned and its value.</li>
+<li>Review the class-wide responses and comment on similarities and
+differences between your group and other groups top 3.</li>
+<li>Think about the work that you have done, what you have learned and
+its value.</li>
 <li>What did you learn during this exercise?</li>
 <li>What is the value of learning to ask your own questions?</li>
 <li>How can you use what you learned?</li>
@@ -516,8 +466,12 @@ div.tocify {
 </div>
 <div id="bridge-bridge" class="section level2">
 <h2>3-2-1 Bridge (Bridge)</h2>
-<p>This activity is designed for you to visualize and reflect on how your thinking and perceptions on a specific topic change throughout a module, or course.</p>
-<p><a href="https://norcalbiostat.github.io/MATH315/lecture/321_Bridge.html" class="uri">https://norcalbiostat.github.io/MATH315/lecture/321_Bridge.html</a></p>
+<p>This activity is designed for you to visualize and reflect on how
+your thinking and perceptions on a specific topic change throughout a
+module, or course.</p>
+<p><a
+href="https://norcalbiostat.github.io/MATH315/lecture/321_Bridge.html"
+class="uri">https://norcalbiostat.github.io/MATH315/lecture/321_Bridge.html</a></p>
 </div>
 <div id="quick-writes-qw" class="section level2">
 <h2>Quick Writes (QW)</h2>
@@ -529,26 +483,50 @@ div.tocify {
 </div>
 <div id="peer-review-pr" class="section level2">
 <h2>Peer Review (PR)</h2>
-<p>No matter what you end up doing after graduation, the quality of your ideas and work will be judged, in a large measure, by how well you can communicate in writing to diverse audiences. Participating in peer review can help you learn to shape their written language as a medium of communication with readers. <a href="https://teachingcenter.wustl.edu/resources/writing-assignments-feedback/using-peer-review-to-help-students-improve-their-writing/">[Ref.]</a></p>
-<p>You will be providing peer reviews on different assignments, including homework and project assignments.</p>
-<p>Most assignments will have a Draft due date. Then a period of peer review for approx 2 days, where your job is to help your classmate get the best score possible. Then after the peer review window has closed, you have another 1-2 days to make corrections and submit your final version.</p>
-<p>Details on requirements, and grading of reviews can be found in this <a href="https://drive.google.com/open?id=1eAe2joBOQ_RGkYi9k3LPBAiaclhjLoXBJdsOu1f4xrs">linked Google Document</a></p>
+<p>No matter what you end up doing after graduation, the quality of your
+ideas and work will be judged, in a large measure, by how well you can
+communicate in writing to diverse audiences. Participating in peer
+review can help you learn to shape their written language as a medium of
+communication with readers. <a
+href="https://teachingcenter.wustl.edu/resources/writing-assignments-feedback/using-peer-review-to-help-students-improve-their-writing/">[Ref.]</a></p>
+<p>You will be providing peer reviews on different assignments,
+including homework and project assignments.</p>
+<p>Most assignments will have a Draft due date. Then a period of peer
+review for approx 2 days, where your job is to help your classmate get
+the best score possible. Then after the peer review window has closed,
+you have another 1-2 days to make corrections and submit your final
+version.</p>
+<p>Details on requirements, and grading of reviews can be found in this
+<a
+href="https://drive.google.com/open?id=1eAe2joBOQ_RGkYi9k3LPBAiaclhjLoXBJdsOu1f4xrs">linked
+Google Document</a></p>
 </div>
 <div id="quizzes-qz" class="section level2">
 <h2>Quizzes (Qz)</h2>
-<p>Quizzes are a great way to test yourself, enhance recall, and self-assess your comprehension of the subject. Quizzes are administered in Google Forms, and done in two parts.</p>
+<p>Quizzes are a great way to test yourself, enhance recall, and
+self-assess your comprehension of the subject. Quizzes are administered
+in Google Forms, and done in two parts.</p>
 <ol style="list-style-type: decimal">
-<li><p><strong>Individual</strong>: First try to answer as many questions without looking at your notes. Then use your notes to answer the rest.</p></li>
-<li><p><strong>Group</strong>: After the individual quiz closes I will choose 1-4 questions that scored the lowest. We will do a class-wide discussion of those topics, then you will work in groups to redo the selected questions for half credit.</p></li>
+<li><p><strong>Individual</strong>: First try to answer as many
+questions without looking at your notes. Then use your notes to answer
+the rest.</p></li>
+<li><p><strong>Group</strong>: After the individual quiz closes I will
+choose 1-4 questions that scored the lowest. We will do a class-wide
+discussion of those topics, then you will work in groups to redo the
+selected questions for half credit.</p></li>
 </ol>
 </div>
 <div id="exam-error-assessment" class="section level2">
 <h2>Exam Error Assessment</h2>
-<p>For the midterm you will have an opportunity assess your errors on the midterm, make corrections, review the corrections with me, for a partial return of the credit lost. <a href="notes/Analyzing%20exam%20errors.pdf">Error Assessment Form</a></p>
+<p>For the midterm you will have an opportunity assess your errors on
+the midterm, make corrections, review the corrections with me, for a
+partial return of the credit lost. <a
+href="notes/Analyzing%20exam%20errors.pdf">Error Assessment Form</a></p>
 <ul>
 <li>Download the error assessment form.</li>
 <li>Review page 3, six types of test taking errors.</li>
-<li>Fill out page 2 by using the commenting/editing tool in Adobe to add text.</li>
+<li>Fill out page 2 by using the commenting/editing tool in Adobe to add
+text.</li>
 <li>Redo the problems you got wrong on a separate form.</li>
 <li>Make an appt with me to go over your corrected answers.</li>
 </ul>
@@ -565,7 +543,7 @@ div.tocify {
 
 // add bootstrap table styles to pandoc tables
 function bootstrapStylePandocTables() {
-  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
 }
 $(document).ready(function () {
   bootstrapStylePandocTables();
@@ -583,7 +561,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
+    $(this).parent().toggleClass('nav-tabs-open');
   });
 });
 </script>
@@ -592,6 +570,9 @@ $(document).ready(function () {
 
 <script>
 $(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
 
     // move toc-ignore selectors from section div to header
     $('div.section.toc-ignore')
@@ -604,7 +585,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
