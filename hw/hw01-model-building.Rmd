@@ -1,20 +1,19 @@
 ---
 title: "HW01 - Statistical Modeling"
-author: "MATH 456 - Spring 2020"
 output:
   html_document:
-    df_print: paged
-  pdf_document: default
+    toc: yes
+    toc_float: yes
 ---
 
 # Submission Instructions. 
 
-* [[Right click this link to download the R Markdown template for this homework.]](hw01-modeling-template.Rmd) This template is required. 
+* [Right click this link to download the R Markdown template for this homework.](hw01-modeling-template.Rmd) 
+    - This template is required for this homework as it provides a demonstration on how to use markdown headers `#` and `##` to nicely format your homework to make it easy for me to find your problems. All further homework must be in a format like this (a template is not always provided.)
     - Rename this file with your username. I.e. `hw01-modeling-template.Rmd` becomes `hw01-modeling-rdonatello.Rmd`
-* Knit to PDF and submit to Google Drive: `HW01: Statistical Modeling/Draft` folder by the due date. 
-* This is a peer reviewed assignment. After the PR period, you should update your assignment with corrections by your peers, and submit a final version into the `HW01: Statistical Modeling/Final` Google folder. 
+* Knit/render to PDF and submit to Google Drive: `Topic 01: Statistical Modeling/Draft` folder by the due date. 
 
-[[Click here to download this file as a PDF]](hw01.pdf)
+* This is a peer reviewed assignment. After the PR period, you should update your assignment with corrections by your peers, and submit a final version into the `Topic 01: Statistical Modeling/Final` Google folder. 
 
 # Part I: Statistical Modeling
 
@@ -42,7 +41,7 @@ output:
 
 6. Using the depression data set, fit a model of income using age, sex, educational level and religion as predictors. (PMA6 problem 10.3 modified)
     a. Use a general F test to determine whether religion has an effect on income. 
-    b. State the reference categories for both relition and educational level.
+    b. State the reference categories for both religion and educational level.
     c. Interpret the coefficient for each level of educational level in full context of the problem, being sure to include the comparison group. You must include the point estimate ($\hat{\beta}$), a 95% confidence interval for that estimate, and a p-value in your conclusion. 
 
 <br>

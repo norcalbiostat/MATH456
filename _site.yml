@@ -18,6 +18,7 @@ navbar:
   - text: Project 
     icon: fa-group
     href: project.html
+    
   right:
   - text: Help
     icon: fa-question

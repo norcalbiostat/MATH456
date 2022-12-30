@@ -4,7 +4,10 @@ Some entries are completed during class as part of participation and reflection.
 If you did not attend class that day, just say so. Don't try to make up an entry. 
 
 
-* HW 00: What is self-regulated learning? What is the benefit to you? Find a good diagram that you think captures this idea and draw it in your LJ.
+* HW 00: How does the material you’ve heard thus far connect or conflict with your prior knowledge, beliefs, or values?
+
+
+<!---
 * Mind map on data preparation - How did you choose what to write? How did you start? 
 * QFT 02/03 - Variable Selection
 * QFT 02/10 - What to do with non-continuous outcome data? 
@@ -24,3 +27,5 @@ If you did not attend class that day, just say so. Don't try to make up an entry
 * One check in per topic, Modified QFT process. 
 * Generate questions in your learning journal (follow rules). 
 * Will be checked on the first Monday of the start of a topic. 
+
+--->
