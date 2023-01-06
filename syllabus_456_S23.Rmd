@@ -1,6 +1,6 @@
 ---
 title: 'Syllabus for MATH 456 - Applied Statistics II'
-author: "Spring 2022"
+author: "Spring 2023"
 output:
   pdf_document: default
   html_document:
@@ -25,8 +25,6 @@ _Advanced topics in applied statistics including multiple regression, multivaria
 
 This is an in person class with no expectation for hybrid learning. Synchronous zoom room can be setup (link in Canvas) in case of illness (Please don't come to class sick), but you may miss out on in class activities. 
 
-You can download the Syllabus in PDF form by clicking [[this link]](syllabus_456_S22.pdf).
-
 # Learning Outcomes
 Upon successful completion of this course, students will be able to:  
 
@@ -35,7 +33,6 @@ Upon successful completion of this course, students will be able to:
 * Apply advanced statistical analysis methodologies to complex and multivariate data. 
 * Appropriately conduct an analysis in the presence of missing data. 
 * Report the results of the analysis in plain language. 
-* Work collaboratively on a team based project. 
 
 
 # Required Materials
@@ -44,24 +41,26 @@ Upon successful completion of this course, students will be able to:
   - Several copies are available in the library. More can be made available if needed. 
 * **Reliable Laptop**: Expect to bring often. Contact me if this poses a problem or concern for you. 
 * **Reliable internet** connection while on and off campus. ITSS can help you get this setup. 
-* **Computer Software:** Unless you have been granted an exception, all work is be done in R. Exceptions are granted on an individual basis after demonstration of proficiency in an alternate language and the ability to produce a reproducible PDF report similar to a R Markdown file.
+* **Computer Software:** Unless you have been granted an exception, all work is be done in R. Exceptions are granted on an individual basis after demonstration of proficiency in an alternate language and the ability to produce a reproducible PDF report similar to a R Markdown file and produce readable & annotated code.
 
 # Tentative topic list
 
 * Multiple Linear Regression Model building 
+    - categorical variables, reference coding
     - moderators, confounders, interactions, stratification
-    - categorical variables, reference coding, contrasts
-* Variable selection methods
+    - Variable selection methods
 * Classification & Prediction
     - Sensitivity/specificity/accuracy
 * Multivariate statistics / Dimension Reduction
     - Principle Component Analysis
     - Factor Analysis
 * Missing Data: Identification & Imputation
-* Optional Topics. At least one of the following topics will also be covered. 
+* Additional Topics. 1-2 of the following topics will also be covered. 
     - Cluster analysis
     - Analysis of Survival Data
     - Generalized linear models / modeling of count data. 
+    - Correlated outcomes (Multi-level models)
+    - Bootstrap methods
 
 
 # Assignments / graded items 
@@ -69,28 +68,24 @@ Your final grade will be a straight sum of points earned and will be displayed a
 I use a standard grade cutoff of 100-90%: A, 89-80%: B, 79-70%: C, 69-60%: D, 0-59%: F  
 
 
-#### Exams (XX%)
+#### Exams (25%)
 * 2 Exams (midterm/final, not cumulative). [Error Assessment Form](notes/Analyzing exam errors.pdf) available for midterm. 
 
-#### Assignments (XX%)
-* 6 standard homework assignments on the topics listed above. Submitted through <TBD>. 
-* Peer reviews (PR) of these assignments. 
+#### Assignments (30%)
+* 6 Standard homework assignments on the topics listed above. Drafts submitted through Google Drive, Final versions for grading submitted through Canvas. 
 
-#### Quizzes (XX%)
-* 7 Individual + Group quizzes. Administered through Google Forms. 
+#### Quizzes (15%)
+* Nearly weekly Individual + Group quizzes. Administered through Google Forms. Lowest score dropped. 
 
-#### Active Learning (XX%)
+#### Active Learning (30%)
 * Various active or reflective [learning activities](learning_tools.html) during/outside of class.
-* Attending [Community Coding](http://bit.ly/cc_hours) and/or Office Hours **3** times. This can be to check in on your grade, ask clarifying questions, or chat about life and graduate school.
+* Peer reviews (PR) of assignments. Because helping others helps you learn. 
+* Attending [Community Coding](http://bit.ly/cc_hours) and/or Office Hours **2** times. This can be to check in on your grade, ask clarifying questions, or chat about life and graduate school.
 * Discord participation. Contributing to our learning community by asking and answering questions about assignments, code, etc in Discord is required to make this class run smoothly. And in the end, you are the ones that will benefit from it the most. Don't spend more than 20 min banging your head on the proverbial wall before you reach out and ask for help. 
-* External/ongoing learning. No academic topic only lives in the classroom. You are required to do **1** of them. 
-    -  Attending an internal/external seminar talk on a topic in Applied Statistics, or a Data analysis-centric seminar talk,         writing a 1 page summary about the talk, and sharing this summary in the #external-learning Discord channel.
-    - Contribute to the [Applied Statistics Course Notes](https://norcalbiostat.github.io/AppliedStatistics_notes/). This could be a new example, enhancing/fixing an old example, 
+* One external activity. Because no academic topic only lives in the classroom. Examples include:
+    -  Attending an internal/external seminar talk on a topic in Applied Statistics, or a Data analysis-centric seminar talk, writing a 1 page summary about the talk and how it relates to this class or your chosen field, and sharing this summary in the #external-learning Discord channel.
+    - Contribute to the [Applied Statistics Course Notes](https://norcalbiostat.github.io/AppliedStatistics_notes/). This could be a new example or  enhancing/fixing an old example
         - Once you identify the piece you want to work on, PM me the section in Discord I will send you the relevant code/data. 
-
-#### Project (XX%)
-* Student Group led analysis [project](project.html). 
-
 
 
 ----

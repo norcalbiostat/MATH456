@@ -14,10 +14,8 @@ navbar:
     - text: Learning Techniques
       href: learning_tools.html
     - text: Syllabus 
-      href: syllabus_456_S22.html
-  - text: Project 
-    icon: fa-group
-    href: project.html
+      href: syllabus_456_S23.html
+
     
   right:
   - text: Help

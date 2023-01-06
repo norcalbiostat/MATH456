@@ -1,5 +1,5 @@
 ---
-title: 'HW 00: Getting Started'
+title: 'HW 0: Getting Started'
 output:
   html_document:
     toc: yes
@@ -7,17 +7,29 @@ output:
 ---
 
 # Submission Instructions
- 
-* Upload your flowchart (#3 below) as a PDF to our shared Google Drive folder `Topic 00: Data Preparation`. 
-* This file must be named "hw00_dataprep_userid" where `userid` is your chico state user id, (i.e. the first part of your email.)
 
-## Peer Review
+This assignment is a checklist of tasks for you to do to prepare for learning in this class. Submission instructions for any items that need to be turned in are explained under that item. 
 
-This assignment will be subject to Peer Review, but no draft/revision cycle.
+Check Canvas for due dates
 
 ---
 
-# 1. Preparing class materials
+
+# 1. Preparing Data for Analysis 
+
+1. Read PMA6 Chapter 3
+
+2. Data Preparation Flowchart
+    - In class you will work with a partner to draft up a flowchart / reference sheet for the process of preparing data for analysis. E.g.: If you were handed a data set, what are the first things you need to do?
+    - After class and using the information from Chapter 3 and your own personal experiences, fill in the gaps, finalize and personalize this flowchart. 
+    - Convert this flowchart to PDF format however you wish. You could recreate it using mind mapping software, you could take a finalized picture and save as PDF. 
+    - Upload your flowchart as a PDF to our shared Google Drive folder `Topic 00: Data Preparation`. This file must be named "hw00_dataprep_userid" where `userid` is your chico state user id, (i.e. the first part of your email.)
+    - **AND** upload a copy to the Canvas assignment. 
+    - This assignment will be subject to Peer Review, but without a no draft/revision cycle.
+
+You are welcome (encouraged) to work on this flowchart after the official due date. Especially after you view other's submissions. Very likely they included something that you didn't think of! The intent is to create something useful for yourself. 
+
+# 2. Preparing class materials & platforms
 
 1. Join our Discord workspace by clicking here: https://discord.gg/9tQyTKC3cE, reviewing and agreeing to the code of conduct. 
     - Have an existing Discord account? Feel free to use it, but change your name on this server to your preferred name that you want us to call you by. 
@@ -25,17 +37,15 @@ This assignment will be subject to Peer Review, but no draft/revision cycle.
     - Download the Desktop app. You are not allowed to rely on remembering to login using the web version. The Discord phone app is technically optional, but really really helpful/handy. Students historically have stated it's much easier to work with.
     - Post an introduction in the `#class-chat` channel. Tell us a little about you! Year, major, hometown, any extracurricular activities, what do you hope to get out of this class, how will you ensure your success in this class. Oh.. and of course any mention of pets should include a photo!
   
-2. Join our class Google Drive. You will be added to this manually using your @mail.csuchico.edu email address. 
-    - Star this folder to make it easier to find. 
+2. You have been added to our class Google Folder using your @mail.csuchico.edu email address. :star: this folder in Google Drive to make it easier to find. 
     
 3. Create an electronic Learning Journal (LJ). This could be a Google Document, or a document in Dropbox or Box. 
     - PM the URL link to Dr. D in Discord. If you are using Google Docs make sure the permissions on the document are set to _anyone with the link can view_
     
 4. Update your R (4.2+) and R Studio (latest). 
-    - All homework is to be done in a literate programming/reproducible manner. This means either `.Rmd` or `.qmd` files compiled to PDF. If you don't know what this means, reviw lecture 02 & 03 from [Math 130 week 1](https://norcalbiostat.github.io/MATH130/wk1.html)
+    - All homework is to be done in a literate programming/reproducible manner. This means either `.Rmd` or `.qmd` files compiled to PDF. If you don't know what this means, review lecture 02 & 03 from [Math 130 week 1](https://norcalbiostat.github.io/MATH130/wk1.html)
     - Make sure you can knit to PDF. If you cannot, then install the `tinytex` package and then run `tinytex::install_tinytex()` in the console to install a lightweight version of LaTeX.
     
-
 5. Setup your class folder on your computer. By now you should have figured out a common workplace on your computer for your class files. If you have not already done so, create a `MATH456` folder. 
     - Add folders for `data`, `hw`
     - Download the raw data and codebooks from our `DATA` folder in our shared Google Drive into your `data` subfolder on your computer
@@ -43,35 +53,18 @@ This assignment will be subject to Peer Review, but no draft/revision cycle.
         - import the raw data
         - save a `clean` data set as a `.Rdata` file that you will use for analysis
     - [Example](https://www.norcalbiostat.com/data/dm_addhlth)
-        
-6. Project Overview: If you have your own data or topic that you would like to research this semester, you will have this chance. Review the Projects page on the class website to see what is expected. 
+6. Help me decide when to hold student office hours. Remember, these are open drop in times where I dedicate my time to YOU as students. My time outside these hours is limited, so be sure to fill this out so I can best choose times that you are free. [[Link]](https://forms.gle/aZgtaBbt2tH21ZAr6)   
 
 
+# 3. Preparing yourself to Learn
 
-# 2. Preparing yourself to Learn
+1.  Read a little about Self-regulated learning and metacognition from the following sources
+    - https://en.wikipedia.org/wiki/Self-regulated_learning
+    - https://serc.carleton.edu/sage2yc/self_regulated/what.html
+    - Document: [Questions that Self-regulated learnings ask themselves](../notes/SLR handout.docx)
+    - Google? 
 
-1.  Read a little about Self-regulated learning and metacognition. 
-
-* https://en.wikipedia.org/wiki/Self-regulated_learning 
-* https://serc.carleton.edu/sage2yc/self_regulated/what.html
-* Document: [Questions that Self-regulated learnings ask themselves](../notes/SLR handout.docx)
-
-2.  Write your first LJ Entry: 
+2.  Write your first LJ Entry by answering the question below: 
 
 > How does the material you’ve heard thus far connect or conflict with your prior knowledge, beliefs, or values?  
-  
-# 3. Preparing Data for Analysis
-
-1. Read PMA6 Chapter 3 before Friday
-
-2. Data Preparation Flowchart
-    - In class you will work with a partner to create a flowchart / reference sheet for the process of preparing data for analysis. E.g.: If you were handed a data set, what are the first things you need to do?
-    - Work up a draft with your partner, then snap a picture. 
-    - Later, outside of class, transfer your diagram into an electronic program. There are many different mind mapping / flowchart software programs out there, e.g. Lucid chart is available in Google Drive, but you can also insert images into a normal word document. 
-
-You are welcome (encouraged) to work on this flowchart after the official due date. Especially after you view other's submissions. Very likely they included something that you didn't think of! The intent is to create something useful for yourself. 
-
-3. Download raw data and setup data management files
-    - 
-All data can be downloaded from the `Data` folder in our google drive. Note that each data set
-
+ 

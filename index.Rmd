@@ -242,19 +242,8 @@ math456/
 ### `r format(wk1.date, "%m-%d-%Y")`: Welcome!
 
 * Welcome to spring semester in statistics with your host, Dr. Robin Donatello. 
-* Make sure you acquaint yourself with this website, it will be your guide for the next 16 weeks. 
-* We will use Google Drive for homework submission. 
-    - You will be added using your @mail.csuchico.edu email address. 
-    - I recommend you `r emo::ji("star")` the folder in your drive so you can find it easier. 
-* We will use Discord for all outside of class communication. 
-    - Do not email me with questions relating to the class. 
-    - You must download the desktop app, or phone app (or both). Do not rely on logging into the web browser version. You will miss timely information. 
-    - Instructions to join can be found in [Hw0](hw/hw00-getting-started.html)
-* Software Updates: 
-    - Update your version of `R studio` for sure. Update R if you're running < 4.2. 
-* If you've had me in a class before, you know that there *will* be typos and broken links on this webpage. Here is how you can contribute to the fix.
-    - good: Notify me in Discord. That way I can confirm in public when the issue is resolved. 
-    - better: open up an Issue in [Github](https://github.com/norcalbiostat/MATH456)
-    - best: fork the repo and submit a PR with the fix!
+* Make sure you acquaint yourself with this website and our Canvas course page, it they will be your guide for the next 16 weeks. 
+* To best ensure your success in this class, head over to Canvas now and review the first module, and the first setup homework! 
+
 
 

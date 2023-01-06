@@ -10,14 +10,15 @@ knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
 
 # Last Updated: `r format(Sys.time(), "%a %b %d %X")` {.tabset .tabset-fade .tabset-pills}
 
-**THIS PAGE IS NOT UPDATED FOR SPRING 23**
+**SPRING 23 Updates in progress**
 
 ## Overview
 
 <p>
 Unless specified otherwise, all assignments are due at midnight on the due date listed.  
 
-Don't forget to check the weekly details for information on how to prepare and links to other materials.   
+Don't forget to check the weekly details (and Canvas) for information on how to prepare and links to other materials.   
+
 **PMA6**: Practical Multivariate Analysis 6th edition  
 **ASCN**: Applied Stats Course Notes (linked in nav bar under Materials)
 </p>
@@ -40,7 +41,7 @@ weekdates[9] <- "Spring Break (03/16)"
 weekdates[17] <- "Finals Week (05/12)"
 
 # Filter columns to display on schedule
-out <- rawdat %>% select(Topic:Project)
+out <- rawdat %>% select(Topic:Assignments)
 
 # add bold to due dates
 out$Assignments <- gsub(" (", " (<b>", out$Assignments, fixed=TRUE)
@@ -76,8 +77,7 @@ out %>%
   column_spec(1, width = "25%") %>% 
   column_spec(2, width = "15%") %>%
   column_spec(3, width = "10%") %>%
-  column_spec(4, width = "25%") %>% 
-  column_spec(5, width = "25%")
+  column_spec(4, width = "35%") 
 ```
 
 ## Details
@@ -623,11 +623,3 @@ pander(w15$fri)
 </div>
 
 
-
-## Calendar
-
-For those of you that like the calendar view of your schedule. Due to schedule adjustments during
-the semester these dates may not match exactly with the schedule. In those cases please bring any 
-descrepencies to my attention via Slack. 
-
-<iframe src="https://calendar.google.com/calendar/b/1/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=bWFpbC5jc3VjaGljby5lZHVfYTRwbXF2NzdqOG45NnM4Yjd0bzM3ZmhiMTRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=bWFpbC5jc3VjaGljby5lZHVfOTNyMXBmOThxZ2VzNzlsa2dkb3FpcGV1YW9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23AA5A00&amp;color=%231B887A" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
