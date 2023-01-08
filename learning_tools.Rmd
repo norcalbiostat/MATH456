@@ -11,8 +11,9 @@ An electronic document where you will be writing responses and reflections to ce
 
 https://www.teachthought.com/literacy/20-types-of-learning-journals-that-help-students-think/
 
-* Date each entry. Write entries in chronoligcal order, from oldest at the top to newest at the bottom. 
-* If you find it getting lengthy, you can use first or second level headers to create a navigation bar/outline view to the left side to help find specific entries. 
+* Date each entry. Write entries in reverse chronological order, from newest at the top to oldest at the bottom. 
+* Use 1st level headers for each date so a nice outline is created that helps both of us navigate
+
 
 
 [[Here is the list]](hw/lj-entries.html) of LJ entries to date. 

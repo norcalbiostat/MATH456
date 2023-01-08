@@ -24,7 +24,6 @@ Check Canvas for due dates
     - After class and using the information from Chapter 3 and your own personal experiences, fill in the gaps, finalize and personalize this flowchart. 
     - Convert this flowchart to PDF format however you wish. You could recreate it using mind mapping software, you could take a finalized picture and save as PDF. 
     - Upload your flowchart as a PDF to our shared Google Drive folder `Topic 00: Data Preparation`. This file must be named "hw00_dataprep_userid" where `userid` is your chico state user id, (i.e. the first part of your email.)
-    - **AND** upload a copy to the Canvas assignment. 
     - This assignment will be subject to Peer Review, but without a no draft/revision cycle.
 
 You are welcome (encouraged) to work on this flowchart after the official due date. Especially after you view other's submissions. Very likely they included something that you didn't think of! The intent is to create something useful for yourself. 

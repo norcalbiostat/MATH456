@@ -55,12 +55,20 @@ Upon successful completion of this course, students will be able to:
     - Principle Component Analysis
     - Factor Analysis
 * Missing Data: Identification & Imputation
+* Correlated Outcomes / Hierarchical Modeling
 * Additional Topics. 1-2 of the following topics will also be covered. 
     - Cluster analysis
     - Analysis of Survival Data
     - Generalized linear models / modeling of count data. 
-    - Correlated outcomes (Multi-level models)
     - Bootstrap methods
+
+We will spend 2 weeks on each topic and do the following activities: 
+
+* Opening Question Formulation 
+* Homework Assignment
+* Peer review of the Homework
+* Contribute to a shared notes document
+* Content knowledge Quiz
 
 
 # Assignments / graded items 
@@ -80,6 +88,7 @@ I use a standard grade cutoff of 100-90%: A, 89-80%: B, 79-70%: C, 69-60%: D, 0-
 #### Active Learning (30%)
 * Various active or reflective [learning activities](learning_tools.html) during/outside of class.
 * Peer reviews (PR) of assignments. Because helping others helps you learn. 
+* Working collaboratively with your classmates during class to solve problems and discuss topics. 
 * Attending [Community Coding](http://bit.ly/cc_hours) and/or Office Hours **2** times. This can be to check in on your grade, ask clarifying questions, or chat about life and graduate school.
 * Discord participation. Contributing to our learning community by asking and answering questions about assignments, code, etc in Discord is required to make this class run smoothly. And in the end, you are the ones that will benefit from it the most. Don't spend more than 20 min banging your head on the proverbial wall before you reach out and ask for help. 
 * One external activity. Because no academic topic only lives in the classroom. Examples include:
