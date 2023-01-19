@@ -1,5 +1,5 @@
 ---
-title: Schedule
+title: Weekly Activities
 output: html_document
 ---
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
@@ -8,19 +8,15 @@ options(knitr.table.format = "html", knitr.kable.NA = '')
 knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE) 
 ```
 
-# Last Updated: `r format(Sys.time(), "%a %b %d %X")` {.tabset .tabset-fade .tabset-pills}
-
-**SPRING 23 Updates in progress**
-
-## Overview
-
-<p>
-Unless specified otherwise, all assignments are due at midnight on the due date listed.  
-
-Don't forget to check the weekly details (and Canvas) for information on how to prepare and links to other materials.   
+All due dates and submission instructions are posted in Canvas. 
 
 **PMA6**: Practical Multivariate Analysis 6th edition  
 **ASCN**: Applied Stats Course Notes (linked in nav bar under Materials)
+
+# Last Updated: `r format(Sys.time(), "%a %b %d %X")` {.tabset .tabset-fade .tabset-pills}
+
+## Overview
+
 </p>
 ```{r}
 # Read in schedule
@@ -37,8 +33,8 @@ wkdt <- seq.Date(start.date, start.date+7*16, by='week')
 
 # format for display
 weekdates <- paste0("Week ", rawdat$wknum[wn], " (", format(wkdt, "%m/%d") , ")") 
-weekdates[9] <- "Spring Break (03/16)"
-weekdates[17] <- "Finals Week (05/12)"
+weekdates[8] <- "Spring Break (03/13)"
+weekdates[17] <- "Finals Week (05/15)"
 
 # Filter columns to display on schedule
 out <- rawdat %>% select(Topic:Assignments)
@@ -64,8 +60,8 @@ out %>%
   pack_rows(weekdates[5], wn[5],  wn[6]-1, label_row_css =wk.labs) %>%
   pack_rows(weekdates[6], wn[6],  wn[7]-1, label_row_css =wk.labs) %>%
   pack_rows(weekdates[7], wn[7],  wn[8]-1, label_row_css =wk.labs) %>%
-  pack_rows(weekdates[8], wn[8],  wn[9]-1, label_row_css =wk.labs) %>%
-  pack_rows(weekdates[9], wn[9],  wn[10]-1, label_row_css =hlt.wks) %>%
+  pack_rows(weekdates[8], wn[8],  wn[9]-1, label_row_css =hlt.wks) %>%
+  pack_rows(weekdates[9], wn[9],  wn[10]-1, label_row_css =wk.labs) %>%
   pack_rows(weekdates[10], wn[10],  wn[11]-1, label_row_css =wk.labs) %>%
   pack_rows(weekdates[11], wn[11],  wn[12]-1, label_row_css =wk.labs) %>%
   pack_rows(weekdates[12], wn[12],  wn[13]-1, label_row_css =wk.labs) %>%
@@ -82,15 +78,13 @@ out %>%
 
 ## Details
 
-Click each link to expand or contract the details for that week. 
-
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
+```{r}
 # Read in schedule
-raw_detail <- read_excel("schedule_456.xlsx", sheet="slo_detail")
+raw_slo_detail <- read_excel("schedule_456.xlsx", sheet="slo_detail")
 
 # Function to extract week and display data
 details <- function(w){
-  wd <- filter(raw_detail, wk==w) %>% 
+  wd <- filter(raw_slo_detail, wk==w) %>% 
         select(Topics, SLO, Prepare, Monday, Wednesday, Friday)  
   # strip data columns into separate lists
   Topic <- gsub("\r\n", "", wd$Topics)
@@ -103,6 +97,8 @@ details <- function(w){
   return(list(Topic=Topic, SLO=SLO, prep=prep, mon=mon, wed=wed, fri=fri))
 }
 ```
+
+Click each link to expand or contract the details for that week. 
 
 ```{r}
 w1 <- details(1)
@@ -139,7 +135,6 @@ pander(w1$fri)
 </div>
 
 
-
 ```{r}
 w2 <- details(2)
 ```
@@ -172,10 +167,6 @@ pander(w2$fri)
 ```
 
 </div>
-
-
-
-
 
 ```{r}
 w3 <- details(3)
@@ -621,5 +612,3 @@ pander(w15$fri)
 ```
 
 </div>
-
-

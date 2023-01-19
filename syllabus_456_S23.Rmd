@@ -90,7 +90,7 @@ I use a standard grade cutoff of 100-90%: A, 89-80%: B, 79-70%: C, 69-60%: D, 0-
 * Peer reviews (PR) of assignments. Because helping others helps you learn. 
 * Working collaboratively with your classmates during class to solve problems and discuss topics. 
 * Attending [Community Coding](http://bit.ly/cc_hours) and/or Office Hours **2** times. This can be to check in on your grade, ask clarifying questions, or chat about life and graduate school.
-* Discord participation. Contributing to our learning community by asking and answering questions about assignments, code, etc in Discord is required to make this class run smoothly. And in the end, you are the ones that will benefit from it the most. Don't spend more than 20 min banging your head on the proverbial wall before you reach out and ask for help. 
+* Discussion boards & Discord participation. Contributing to our learning community by asking and answering questions about assignments, code, etc in Discord is required to make this class run smoothly. And in the end, you are the ones that will benefit from it the most. Don't spend more than 20 min banging your head on the proverbial wall before you reach out and ask for help. 
 * One external activity. Because no academic topic only lives in the classroom. Examples include:
     -  Attending an internal/external seminar talk on a topic in Applied Statistics, or a Data analysis-centric seminar talk, writing a 1 page summary about the talk and how it relates to this class or your chosen field, and sharing this summary in the #external-learning Discord channel.
     - Contribute to the [Applied Statistics Course Notes](https://norcalbiostat.github.io/AppliedStatistics_notes/). This could be a new example or  enhancing/fixing an old example
@@ -169,7 +169,15 @@ Accessibility Resource Center 530-898-5959 Student Services Center 170 [arcdept\
 
 ## COVID-19 
 
-The CSU requires students to be fully vaccinated and boosted against COVID-19 by February 28th, 2022, unless you have an approved exemption. While Chico State has relaxed its stance on mask mandates, for your and my health and safety I _request_ that everyone wear an appropriate face mask covering the nose and mouth while in class. 
+The CSU requires students to be fully vaccinated and boosted against COVID-19 by February 28th, 2022, unless you have an approved exemption. While Chico State has relaxed its stance on mask mandates, this is still a real pressing problem.  
+* I recognize that we all have different levels of risk we are willing to take ourselves, and different risk management strategies. 
+* I personally am working on reducing my mask wearing, but I also have immunocompromised elderly mother at home. 
+* Masks will ALWAYS be welcome and respected in this classroom. No questions.
+* I am likely to request masks be worn in my office. 
+* Please keep up to date with available booster shots. You can't learn if you're ill. 
+* If you have COVID symptoms, :x: Do not come to class. I'll turn on Zoom for the day so you can participate.
+* If you are just generally feeling unwell, please use a mask. I will always have some on hand. 
+
 
 ## Adding and Dropping the course
 

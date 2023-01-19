@@ -4,12 +4,17 @@ Some entries are completed during class as part of participation and reflection.
 If you did not attend class that day, just say so. Don't try to make up an entry. 
 
 
-* HW 00: How does the material you’ve heard thus far connect or conflict with your prior knowledge, beliefs, or values?
+* How does the material you’ve heard thus far connect or conflict with your prior knowledge, beliefs, or values?
 
 
 <!---
 * Mind map on data preparation - How did you choose what to write? How did you start? 
 * QFT 02/03 - Variable Selection
+    - Review the class-wide responses and comment on similarities and differences between your group and other groups top 3.
+    - Think about the work that you have done, what you have learned and its value. 
+    - What is the value of learning to ask your own questions? 
+    - How can you use what you learned? 
+    
 * QFT 02/10 - What to do with non-continuous outcome data? 
 * 2/14 - In class logistic regression recap
 

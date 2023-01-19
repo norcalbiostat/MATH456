@@ -6,18 +6,19 @@ navbar:
   - text: Schedule
     icon: fa-calendar
     href: schedule.html
-  - text: Materials
-    icon: fa-folder-open
-    menu:
-    - text: Course Notes
-      href: https://norcalbiostat.github.io/AppliedStatistics_notes/index.html
-    - text: Learning Techniques
-      href: learning_tools.html
-    - text: Syllabus 
-      href: syllabus_456_S23.html
-
+  - text: Course Notes
+    icon: fa-link
+    href: https://norcalbiostat.github.io/AppliedStatistics_notes/index.html
+  - text: Google Drive
+    icon: fa-google
+    href: https://drive.google.com/drive/folders/1Nfa_kDGWxoN37qKVXds0MfNqZwVtFuv5
+  - text: Learning Techniques
+    icon: fa-sparkles
+    href: learning_tools.html
     
   right:
+  - text: Syllabus 
+    href: syllabus_456_S23.html
   - text: Help
     icon: fa-question
     menu:
