@@ -4,11 +4,10 @@ Some entries are completed during class as part of participation and reflection.
 If you did not attend class that day, just say so. Don't try to make up an entry. 
 
 
-* How does the material you’ve heard thus far connect or conflict with your prior knowledge, beliefs, or values?
-
+* 1/23 How does the material you’ve heard thus far connect or conflict with your prior knowledge, beliefs, or values?
+* 1/27 Linear Regression brain dump. Write down everything you know about Linear Regression 
 
 <!---
-* Mind map on data preparation - How did you choose what to write? How did you start? 
 * QFT 02/03 - Variable Selection
     - Review the class-wide responses and comment on similarities and differences between your group and other groups top 3.
     - Think about the work that you have done, what you have learned and its value. 

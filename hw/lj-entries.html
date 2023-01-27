@@ -297,17 +297,23 @@ overflow-y: auto;
 border: 1px solid #ddd;
 border-radius: 4px;
 }
-.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-content: "\e259";
+.tabset-dropdown > .nav-tabs > li.active:before {
+content: "";
 font-family: 'Glyphicons Halflings';
 display: inline-block;
 padding: 10px;
 border-right: 1px solid #ddd;
 }
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-content: "\e258";
-font-family: 'Glyphicons Halflings';
+content: "";
 border: none;
+}
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+content: "";
+font-family: 'Glyphicons Halflings';
+display: inline-block;
+padding: 10px;
+border-right: 1px solid #ddd;
 }
 .tabset-dropdown > .nav-tabs > li.active {
 display: block;
@@ -358,12 +364,18 @@ display: none;
 reflection. If you did not attend class that day, just say so. Don’t try
 to make up an entry.</p>
 <ul>
-<li>HW 00: How does the material you’ve heard thus far connect or
-conflict with your prior knowledge, beliefs, or values?</li>
+<li>1/23 How does the material you’ve heard thus far connect or conflict
+with your prior knowledge, beliefs, or values?</li>
+<li>1/27 Linear Regression brain dump. Write down everything you know
+about Linear Regression</li>
 </ul>
 <!---
-* Mind map on data preparation - How did you choose what to write? How did you start? 
 * QFT 02/03 - Variable Selection
+    - Review the class-wide responses and comment on similarities and differences between your group and other groups top 3.
+    - Think about the work that you have done, what you have learned and its value. 
+    - What is the value of learning to ask your own questions? 
+    - How can you use what you learned? 
+    
 * QFT 02/10 - What to do with non-continuous outcome data? 
 * 2/14 - In class logistic regression recap
 
