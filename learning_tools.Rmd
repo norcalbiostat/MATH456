@@ -27,9 +27,13 @@ The backbone of the scientific process is asking and trying to answer questions.
 
 1. You will be presented with a Question Focus / prompt. 
 2. In a group you will produce questions about the focus topic using some guiding rules. 
+    a. Ask as many questions as you can
+    b. Do not stop to answer, judge or to discuss the questions
+    c. Write down every question exactly as it is stated
+    d. Change any statement into a question
 3. Identify closed and open ended questions, practice converting between the two. 
-4. Prioritize questions. Mark with an "X" on your list.
-5. In a shared Google document: 
+4. Prioritize questions. Which are the ones you _need_ answered? 
+5. In a shared Google slides file (copy the last slide for your team): 
     - Share questions converted from open to closed, and closed to open format. 
     - Your top 3 questions, with rational for their ranking. 
 6. (After class) Reflect on the activity in your Learning Journal. 

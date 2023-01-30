@@ -13,7 +13,7 @@
 
 <title>Math 456 course home</title>
 
-<script src="site_libs/header-attrs-2.19/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.15/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/journal.min.css" rel="stylesheet" />
@@ -169,8 +169,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "\e259";
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -178,9 +178,16 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "\e258";
-  font-family: 'Glyphicons Halflings';
+  content: "&#xe258;";
   border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -338,13 +345,13 @@ $(document).ready(function () {
 <p>This is the landing page for <span style="color:blue"><strong>Applied
 Statistics II</strong></span> course taught by <a
 href="http://www.norcalbiostat.com">Dr. Robin Donatello</a> for <span
-style="color:blue"><strong>Spring 2022</strong></span>. This page is
+style="color:blue"><strong>Spring 2023</strong></span>. This page is
 used for posting of regular announcements and information for students
 of the class.</p>
 <hr />
 <!---
 
-### 04-17-2022: Cluster Analysis
+### 04-17-2023: Cluster Analysis
 
 * Lighter load week this week. 
 * [HW 05 posted](hw/hw05-cluster.html)
@@ -352,7 +359,7 @@ of the class.</p>
 
 ----
 
-### 04-10-2022:
+### 04-10-2023:
 
 #### Asynchronous discussions: asking, answering & discussing questions in Slack.
 
@@ -370,7 +377,7 @@ Come check in with me! Drop into open class time and ask a question. Check in wi
 
 ----
 
-### 04-03-2022:
+### 04-03-2023:
 
 * Dimension reduction via Principal Components and Factor Analysis. 
 * Mind the due dates, the schedule details has some reminders to help you stay on task. 
@@ -378,7 +385,7 @@ Come check in with me! Drop into open class time and ask a question. Check in wi
 
 ----
 
-### 03-27-2022: Getting back to business, Long but important notice about class changes. 
+### 03-27-2023: Getting back to business, Long but important notice about class changes. 
 
 _Video version of this announcment available in our google drive ("week 9 announcement")_
 
@@ -404,7 +411,7 @@ This is also linked under the 'Materials' tab in the navbar.
   
 ----
 
-### 03-13-2022: Midterm, Project updates. 
+### 03-13-2023: Midterm, Project updates. 
 
 * Monday review for midterm. 
 * HW02 PR will be regraded (later)
@@ -435,7 +442,7 @@ Have a GOOD break! Use lots of 🧼 and stay away from 😷. I hope to see you a
 
 
 
-### 03-06-2022: Missing Data: Multiple Imputation with Chained Equations
+### 03-06-2023: Missing Data: Multiple Imputation with Chained Equations
 
 * Video on Multiple Imputation in Physics Education Research https://media.csuchico.edu/media/0_tgnydpgf
 * There is so much to cover regarding how to treat missing data, we could have an entire class on it. For more details please refer to the textbook by a current leading researcher in this area and the creator of `mice`: Flexible Imputation of Missing Data, 2nd Ed, by Stef van Buuren: https://stefvanbuuren.name/fimd/
@@ -462,7 +469,7 @@ For the full experience that is more similar to what you're doing on your projec
 
 
 
-### 02-27-2022: Missing Data: Identification and Imputation
+### 02-27-2023: Missing Data: Identification and Imputation
 
 * HW 01 feedback started. Please review for general info that applies to all HW. 
 * Quiz 2 posted. Individual due Tuesday 2/25, Group on Wednesday. 
@@ -472,7 +479,7 @@ For the full experience that is more similar to what you're doing on your projec
 
 
 
-### 02-20-2022: Classification and Prediction
+### 02-20-2023: Classification and Prediction
 
 * The Learning Journal section on the [Learning Tools](learning_tools.html) page has been updated to contain information on what LJ entries were assigned. I will update this on a more regular basis going forward. 
 
@@ -498,7 +505,7 @@ I highly recommend looking into the [[kableExtra]](https://cran.r-project.org/we
 
 
 
-### 02-13-2022: Modeling Binary Outcomes
+### 02-13-2023: Modeling Binary Outcomes
 
 * Little bit of recap on regression modeling for a continuous outcome, before we get into what to do when your outcome isn't continuous. 
 * We are going to only discuss the case when your outcome is binary, by fitting a Logistic regression model.
@@ -510,7 +517,7 @@ I highly recommend looking into the [[kableExtra]](https://cran.r-project.org/we
     - You have 2 assignments to peer review. The rotation sheet has been updated. 
 
 
-### 02-06-2022: Variable Selection
+### 02-06-2023: Variable Selection
 
 * I will be reviewing and commenting on project proposals this week. Approved proposals will have until Saturday to create and post a video "pitch" to recruit other students to join their project. 
 * Due to the lack of proposals submitted so far, I am extending the proposal deadline until Monday EOD. 
@@ -519,37 +526,62 @@ I highly recommend looking into the [[kableExtra]](https://cran.r-project.org/we
 * You should have started HW1 already. In fact, you should be done with a portion of HW 1 already. Quiz 1 is based on the content covered in HW1, will open Saturday, and close on Sunday EOD. 
 
 
-### 01-30-2022: Refresher on Linear regression modeling.
-
-
-* The main goal this week is to refresh/learn how to interpret all types of predictors in a linear regression model. 
-* You'll get your first experience conducting a peer review also this wek. 
-* Review the course notes and corresponding textbook chapters before class.
-
-HW01 is not a "linear" homework in that early questions are on topics early in the module, and later questions on later topics. Questions have various parts, some of which aren't discussed directly in class until later. You may not be able to complete all parts of all questions until the end of this module. Do what you can. 
-
-**General Guidance on Homework**  
-
-* Start early and do what you can. If you have any question about the length, or difficulty of my homework assignments and why you should procrastinate at your own peril, just ask any of my prior students. 
-* Don't be afraid to ask questions. It is essential to your learning. This is a judgement free class as clearly stated in the [[code of conduct]](https://norcalbiostat.github.io/MATH456/syllabus_456_S20.html#policies) section of the syllabus. 
-* Spell check your work, and for petes sake look at your work before you turn it in and imagine if you had to print it out. 
-    - No 100 page documents because you accidentally printed out the whole data set. 
-    - Make sure all code is showing and readable
-    - Make sure all text is readable and not sucked into a table or wrapping off the page. 
-* All data sets referenced for the homework can be obtained from Dr. D's [[data website]](https://norcalbiostat.netlify.com/data/cleaned_data/). 
-* Don't assume the data are clean. 
-    - Check the data type in R, versus the codebook.
-* We will be using the following data sets regularly: Depression, Lung function, Parental HIV. 
-    - For each data set we use you should maintain:
-        1. the raw data
-        2. the codebook
-        3. a data management file
-        4. a clean data set that is used for homework
-
-The following file organization is recommended. Another option could be to have a subfolder for each data set.
-
-```
-math456/
+--->
+<div id="model-building---how-to-choose-variables"
+class="section level3">
+<h3>01-30-2023: Model building - how to choose variables</h3>
+<ul>
+<li>This week we start topic 1: Model building. We will cover ways that
+variables can confound, or moderate existing planned relationships and
+learn how to interpret intearction terms.</li>
+<li>You’ll get your first experience conducting a peer review (Due Tue)
+and with the Question Formulation Technique QFT) on Monday. .</li>
+<li>Review the course notes and corresponding textbook chapters before
+class.</li>
+</ul>
+<p>HW01 is not a “linear” homework in that early questions are on topics
+early in the module, and later questions on later topics. Questions have
+various parts, some of which aren’t discussed directly in class until
+later. You may not be able to complete all parts of all questions until
+the end of this module. Do what you can.</p>
+<p><strong>General Guidance on Homework</strong></p>
+<ul>
+<li>Start early and do what you can. If you have any question about the
+length, or difficulty of my homework assignments and why you should
+procrastinate at your own peril, just ask any of my prior students.</li>
+<li>Ask questions! It is essential to your learning.</li>
+<li>Spell check your work, and for petes sake look at your work before
+you turn it in and imagine if you had to print it out.
+<ul>
+<li>No 100 page documents because you accidentally printed out the whole
+data set.</li>
+<li>Make sure all code is showing and readable</li>
+<li>Make sure all text is readable and not sucked into a table or
+wrapping off the page.</li>
+</ul></li>
+<li>All data sets referenced for the homework can be obtained from
+Dr. D’s <a
+href="https://norcalbiostat.netlify.com/data/cleaned_data/">[data
+website]</a>.</li>
+<li>Don’t assume the data are clean.
+<ul>
+<li>Check the data type in R, versus the codebook.</li>
+</ul></li>
+<li>We will be using the following data sets regularly: Depression, Lung
+function, Parental HIV.
+<ul>
+<li>For each data set we use you should maintain:
+<ol style="list-style-type: decimal">
+<li>the raw data</li>
+<li>the codebook</li>
+<li>a data management file</li>
+<li>a clean data set that is used for homework</li>
+</ol></li>
+</ul></li>
+</ul>
+<p>The following file organization is recommended. Another option could
+be to have a subfolder for each data set.</p>
+<pre><code>math456/
   | - data/
         | - lung_081217.txt
         | - dm_lung.R (or .Rmd)
@@ -559,19 +591,15 @@ math456/
         | - depress_clean.Rdata
   | - hw/
       | - hw01-modeling-userid.Rmd
-      | - hw01-modeling-userid.pdf
-```
-
-
-
-#### Office Hours Scheduled
-
-[Click this link](OH_Viz.html) to see the R code I use to choose office hours. 
-
-
---->
+      | - hw01-modeling-userid.pdf</code></pre>
+<div id="office-hours-scheduled" class="section level4">
+<h4>Office Hours Scheduled</h4>
+<p><a href="OH_Viz.html">Click this link</a> to see the R code I use to
+choose office hours.</p>
+</div>
+</div>
 <div id="welcome" class="section level3">
-<h3>01-23-2022: Welcome!</h3>
+<h3>01-23-2023: Welcome!</h3>
 <ul>
 <li>Welcome to spring semester in statistics with your host, Dr. Robin
 Donatello.</li>

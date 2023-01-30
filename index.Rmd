@@ -2,10 +2,10 @@
 title: "Math 456 course home"
 ---
 
-This is the landing page for <span style="color:blue">**Applied Statistics II**</span> course taught by [Dr. Robin Donatello](http://www.norcalbiostat.com) for <span style="color:blue">**Spring 2022**</span>.  This page is used for posting of regular announcements and information for students of the class. 
+This is the landing page for <span style="color:blue">**Applied Statistics II**</span> course taught by [Dr. Robin Donatello](http://www.norcalbiostat.com) for <span style="color:blue">**Spring 2023**</span>.  This page is used for posting of regular announcements and information for students of the class. 
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
-wk1.date <- as.Date("2022-01-23")
+wk1.date <- as.Date("2023-01-23")
 ```
 
 ----
@@ -187,11 +187,13 @@ I highly recommend looking into the [[kableExtra]](https://cran.r-project.org/we
 * You should have started HW1 already. In fact, you should be done with a portion of HW 1 already. Quiz 1 is based on the content covered in HW1, will open Saturday, and close on Sunday EOD. 
 
 
-### `r format(wk1.date+1*7, "%m-%d-%Y")`: Refresher on Linear regression modeling.
+--->
+
+### `r format(wk1.date+1*7, "%m-%d-%Y")`: Model building - how to choose variables
 
 
-* The main goal this week is to refresh/learn how to interpret all types of predictors in a linear regression model. 
-* You'll get your first experience conducting a peer review also this wek. 
+* This week we start topic 1: Model building. We will cover ways that variables can confound, or moderate existing planned relationships and learn how to interpret intearction terms.
+* You'll get your first experience conducting a peer review (Due Tue) and with the Question Formulation Technique QFT) on Monday. . 
 * Review the course notes and corresponding textbook chapters before class.
 
 HW01 is not a "linear" homework in that early questions are on topics early in the module, and later questions on later topics. Questions have various parts, some of which aren't discussed directly in class until later. You may not be able to complete all parts of all questions until the end of this module. Do what you can. 
@@ -199,7 +201,7 @@ HW01 is not a "linear" homework in that early questions are on topics early in t
 **General Guidance on Homework**  
 
 * Start early and do what you can. If you have any question about the length, or difficulty of my homework assignments and why you should procrastinate at your own peril, just ask any of my prior students. 
-* Don't be afraid to ask questions. It is essential to your learning. This is a judgement free class as clearly stated in the [[code of conduct]](https://norcalbiostat.github.io/MATH456/syllabus_456_S20.html#policies) section of the syllabus. 
+* Ask questions! It is essential to your learning. 
 * Spell check your work, and for petes sake look at your work before you turn it in and imagine if you had to print it out. 
     - No 100 page documents because you accidentally printed out the whole data set. 
     - Make sure all code is showing and readable
@@ -237,7 +239,6 @@ math456/
 [Click this link](OH_Viz.html) to see the R code I use to choose office hours. 
 
 
---->
 
 ### `r format(wk1.date, "%m-%d-%Y")`: Welcome!
 
