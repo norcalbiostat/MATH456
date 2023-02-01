@@ -13,7 +13,7 @@
 
 <title>Weekly Activities</title>
 
-<script src="site_libs/header-attrs-2.15/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.19/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/journal.min.css" rel="stylesheet" />
@@ -171,8 +171,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -180,16 +180,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -349,10 +342,10 @@ $(document).ready(function () {
 edition<br />
 <strong>ASCN</strong>: Applied Stats Course Notes (linked in nav bar
 under Materials)</p>
-<div id="last-updated-mon-jan-30-110123-am"
+<div id="last-updated-tue-jan-31-74312-pm"
 class="section level1 tabset tabset-fade tabset-pills">
-<h1 class="tabset tabset-fade tabset-pills">Last Updated: Mon Jan 30
-11:01:23 AM</h1>
+<h1 class="tabset tabset-fade tabset-pills">Last Updated: Tue Jan 31
+7:43:12 PM</h1>
 <div id="overview" class="section level2">
 <h2>Overview</h2>
 </p>
@@ -448,7 +441,6 @@ ASCN Ch 10.1
 <td style="text-align:center;width: 10%; ">
 </td>
 <td style="text-align:center;width: 35%; ">
-LJ Check in
 </td>
 </tr>
 <tr grouplength="2">
@@ -467,6 +459,7 @@ ASCN Ch 10
 <td style="text-align:center;width: 10%; ">
 </td>
 <td style="text-align:center;width: 35%; ">
+LJ Check in
 </td>
 </tr>
 <tr>
@@ -515,6 +508,7 @@ PMA6 11.3-11.4
 <td style="text-align:center;width: 10%; ">
 </td>
 <td style="text-align:center;width: 35%; ">
+LJ Check in
 </td>
 </tr>
 <tr grouplength="1">
