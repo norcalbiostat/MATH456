@@ -15,6 +15,11 @@ output:
 
 * This is a peer reviewed assignment. After the PR period, you should update your assignment with corrections by your peers, and submit a final version into the `Topic 01: Statistical Modeling/Final` Google folder. 
 
+## Get Data
+* The code to get the data used for this assignment is included in the template. 
+* Download codebooks here:  [Lung Function](https://www.norcalbiostat.com/data/DepressCodebook.txt), [Parental HIV](https://www.norcalbiostat.com/data/ParhivCodebook.txt), [Depression](https://www.norcalbiostat.com/data/DepressCodebook.txt)
+
+
 # Part I: Statistical Modeling
 
 1. From the depression data set, fit a linear regression model on depression as given by `cesd`, using `income` and `age` as independent variables. (PMA6 problem 8.5, modified)
