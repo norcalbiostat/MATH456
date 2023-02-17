@@ -9,7 +9,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="MATH 456 - Spring 2020" />
 
 
 <title>HW02 - Logistic Regression &amp; Classification</title>
@@ -1622,7 +1621,6 @@ display: none;
 
 <h1 class="title toc-ignore">HW02 - Logistic Regression &amp;
 Classification</h1>
-<h4 class="author">MATH 456 - Spring 2020</h4>
 
 </div>
 
@@ -1663,7 +1661,8 @@ Northridge earthquake, controlling for age (<code>RAGE</code>), gender
 <li>Explore all measures in question using summary tables. Comment on
 any unusual values. Perform necessary data management (E.g. fix any
 values that are out of range, plausibly incorrect, or categories with
-too small sample sizes)</li>
+too small sample sizes – you can use <a href="https://docs.google.com/document/d/1olSYDMK4O9iGI1583LMZcV8mF4WO0OL5z0MIhdnrl1Y">my
+cleaning script</a> as a starter)</li>
 <li>Fit a logistic regression model on emotional injury as the outcome
 using the variables listed above as predictors. Use
 <code>tbl_regression</code> to create a nice table of results that
@@ -1691,15 +1690,11 @@ variables are reasonable to use (e.g. using the # of times a student
 skips school to predict whether or not they will predict school)</li>
 <li>Use the default value for the <code>predict()</code> function to
 create a vector of predictions for each student.</li>
+<li>Explore the distribution of predictions against a few variables that
+you identified (via the model) as being highly predictive of skipping
+school</li>
 <li>Create a confusion matrix for these predictions and interpret:
 accuracy, balanced accuracy, sensitivity, specificity, PPV, NPV.</li>
-<li>Create a plot of predicted probabilities by true group membership.
-Describe the distributions. What do you notice?</li>
-<li>Find the best cutoff point to discriminate between adolescents who
-were absent without a reason and those who were not by using an ROC
-curve and maximizing accuracy.</li>
-<li>Recreate your confusion matrix using the new cutoff point. What
-affect did this change have on the other metrics?</li>
 </ol>
 </div>
 
