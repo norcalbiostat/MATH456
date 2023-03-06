@@ -1,0 +1,28 @@
+---
+title: "HW 03 - Missing Data Assignment"
+output: html_document
+---
+
+> Use the quarto template provided in canvas.
+
+## Part 1: Exploring Imputation Techniques
+ 
+Put your work from the MI practice worksheet here. 
+
+
+## Part 2: Multiple Imputation using Chained Equations
+
+1. Sticking with the Parental HIV data set (the one from the practice worksheet), build a better imputation model for `parental_overprotection`. Do this by imputing the `pb01-pb25`, then recreate the `parental_overprotection` scale post-imputation. "Talk me" through your process. 
+    a. Explore missing data patterns in other (non-scale) variables before you build your model. Not all variables should be considered in the imputation models. Use tables and plots. Discuss all output.  
+    b. Multiply impute this data set between $m=5$ and $m=10$ times. Make sure the imputation models used for each variable are showing in your final output. Adjust any that may not make sense for their variable type. 
+    c. Update the summary table and plot from Part I and compare how your new model did compared to the others. 
+2. After controlling for other measures, what is the effect of gender on the _odds_ a student will skip school? Adjust the model for fit or stability as needed. Report your results in a nice table and/or plot.  
+    a. Fit this model on the complete cases (no imputation).
+    b. Fit this model on the multiply imputed data sets from the prior problem, report the pooled estimates and intervals. 
+    c. Interpret the effect of gender on playing hookey. Did it change from the complete case model? 
+    d. Create a plot to compare the results for all coefficients in the model. 
+    e. What are the biggest differences you notice? Would the inference/interpretation of the effect of any covariate on the odds of a student skipping school change depending on what model you use? 
+
+
+
+

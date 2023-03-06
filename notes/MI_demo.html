@@ -86,16 +86,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </style>
 
 
-<script src="MI practice for posting_files/libs/clipboard/clipboard.min.js"></script>
-<script src="MI practice for posting_files/libs/quarto-html/quarto.js"></script>
-<script src="MI practice for posting_files/libs/quarto-html/popper.min.js"></script>
-<script src="MI practice for posting_files/libs/quarto-html/tippy.umd.min.js"></script>
-<script src="MI practice for posting_files/libs/quarto-html/anchor.min.js"></script>
-<link href="MI practice for posting_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="MI practice for posting_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="MI practice for posting_files/libs/bootstrap/bootstrap.min.js"></script>
-<link href="MI practice for posting_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="MI practice for posting_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="MI_demo_files/libs/clipboard/clipboard.min.js"></script>
+<script src="MI_demo_files/libs/quarto-html/quarto.js"></script>
+<script src="MI_demo_files/libs/quarto-html/popper.min.js"></script>
+<script src="MI_demo_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="MI_demo_files/libs/quarto-html/anchor.min.js"></script>
+<link href="MI_demo_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="MI_demo_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="MI_demo_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="MI_demo_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="MI_demo_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
@@ -149,7 +149,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(VIM)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="st">"mi_example.Rdata"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="st">"C:/Box/Teaching/456/in class worksheets/mi_example.Rdata"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="identify-missing" class="level1">
@@ -171,7 +171,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>scale.vars <span class="ot">&lt;-</span> hiv <span class="sc">%&gt;%</span> <span class="fu">select</span>(parent_care<span class="sc">:</span>bsi_psycho, gender, siblings, age)</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">aggr</span>(scale.vars, <span class="at">sortVars=</span><span class="cn">TRUE</span>, <span class="at">combined=</span><span class="cn">TRUE</span>, <span class="at">numbers=</span><span class="cn">TRUE</span>, <span class="at">cex.axis=</span>.<span class="dv">7</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="MI-practice-for-posting_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+<p><img src="MI_demo_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
@@ -200,7 +200,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">marginplot</span>(hiv[,<span class="fu">c</span>(<span class="st">'bsi_depress'</span>, <span class="st">'parent_overprotection'</span>)])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="MI-practice-for-posting_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
+<p><img src="MI_demo_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 <p>When someone is missing <code>parent_overprotection</code>, they have a lower <code>bsi_depress</code> score. Those missing <code>bsi_depress</code> have a slightly lower <code>parental_overprotection</code> score. Only 4 individuals are missing both values.</p>
@@ -225,7 +225,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>ggpubr<span class="sc">::</span><span class="fu">ggdensity</span>(depress_regr_imp, <span class="at">x =</span> <span class="st">"bsi_depress"</span>, <span class="at">add=</span><span class="st">"mean"</span>,</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>                  <span class="at">color =</span> <span class="st">"bsi_depress_imp"</span>, <span class="at">fill =</span> <span class="st">"bsi_depress_imp"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="MI-practice-for-posting_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
+<p><img src="MI_demo_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 <p>It seems like only values around 0.5 and 0.8 were imputed values for <code>bsi_depress</code>. The imputed values don’t quite match the distribution of observed values.</p>
@@ -379,7 +379,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">limits=</span><span class="fu">c</span>(<span class="sc">-</span><span class="dv">1</span>, <span class="dv">3</span>))<span class="sc">+</span> </span>
 <span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span> <span class="fu">xlab</span>(<span class="st">"Average BSI Depression score"</span>) <span class="sc">+</span> <span class="fu">ylab</span>(<span class="st">""</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="MI-practice-for-posting_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid" width="672"></p>
+<p><img src="MI_demo_files/figure-html/unnamed-chunk-15-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 </section>
