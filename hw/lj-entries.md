@@ -12,4 +12,4 @@ If you did not attend class that day, just say so. Don't try to make up an entry
     - Think about the work that you have done, what you have learned and its value. 
     - What is the value of learning to ask your own questions? 
     - How can you use what you learned? 
-
+* 3/26 - We're 2/3 through the semester and this class has a different feel to it from when it started. How are you doing? Not just in the class, but in general? 
