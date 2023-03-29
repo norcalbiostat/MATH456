@@ -13,7 +13,7 @@
 
 <title>Weekly Activities</title>
 
-<script src="site_libs/header-attrs-2.16/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.19/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/journal.min.css" rel="stylesheet" />
@@ -171,8 +171,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -180,16 +180,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -349,10 +342,10 @@ $(document).ready(function () {
 edition<br />
 <strong>ASCN</strong>: Applied Stats Course Notes (linked in nav bar
 under Materials)</p>
-<div id="last-updated-mon-mar-27-31533-pm"
+<div id="last-updated-tue-mar-28-74525-pm"
 class="section level1 tabset tabset-fade tabset-pills">
-<h1 class="tabset tabset-fade tabset-pills">Last Updated: Mon Mar 27
-3:15:33 PM</h1>
+<h1 class="tabset tabset-fade tabset-pills">Last Updated: Tue Mar 28
+7:45:25 PM</h1>
 <div id="overview" class="section level2">
 <h2>Overview</h2>
 </p>
@@ -611,7 +604,7 @@ PMA6 CH 14 ASCN Ch 13
 <td style="text-align:center;width: 10%; ">
 </td>
 <td style="text-align:center;width: 35%; ">
-HW04
+<a href="hw/hw04-dimension-reduction.html">HW04: Dimension Reduction</a>
 </td>
 </tr>
 <tr grouplength="1">
