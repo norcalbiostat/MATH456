@@ -27,3 +27,15 @@ Use the _covariance_ matrix, but *do not center or scale* the data. You should h
 
 ## 2. Repeat question #1b-d using the correlation matrix instead of the covariance matrix. 
 Compare the results and comment. (Are the same number of PC's retained? Are the loadings different?)
+
+
+
+## 3 (PMA6 14.11 modified): This question uses the Parental HIV data set. 
+### a) If you were to conduct a PCA on all items of the Parental Bonding scale (`pb01-pb25`), _a priori_ how many PC's would you expect to retain for this scale? 
+
+### b) Perform this PCA using the correlation matrix. Using all of the three guides: % variance retained, Eigenvalues > 1, and a scree plot, choose a number of PC's to retain. 
+
+
+
+## 4. Perform a regression analysis of `bsi_overall` on your retained PC's from question 3. Compare this model to one that only uses the two parental bonding scales as defined in the codebook. Compare the models using appropriate measures of model fit. 
+
