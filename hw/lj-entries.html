@@ -297,23 +297,17 @@ overflow-y: auto;
 border: 1px solid #ddd;
 border-radius: 4px;
 }
-.tabset-dropdown > .nav-tabs > li.active:before {
-content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+content: "\e259";
 font-family: 'Glyphicons Halflings';
 display: inline-block;
 padding: 10px;
 border-right: 1px solid #ddd;
 }
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-content: "";
-border: none;
-}
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-content: "";
+content: "\e258";
 font-family: 'Glyphicons Halflings';
-display: inline-block;
-padding: 10px;
-border-right: 1px solid #ddd;
+border: none;
 }
 .tabset-dropdown > .nav-tabs > li.active {
 display: block;
@@ -386,6 +380,21 @@ its value.</li>
 <li>3/26 - We’re 2/3 through the semester and this class has a different
 feel to it from when it started. How are you doing? Not just in the
 class, but in general?</li>
+<li>4/10 - Consider the topics we have covered so far in class: data
+management, model building, multiple regression, logistic regression,
+classification, missing data, imputation, dimension reduction, principle
+components, factor analysis.
+<ul>
+<li>How do they relate to each other (aside from they use data &amp;
+statistics)</li>
+<li>Give a few examples of when it would be appropriate to use these
+techniques (name the technique with the example) in your direct field of
+study/interest area.</li>
+<li>How would you know when to use each one? What are the verbal/written
+clues that you would look for to identify that a particular technique is
+appropriate in a real life situation (e.g. when someone doesn’t tell you
+“hey go do a PCA…”)</li>
+</ul></li>
 </ul>
 </div>
 

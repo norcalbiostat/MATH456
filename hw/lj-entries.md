@@ -13,3 +13,8 @@ If you did not attend class that day, just say so. Don't try to make up an entry
     - What is the value of learning to ask your own questions? 
     - How can you use what you learned? 
 * 3/26 - We're 2/3 through the semester and this class has a different feel to it from when it started. How are you doing? Not just in the class, but in general? 
+* 4/10 - Consider the topics we have covered so far in class: data management, model building, multiple regression, logistic regression, classification, missing data, imputation, dimension reduction, principle components, factor analysis. 
+    - How do they relate to each other (aside from they use data & statistics)
+    - Give a few examples of when it would be appropriate to use these techniques (name the technique with the example) in your direct field of study/interest area. 
+    - How would you know when to use each one? What are the verbal/written clues that you would look for to identify that a particular technique is appropriate in a real life situation (e.g. when someone doesn't tell you "hey go do a PCA... ")
+
