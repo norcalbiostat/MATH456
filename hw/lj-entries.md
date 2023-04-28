@@ -1,7 +1,7 @@
 # Learning Journal Entries
 
 Some entries are completed during class as part of participation and reflection. 
-If you did not attend class that day, just say so. Don't try to make up an entry. 
+If you did not attend class that day, say so and respond to the prompt the best you can. 
 
 
 * 1/23 How does the material you’ve heard thus far (from the reading in Homework 00) connect or conflict with your prior knowledge, beliefs, or values?
@@ -17,4 +17,8 @@ If you did not attend class that day, just say so. Don't try to make up an entry
     - How do they relate to each other (aside from they use data & statistics)
     - Give a few examples of when it would be appropriate to use these techniques (name the technique with the example) in your direct field of study/interest area. 
     - How would you know when to use each one? What are the verbal/written clues that you would look for to identify that a particular technique is appropriate in a real life situation (e.g. when someone doesn't tell you "hey go do a PCA... ")
+* 5/12:  **"I used to think.... Now I think..."**. 
+    - When we began this study of applied statistics and advanced statistical models, you all had some initial ideas about it and what it was all about. In just a few sentences, I want to write what it is that you used to think about applied statistics and advanced statistical models. Take a minute to think back and then write down your response to "I used to think..."
+    - Now, I want you to think about how your ideas about applied statistics and advanced statistical models have changed as a result of what we’ve been studying, doing, and discussing. Again in just a few sentences write down what you now think about applied statistics and advanced statistical models. Start your sentences with, "Now, I think..."
+    - I will ask you to share this out to the class on 5/12, explaining your shift in thinking. 
 
