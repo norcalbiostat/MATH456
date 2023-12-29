@@ -2,249 +2,48 @@
 title: "Math 456 course home"
 ---
 
-This is the landing page for <span style="color:blue">**Applied Statistics II**</span> course taught by [Dr. Robin Donatello](http://www.norcalbiostat.com) for <span style="color:blue">**Spring 2023**</span>.  This page is used for posting of regular announcements and information for students of the class. 
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
-wk1.date <- as.Date("2023-01-23")
-```
+## Applied Statistical Models
 
-----
+> Advanced topics in applied statistics including multiple regression, multivariate methods, nonparametrics, analysis of covariance, bootstrap methods and others as appropriate. Statistical computer packages are introduced and used. Appropriate for biology, agriculture, nutrition, business, psychology, social science and other majors.
 
-<!---
+<br>
 
-### `r format(wk1.date+12*7, "%m-%d-%Y")`: Cluster Analysis
+<hr>
 
-* Lighter load week this week. 
-* [HW 05 posted](hw/hw05-cluster.html)
-* Project requirements adjusted. See the [project page](project.html).
+:::: {.columns}
 
-----
+::: {.column width="33%"}
+### Course details
 
-### `r format(wk1.date+11*7, "%m-%d-%Y")`:
+📅 &nbsp; MWF  
+🕓 &nbsp; 10-10:50 am   
+🏛 &nbsp; Holt 171  
+👥️ &nbsp; In Person  
+💻 &nbsp; Laptop Required
 
-#### Asynchronous discussions: asking, answering & discussing questions in Slack.
+:::
 
-* Still required, but timeline has been removed. Just get your questions & discussion in before the HW is due. 
-* This is essential discussion for your learning. We don't have opportunities to talk to each other in class. 
-* You don't have to have "the" answer to contribute meaningfully & work towards a discussion.
+::: {.column width="33%"}
+### Pre-reqs
+MATH 314/315/615 at Chico State, 
+or instructor permission.
 
+### Student Drop in Hours
 
-#### Office hours requirement
-Come check in with me! Drop into open class time and ask a question. Check in with me to let me know you're on track and making progress. This is not like coming to the principals office - you're not in trouble! I'm not gonna get on your case if you're behind. I want to help and support you, and it's important for me to know how you all are doing. 
+**Update** on Zoom (link in Canvas)
+:::
 
+::: {.column width="33%"}
+### Instructor
 
-#### Don't forget about the exam error assessment. 
+🐾 &nbsp; [Dr. Robin Donatello](https://www.norcalbiostat.com)  
+🚪 &nbsp; Office: Holt 202  
+📧 &nbsp; <a href="mailto:rdonatello@csuchico.edu">rdonatello@csuchico.edu</a>  
+🙋 &nbsp; [Schedule an appointment](https://dr-donatello.youcanbook.me/)
+:::
 
-
-----
-
-### `r format(wk1.date+10*7, "%m-%d-%Y")`:
-
-* Dimension reduction via Principal Components and Factor Analysis. 
-* Mind the due dates, the schedule details has some reminders to help you stay on task. 
-* PCA videos are posted. FA videos will be posted before the end of the week. 
-
-----
-
-### `r format(wk1.date+9*7, "%m-%d-%Y")`: Getting back to business, Long but important notice about class changes. 
-
-_Video version of this announcment available in our google drive ("week 9 announcement")_
-
-#### Changes due to Covid-19
-See [this page](class_structure_changes.html) for comprehensive details on changes to the structure of our class. 
-This is also linked under the 'Materials' tab in the navbar. 
-
-
-#### Gradebook 
-
-* I switched priorities and will finish the exam before I go back to the homework and peer reviews. 
-* Now that every educational tool is free, I'm testing out Gradescope to grade your exams. 
-* You still have an opportunity to do an [Exam error assessment](learning_tools.html#exam_error_assessment).
-    - You have until the end of the semester to get this done with me. 
-    - You can earn up to half the points you missed back. This will be added directly to your midterm grade. 
-* I have added columns in the Blackboard gradebook to reflect assignments and points available for the rest of the semester. 
-
-    
-#### Project Timeline Updates
-
-* Project presentation that we were going to do the Friday before finals, will now be due Friday 3/27. 
-* See the [project page](project.html#project_update) for more details as there has been changes to the delivery requirements. 
-  
-----
-
-### `r format(wk1.date+7*7, "%m-%d-%Y")`: Midterm, Project updates. 
-
-* Monday review for midterm. 
-* HW02 PR will be regraded (later)
-* HW03 Solutions will be posted Monday evening
-
-## `r emo::ji("warning")` <span style="color:red">UPDATE</span>
-
-* We will be transitioning to holding classes online until further notice. 
-    - I am aware that Chico State is not officially mandating that classes be held online. It is still up to the instructor.
-* This page will become more important as a central point of information. 
-    - Some info will still be reposted in Slack. Check in here daily.
-    - The link in the top right has been updated to contact me via zoom easier. 
-* Class is still held at the same time: 2-3pm MWF. 
-    - We will meet via Zoom. 
-    - Treat this time as if you were coming to an in person clas. See the [[Online Classroom Expecations]](http://sites.ischool.berkeley.edu/remote-teaching/2020/03/09/for-students-online-classroom-expectations/)
-    - This means expect to take notes as if you were in class. Expect to participate in discussion, verbally, in groups, and through Slack. 
-
-#### Thursday
-* I still have OH at 1-2pm on Thursday. 
-* This is a good time to test out making sure you know how to work Zoom. 
-
-#### Friday
-- We will continue with the plan to present the week 8 update. 
-- See the [[project]](project.html) page for specifics and logistical updates. 
-
-
-Have a GOOD break! Use lots of `r emo::ji("soap")` and stay away from `r emo::ji("mask")`. I hope to see you all again in person real soon. 
-
-
-
-### `r format(wk1.date+6*7, "%m-%d-%Y")`: Missing Data: Multiple Imputation with Chained Equations
-
-* Video on Multiple Imputation in Physics Education Research https://media.csuchico.edu/media/0_tgnydpgf
-* There is so much to cover regarding how to treat missing data, we could have an entire class on it. For more details please refer to the textbook by a current leading researcher in this area and the creator of `mice`: Flexible Imputation of Missing Data, 2nd Ed, by Stef van Buuren: https://stefvanbuuren.name/fimd/
-* Quiz 3 has been posted. Due Thursday, group quiz on Friday. 
-* Short turn around time for HW3. Solutions will be posted on Monday, no late assignments will be collected. 
-* We have some open work days built into the schedule this week. That does not imply that you can skip class time. 
-
-
-#### HW 1 grading done. 
-
-* Please read the HW 1 feedback in Google Drive. It contains response to common problems throughout the homework. 
-* If you got a 0, but submitted something, my guess is that you didn't put the file into the `final` folder.
-    - If this is the case, go ahead and resubmit and i'll work on grading it when i have time, but it will be considered late. 
-* HW 2 solutions will be posted shortly. 
-
-#### Status of analysis data sets
-By now you should have: 
-
-1. a `data` folder in your `math456` folder containing all the data sets we work on in class and for homework.
-2. a data management (`dm`) file that reads in these data sets, performs some cleaning actions on it (e.g. converting to factors, collapsing levels). [See examples here](https://norcalbiostat.netlify.com/data/raw_data/). 
-3. a `clean` data set, dated with the date that you last peformed cleaning on (i.e. `lung_03012020.csv`). This is the one you use in analysis. 
-
-For the full experience that is more similar to what you're doing on your project, and what you will encounter in real world analysis, you should download the raw data files from the link above and make your own DM file. You can use the ones I have linked as starter code. 
-
-
-
-### `r format(wk1.date+5*7, "%m-%d-%Y")`: Missing Data: Identification and Imputation
-
-* HW 01 feedback started. Please review for general info that applies to all HW. 
-* Quiz 2 posted. Individual due Tuesday 2/25, Group on Wednesday. 
-* HW 03 posted. Short turn around time on it, check the calendar. 
-* QFT on Monday - don't forget the learning journal reflection afterward. 
-
-
-
-
-### `r format(wk1.date+4*7, "%m-%d-%Y")`: Classification and Prediction
-
-* The Learning Journal section on the [Learning Tools](learning_tools.html) page has been updated to contain information on what LJ entries were assigned. I will update this on a more regular basis going forward. 
-
-#### PROJECT UPDATE
-* Project selection is over! Thank you to all who contributed project proposals. 
-    - All student proposals were funded!
-    - You all have been assigned to either your 1st or 2nd choices.
-    - Those that didn't respond to the project selection form were placed on teams of my choosing. 
-* You have been placed in a private Slack channel with your team members. 
-* Check the Project page for details on your next deliverables (this week)
-
-
-#### Report appearance
-
-In a professional world, it is not just the correctness/quality of your work, but how you present the results. 
-There are several packages in R that help you with this by writing the HTML or LaTeX code for you. 
-
-When looking for some updated references so I could write a list for you, I came across [[these course notes]](https://jrnold.github.io/intro-methods-notes/formatting-tables.html) by [Dr. Jeffrey Arnold](https://github.com/jrnold) taht does a good job (even if it's from 2018) of giving a list of packages, and examples of a few. I noticed that these notes also do a good job of explaining regression modeling concepts. There is a lot more to talk about than what I can go through this semester.
-
-**See new code at end of logistic regression section of ASCN**
-
-I highly recommend looking into the [[kableExtra]](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html) package for most things related to printing nice table (not raw regression output).
-
-
-
-### `r format(wk1.date+3*7, "%m-%d-%Y")`: Modeling Binary Outcomes
-
-* Little bit of recap on regression modeling for a continuous outcome, before we get into what to do when your outcome isn't continuous. 
-* We are going to only discuss the case when your outcome is binary, by fitting a Logistic regression model.
-
-
-* Quiz 1 is due by Monday 1pm
-* Draft of HW1 is due by Sunday EOD
-* Peer review opens Monday morning, due Wednesday
-    - You have 2 assignments to peer review. The rotation sheet has been updated. 
-
-
-### `r format(wk1.date+2*7, "%m-%d-%Y")`: Variable Selection
-
-* I will be reviewing and commenting on project proposals this week. Approved proposals will have until Saturday to create and post a video "pitch" to recruit other students to join their project. 
-* Due to the lack of proposals submitted so far, I am extending the proposal deadline until Monday EOD. 
-    - Everyone has to work on a project. 
-    - I will have several projects proposals for you to choose from. These won't nearly be as much fun or interesting compared to ones that you would choose. 
-* You should have started HW1 already. In fact, you should be done with a portion of HW 1 already. Quiz 1 is based on the content covered in HW1, will open Saturday, and close on Sunday EOD. 
-
-
---->
-
-### `r format(wk1.date+1*7, "%m-%d-%Y")`: Model building - how to choose variables
-
-
-* This week we start topic 1: Model building. We will cover ways that variables can confound, or moderate existing planned relationships and learn how to interpret intearction terms.
-* You'll get your first experience conducting a peer review (Due Tue) and with the Question Formulation Technique QFT) on Monday. . 
-* Review the course notes and corresponding textbook chapters before class.
-
-HW01 is not a "linear" homework in that early questions are on topics early in the module, and later questions on later topics. Questions have various parts, some of which aren't discussed directly in class until later. You may not be able to complete all parts of all questions until the end of this module. Do what you can. 
-
-**General Guidance on Homework**  
-
-* Start early and do what you can. If you have any question about the length, or difficulty of my homework assignments and why you should procrastinate at your own peril, just ask any of my prior students. 
-* Ask questions! It is essential to your learning. 
-* Spell check your work, and for petes sake look at your work before you turn it in and imagine if you had to print it out. 
-    - No 100 page documents because you accidentally printed out the whole data set. 
-    - Make sure all code is showing and readable
-    - Make sure all text is readable and not sucked into a table or wrapping off the page. 
-* All data sets referenced for the homework can be obtained from Dr. D's [[data website]](https://norcalbiostat.netlify.com/data/cleaned_data/). 
-* Don't assume the data are clean. 
-    - Check the data type in R, versus the codebook.
-* We will be using the following data sets regularly: Depression, Lung function, Parental HIV. 
-    - For each data set we use you should maintain:
-        1. the raw data
-        2. the codebook
-        3. a data management file
-        4. a clean data set that is used for homework
-
-The following file organization is recommended. Another option could be to have a subfolder for each data set.
-
-```
-math456/
-  | - data/
-        | - lung_081217.txt
-        | - dm_lung.R (or .Rmd)
-        | - lung_clean.Rdata
-        | - depress_081217.txt
-        | - dm_depress.R
-        | - depress_clean.Rdata
-  | - hw/
-      | - hw01-modeling-userid.Rmd
-      | - hw01-modeling-userid.pdf
-```
-
-
-
-#### Office Hours Scheduled
-
-[Click this link](OH_Viz.html) to see the R code I use to choose office hours. 
-
-
-
-### `r format(wk1.date, "%m-%d-%Y")`: Welcome!
-
-* Welcome to spring semester in statistics with your host, Dr. Robin Donatello. 
-* Make sure you acquaint yourself with this website and our Canvas course page, it they will be your guide for the next 16 weeks. 
-* To best ensure your success in this class, head over to Canvas now and review the first module, and the first setup homework! 
+::::
 
 
 

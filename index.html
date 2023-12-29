@@ -13,10 +13,10 @@
 
 <title>Math 456 course home</title>
 
-<script src="site_libs/header-attrs-2.15/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.24/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/journal.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/united.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -30,8 +30,8 @@
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -48,7 +48,6 @@
 
 
 
-<link rel="stylesheet" href="style.css" type="text/css" />
 
 
 
@@ -169,8 +168,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -178,16 +177,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -241,21 +233,21 @@ $(document).ready(function () {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="schedule.html">
+  <a href="modules.html">
     <span class="fa fa-calendar"></span>
      
-    Schedule
+    Modules
   </a>
 </li>
 <li>
   <a href="https://norcalbiostat.github.io/AppliedStatistics_notes/index.html">
     <span class="fa fa-link"></span>
      
-    Course Notes
+    Course Notes (ASCN)
   </a>
 </li>
 <li>
-  <a href="https://drive.google.com/drive/folders/1Nfa_kDGWxoN37qKVXds0MfNqZwVtFuv5">
+  <a href="https://drive.google.com/drive/folders/1HwbunVx8BS5EFJUUFlsG5HOFcWNa9uxM">
     <span class="fa fa-google"></span>
      
     Google Drive
@@ -271,7 +263,7 @@ $(document).ready(function () {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="syllabus_456_S23.html">Syllabus</a>
+  <a href="syllabus.html">Syllabus</a>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -305,29 +297,6 @@ $(document).ready(function () {
     </li>
   </ul>
 </li>
-<li class="dropdown">
-  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Contact Dr. D
-     
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="http://www.norcalbiostat.com/">
-        <span class="fa fa-paw"></span>
-         
-        Her website
-      </a>
-    </li>
-    <li>
-      <a href="https://dr-donatello.youcanbook.me/">
-        <span class="fa fa-calendar-check-o"></span>
-         
-        Request Appointment
-      </a>
-    </li>
-  </ul>
-</li>
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -342,272 +311,48 @@ $(document).ready(function () {
 </div>
 
 
-<p>This is the landing page for <span style="color:blue"><strong>Applied
-Statistics II</strong></span> course taught by <a
-href="http://www.norcalbiostat.com">Dr. Robin Donatello</a> for <span
-style="color:blue"><strong>Spring 2023</strong></span>. This page is
-used for posting of regular announcements and information for students
-of the class.</p>
-<hr />
-<!---
-
-### 04-17-2023: Cluster Analysis
-
-* Lighter load week this week. 
-* [HW 05 posted](hw/hw05-cluster.html)
-* Project requirements adjusted. See the [project page](project.html).
-
-----
-
-### 04-10-2023:
-
-#### Asynchronous discussions: asking, answering & discussing questions in Slack.
-
-* Still required, but timeline has been removed. Just get your questions & discussion in before the HW is due. 
-* This is essential discussion for your learning. We don't have opportunities to talk to each other in class. 
-* You don't have to have "the" answer to contribute meaningfully & work towards a discussion.
-
-
-#### Office hours requirement
-Come check in with me! Drop into open class time and ask a question. Check in with me to let me know you're on track and making progress. This is not like coming to the principals office - you're not in trouble! I'm not gonna get on your case if you're behind. I want to help and support you, and it's important for me to know how you all are doing. 
-
-
-#### Don't forget about the exam error assessment. 
-
-
-----
-
-### 04-03-2023:
-
-* Dimension reduction via Principal Components and Factor Analysis. 
-* Mind the due dates, the schedule details has some reminders to help you stay on task. 
-* PCA videos are posted. FA videos will be posted before the end of the week. 
-
-----
-
-### 03-27-2023: Getting back to business, Long but important notice about class changes. 
-
-_Video version of this announcment available in our google drive ("week 9 announcement")_
-
-#### Changes due to Covid-19
-See [this page](class_structure_changes.html) for comprehensive details on changes to the structure of our class. 
-This is also linked under the 'Materials' tab in the navbar. 
-
-
-#### Gradebook 
-
-* I switched priorities and will finish the exam before I go back to the homework and peer reviews. 
-* Now that every educational tool is free, I'm testing out Gradescope to grade your exams. 
-* You still have an opportunity to do an [Exam error assessment](learning_tools.html#exam_error_assessment).
-    - You have until the end of the semester to get this done with me. 
-    - You can earn up to half the points you missed back. This will be added directly to your midterm grade. 
-* I have added columns in the Blackboard gradebook to reflect assignments and points available for the rest of the semester. 
-
-    
-#### Project Timeline Updates
-
-* Project presentation that we were going to do the Friday before finals, will now be due Friday 3/27. 
-* See the [project page](project.html#project_update) for more details as there has been changes to the delivery requirements. 
-  
-----
-
-### 03-13-2023: Midterm, Project updates. 
-
-* Monday review for midterm. 
-* HW02 PR will be regraded (later)
-* HW03 Solutions will be posted Monday evening
-
-## ⚠️ <span style="color:red">UPDATE</span>
-
-* We will be transitioning to holding classes online until further notice. 
-    - I am aware that Chico State is not officially mandating that classes be held online. It is still up to the instructor.
-* This page will become more important as a central point of information. 
-    - Some info will still be reposted in Slack. Check in here daily.
-    - The link in the top right has been updated to contact me via zoom easier. 
-* Class is still held at the same time: 2-3pm MWF. 
-    - We will meet via Zoom. 
-    - Treat this time as if you were coming to an in person clas. See the [[Online Classroom Expecations]](http://sites.ischool.berkeley.edu/remote-teaching/2020/03/09/for-students-online-classroom-expectations/)
-    - This means expect to take notes as if you were in class. Expect to participate in discussion, verbally, in groups, and through Slack. 
-
-#### Thursday
-* I still have OH at 1-2pm on Thursday. 
-* This is a good time to test out making sure you know how to work Zoom. 
-
-#### Friday
-- We will continue with the plan to present the week 8 update. 
-- See the [[project]](project.html) page for specifics and logistical updates. 
-
-
-Have a GOOD break! Use lots of 🧼 and stay away from 😷. I hope to see you all again in person real soon. 
-
-
-
-### 03-06-2023: Missing Data: Multiple Imputation with Chained Equations
-
-* Video on Multiple Imputation in Physics Education Research https://media.csuchico.edu/media/0_tgnydpgf
-* There is so much to cover regarding how to treat missing data, we could have an entire class on it. For more details please refer to the textbook by a current leading researcher in this area and the creator of `mice`: Flexible Imputation of Missing Data, 2nd Ed, by Stef van Buuren: https://stefvanbuuren.name/fimd/
-* Quiz 3 has been posted. Due Thursday, group quiz on Friday. 
-* Short turn around time for HW3. Solutions will be posted on Monday, no late assignments will be collected. 
-* We have some open work days built into the schedule this week. That does not imply that you can skip class time. 
-
-
-#### HW 1 grading done. 
-
-* Please read the HW 1 feedback in Google Drive. It contains response to common problems throughout the homework. 
-* If you got a 0, but submitted something, my guess is that you didn't put the file into the `final` folder.
-    - If this is the case, go ahead and resubmit and i'll work on grading it when i have time, but it will be considered late. 
-* HW 2 solutions will be posted shortly. 
-
-#### Status of analysis data sets
-By now you should have: 
-
-1. a `data` folder in your `math456` folder containing all the data sets we work on in class and for homework.
-2. a data management (`dm`) file that reads in these data sets, performs some cleaning actions on it (e.g. converting to factors, collapsing levels). [See examples here](https://norcalbiostat.netlify.com/data/raw_data/). 
-3. a `clean` data set, dated with the date that you last peformed cleaning on (i.e. `lung_03012020.csv`). This is the one you use in analysis. 
-
-For the full experience that is more similar to what you're doing on your project, and what you will encounter in real world analysis, you should download the raw data files from the link above and make your own DM file. You can use the ones I have linked as starter code. 
-
-
-
-### 02-27-2023: Missing Data: Identification and Imputation
-
-* HW 01 feedback started. Please review for general info that applies to all HW. 
-* Quiz 2 posted. Individual due Tuesday 2/25, Group on Wednesday. 
-* HW 03 posted. Short turn around time on it, check the calendar. 
-* QFT on Monday - don't forget the learning journal reflection afterward. 
-
-
-
-
-### 02-20-2023: Classification and Prediction
-
-* The Learning Journal section on the [Learning Tools](learning_tools.html) page has been updated to contain information on what LJ entries were assigned. I will update this on a more regular basis going forward. 
-
-#### PROJECT UPDATE
-* Project selection is over! Thank you to all who contributed project proposals. 
-    - All student proposals were funded!
-    - You all have been assigned to either your 1st or 2nd choices.
-    - Those that didn't respond to the project selection form were placed on teams of my choosing. 
-* You have been placed in a private Slack channel with your team members. 
-* Check the Project page for details on your next deliverables (this week)
-
-
-#### Report appearance
-
-In a professional world, it is not just the correctness/quality of your work, but how you present the results. 
-There are several packages in R that help you with this by writing the HTML or LaTeX code for you. 
-
-When looking for some updated references so I could write a list for you, I came across [[these course notes]](https://jrnold.github.io/intro-methods-notes/formatting-tables.html) by [Dr. Jeffrey Arnold](https://github.com/jrnold) taht does a good job (even if it's from 2018) of giving a list of packages, and examples of a few. I noticed that these notes also do a good job of explaining regression modeling concepts. There is a lot more to talk about than what I can go through this semester.
-
-**See new code at end of logistic regression section of ASCN**
-
-I highly recommend looking into the [[kableExtra]](https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html) package for most things related to printing nice table (not raw regression output).
-
-
-
-### 02-13-2023: Modeling Binary Outcomes
-
-* Little bit of recap on regression modeling for a continuous outcome, before we get into what to do when your outcome isn't continuous. 
-* We are going to only discuss the case when your outcome is binary, by fitting a Logistic regression model.
-
-
-* Quiz 1 is due by Monday 1pm
-* Draft of HW1 is due by Sunday EOD
-* Peer review opens Monday morning, due Wednesday
-    - You have 2 assignments to peer review. The rotation sheet has been updated. 
-
-
-### 02-06-2023: Variable Selection
-
-* I will be reviewing and commenting on project proposals this week. Approved proposals will have until Saturday to create and post a video "pitch" to recruit other students to join their project. 
-* Due to the lack of proposals submitted so far, I am extending the proposal deadline until Monday EOD. 
-    - Everyone has to work on a project. 
-    - I will have several projects proposals for you to choose from. These won't nearly be as much fun or interesting compared to ones that you would choose. 
-* You should have started HW1 already. In fact, you should be done with a portion of HW 1 already. Quiz 1 is based on the content covered in HW1, will open Saturday, and close on Sunday EOD. 
-
-
---->
-<div id="model-building---how-to-choose-variables"
-class="section level3">
-<h3>01-30-2023: Model building - how to choose variables</h3>
-<ul>
-<li>This week we start topic 1: Model building. We will cover ways that
-variables can confound, or moderate existing planned relationships and
-learn how to interpret intearction terms.</li>
-<li>You’ll get your first experience conducting a peer review (Due Tue)
-and with the Question Formulation Technique QFT) on Monday. .</li>
-<li>Review the course notes and corresponding textbook chapters before
-class.</li>
-</ul>
-<p>HW01 is not a “linear” homework in that early questions are on topics
-early in the module, and later questions on later topics. Questions have
-various parts, some of which aren’t discussed directly in class until
-later. You may not be able to complete all parts of all questions until
-the end of this module. Do what you can.</p>
-<p><strong>General Guidance on Homework</strong></p>
-<ul>
-<li>Start early and do what you can. If you have any question about the
-length, or difficulty of my homework assignments and why you should
-procrastinate at your own peril, just ask any of my prior students.</li>
-<li>Ask questions! It is essential to your learning.</li>
-<li>Spell check your work, and for petes sake look at your work before
-you turn it in and imagine if you had to print it out.
-<ul>
-<li>No 100 page documents because you accidentally printed out the whole
-data set.</li>
-<li>Make sure all code is showing and readable</li>
-<li>Make sure all text is readable and not sucked into a table or
-wrapping off the page.</li>
-</ul></li>
-<li>All data sets referenced for the homework can be obtained from
-Dr. D’s <a
-href="https://norcalbiostat.netlify.com/data/cleaned_data/">[data
-website]</a>.</li>
-<li>Don’t assume the data are clean.
-<ul>
-<li>Check the data type in R, versus the codebook.</li>
-</ul></li>
-<li>We will be using the following data sets regularly: Depression, Lung
-function, Parental HIV.
-<ul>
-<li>For each data set we use you should maintain:
-<ol style="list-style-type: decimal">
-<li>the raw data</li>
-<li>the codebook</li>
-<li>a data management file</li>
-<li>a clean data set that is used for homework</li>
-</ol></li>
-</ul></li>
-</ul>
-<p>The following file organization is recommended. Another option could
-be to have a subfolder for each data set.</p>
-<pre><code>math456/
-  | - data/
-        | - lung_081217.txt
-        | - dm_lung.R (or .Rmd)
-        | - lung_clean.Rdata
-        | - depress_081217.txt
-        | - dm_depress.R
-        | - depress_clean.Rdata
-  | - hw/
-      | - hw01-modeling-userid.Rmd
-      | - hw01-modeling-userid.pdf</code></pre>
-<div id="office-hours-scheduled" class="section level4">
-<h4>Office Hours Scheduled</h4>
-<p><a href="OH_Viz.html">Click this link</a> to see the R code I use to
-choose office hours.</p>
+<div id="applied-statistical-models" class="section level2">
+<h2>Applied Statistical Models</h2>
+<blockquote>
+<p>Advanced topics in applied statistics including multiple regression,
+multivariate methods, nonparametrics, analysis of covariance, bootstrap
+methods and others as appropriate. Statistical computer packages are
+introduced and used. Appropriate for biology, agriculture, nutrition,
+business, psychology, social science and other majors.</p>
+</blockquote>
+<p><br></p>
+<hr>
+<div class="columns">
+<div class="column" style="width:33%;">
+<div id="course-details" class="section level3">
+<h3>Course details</h3>
+<p>📅   MWF<br />
+🕓   10-10:50 am<br />
+🏛   Holt 171<br />
+👥️   In Person. 💻   Laptop Required</p>
+</div>
+</div><div class="column" style="width:33%;">
+<div id="pre-reqs" class="section level3">
+<h3>Pre-reqs</h3>
+<p>MATH 314/315/615 at Chico State or instructor permission.</p>
+</div>
+<div id="student-drop-in-hours" class="section level3">
+<h3>Student Drop in Hours</h3>
+<p>Update on Zoom (link in Canvas)</p>
+</div>
+</div><div class="column" style="width:33%;">
+<div id="instructor" class="section level3">
+<h3>Instructor</h3>
+<p>🐾   <a href="https://www.norcalbiostat.com">Dr. Robin
+Donatello</a><br />
+🚪   Office: Holt 202<br />
+📧  
+<a href="mailto:rdonatello@csuchico.edu">rdonatello@csuchico.edu</a><br />
+🙋   <a href="https://dr-donatello.youcanbook.me/">Schedule an
+appointment</a></p>
 </div>
 </div>
-<div id="welcome" class="section level3">
-<h3>01-23-2023: Welcome!</h3>
-<ul>
-<li>Welcome to spring semester in statistics with your host, Dr. Robin
-Donatello.</li>
-<li>Make sure you acquaint yourself with this website and our Canvas
-course page, it they will be your guide for the next 16 weeks.</li>
-<li>To best ensure your success in this class, head over to Canvas now
-and review the first module, and the first setup homework!</li>
-</ul>
+</div>
 </div>
 
 

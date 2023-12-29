@@ -3,22 +3,22 @@ output_dir: '.'
 navbar:
   title: MATH 456
   left:
-  - text: Schedule
+  - text: Modules
     icon: fa-calendar
-    href: schedule.html
-  - text: Course Notes
+    href: modules.html
+  - text: Course Notes (ASCN)
     icon: fa-link
     href: https://norcalbiostat.github.io/AppliedStatistics_notes/index.html
   - text: Google Drive
     icon: fa-google
-    href: https://drive.google.com/drive/folders/1Nfa_kDGWxoN37qKVXds0MfNqZwVtFuv5
+    href: https://drive.google.com/drive/folders/1HwbunVx8BS5EFJUUFlsG5HOFcWNa9uxM
   - text: Learning Techniques
     icon: fa-sparkles
     href: learning_tools.html
     
   right:
   - text: Syllabus 
-    href: syllabus_456_S23.html
+    href: syllabus.html
   - text: Help
     icon: fa-question
     menu:
@@ -31,19 +31,12 @@ navbar:
     - text: R Cookbook
       icon: fa-area-chart
       href: http://www.cookbook-r.com/
-  - text: Contact Dr. D
-    menu:
-    - text: Her website
-      icon: fa-paw
-      href: http://www.norcalbiostat.com/
-    - text: Request Appointment
-      icon: fa-calendar-check-o
-      href: https://dr-donatello.youcanbook.me/
+  
       
 output:
   html_document:
-    theme: journal
-    highlight: tango
+    theme: united
+    highlight: espresso
     lib_dir: site_libs
     self_contained: no
-    css: style.css
+#    css: style.css
