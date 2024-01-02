@@ -5,7 +5,7 @@ title: "Math 456 course home"
 
 ## Applied Statistical Models
 
-> Advanced topics in applied statistics including multiple regression, multivariate methods, nonparametrics, analysis of covariance, bootstrap methods and others as appropriate. Statistical computer packages are introduced and used. Appropriate for biology, agriculture, nutrition, business, psychology, social science and other majors.
+_Advanced topics in applied statistics including multiple regression, multivariate methods, nonparametrics, analysis of covariance, bootstrap methods and others as appropriate. Statistical computer packages are introduced and used. Appropriate for biology, agriculture, nutrition, business, psychology, social science and other majors._
 
 <br>
 

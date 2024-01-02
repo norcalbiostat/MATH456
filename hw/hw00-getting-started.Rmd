@@ -35,35 +35,49 @@ You are welcome (encouraged) to work on this flowchart after the official due da
     - The invite takes you to the #class-selection page. Choose your pronouns and click the `r emo::ji("books")` icon to add the Math 456 role. This will let you see our class channels. 
     - Download the Desktop app. You are not allowed to rely on remembering to login using the web version. The Discord phone app is technically optional, but really really helpful/handy. Students historically have stated it's much easier to work with.
     - Post an introduction in the `#class-chat` channel. Tell us a little about you! Year, major, hometown, any extracurricular activities, what do you hope to get out of this class, how will you ensure your success in this class. Oh.. and of course any mention of pets should include a photo!
+
+2. :star: access to our [Google Drive](https://drive.google.com/drive/folders/1WF9ACb66RD-npIxpZ67OgqDfnWTpIQD0). 
+    - You have been added to our shared Google Drive using your chico state (@mail.csuchico.edu) email address. 
+    - :warning: If you are logged into a personal Google account _before_ you log into your Chico State account, then when you click on links for items in our class Google Drive, it will automatically try to access that file/folder with your personal account. 
+    - You can either A) always log into your Chico State Google account *first*, or B) :star: this folder so that you can log into Google Drive from whatever account you are logged into, then switch to your Chico State account, and you will be able to easily find the folder in your starred section. 
+
+
+
+ 
+2. Update your R (4.2+), R Studio (latest), and relevant packages. 
+    - Download page: https://posit.co/download/rstudio-desktop/ 
+    - Install or update the following packages: `tidyverse`, `tinytex`, `sjPlot`, `gtsummary`, `performance`
+
+3. **Hello Quarto.** All homework is to be done in a literate programming/reproducible manner and submitted as a PDF. We will be using Quarto to do this. If you are familiar with RMarkdown, Quarto is the 'next generation' format. 
+    - Watch this [Getting Started with Quarto video](https://quarto.org/docs/get-started/hello/rstudio.html), even if you have used Quarto before. 
+    - Test your ability to render to PDF using a new `qmd` file or the `hello.qmd` from the tutorial page linked above. If you cannot then run `tinytex::install_tinytex()` in the console. 
+
   
-2. You have been added to our class Google Folder using your @mail.csuchico.edu email address. :star: this folder in Google Drive to make it easier to find. 
-    
-3. Create an electronic Learning Journal (LJ). This could be a Google Document, or a document in Dropbox or Box. 
-    - PM the URL link to Dr. D in Discord. If you are using Google Docs make sure the permissions on the document are set to _anyone with the link can view_
-    
-4. Update your R (4.2+) and R Studio (latest). 
-    - All homework is to be done in a literate programming/reproducible manner. This means either `.Rmd` or `.qmd` files compiled to PDF. If you don't know what this means, review lecture 02 & 03 from [Math 130 week 1](https://norcalbiostat.github.io/MATH130/wk1.html)
-    - Make sure you can knit to PDF. If you cannot, then install the `tinytex` package and then run `tinytex::install_tinytex()` in the console to install a lightweight version of LaTeX.
-    
-5. Setup your class folder on your computer. By now you should have figured out a common workplace on your computer for your class files. If you have not already done so, create a `MATH456` folder. 
+4. Setup your class folder on your computer. By now you should have figured out a common workplace on your computer for your class files. If you have not already done so, create a `MATH456` folder. 
     - Add folders for `data`, `hw`
     - Download the raw data and codebooks from our `DATA` folder in our shared Google Drive into your `data` subfolder on your computer
     - create data cleaning scripts for each data set that ONLY do the following (for now): 
         - import the raw data
         - save a `clean` data set as a `.Rdata` file that you will use for analysis
     - [Example](https://www.norcalbiostat.com/data/dm_addhlth)
-6. Help me decide when to hold student office hours. Remember, these are open drop in times where I dedicate my time to YOU as students. My time outside these hours is limited, so be sure to fill this out so I can best choose times that you are free. [[Link]](https://forms.gle/aZgtaBbt2tH21ZAr6)   
+
+ 
 
 
 # 3. Preparing yourself to Learn
 
-1.  Read a little about Self-regulated learning and metacognition from the following sources
+1.  Read a little about Self-regulated learning, Metacognition, and Learning Journals from the following sources
     - https://en.wikipedia.org/wiki/Self-regulated_learning
     - https://serc.carleton.edu/sage2yc/self_regulated/what.html
-    - Document: [Questions that Self-regulated learnings ask themselves](../notes/SLR handout.docx)
-    - Google? 
+    - [Questions that Self-regulated learnings ask themselves](../notes/SLR handout.docx)
+    - https://www.teachthought.com/literacy/20-types-of-learning-journals-that-help-students-think/ 
 
-2.  Write your first LJ Entry by answering the question below: 
 
-> How does the material you’ve heard thus far connect or conflict with your prior knowledge, beliefs, or values?  
+2. Create your Learning Journal (LJ) by making a copy of the template found in the **Learning Journals** folder in our Google Drive.
+    - When you make a copy of this template document, make sure the copy stays in this shared folder. 
+    - Rename this file with your name (First, Last)
+    - Click the **SHARE** button in the top right and remove everyone _except_ yourself and Dr. D as collaborators. 
+    - Your first entry is dated for you, and asks you to reflect on the reading you just did. 
+    - Every subsequent entry will go at the top (so reverse chronological order), and dated using a 1st level header just like the one in the template. 
+    
  

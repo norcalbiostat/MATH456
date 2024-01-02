@@ -6,6 +6,8 @@ navbar:
   - text: Modules
     icon: fa-calendar
     href: modules.html
+  - text: Prep & Plan
+    href: weekly_overview.html
   - text: Course Notes (ASCN)
     icon: fa-link
     href: https://norcalbiostat.github.io/AppliedStatistics_notes/index.html
@@ -25,12 +27,16 @@ navbar:
     - text: Community Coding
       icon: fa-group
       href: http://bit.ly/cc_hours
+    - text: Posit Community
+      icon: fa-comment
+      href: https://community.rstudio.com/ 
     - text: Stack Overflow/r
       icon: fa-stack-overflow
       href: https://stackoverflow.com/questions/tagged/r
     - text: R Cookbook
       icon: fa-area-chart
-      href: http://www.cookbook-r.com/
+      href: https://rc2e.com/
+    
   
       
 output:
