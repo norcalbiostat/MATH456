@@ -35,6 +35,15 @@ Upon successful completion of this course, students will be able to:
 * Report the results of the analysis in plain language. 
 
 
+# General Guidance on Homework
+
+* Start early and do what you can. If you have any question about the length, or difficulty of my homework assignments and why you should procrastinate at your own peril, just ask any of my prior students.
+* Ask questions! It is essential to your learning.
+* Spell check your work, and for petes sake look at your work before you turn it in and imagine if you had to print it out.
+    - No 100 page documents because you accidentally printed out the whole data set.
+    - Make sure all code is showing and readable
+    - Make sure all text is readable and not sucked into a table or wrapping off the page.
+
 # Required Materials
 * **Textbook**: _Practical Multivariate Analysis 6th Edition_. Afifi, May, Donatello, Clark ISBN-13: 978-1138702226 
   - 6th edition is necessary
@@ -76,13 +85,13 @@ Your final grade will be a straight sum of points earned and will be displayed a
 I use a standard grade cutoff of 100-90%: A, 89-80%: B, 79-70%: C, 69-60%: D, 0-59%: F  
 
 
-#### Exams (25%)
+#### Exams (20%)
 * 2 Exams (midterm/final, not cumulative). [Error Assessment Form](notes/Analyzing exam errors.pdf) available for midterm. 
 
 #### Assignments (30%)
 * 6 Standard homework assignments on the topics listed above. Drafts submitted through Google Drive, Final versions for grading submitted through Canvas. 
 
-#### Quizzes (15%)
+#### Quizzes (20%)
 * Nearly weekly Individual + Group quizzes. Administered through Google Forms. Lowest score dropped. 
 
 #### Active Learning (30%)
@@ -91,10 +100,6 @@ I use a standard grade cutoff of 100-90%: A, 89-80%: B, 79-70%: C, 69-60%: D, 0-
 * Working collaboratively with your classmates during class to solve problems and discuss topics. 
 * Attending [Community Coding](http://bit.ly/cc_hours) and/or Office Hours **2** times. This can be to check in on your grade, ask clarifying questions, or chat about life and graduate school.
 * Discussion boards & Discord participation. Contributing to our learning community by asking and answering questions about assignments, code, etc in Discord is required to make this class run smoothly. And in the end, you are the ones that will benefit from it the most. Don't spend more than 20 min banging your head on the proverbial wall before you reach out and ask for help. 
-* One external activity. Because no academic topic only lives in the classroom. Examples include:
-    -  Attending an internal/external seminar talk on a topic in Applied Statistics, or a Data analysis-centric seminar talk, writing a 1 page summary about the talk and how it relates to this class or your chosen field, and sharing this summary in the #external-learning Discord channel.
-    - Contribute to the [Applied Statistics Course Notes](https://norcalbiostat.github.io/AppliedStatistics_notes/). This could be a new example or  enhancing/fixing an old example
-        - Once you identify the piece you want to work on, PM me the section in Discord I will send you the relevant code/data. 
 
 
 ----

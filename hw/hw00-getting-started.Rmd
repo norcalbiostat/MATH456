@@ -8,42 +8,17 @@ output:
 
 # Submission Instructions
 
-This assignment is a checklist of tasks for you to do to prepare for learning in this class. Submission instructions for any items that need to be turned in are explained under that item. 
+This assignment is a checklist of tasks for you to do to prepare for learning in this class. Some items ask you to submit a screenshot, some ask you to write a sentence or two. The details are in the corresponding "HW00 Checklist" in Canvas. 
 
-Check Canvas for due dates
+Pay attention to the ordering & timeline of these assignments. 
 
 ---
 
-
-# 1. Preparing Data for Analysis 
+# BY WEDNESDAY: Preparing Data for Analysis 
 
 1. Read PMA6 Chapter 3
+    - What is one question you have, or what is one piece of information that is new for you? Answer this in Canvas. 
 
-2. Data Preparation Flowchart
-    - In class you will work with a partner to draft up a flowchart / reference sheet for the process of preparing data for analysis. E.g.: If you were handed a data set, what are the first things you need to do?
-    - After class and using the information from Chapter 3 and your own personal experiences, fill in the gaps, finalize and personalize this flowchart. 
-    - Convert this flowchart to PDF format however you wish. You could recreate it using mind mapping software, you could take a finalized picture and save as PDF. 
-    - Upload your flowchart as a PDF to our shared Google Drive folder `Topic 00: Data Preparation`. This file must be named "hw00_dataprep_userid" where `userid` is your chico state user id, (i.e. the first part of your email.)
-    - This assignment will be subject to Peer Review, but without a no draft/revision cycle.
-
-You are welcome (encouraged) to work on this flowchart after the official due date. Especially after you view other's submissions. Very likely they included something that you didn't think of! The intent is to create something useful for yourself. 
-
-# 2. Preparing class materials & platforms
-
-1. Join our Discord workspace by clicking here: https://discord.gg/9tQyTKC3cE, reviewing and agreeing to the code of conduct. 
-    - Have an existing Discord account? Feel free to use it, but change your name on this server to your preferred name that you want us to call you by. 
-    - The invite takes you to the #class-selection page. Choose your pronouns and click the `r emo::ji("books")` icon to add the Math 456 role. This will let you see our class channels. 
-    - Download the Desktop app. You are not allowed to rely on remembering to login using the web version. The Discord phone app is technically optional, but really really helpful/handy. Students historically have stated it's much easier to work with.
-    - Post an introduction in the `#class-chat` channel. Tell us a little about you! Year, major, hometown, any extracurricular activities, what do you hope to get out of this class, how will you ensure your success in this class. Oh.. and of course any mention of pets should include a photo!
-
-2. :star: access to our [Google Drive](https://drive.google.com/drive/folders/1WF9ACb66RD-npIxpZ67OgqDfnWTpIQD0). 
-    - You have been added to our shared Google Drive using your chico state (@mail.csuchico.edu) email address. 
-    - :warning: If you are logged into a personal Google account _before_ you log into your Chico State account, then when you click on links for items in our class Google Drive, it will automatically try to access that file/folder with your personal account. 
-    - You can either A) always log into your Chico State Google account *first*, or B) :star: this folder so that you can log into Google Drive from whatever account you are logged into, then switch to your Chico State account, and you will be able to easily find the folder in your starred section. 
-
-
-
- 
 2. Update your R (4.2+), R Studio (latest), and relevant packages. 
     - Download page: https://posit.co/download/rstudio-desktop/ 
     - Install or update the following packages: `tidyverse`, `tinytex`, `sjPlot`, `gtsummary`, `performance`
@@ -51,33 +26,49 @@ You are welcome (encouraged) to work on this flowchart after the official due da
 3. **Hello Quarto.** All homework is to be done in a literate programming/reproducible manner and submitted as a PDF. We will be using Quarto to do this. If you are familiar with RMarkdown, Quarto is the 'next generation' format. 
     - Watch this [Getting Started with Quarto video](https://quarto.org/docs/get-started/hello/rstudio.html), even if you have used Quarto before. 
     - Test your ability to render to PDF using a new `qmd` file or the `hello.qmd` from the tutorial page linked above. If you cannot then run `tinytex::install_tinytex()` in the console. 
-
-  
+    
 4. Setup your class folder on your computer. By now you should have figured out a common workplace on your computer for your class files. If you have not already done so, create a `MATH456` folder. 
     - Add folders for `data`, `hw`
-    - Download the raw data and codebooks from our `DATA` folder in our shared Google Drive into your `data` subfolder on your computer
-    - create data cleaning scripts for each data set that ONLY do the following (for now): 
-        - import the raw data
-        - save a `clean` data set as a `.Rdata` file that you will use for analysis
-    - [Example](https://www.norcalbiostat.com/data/dm_addhlth)
+    - Download the raw data and codebooks from this [Google Folder](https://drive.google.com/drive/folders/1vSE07R9tOJjxL-aEfDogdk_1s-E8r2ts) into your `data` subfolder on your computer
 
- 
+# BY FRIDAY: Preparing class materials & platforms
+
+1. Join our Discord workspace by clicking here: https://discord.gg/9tQyTKC3cE, reviewing and agreeing to the code of conduct. 
+    - Have an existing Discord account? Feel free to use it, but change your name on this server to your preferred name that you want us to call you by. 
+    - The invite takes you to the #class-selection page. Choose your pronouns and click the `r emo::ji("books")` icon to add the Math 456 role. This will let you see our class channels. 
+    - Download the Desktop app. You are not allowed to rely on remembering to login using the web version. The Discord phone app is technically optional, but really really helpful/handy. Students historically have stated it's much easier to work with.
+    - Post an introduction in the `#class-chat` channel. Tell us a little about you! Year, major, hometown, any extracurricular activities, what do you hope to get out of this class, how will you ensure your success in this class. Oh.. and of course any mention of pets should include a photo!
 
 
-# 3. Preparing yourself to Learn
+2. Review ASCN Chapter 1. Expect this to be your reference guide for next week. 
+    - What is one question you have, or what is one piece of information that is new for you? Answer this in Canvas. 
 
-1.  Read a little about Self-regulated learning, Metacognition, and Learning Journals from the following sources
+
+
+
+
+# BEFORE SUNDAY
+
+1. Read a little about Self-regulated learning, Metacognition, and Learning Journals from the following sources
     - https://en.wikipedia.org/wiki/Self-regulated_learning
     - https://serc.carleton.edu/sage2yc/self_regulated/what.html
     - [Questions that Self-regulated learnings ask themselves](../notes/SLR handout.docx)
     - https://www.teachthought.com/literacy/20-types-of-learning-journals-that-help-students-think/ 
-
-
 2. Create your Learning Journal (LJ) by making a copy of the template found in the **Learning Journals** folder in our Google Drive.
     - When you make a copy of this template document, make sure the copy stays in this shared folder. 
     - Rename this file with your name (First, Last)
     - Click the **SHARE** button in the top right and remove everyone _except_ yourself and Dr. D as collaborators. 
     - Your first entry is dated for you, and asks you to reflect on the reading you just did. 
-    - Every subsequent entry will go at the top (so reverse chronological order), and dated using a 1st level header just like the one in the template. 
+    
+3. Write your first LJ entry. 
+
+4. `r emo::ji("star")` access to our [Google Drive](https://drive.google.com/drive/folders/1WF9ACb66RD-npIxpZ67OgqDfnWTpIQD0). 
+    - You have been added to our shared Google Drive using your chico state (@mail.csuchico.edu) email address. 
+    - `r emo::ji("warning")` If you are logged into a personal Google account _before_ you log into your Chico State account, then when you click on links for items in our class Google Drive, it will automatically try to access that file/folder with your personal account. 
+    - Starring this folder allows you to log into Google Drive from whatever account you are logged into, then switch to your Chico State account, and you will be able to easily find the folder in your starred section. 
+
+
+
+ 
     
  

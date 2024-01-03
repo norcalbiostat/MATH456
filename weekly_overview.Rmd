@@ -1,0 +1,551 @@
+---
+title: Weekly Activities
+output: html_document
+---
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+library(dplyr);library(readxl); library(kableExtra);library(stringr); library(pander)
+
+library(gt)
+options(knitr.table.format = "html", knitr.kable.NA = '') 
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE) 
+```
+
+```{r}
+# Read in schedule
+raw_slo_detail <- googlesheets4::read_sheet("1flUYEIAqLfa8Re4gNRTsRRA8skF4Ln6rImfKb-WDTZI", 
+                                 sheet="slo_detail", 
+                                 col_types = c("nDccccccc")) 
+
+# Function to extract week and display data
+details <- function(w){
+  wd <- filter(raw_slo_detail, wk==w) %>% 
+        select(Topics, SLO, Prepare, Monday, Wednesday, Friday)  
+  # strip data columns into separate lists
+  Topic <- gsub("\r\n", "", wd$Topics)
+  SLO  <- as.list(str_split(wd$SLO, "\n", simplify=TRUE))
+  prep <- as.list(str_split(wd$Prepare, "\n", simplify=TRUE))
+  mon  <- as.list(str_split(wd$Monday, "\n", simplify=TRUE))
+  wed  <- as.list(str_split(wd$Wednesday, "\n", simplify=TRUE))
+  fri  <- as.list(str_split(wd$Friday, "\n", simplify=TRUE))
+ 
+  return(list(Topic=Topic, SLO=SLO, prep=prep, mon=mon, wed=wed, fri=fri))
+}
+
+```
+
+Click each link to expand or contract the details for that week. 
+
+```{r}
+w1 <- details(1)
+```
+
+### <a href="#week1" data-toggle="collapse">Week 1: `r w1$Topic`</a>
+<div id="week1" class="collapse">
+
+#### Learning Objectives
+By the end of the week, learners will be able to: 
+```{r}
+pander(w1$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w1$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w1$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w1$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w1$fri)
+```
+
+</div>
+
+
+```{r}
+w2 <- details(2)
+```
+### <a href="#week2" data-toggle="collapse">Week 2: `r w2$Topic`</a>
+<div id="week2" class="collapse">
+
+#### Learning Objectives
+```{r}
+pander(w2$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w2$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w2$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w2$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w2$fri)
+```
+
+</div>
+
+```{r}
+w3 <- details(3)
+```
+
+### <a href="#week3" data-toggle="collapse">Week 3: `r w3$Topic`</a>
+<div id="week3" class="collapse">
+
+#### Learning Objectives
+```{r}
+pander(w3$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w3$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w3$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w3$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w3$fri)
+```
+
+</div>
+
+```{r}
+w4 <- details(4)
+```
+### <a href="#week4" data-toggle="collapse">Week 4: `r w4$Topic`</a>
+<div id="week4" class="collapse">
+
+#### Learning Objectives
+```{r}
+pander(w4$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w4$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w4$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w4$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w4$fri)
+```
+
+</div>
+
+```{r}
+w5 <- details(5)
+```
+### <a href="#week5" data-toggle="collapse">Week 5: `r w5$Topic`</a>
+<div id="week5" class="collapse">
+
+#### Learning Objectives
+```{r}
+pander(w5$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w5$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w5$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w5$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w5$fri)
+```
+
+</div>
+
+```{r}
+w6 <- details(6)
+```
+### <a href="#week6" data-toggle="collapse">Week 6: `r w6$Topic`</a>
+<div id="week6" class="collapse">
+
+#### Learning Objectives
+```{r}
+pander(w6$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w6$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w6$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w6$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w6$fri)
+```
+
+</div>
+
+```{r}
+w7 <- details(7)
+```
+### <a href="#week7" data-toggle="collapse">Week 7: `r w7$Topic`</a>
+<div id="week7" class="collapse">
+
+#### Learning Objectives
+```{r}
+pander(w7$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w7$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w7$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w7$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w7$fri)
+```
+
+</div>
+
+```{r}
+w8 <- details(8)
+```
+
+### <a href="#week8" data-toggle="collapse">Week 8: `r w8$Topic`</a>
+<div id="week8" class="collapse">
+
+#### Learning Objectives
+```{r}
+pander(w8$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w8$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w8$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w8$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w8$fri)
+```
+
+</div>
+
+
+
+```{r}
+w9 <- details(9)
+```
+### <a href="#week9" data-toggle="collapse">Week 9: `r w9$Topic`</a>
+<div id="week9" class="collapse">
+
+#### Learning Objectives
+```{r}
+pander(w9$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w9$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w9$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w9$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w9$fri)
+```
+
+</div>
+
+
+```{r}
+w10 <- details(10)
+```
+
+### <a href="#week10" data-toggle="collapse">Week 10: `r w10$Topic`</a>
+<div id="week10" class="collapse">
+
+#### Learning Objectives
+```{r}
+pander(w10$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w10$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w10$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w10$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w10$fri)
+```
+
+</div>
+
+
+```{r}
+w11 <- details(11)
+```
+
+### <a href="#week11" data-toggle="collapse">Week 11: `r w11$Topic`</a>
+<div id="week11" class="collapse">
+
+#### Learning Objectives
+```{r}
+pander(w11$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w11$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w11$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w11$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w11$fri)
+```
+
+</div>
+
+
+
+```{r}
+w12 <- details(12)
+```
+### <a href="#week12" data-toggle="collapse">Week 12: `r w12$Topic`</a>
+<div id="week12" class="collapse">
+
+#### Learning Objectives
+```{r}
+pander(w12$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w12$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w12$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w12$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w12$fri)
+```
+
+</div>
+
+
+
+```{r}
+w13 <- details(13)
+```
+### <a href="#week13" data-toggle="collapse">Week 13: `r w13$Topic`</a>
+<div id="week13" class="collapse">
+
+#### Learning Objectives
+```{r}
+pander(w13$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w13$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w13$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w13$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w13$fri)
+```
+
+</div>
+
+
+
+```{r}
+w14 <- details(14)
+```
+### <a href="#week14" data-toggle="collapse">Week 14: `r w14$Topic`</a>
+<div id="week14" class="collapse">
+
+#### Learning Objectives
+```{r}
+pander(w14$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w14$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w14$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w14$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w14$fri)
+```
+
+</div>
+
+
+
+```{r}
+w15 <- details(15)
+```
+### <a href="#week15" data-toggle="collapse">Week 15: `r w15$Topic`</a>
+<div id="week15" class="collapse">
+
+#### Learning Objectives
+```{r}
+pander(w15$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w15$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w15$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w15$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w15$fri)
+```
+
+</div>
