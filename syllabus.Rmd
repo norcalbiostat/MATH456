@@ -1,6 +1,6 @@
 ---
 title: 'Syllabus for MATH 456 - Applied Statistics II'
-author: "Spring 2023"
+author: "Spring 2024"
 output:
   pdf_document: default
   html_document: 
