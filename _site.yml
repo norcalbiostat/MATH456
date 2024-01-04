@@ -3,47 +3,49 @@ output_dir: '.'
 navbar:
   title: MATH 456
   left:
-  - text: Schedule
+  - text: Modules
+    icon: fa-file-lines
+    href: modules.html
+  - text: Prep & Plan
     icon: fa-calendar
-    href: schedule.html
-  - text: Course Notes
+    href: weekly_overview.html
+
+  - text: Learning Techniques
+    icon: fa-lightbulb
+    href: learning_tools.html
+    
+  right:
+  - text: Course Notes (ASCN)
     icon: fa-link
     href: https://norcalbiostat.github.io/AppliedStatistics_notes/index.html
   - text: Google Drive
     icon: fa-google
-    href: https://drive.google.com/drive/folders/1Nfa_kDGWxoN37qKVXds0MfNqZwVtFuv5
-  - text: Learning Techniques
-    icon: fa-sparkles
-    href: learning_tools.html
-    
-  right:
+    href: https://drive.google.com/drive/folders/1HwbunVx8BS5EFJUUFlsG5HOFcWNa9uxM
   - text: Syllabus 
-    href: syllabus_456_S23.html
+    icon: fa-book
+    href: syllabus.html
   - text: Help
     icon: fa-question
     menu:
     - text: Community Coding
       icon: fa-group
       href: http://bit.ly/cc_hours
+    - text: Posit Community
+      icon: fa-comment
+      href: https://community.rstudio.com/ 
     - text: Stack Overflow/r
       icon: fa-stack-overflow
       href: https://stackoverflow.com/questions/tagged/r
     - text: R Cookbook
       icon: fa-area-chart
-      href: http://www.cookbook-r.com/
-  - text: Contact Dr. D
-    menu:
-    - text: Her website
-      icon: fa-paw
-      href: http://www.norcalbiostat.com/
-    - text: Request Appointment
-      icon: fa-calendar-check-o
-      href: https://dr-donatello.youcanbook.me/
+      href: https://rc2e.com/
+    
+  
       
 output:
   html_document:
-    theme: journal
-    highlight: tango
+    theme: united
+    highlight: espresso
     lib_dir: site_libs
     self_contained: no
     css: style.css

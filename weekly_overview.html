@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Weekly Activities</title>
+
+<script src="site_libs/header-attrs-2.24/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/united.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">MATH 456</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="modules.html">
+    <span class="fa fa-file-lines"></span>
+     
+    Modules
+  </a>
+</li>
+<li>
+  <a href="weekly_overview.html">
+    <span class="fa fa-calendar"></span>
+     
+    Prep &amp; Plan
+  </a>
+</li>
+<li>
+  <a href="learning_tools.html">
+    <span class="fa fa-lightbulb"></span>
+     
+    Learning Techniques
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://norcalbiostat.github.io/AppliedStatistics_notes/index.html">
+    <span class="fa fa-link"></span>
+     
+    Course Notes (ASCN)
+  </a>
+</li>
+<li>
+  <a href="https://drive.google.com/drive/folders/1HwbunVx8BS5EFJUUFlsG5HOFcWNa9uxM">
+    <span class="fa fa-google"></span>
+     
+    Google Drive
+  </a>
+</li>
+<li>
+  <a href="syllabus.html">
+    <span class="fa fa-book"></span>
+     
+    Syllabus
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="fa fa-question"></span>
+     
+    Help
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="http://bit.ly/cc_hours">
+        <span class="fa fa-group"></span>
+         
+        Community Coding
+      </a>
+    </li>
+    <li>
+      <a href="https://community.rstudio.com/">
+        <span class="fa fa-comment"></span>
+         
+        Posit Community
+      </a>
+    </li>
+    <li>
+      <a href="https://stackoverflow.com/questions/tagged/r">
+        <span class="fa fa-stack-overflow"></span>
+         
+        Stack Overflow/r
+      </a>
+    </li>
+    <li>
+      <a href="https://rc2e.com/">
+        <span class="fa fa-area-chart"></span>
+         
+        R Cookbook
+      </a>
+    </li>
+  </ul>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Weekly Activities</h1>
+
+</div>
+
+
+<p>Click each link to expand or contract the details for that week.</p>
+<div
+id="week-1-class-logistics-reproducible-workflows-linear-regression-review"
+class="section level3">
+<h3><a href="#week1" data-toggle="collapse">Week 1: Class logistics ,
+Reproducible workflows &amp; Linear Regression review</a></h3>
+<div id="week1" class="collapse">
+<div id="learning-objectives" class="section level4">
+<h4>Learning Objectives</h4>
+<p>By the end of the week, learners will be able to:</p>
+<ul>
+<li>Describe how to ensure your success in this class</li>
+<li>Get to know your classmates</li>
+<li>Describe what Self Regulated Learning means to you</li>
+<li>Create a reproducible workflow for data analysis</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="how-to-prepare" class="section level4">
+<h4>How to prepare</h4>
+<ul>
+<li>Familiarize yourself with this website and required course
+materials.</li>
+<li>Review the syllabus and start on HW 0.</li>
+<li>Read PMA6 Ch3 and ASCN Ch 1 (Before Wednesday)</li>
+<li>Refresh on linear regression (Before Fri) PMA6 Ch 8, ASCN Ch
+7,9</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="monday-overview" class="section level4">
+<h4>Monday overview</h4>
+<ul>
+<li>Introduction to the class.</li>
+<li>QFT: Preparing data for analysis</li>
+<li>Tips on cleaning data</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="wednesday-overview" class="section level4">
+<h4>Wednesday overview</h4>
+<ul>
+<li>Reproducible workflows (whiteboard).</li>
+<li>Convert class folder to Rproj</li>
+<li>Start DM file</li>
+<li>Explain DM check ins</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="friday-overview" class="section level4">
+<h4>Friday overview</h4>
+<ul>
+<li>Group Quiz on class logistics &amp; Data Preparation</li>
+<li>Jump start - write down everything you know about LinReg (LJ)</li>
+<li>Work in groups to organize ideas into topics (Whiteboard)</li>
+</ul>
+<!-- end of list -->
+</div>
+</div>
+</div>
+<div id="week-2-stratification-moderation-interaction-terms"
+class="section level3">
+<h3><a href="#week2" data-toggle="collapse">Week 2: Stratification,
+Moderation &amp; Interaction Terms</a></h3>
+<div id="week2" class="collapse">
+<div id="learning-objectives-1" class="section level4">
+<h4>Learning Objectives</h4>
+<ul>
+<li>Practice asking questions</li>
+<li>Interpret different types of predictors</li>
+<li>Identify moderating and confounding variables</li>
+<li>Fit and interpret an interaction model</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="how-to-prepare-1" class="section level4">
+<h4>How to prepare</h4>
+<ul>
+<li>Read ASCN Ch 9.6, Ch 8</li>
+<li>Review HW1 to see what is expected of you</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="monday-overview-1" class="section level4">
+<h4>Monday overview</h4>
+<ul>
+<li>QFT: Model Building &amp; Variable Selection</li>
+<li>Recap on the purpose of linear regression models, assumptions,
+interpretation of predictors.</li>
+<li>What does it mean for a variable to be a confounder or
+moderator?</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="wednesday-overview-1" class="section level4">
+<h4>Wednesday overview</h4>
+<ul>
+<li>Stratified models, purpose and limitations.</li>
+<li>Interpreting Interactions</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="friday-overview-1" class="section level4">
+<h4>Friday overview</h4>
+<ul>
+<li>Introduction to Peer Review</li>
+<li>Choosing between competing models.</li>
+</ul>
+<!-- end of list -->
+</div>
+</div>
+</div>
+<div id="week-3-model-building-variable-selection"
+class="section level3">
+<h3><a href="#week3" data-toggle="collapse">Week 3: Model Building &amp;
+Variable Selection</a></h3>
+<div id="week3" class="collapse">
+<div id="learning-objectives-2" class="section level4">
+<h4>Learning Objectives</h4>
+<ul>
+<li>Perform various variable selection techniques</li>
+<li>Identify pros and cons for each method</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="how-to-prepare-2" class="section level4">
+<h4>How to prepare</h4>
+<ul>
+<li>PMA6 CH9, ASCN 10</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="monday-overview-2" class="section level4">
+<h4>Monday overview</h4>
+<ul>
+<li>Multicollinearity</li>
+<li>Automated Variable Selection</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="wednesday-overview-2" class="section level4">
+<h4>Wednesday overview</h4>
+<ul>
+<li>Penalized methods (Lasso/Ridge)</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="friday-overview-2" class="section level4">
+<h4>Friday overview</h4>
+<ul>
+<li>Group Quiz on Model Building</li>
+<li>Flex day</li>
+</ul>
+<!-- end of list -->
+</div>
+</div>
+</div>
+<div id="week-4-logistic-regression" class="section level3">
+<h3><a href="#week4" data-toggle="collapse">Week 4: Logistic
+Regression</a></h3>
+<div id="week4" class="collapse">
+<div id="learning-objectives-3" class="section level4">
+<h4>Learning Objectives</h4>
+<ul>
+<li>Build and interpret a Logistic regression model on binary data</li>
+<li>Use measure of model fit to compare between models.</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="how-to-prepare-3" class="section level4">
+<h4>How to prepare</h4>
+<ul>
+<li>PMA6 CH12.1-12.8, ASCN Ch11.1-11.3</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="monday-overview-3" class="section level4">
+<h4>Monday overview</h4>
+<ul>
+<li>QFT/LJ: Non-continuous outcomes</li>
+<li>Fitting and interpreting Logistic Regression models.</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="wednesday-overview-3" class="section level4">
+<h4>Wednesday overview</h4>
+<ul>
+<li>DM File check in</li>
+<li>Odds Ratios are always the odds of an event for one group compared
+to another group.</li>
+<li>Some measures of model fit for Logistic regression is slightly
+different than for linear regression.</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="friday-overview-3" class="section level4">
+<h4>Friday overview</h4>
+<ul>
+<li>LJ Check in</li>
+<li>Use logistic regression to classify observations into two
+groups.</li>
+</ul>
+<!-- end of list -->
+</div>
+</div>
+</div>
+<div id="week-5-classification-and-predictions" class="section level3">
+<h3><a href="#week5" data-toggle="collapse">Week 5: Classification and
+predictions</a></h3>
+<div id="week5" class="collapse">
+<div id="learning-objectives-4" class="section level4">
+<h4>Learning Objectives</h4>
+<ul>
+<li>Use Logistic Regression to classify observations into two
+groups</li>
+<li>Identify the optimal cutoff point for a binary classifier</li>
+<li>Create and interpret a ROC curve</li>
+<li>Create a confusion matrix</li>
+<li>Calculate and explain terms such as Sensitivity, Specificity, and
+Accuracy</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="how-to-prepare-4" class="section level4">
+<h4>How to prepare</h4>
+<ul>
+<li>Read ASCN Ch 12</li>
+<li>Install packages: caret, ROCR</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="monday-overview-4" class="section level4">
+<h4>Monday overview</h4>
+<ul>
+<li>Confusion matrix.</li>
+<li>Sensitivity, specificity, accuracy</li>
+<li>ROC curves</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="wednesday-overview-4" class="section level4">
+<h4>Wednesday overview</h4>
+<ul>
+<li>Changing the cut point -default is not always best</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="friday-overview-4" class="section level4">
+<h4>Friday overview</h4>
+<ul>
+<li>Group quiz on Logistic Regression &amp; Classification</li>
+<li>Flex day</li>
+</ul>
+<!-- end of list -->
+</div>
+</div>
+</div>
+<div id="week-6-exam-1-effect-of-non-response" class="section level3">
+<h3><a href="#week6" data-toggle="collapse">Week 6: Exam 1, Effect of
+non-response</a></h3>
+<div id="week6" class="collapse">
+<div id="learning-objectives-5" class="section level4">
+<h4>Learning Objectives</h4>
+<ul>
+<li><em>NA</em></li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="how-to-prepare-5" class="section level4">
+<h4>How to prepare</h4>
+<ul>
+<li>Review all prior materials. Homework, quizzes, discussion boards,
+QFT.</li>
+<li>Draft a 1 page set of notes for each of the 3 topics covered so
+far.</li>
+<li>Write 1 serious exam question (don’t cheese this)</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="monday-overview-5" class="section level4">
+<h4>Monday overview</h4>
+<ul>
+<li>Exam 1 review session</li>
+<li>Writing models, identifying appropriate analysis, interpreting
+predictors, vocabulary</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="wednesday-overview-5" class="section level4">
+<h4>Wednesday overview</h4>
+<ul>
+<li>Exam 1 (MLR, Variable Selection, LogReg, Classification &amp;
+Prediction)</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="friday-overview-5" class="section level4">
+<h4>Friday overview</h4>
+<ul>
+<li>QFT on Missing Data</li>
+<li>Effects of non-response</li>
+</ul>
+<!-- end of list -->
+</div>
+</div>
+</div>
+<div id="week-7-missing-data-mechanisms-imputation"
+class="section level3">
+<h3><a href="#week7" data-toggle="collapse">Week 7: Missing data
+mechanisms, imputation</a></h3>
+<div id="week7" class="collapse">
+<div id="learning-objectives-6" class="section level4">
+<h4>Learning Objectives</h4>
+<ul>
+<li>Explain the effects of missing data.</li>
+<li>List and define the different missing data mechanisms.</li>
+<li>Explain the typical methods of handling missing data and the
+problems with each.</li>
+<li>Explain the mathematical model behind two imputation methods</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="how-to-prepare-6" class="section level4">
+<h4>How to prepare</h4>
+<ul>
+<li><em>NA</em></li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="monday-overview-6" class="section level4">
+<h4>Monday overview</h4>
+<ul>
+<li>What are the mechanisms in which data can be missing?</li>
+<li>What strategies can we use to deal with missing data in an
+appropriate manner?</li>
+<li>What are some methods for imputation?</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="wednesday-overview-6" class="section level4">
+<h4>Wednesday overview</h4>
+<ul>
+<li>Multiple imputation is the gold standard of how to analyze data with
+missing values.</li>
+<li>We’ll explore how this algorithm works with some sample data.</li>
+<li><a href="notes/MI_demo.html">Multiple Imputation Demo</a></li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="friday-overview-6" class="section level4">
+<h4>Friday overview</h4>
+<ul>
+<li>Discuss specific details for one specific method called MICE:
+Multiple Imputation using Chained Equations</li>
+</ul>
+<!-- end of list -->
+</div>
+</div>
+</div>
+<div id="week-8-multiple-imputation-with-chained-equations"
+class="section level3">
+<h3><a href="#week8" data-toggle="collapse">Week 8: Multiple Imputation
+with Chained Equations</a></h3>
+<div id="week8" class="collapse">
+<div id="learning-objectives-7" class="section level4">
+<h4>Learning Objectives</h4>
+<ul>
+<li>Explain the mathematical model behind multiple imputation using
+chained equations</li>
+<li>Conduct multiple imputation on a data set and analyze the
+results.</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="how-to-prepare-7" class="section level4">
+<h4>How to prepare</h4>
+<ul>
+<li>install packages: mice, VIM</li>
+<li>Seminar on Missing Data: <a
+href="https://media.csuchico.edu/media/0_tgnydpgf"
+class="uri">https://media.csuchico.edu/media/0_tgnydpgf</a></li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="monday-overview-7" class="section level4">
+<h4>Monday overview</h4>
+<ul>
+<li>Review example on MICE</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="wednesday-overview-7" class="section level4">
+<h4>Wednesday overview</h4>
+<ul>
+<li>Flex day</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="friday-overview-7" class="section level4">
+<h4>Friday overview</h4>
+<ul>
+<li>Group quiz on Missing Data</li>
+<li>Flex day</li>
+</ul>
+<!-- end of list -->
+</div>
+</div>
+</div>
+<div id="week-9-dimension-reduction---pca" class="section level3">
+<h3><a href="#week9" data-toggle="collapse">Week 9: Dimension Reduction
+- PCA</a></h3>
+<div id="week9" class="collapse">
+<div id="learning-objectives-8" class="section level4">
+<h4>Learning Objectives</h4>
+<ul>
+<li>Explain how PCA can be used as a dimension reduction technique</li>
+<li>Explain the difference between multivariate and multivariable</li>
+<li>Conduct a PCA using both the correlation and covariance matrix</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="how-to-prepare-8" class="section level4">
+<h4>How to prepare</h4>
+<ul>
+<li>Read ASCN Ch 13 and 14.1 (PMA6 14.1 &amp; 14.2)</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="monday-overview-8" class="section level4">
+<h4>Monday overview</h4>
+<ul>
+<li>QFT on Dimension reduction</li>
+<li>Introduction to PCA</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="wednesday-overview-8" class="section level4">
+<h4>Wednesday overview</h4>
+<ul>
+<li>Basic Idea of PCA, how it connects to linear algebra.</li>
+<li>Generating PC’s using R.</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="friday-overview-8" class="section level4">
+<h4>Friday overview</h4>
+<ul>
+<li>Visualizing and interpreting PC’s</li>
+</ul>
+<!-- end of list -->
+</div>
+</div>
+</div>
+<div id="week-10-latent-constructs---factor-analysis"
+class="section level3">
+<h3><a href="#week10" data-toggle="collapse">Week 10: Latent Constructs
+- Factor Analysis</a></h3>
+<div id="week10" class="collapse">
+<div id="learning-objectives-9" class="section level4">
+<h4>Learning Objectives</h4>
+<ul>
+<li>Use visualization techniques to identify the number of PC’s to
+retain</li>
+<li>Explain the difference between PCA and FA</li>
+<li>Create a latent factor model, visualize and interpret results.</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="how-to-prepare-9" class="section level4">
+<h4>How to prepare</h4>
+<ul>
+<li>Read ASCN 15.1-15.3, and PMA6 15.1-15.4</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="monday-overview-9" class="section level4">
+<h4>Monday overview</h4>
+<ul>
+<li>No school - Cesar Chavez Day</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="wednesday-overview-9" class="section level4">
+<h4>Wednesday overview</h4>
+<ul>
+<li>Introduction to Factor Analysis</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="friday-overview-9" class="section level4">
+<h4>Friday overview</h4>
+<ul>
+<li>Factor extraction &amp; scores</li>
+</ul>
+<!-- end of list -->
+</div>
+</div>
+</div>
+<div id="week-11-wrap-up-dimension-reduction" class="section level3">
+<h3><a href="#week11" data-toggle="collapse">Week 11: Wrap up Dimension
+Reduction</a></h3>
+<div id="week11" class="collapse">
+<div id="learning-objectives-10" class="section level4">
+<h4>Learning Objectives</h4>
+<ul>
+<li>Create a latent factor model, visualize and interpret results.</li>
+<li>Use latent factors as a predictor in another model</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="how-to-prepare-10" class="section level4">
+<h4>How to prepare</h4>
+<ul>
+<li>Read ASCM 15.4-end, PMA6 15.5-end</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="monday-overview-10" class="section level4">
+<h4>Monday overview</h4>
+<ul>
+<li>Factor rotation</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="wednesday-overview-10" class="section level4">
+<h4>Wednesday overview</h4>
+<ul>
+<li>Flex day</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="friday-overview-10" class="section level4">
+<h4>Friday overview</h4>
+<ul>
+<li>Group quiz on dimension reduction</li>
+<li>Flex day (Data Fest)</li>
+</ul>
+<!-- end of list -->
+</div>
+</div>
+</div>
+<div id="week-12-correlated-outcomes" class="section level3">
+<h3><a href="#week12" data-toggle="collapse">Week 12: Correlated
+Outcomes</a></h3>
+<div id="week12" class="collapse">
+<div id="learning-objectives-11" class="section level4">
+<h4>Learning Objectives</h4>
+<ul>
+<li><em>NA</em></li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="how-to-prepare-11" class="section level4">
+<h4>How to prepare</h4>
+<ul>
+<li><em>NA</em></li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="monday-overview-11" class="section level4">
+<h4>Monday overview</h4>
+<ul>
+<li>QFT on Correlated Outcomes</li>
+<li>Introduction to HLM/MLM</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="wednesday-overview-11" class="section level4">
+<h4>Wednesday overview</h4>
+<ul>
+<li><em>NA</em></li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="friday-overview-11" class="section level4">
+<h4>Friday overview</h4>
+<ul>
+<li><em>NA</em></li>
+</ul>
+<!-- end of list -->
+</div>
+</div>
+</div>
+<div id="week-13-correlated-outcomes" class="section level3">
+<h3><a href="#week13" data-toggle="collapse">Week 13: Correlated
+Outcomes</a></h3>
+<div id="week13" class="collapse">
+<div id="learning-objectives-12" class="section level4">
+<h4>Learning Objectives</h4>
+<ul>
+<li><em>NA</em></li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="how-to-prepare-12" class="section level4">
+<h4>How to prepare</h4>
+<ul>
+<li><em>NA</em></li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="monday-overview-12" class="section level4">
+<h4>Monday overview</h4>
+<ul>
+<li><em>NA</em></li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="wednesday-overview-12" class="section level4">
+<h4>Wednesday overview</h4>
+<ul>
+<li><em>NA</em></li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="friday-overview-12" class="section level4">
+<h4>Friday overview</h4>
+<ul>
+<li>Group quiz on HLM/MLM</li>
+</ul>
+<!-- end of list -->
+</div>
+</div>
+</div>
+<div id="week-14-exam-2-special-topic-presentations"
+class="section level3">
+<h3><a href="#week14" data-toggle="collapse">Week 14: Exam 2, Special
+topic presentations</a></h3>
+<div id="week14" class="collapse">
+<div id="learning-objectives-13" class="section level4">
+<h4>Learning Objectives</h4>
+<ul>
+<li><em>NA</em></li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="how-to-prepare-13" class="section level4">
+<h4>How to prepare</h4>
+<ul>
+<li>Review the materials for exam 2</li>
+<li>Finalize your special topics presentation proposal</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="monday-overview-13" class="section level4">
+<h4>Monday overview</h4>
+<ul>
+<li>Exam 2 review</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="wednesday-overview-13" class="section level4">
+<h4>Wednesday overview</h4>
+<ul>
+<li>Exam 2 (Missing Data, PCA, HLM)</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="friday-overview-13" class="section level4">
+<h4>Friday overview</h4>
+<ul>
+<li>Special topic prep day - Proposals due</li>
+</ul>
+<!-- end of list -->
+</div>
+</div>
+</div>
+<div id="week-15-special-topic-presentations" class="section level3">
+<h3><a href="#week15" data-toggle="collapse">Week 15: Special Topic
+Presentations</a></h3>
+<div id="week15" class="collapse">
+<div id="learning-objectives-14" class="section level4">
+<h4>Learning Objectives</h4>
+<ul>
+<li><em>NA</em></li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="how-to-prepare-14" class="section level4">
+<h4>How to prepare</h4>
+<ul>
+<li><em>NA</em></li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="monday-overview-14" class="section level4">
+<h4>Monday overview</h4>
+<ul>
+<li>Special topic 01 &amp; 02</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="wednesday-overview-14" class="section level4">
+<h4>Wednesday overview</h4>
+<ul>
+<li>Special topic 03 &amp; 04</li>
+</ul>
+<!-- end of list -->
+</div>
+<div id="friday-overview-14" class="section level4">
+<h4>Friday overview</h4>
+<ul>
+<li>Special topic 05 &amp; 06</li>
+</ul>
+<!-- end of list -->
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

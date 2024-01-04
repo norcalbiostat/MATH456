@@ -1,158 +1,167 @@
 ---
 title: "Welcome to MATH 456"
-subtitle: "Applied Statistics II"
-description: "Course Overview slides"
-date: "2023-01-23"
-author: "Robin Donatello"
+subtitle: "Applied Statistics II - Spring 2024"
+author: "Dr. Robin Donatello"
 format: 
   revealjs:
-    theme: sky
+    theme: blood
     transition: fade
     slide-number: true
 ---
+
+# Overview
+
+-   Meet your instructor
+-   Code of Conduct
+-   Course Objectives
+-   General Schedule
+-   Course Materials
+
+*These slides do not replace the need to read the Syllabus in detail.*
 
 # Meet your instructor {background-image="Zombatar.jpg" background-size="250px" background-position="95% 15%"}
 
 ## Dr. Robin Donatello (she/her) {.smaller}
 
-You can address me as "Robin", "Dr. D", or some other respectful title that you feel comfortable with. 
+You can address me as "Robin", "Dr. D", or some other respectful title that you feel comfortable with.
 
 I have a Doctorate in Public Health (DrPH) Biostatistics from UCLA, but I'm a Chico alum. I double majored in Statistics & Biology, with minor in Chemistry, and a first generation college student who started at Butte College.
 
 My campus life consists of training the next generation of Scientists how to harness the power of Statistics and Data in a responsible and ethical manner, leading the Data Science Initiative (DSI) provide training and experiences for students and faculty, and providing analytical support and statistical consulting for many projects on and off campus.
 
-When I'm not on campus, typically I'm growing food for my family, out adventuring with my dogs, or getting some game time in. You can learn more about the projects i'm involved in on my [website](http://www.norcalbiostat.com/).
-
-## Your turn
-
-* Turn to your neighbor and introduce yourself. 
-* You'll post an introduction in Discord this week so everyone will get to know everyone else. 
+When I'm not on campus, typically I'm growing food for my family, out adventuring with my dogs, or getting some game time in. You can learn more about the projects I'm involved in on my [website](http://www.norcalbiostat.com/).
 
 # Code of Conduct
 
 ## Everyone is welcome here
 
-It is my intent that students from all diverse backgrounds and perspectives be well-served by this course, that students' learning needs be addressed both in and out of class, and that the diversity that the students bring to this class be viewed as a resource, strength and benefit. 
+It is my intent that students from all diverse backgrounds and perspectives be well-served by this course, that students' learning needs be addressed both in and out of class, and that the diversity that the students bring to this class be viewed as a resource, strength and benefit.
 
-It is my intent to present materials and activities that are respectful of diversity: gender identity, sexuality, disability, age, socioeconomic status, ethnicity, race, nationality, religion, and culture. 
+It is my intent to present materials and activities that are respectful of diversity: gender identity, sexuality, disability, age, socioeconomic status, ethnicity, race, nationality, religion, and culture.
 
 ## Supportive Learning Environment
 
-I would like to create a learning environment that supports a diversity of thoughts, perspectives and experiences, and honors your identities (including race, gender, class, sexuality, religion, ability, etc.) 
+I would like to create a learning environment that supports a diversity of thoughts, perspectives and experiences, and honors your identities (including race, gender, class, sexuality, religion, ability, etc.)
 
 ## To help accomplish this:
 
-* Let me know if you have a name and/or set of pronouns that differ from those that appear in your official Chico records. 
-* Help me pronounce your name as accurately as possible. Corrections are welcome. 
-* If you feel like your performance in the class is being impacted by your experiences outside of class, please don't hesitate to come and talk with me. I want to be a resource for you.
+-   Let me know if you have a name and/or set of pronouns that differ from those that appear in your official Chico records.
+-   Help me pronounce your name as accurately as possible. Corrections are welcome.
+-   If you feel like your performance in the class is being impacted by your experiences outside of class, please don't hesitate to come and talk with me. I want to be a resource for you.
 
 ## Mitigating our risk of COVID-19 {.smaller}
 
-* This is still a real thing, but we all have different levels of risk we are willing to take ourselves, and different risk management strategies. 
-* I personally am working on reducing my mask wearing to re-challenge my immune system, but I also have immunocompromised elderly mother at home. Always a balance. 
-* Masks will ALWAYS be welcome and respected in this classroom. No questions.
-* I am likely to request masks be worn in my office. 
-* Please keep up to date with available booster shots. You can't learn if you're ill. 
-* If you have COVID symptoms, Do not come to class. I'll turn on Zoom for the day so you can participate.
-* If you are just generally feeling unwell, please use a mask. I will always have some on hand. 
+-   Like it or not, it's here to stay. We all have different levels of risk we are willing to take ourselves, and different risk management strategies.
+-   Masks will ALWAYS be welcome and respected in this classroom. No questions.
+-   Please keep up to date with available booster shots. You can't learn if you're ill.
+-   If you have COVID symptoms, Do not come to class. I'll turn on Zoom for the day so you can participate.
+-   If you are just generally feeling unwell, please use a mask. I will always have some on hand.
 
+## Collaboration, Plagerism and AI {.smaller}
 
-# What is this class about? 
+-   Collaboration on assignments is encouraged.
+-   Collaboration on exams is not allowed.
+-   I recognize there are a variety of AI programs available to assist in creating text and writing code.
+-   However, AI programs are not a replacement for human creativity, originality, and critical thinking. Writing (text and code) is a skill that you must nurture over time in order to develop your own individual voice, style, and view.
+-   The use of chat GPT is allowed/encouraged to help you *learn* how to code but all code used must be fully explained in text.
+
+*See the [Syllabus](syllabus.html) for my official policy on using ChatGPT in this class*
+
+# What is this class about?
 
 ## Course Description
 
-Advanced topics in applied statistics including multiple regression, multivariate methods, nonparametrics, analysis of covariance, bootstrap methods and others as appropriate. 
+Advanced topics in applied statistics including multiple regression, multivariate methods, nonparametrics, analysis of covariance, bootstrap methods and others as appropriate.
 
 ## Tentative topic/module list {.smaller}
 
-* Multiple Linear Regression Model building 
-    - categorical variables, reference coding
-    - moderators, confounders, interactions, stratification
-    - Variable selection methods
-* Classification & Prediction
-    - Sensitivity/specificity/accuracy
-* Multivariate statistics / Dimension Reduction
-    - Principle Component Analysis
-    - Factor Analysis
-* Missing Data: Identification & Imputation
-* Correlated Outcomes / Hierarchical Modeling
-* +1 Other topic (my choice? your choice? TBD)
+-   Multiple Linear Regression Model building
+    -   categorical variables, reference coding
+    -   moderators, confounders, interactions, stratification
+    -   Variable selection methods
+-   Classification & Prediction
+    -   Logistic Regression
+    -   Sensitivity/specificity/accuracy
+-   Multivariate statistics / Dimension Reduction
+    -   Principle Component Analysis
+    -   Factor Analysis
+-   Missing Data: Identification & Imputation
+-   Correlated Outcomes / Hierarchical Modeling
+-   Special topics - Student led
 
+## Learning goals {.smaller}
 
-## Learning goals 
+-   Prepare data for analysis by cleaning and transforming raw data in a reproducible manner.
+-   Apply advanced statistical analysis methodologies to complex and multivariate data.
+-   Build statistical models to explain and interpret the effect of multiple predictors on a single outcome.
+-   Use multiple measures of model fit to choose between several candidate models.
+-   Identify, impute, and analyze data in the presence of missing values.
+-   Report the results of the analysis in plain language.
 
-* Prepare data for analysis by cleaning and transforming raw data. 
-* Perform research in a reproducible manner. 
-* Apply advanced statistical analysis methodologies to complex and multivariate data. 
-* Appropriately conduct an analysis in the presence of missing data. 
-* Report the results of the analysis in plain language. 
-
-# How are we going to work together? 
+# How are we going to work together?
 
 ## General Schedule
 
-We will spend 2 weeks on each topic and do the following activities: 
+We will spend approximately 2 weeks on each topic and do the following activities:
 
-* Opening Question Formulation 
-* Homework Assignment
-* Peer review of the Homework
-* Contribute to a topic discussion board
-* Content knowledge Quiz
+-   Opening Question Formulation
+-   Homework Assignment (Draft & Final)
+-   Peer review of the Homework draft
+-   Contribute to a topic discussion board
+-   Reflections on Learning
+-   Content knowledge Quiz (Individual and Group)
 
+# Course Materials
 
-## Use a variety of learning and working tools
+## A variety of learning and working tools
 
-* Many of you have had me as an instructor in the past, so some of this won't be new. 
-* I use a combination of tools that are most appropriate for the task or outcome at hand.
-* Homework 0 provides a checklist for getting connected and testing out your tools.
+-   Many of you have had me as an instructor in the past, so some of this won't be new.
+-   I use a combination of tools that are most appropriate for the task or outcome at hand.
+-   Homework 0 provides a checklist for getting connected and testing out your tools.
+    -   It is imperative that you fully complete this assignment ASAP and contact me with any problems or barriers.
 
 ## Class website
 
-<div style="text-align:center">https://norcalbiostat.github.io/MATH456
-
--   Bookmark this page. You will be here a lot. Going through Canvas each time is a waste of your time and clicks. 
--   Contains a weekly overview, including how to prepare, links to lecture notes, quizzes, homework, shared google folder, other relevant links. 
+-   Bookmark this page. You will be here a lot. Going through Canvas each time is a waste of your time and clicks.
+-   Contains a weekly overview, including how to prepare, links to lecture notes, quizzes, homework, shared google folder, other relevant materials.
 -   Sometimes links will be broken. Typo's happen. Notify me via Discord and I'll get to it asap.
+
+I will go over how to navigate the class website later.
 
 ## Textbook
 
-* (PMA6) _Practical Multivariate Analysis 6th Edition_. Afifi, May, Donatello, Clark ISBN-13: 978-1138702226 
-    - 6th edition is necessary
-    - Several copies are available in the library. More are available if needed.
-* [(ASCN) Applied Stats Course Notes](https://norcalbiostat.github.io/AppliedStatistics_notes/index.html). Homegrown 'lecture notes' with code examples.  
+-   (PMA6) *Practical Multivariate Analysis 6th Edition*. Afifi, May, Donatello, Clark ISBN-13: 978-1138702226
+    -   6th edition is necessary
+    -   Several copies are available in the library. More are available if needed.
+-   [(ASCN) Applied Stats Course Notes](https://norcalbiostat.github.io/AppliedStatistics_notes/index.html). Homegrown 'lecture notes' with code examples.
 
 ## Canvas
 
-* Canvas is new to me, and it seems reasonable for organizing due dates, assignments, and grades
-* We will also be completing class Q&A topic discussion boards in Canvas also. 
- 
+-   Used to organizing due dates, assignments, and grades
+-   Submitting final homework assignments
+-   Q&A topic discussion boards
+
 ## Discord
 
 -   Used for outside class discussions, meme sharing, homework help and general chatter.
-- EXCELLENT for sharing code problems and helping others debug. :heart: Screenshots 
+-   EXCELLENT for sharing code problems and helping others debug. 💚 Screenshots
 -   I will not answer most class-content based questions through email.
 -   Download either the phone app or the desktop app (I use both). This is mandatory.
     -   Do not rely on remembering to log in via the web browser. You will miss important notifications.
 
-## R + R Studio 
+## R + R Studio
 
-* We will be using the R programming language, along with R Studio,  the Integrated Development Environment. 
-* Instructions on how to update your programs and packages to install can be found in Hw0. 
-
+-   We will be using the R programming language, along with R Studio, the Integrated Development Environment.
+-   Instructions on how to update your programs and packages to install can be found in Hw0.
 
 ## Google Drive
 
-* Assignment drafts
-* Peer reviews
-* Quizzes
+-   Assignment drafts
+-   Peer reviews
+-   Quizzes
 
-# Graded Content 
+# What's next?
 
-* Quizzes, homework, active learning, exams. 
-* Details in the [Syllabus](https://sampling-458.netlify.app/syllabus.html#assignments-graded-items) and Canvas. 
-
-# What questions do you have for me? 
-
-# Let's get started. 
-
-Course website --> Schedule --> Details --> Week 1
+-   Read the Syllabus
+-   Bookmark the Course Website
+-   Start Homework 0

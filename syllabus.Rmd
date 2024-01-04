@@ -1,0 +1,224 @@
+---
+title: 'Syllabus for MATH 456 - Applied Statistics II'
+author: "Spring 2024"
+output:
+  pdf_document: default
+  html_document: 
+      toc: yes
+      toc_float: true
+---
+
+# Course Description
+_Advanced topics in applied statistics including multiple regression, multivariate methods, nonparametrics, analysis of covariance, bootstrap methods and others as appropriate. Statistical computer packages are introduced and used. Appropriate for biology, agriculture, nutrition, business, psychology, social science and other majors._
+
+# Logistics
+
+#### About the Instructor
+**Instructor:** Dr. Robin Donatello  (Dr. D, she/her/hers)  
+**Office Location:** Holt 202  
+**E-mail:** rdonatello@csuchico.edu    
+**Office Hours:** MF 2-3pm Holt 202, Wed 1:30-3 at [Community Coding](https://www.csuchico.edu/datascience/community-coding.shtml) or [by appointment](https://dr-donatello.youcanbook.me/)  
+**Zoom link:** In Canvas. 
+
+#### About the Course
+**Meeting pattern & location:** MWF 10-11am, Holt 171  
+**Prerequisites:** MATH 314/315/615 at Chico State or instructor permission.  
+**Course Website:** http://norcalbiostat.github.io/MATH456/  
+**Mode of Instruction:** In Person  
+**Use of Canvas:** Due dates, assignment submission, collaborative discussions
+
+## Required Materials
+* **Textbook**: _Practical Multivariate Analysis 6th Edition_. Afifi, May, Donatello, Clark ISBN-13: 978-1138702226 
+  - Several copies are available in the library. More can be made available if needed. 
+* **Reliable Laptop**: Expect to bring it daily. Contact me if this poses a problem or concern for you. 
+* **Reliable internet** connection while on and off campus. ITSS can help you get this setup. 
+* **Computer Software:** (Free) R and R Studio
+* **Accounts:** (Free) 
+    - Campus Google account. This uses your <span style="color:blue">(@mail.csuchico.edu)</span> email.
+    - Discord for class conversation. Sign up instructions are in HW0. 
+
+# Learning Outcomes
+Upon successful completion of this course, students will be able to:  
+
+-   Prepare data for analysis by cleaning and transforming raw data in a reproducible manner.
+-   Apply advanced statistical analysis methodologies to complex and multivariate data.
+-   Build statistical models to explain and interpret the effect of multiple predictors on a single outcome.
+-   Use multiple measures of model fit to choose between several candidate models.
+-   Identify, impute, and analyze data in the presence of missing values.
+-   Report the results of the analysis in plain language.
+
+
+# Tentative topic list
+
+* Multiple Linear Regression Model building 
+    - categorical variables, reference coding
+    - moderators, confounders, interactions, stratification
+    - Variable selection methods
+* Classification & Prediction
+    - Sensitivity/specificity/accuracy
+* Multivariate statistics / Dimension Reduction
+    - Principle Component Analysis
+    - Factor Analysis
+* Missing Data: Identification & Imputation
+* Correlated Outcomes / Hierarchical Modeling
+* Special topics - Student led
+
+We will spend 2 weeks on each topic and do the following activities: 
+
+-   Opening Question Formulation
+-   Homework Assignment (Draft & Final)
+-   Peer review of the Homework draft
+-   Contribute to a topic discussion board
+-   Reflections on Learning
+-   Content knowledge Quiz (Individual and Group)
+
+# Assignments / graded items
+
+Your final grade will be a weighted sum of 4 content areas as described below. You can check your grade and do a "what if" analysis at anytime in Canvas. I use a standard grade cutoff of 100-90%: A, 89-80%: B, 79-70%: C, 69-60%: D, 0-59%: F  
+
+
+#### Exams (20%)
+* 2 Exams
+* An Exam [Error Assessment](learning_tools.html#Exam_Error_Assessment) is available for at least Exam 1. 
+
+#### Assignments (30%)
+* 6 Standard homework assignments on the topics listed above. Drafts submitted through Google Drive, Final versions for grading submitted through Canvas. 
+
+#### Quizzes (20%)
+* Individual + Group quizzes for each module. Administered through Google Forms. Lowest score dropped. 
+
+#### Active Learning (30%)
+* Various active or reflective [learning activities](learning_tools.html) during/outside of class.
+* Peer reviews (PR) of assignments. Because helping others helps you learn. 
+* Working collaboratively with your classmates during class to solve problems and discuss topics. 
+* Special topic presentation/guest lecture. You get to teach class for a day!
+* Attending [Community Coding](http://bit.ly/cc_hours) and/or Office Hours **2** times. This can be to check in on your grade, ask clarifying questions, or chat about life and graduate school.
+* Discussion boards & Discord participation. Contributing to our learning community by asking and answering questions about assignments, code, etc in Discord is required to make this class run smoothly. And in the end, you are the ones that will benefit from it the most. Don't spend more than 20 min banging your head on the proverbial wall before you reach out and ask for help. 
+
+
+# General Guidance on Homework
+
+* Start early and do what you can. If you have any question about the length, or difficulty of my homework assignments and why you should procrastinate at your own peril, just ask any of my prior students.
+* Ask questions! It is essential to your learning.
+* Spell check your work, and for petes sake look at your work before you turn it in and imagine if you had to print it out.
+    - No 100 page documents because you accidentally printed out the whole data set.
+    - Make sure all code is showing and readable
+    - Make sure all text is readable and not sucked into a table or wrapping off the page.
+
+
+----
+
+# Class Policies and statements
+
+## Everyone is welcome here
+
+It is my intent that students from all diverse backgrounds and perspectives be well-served by this course, that students' learning needs be addressed both in and out of class, and that the diversity that the students bring to this class be viewed as a resource, strength and benefit. It is my intent to present materials and activities that are respectful of diversity: gender identity, sexuality, disability, age, socioeconomic status, ethnicity, race, nationality, religion, and culture. Your suggestions are encouraged and appreciated. Please let me know ways to improve the effectiveness of the course for you personally, or for other students or student groups.
+
+I would like to create a learning environment that supports a diversity of thoughts, perspectives and experiences, and honors your identities (including race, gender, class, sexuality, religion, ability, etc.) To help accomplish this:
+
+-  Let me know if you have a name and/or set of pronouns that differ from those that appear in your official Chico records. I make it a point to call on people by name, so please make sure that I know what you want to be called. 
+        - I also want to try to pronounce your name as accurately as possible. The more you help and correct me the better I can do to honor your name. 
+-   If you feel like your performance in the class is being impacted by your experiences outside of class, please don't hesitate to come and talk with me. I want to be a resource for you. Remember that you can also submit anonymous feedback using the feedback button on the schedule and help pages of the website (which will lead to me making a general announcement to the class, if necessary to address your concerns).
+-   If you prefer to speak with someone outside of the course, the Office of Diversity and Inclusion is here to assist. Their number is 530-898-4764, and email [diversityoffice\@csuchico.edu](mailto:diversityoffice@csuchico.edu){.email}
+-   I (like many people) am still in the process of learning about diverse perspectives and identities. If something was said in class (by anyone) that made you feel uncomfortable, please talk to me about it. (Again, anonymous feedback is always an option).
+
+*Adapted from [Monica Linden at Brown University](https://www.brown.edu/sheridan/teaching-learning-resources/inclusive-teaching/statements)*.
+
+Furthermore, I would like to acknowledge that Chico State stands on lands that were originally occupied by the first people of this area, the Mechoopda. I recognize their distinctive spiritual relationship with this land and the waters that run through campus. I am humbled that our campus resides upon sacred lands that once sustained the Mechoopda people for centuries.
+
+
+
+## Attendance
+
+Class attendance is expected. Talk to me ahead of time if you need to miss a class for a planned reason. In the event of an unplanned reason, DM me in Discord when you can so that I know you are still alive. 
+
+
+### COVID-19 
+
+-   Like it or not, it's here to stay. We all have different levels of risk we are willing to take ourselves, and different risk management strategies.
+-   Masks will ALWAYS be welcome and respected in this classroom. No questions.
+-   Please keep up to date with available booster shots. You can't learn if you're ill.
+-   If you are just generally feeling unwell, please use a mask. I will always have some on hand.
+
+> If you are not feeling well or are experiencing Covid symptoms DM me in Discord we'll make a backup plan so you can rest while protecting your classmates. 
+
+
+
+## Late work
+
+In general, work isn't considered 'Late' until someone is waiting for you. This means there is little grace period for draft assignments. Do you want your reviews back in a timely manner? You should show them the same courtesy and professionalism. 
+    
+If I have to pester you several times to submit your work, or you submit your work after I'm done grading the rest of the class, not only will it take longer for me to get feedback to you, it will receive a 10% penalty.  
+
+
+## Collaboration
+
+Collaboration on assignments is encouraged. People learn better when they have someone else to talk through concepts with. 
+
+**Collaboration on exams is not allowed.**
+
+## Peer Reviews
+
+If you consistently do not turn in draft assignments that is complete enough for a review, or consistently provide sub-par reviews to your classmates, I reserve the right to stop assigning you work to review and stop having your work reviewed. You will not have the ability to make up these points. 
+
+## Use of AI
+
+As an instructor I recognize there are a variety of AI programs available to assist in creating text and writing code. However, I want to stress that, AI programs are not a replacement for human creativity, originality, and critical thinking. Writing (text and code) is a skill that you must nurture over time in order to develop your own individual voice, style, and view.  
+
+The use of chat GPT is allowed/encouraged **to help you learn how to code** but all code used must be fully explained in text. We will cover what this means and how to do this when we start data management around week 3. [How ChatGPT can help you write code](https://www.zdnet.com/article/how-to-use-chatgpt-to-write-code/)
+
+You are responsible for fact checking the accuracy of statements composed by AI language models. 
+
+#### Be up front!
+
+When presenting text written by Artificial intelligence (AI) language models, such as ChatGPT, you must include an appropriate citation. [https://apastyle.apa.org/blog/how-to-cite-chatgpt](https://apastyle.apa.org/blog/how-to-cite-chatgpt)
+
+This also goes for when you have it write code for you. You need to indicate when and where you used it. 
+
+
+----
+
+# Student Resources
+
+## Chico State Basic Needs Project
+
+The **Hungry Wildcat Food Pantry** provides supplemental food, fresh produce, CalFresh application assistance and basic needs referral services for students experiencing food and housing insecurity.
+
+All students are welcomed to visit the Pantry located in the Student Service Center 196, open Monday-Friday
+
+Please visit the Chico State Basic Needs website [http://www.csuchico.edu/basic-needs](http://www.csuchico.edu/basic-needs) for more information.
+
+## Wildcat Computing Support
+
+Everyone's journey through education is different and varied. Part of your journey is learning to engage and leverage academic technology. It is extremely important to your success, and at the same time requires patience to learn how it can benefit you. While learning various technologies, they change and adapt quickly. Wildcat Computing Support is curated by students to better support you and enhance your experiences with technology. We provide information to support your success in using academic technology in and out of the classroom.
+
+[https://www.csuchico.edu/wcs/](https://www.csuchico.edu/wcs/)
+
+
+## Americans with Disabilities Act
+
+If you need course adaptations or accommodations because of a disability or chronic illness, or if you need to make special arrangements in case the building must be evacuated, please make an appointment with me as soon as possible, or see me during office hours. Please also contact Accessibility Resource Center (ARC) as they are the designated department responsible for approving and coordinating reasonable accommodations and services for students with disabilities. ARC will help you understand your rights and responsibilities under the Americans with Disabilities Act and provide you further assistance with requesting and arranging accommodations. We try our best to ensure equal access to materials in accessible formats. Reach out to your me if there is some aspect of the course materials that are inaccessible to you.
+
+Accessibility Resource Center 530-898-5959 Student Services Center 170 [arcdept\@csuchico.edu](mailto:arcdept@csuchico.edu){.email} [http://www.csuchico.edu/arc](https://www.csuchico.edu/arc/)
+
+----
+
+# University Policies
+
+
+## Adding and Dropping the course
+
+You are responsible for understanding the policies and procedures about add/drops, academic renewal, etc., found in the [CSU Chico University Catalog](http://www.csuchico.edu/catalog/). You should be aware of the new deadlines and penalties for adding and dropping classes.
+
+## Confidentiality and Mandatory Reoprting
+
+As an instructor, one of my responsibilities is to help create a safe learning environment on our campus. I also have a mandatory reporting responsibility related to my role as a your instructor. I am required to share information regarding sexual misconduct with the University. Students may speak to someone confidentially by contacting the Counseling and Wellness Center (898-6345) or Safe Place (898-3030). Information on campus reporting obligations and other Title IX related resources are available here: www.csuchico.edu/title-ix.
+
+
+## Academic Integrity
+
+Academic integrity is defined as “a commitment, even in the face of adversity, to five fundamental values: honesty, trust, fairness, respect, and responsibility”. From these values flow principles of behavior that enable academic communities to translate ideals to action. Academic integrity is expected and required. No forms of cheating or plagiarism will be tolerated. Please see your student handbook at https://www.csuchico.edu/scrr/integrity.shtml if you have questions about the meaning of these terms or the consequences of violating academic integrity.
+
+-----
+
+_Last updated: `r format(Sys.time(), "%a %b %d %Y %X")`_

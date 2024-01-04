@@ -1,0 +1,64 @@
+---
+title: "Module Overview"
+---
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+library(kableExtra)
+options(knitr.table.format = "html", knitr.kable.NA = '') 
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE) 
+
+# Import data
+mod <- googlesheets4::read_sheet("1flUYEIAqLfa8Re4gNRTsRRA8skF4Ln6rImfKb-WDTZI", 
+                                 sheet="module_overview", 
+                                 col_types = c("nnDccccc")) 
+```
+
+⚠️ Details are subject to change. See Canvas for due dates. 
+_Last Updated: `r format(Sys.time(), "%a %b %d %X")`_ 
+
+
+```{r}
+# content rows
+content  <- mod %>% filter(is.na(tnum))
+
+# which rows have topic numbers 
+tn <- mod %>% filter(!is.na(tnum)) %>% 
+        select(tnum, Topic) %>%
+        mutate(start=0, end=0)
+
+for(t in 1:max(tn$tnum)){
+  tn$start[t] <- min(which(floor(content$Order)==t))
+  tn$end[t]   <- max(which(floor(content$Order)==t))
+}
+
+out <- content %>%
+  mutate(Date = format(Date,"%m/%d")) %>%
+  select(Date, Topic, Read, Collaborate, Practice, Assess) 
+
+
+# highlight rows
+mod.col <-  "background-color: #772953; color: #fff;"
+#hlt.col <-  "background-color: #806000; color: #fff;"
+```
+
+```{r, results='asis'}
+out %>% kbl(align = "llccccc", escape=TRUE) %>%
+  kable_styling(bootstrap_options = c("hover", "striped", "responsive", "bordered")) %>% 
+  pack_rows(tn$Topic[1], tn$start[1],   tn$end[1], label_row_css =mod.col) %>% 
+  pack_rows(tn$Topic[2], tn$start[2],   tn$end[2], label_row_css =mod.col) %>%
+  pack_rows(tn$Topic[3], tn$start[3],   tn$end[3], label_row_css =mod.col) %>%
+  pack_rows(tn$Topic[4], tn$start[4],   tn$end[4], label_row_css =mod.col) %>%
+  pack_rows(tn$Topic[5], tn$start[5],   tn$end[5], label_row_css =mod.col) %>%
+  pack_rows(tn$Topic[6], tn$start[6],   tn$end[6], label_row_css =mod.col) %>%
+  pack_rows(tn$Topic[7], tn$start[7],   tn$end[7], label_row_css =mod.col) %>%
+  column_spec(1, width = "5%") %>% 
+  column_spec(2, width = "25%") %>%
+  column_spec(3, width = "15%") %>%
+  column_spec(4, width = "15%") %>% 
+  column_spec(5, width = "15%") %>%
+  column_spec(6, width = "15%")
+```
+
+
+

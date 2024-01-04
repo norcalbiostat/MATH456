@@ -1,16 +1,23 @@
 
-h5 {
-    color: #008000;
-    font-size: 30px;
-    font-weight: bold;
+h1 {
+    color: #772953;
+}
+
+h2 {
+    color: #594D5B;
+}
+
+h4 {
+    color: #808080;
 }
 
 hr {
     height: 5px;
-    background-color: #006600;
+    background-color: #67032F;
 }
 
-/* build navbar: https://work.smarchal.com/twbscolor/index.php*/ 
+
+/* build navbar: https://work.smarchal.com/twbscolor/index.php
 
 .navbar {
   background-color: #a5d6a7;
@@ -132,4 +139,4 @@ hr {
   background-color: #1b5e20;
 }
 
-
+*/
