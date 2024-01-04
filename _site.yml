@@ -4,22 +4,25 @@ navbar:
   title: MATH 456
   left:
   - text: Modules
-    icon: fa-calendar
+    icon: fa-file-lines
     href: modules.html
   - text: Prep & Plan
+    icon: fa-calendar
     href: weekly_overview.html
+
+  - text: Learning Techniques
+    icon: fa-lightbulb
+    href: learning_tools.html
+    
+  right:
   - text: Course Notes (ASCN)
     icon: fa-link
     href: https://norcalbiostat.github.io/AppliedStatistics_notes/index.html
   - text: Google Drive
     icon: fa-google
     href: https://drive.google.com/drive/folders/1HwbunVx8BS5EFJUUFlsG5HOFcWNa9uxM
-  - text: Learning Techniques
-    icon: fa-sparkles
-    href: learning_tools.html
-    
-  right:
   - text: Syllabus 
+    icon: fa-book
     href: syllabus.html
   - text: Help
     icon: fa-question
@@ -45,4 +48,4 @@ output:
     highlight: espresso
     lib_dir: site_libs
     self_contained: no
-#    css: style.css
+    css: style.css

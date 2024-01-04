@@ -4,6 +4,9 @@ output:
   html_document:
     toc: yes
     toc_float: yes
+    theme: united
+    highlight: espresso
+    css: style.css
 ---
 
 # Submission Instructions
@@ -49,20 +52,21 @@ Pay attention to the ordering & timeline of these assignments.
 
 # BEFORE SUNDAY
 
-1. Read a little about Self-regulated learning, Metacognition, and Learning Journals from the following sources
+1.  Thoroughly read the [syllabus](syllabus.html) and review this course website. Ask at least one question in the Class Logistics discussion board in Canvas. 
+2. Read a little about Self-regulated learning, Metacognition, and Learning Journals from the following sources
     - https://en.wikipedia.org/wiki/Self-regulated_learning
     - https://serc.carleton.edu/sage2yc/self_regulated/what.html
     - [Questions that Self-regulated learnings ask themselves](../notes/SLR handout.docx)
     - https://www.teachthought.com/literacy/20-types-of-learning-journals-that-help-students-think/ 
-2. Create your Learning Journal (LJ) by making a copy of the template found in the **Learning Journals** folder in our Google Drive.
+3. Create your Learning Journal (LJ) by making a copy of the template found in the **Learning Journals** folder in our Google Drive.
     - When you make a copy of this template document, make sure the copy stays in this shared folder. 
     - Rename this file with your name (First, Last)
     - Click the **SHARE** button in the top right and remove everyone _except_ yourself and Dr. D as collaborators. 
     - Your first entry is dated for you, and asks you to reflect on the reading you just did. 
     
-3. Write your first LJ entry. 
+4. Write your first LJ entry. 
 
-4. `r emo::ji("star")` access to our [Google Drive](https://drive.google.com/drive/folders/1WF9ACb66RD-npIxpZ67OgqDfnWTpIQD0). 
+5. `r emo::ji("star")` access to our [Google Drive](https://drive.google.com/drive/folders/1WF9ACb66RD-npIxpZ67OgqDfnWTpIQD0). 
     - You have been added to our shared Google Drive using your chico state (@mail.csuchico.edu) email address. 
     - `r emo::ji("warning")` If you are logged into a personal Google account _before_ you log into your Chico State account, then when you click on links for items in our class Google Drive, it will automatically try to access that file/folder with your personal account. 
     - Starring this folder allows you to log into Google Drive from whatever account you are logged into, then switch to your Chico State account, and you will be able to easily find the folder in your starred section. 

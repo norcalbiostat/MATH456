@@ -30,9 +30,10 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
-<link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
-<script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
 <link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
 <link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
 
@@ -51,6 +52,7 @@
 
 
 
+<link rel="stylesheet" href="style.css" type="text/css" />
 
 
 
@@ -212,6 +214,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -219,6 +284,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -237,15 +312,28 @@ $(document).ready(function () {
       <ul class="nav navbar-nav">
         <li>
   <a href="modules.html">
-    <span class="fa fa-calendar"></span>
+    <span class="fa fa-file-lines"></span>
      
     Modules
   </a>
 </li>
 <li>
-  <a href="weekly_overview.html">Prep &amp; Plan</a>
+  <a href="weekly_overview.html">
+    <span class="fa fa-calendar"></span>
+     
+    Prep &amp; Plan
+  </a>
 </li>
 <li>
+  <a href="learning_tools.html">
+    <span class="fa fa-lightbulb"></span>
+     
+    Learning Techniques
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
   <a href="https://norcalbiostat.github.io/AppliedStatistics_notes/index.html">
     <span class="fa fa-link"></span>
      
@@ -260,16 +348,11 @@ $(document).ready(function () {
   </a>
 </li>
 <li>
-  <a href="learning_tools.html">
-    <span class="fa fa-sparkles"></span>
+  <a href="syllabus.html">
+    <span class="fa fa-book"></span>
      
-    Learning Techniques
+    Syllabus
   </a>
-</li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-  <a href="syllabus.html">Syllabus</a>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -337,69 +420,38 @@ majors.</em></p>
 </div>
 <div id="logistics" class="section level1">
 <h1>Logistics</h1>
+<div id="about-the-instructor" class="section level4">
+<h4>About the Instructor</h4>
 <p><strong>Instructor:</strong> Dr. Robin Donatello (Dr. D,
 she/her/hers)<br />
 <strong>Office Location:</strong> Holt 202<br />
-<strong>Telephone:</strong> 898-5767<br />
 <strong>E-mail:</strong> <a href="mailto:rdonatello@csuchico.edu"
 class="email">rdonatello@csuchico.edu</a><br />
-<strong>Office Hours:</strong> MWF 1-2pm Holt 202, or <a
-href="https://dr-donatello.youcanbook.me/">by appointment</a>.<br />
-<strong>Class days and times:</strong> MWF 3-3:50, Holt 291<br />
+<strong>Office Hours:</strong> MF 2-3pm Holt 202, Wed 1:30-3 at <a
+href="https://www.csuchico.edu/datascience/community-coding.shtml">Community
+Coding</a> or <a href="https://dr-donatello.youcanbook.me/">by
+appointment</a><br />
+<strong>Zoom link:</strong> In Canvas.</p>
+</div>
+<div id="about-the-course" class="section level4">
+<h4>About the Course</h4>
+<p><strong>Meeting pattern &amp; location:</strong> MWF 10-11am, Holt
+171<br />
 <strong>Prerequisites:</strong> MATH 314/315/615 at Chico State or
 instructor permission.<br />
 <strong>Course Website:</strong> <a
 href="http://norcalbiostat.github.io/MATH456/"
 class="uri">http://norcalbiostat.github.io/MATH456/</a><br />
-<strong>Class chat</strong> Chico State Math &amp; Stats Discord server.
-Hw0 has the sign up instructions<br />
-<strong>Google Drive</strong> You will be added to the Math 456 Google
-drive using your campus email.</p>
-<p>This is an in person class with no expectation for hybrid learning.
-Synchronous zoom room can be setup (link in Canvas) in case of illness
-(Please don’t come to class sick), but you may miss out on in class
-activities.</p>
+<strong>Mode of Instruction:</strong> In Person<br />
+<strong>Use of Canvas:</strong> Due dates, assignment submission,
+collaborative discussions</p>
 </div>
-<div id="learning-outcomes" class="section level1">
-<h1>Learning Outcomes</h1>
-<p>Upon successful completion of this course, students will be able
-to:</p>
-<ul>
-<li>Prepare data for analysis by cleaning and transforming raw
-data.</li>
-<li>Perform research in a reproducible manner.</li>
-<li>Apply advanced statistical analysis methodologies to complex and
-multivariate data.</li>
-<li>Appropriately conduct an analysis in the presence of missing
-data.</li>
-<li>Report the results of the analysis in plain language.</li>
-</ul>
-</div>
-<div id="general-guidance-on-homework" class="section level1">
-<h1>General Guidance on Homework</h1>
-<ul>
-<li>Start early and do what you can. If you have any question about the
-length, or difficulty of my homework assignments and why you should
-procrastinate at your own peril, just ask any of my prior students.</li>
-<li>Ask questions! It is essential to your learning.</li>
-<li>Spell check your work, and for petes sake look at your work before
-you turn it in and imagine if you had to print it out.
-<ul>
-<li>No 100 page documents because you accidentally printed out the whole
-data set.</li>
-<li>Make sure all code is showing and readable</li>
-<li>Make sure all text is readable and not sucked into a table or
-wrapping off the page.</li>
-</ul></li>
-</ul>
-</div>
-<div id="required-materials" class="section level1">
-<h1>Required Materials</h1>
+<div id="required-materials" class="section level2">
+<h2>Required Materials</h2>
 <ul>
 <li><strong>Textbook</strong>: <em>Practical Multivariate Analysis 6th
 Edition</em>. Afifi, May, Donatello, Clark ISBN-13: 978-1138702226
 <ul>
-<li>6th edition is necessary</li>
 <li>Several copies are available in the library. More can be made
 available if needed.</li>
 </ul></li>
@@ -407,11 +459,34 @@ available if needed.</li>
 if this poses a problem or concern for you.</li>
 <li><strong>Reliable internet</strong> connection while on and off
 campus. ITSS can help you get this setup.</li>
-<li><strong>Computer Software:</strong> Unless you have been granted an
-exception, all work is be done in R. Exceptions are granted on an
-individual basis after demonstration of proficiency in an alternate
-language and the ability to produce a reproducible PDF report similar to
-a R Markdown file and produce readable &amp; annotated code.</li>
+<li><strong>Computer Software:</strong> (Free) R and R Studio</li>
+<li><strong>Accounts:</strong> (Free)
+<ul>
+<li>Campus Google account. This uses your <span
+style="color:blue">(<span
+class="citation">@mail.csuchico.edu</span>)</span> email.</li>
+<li>Discord for class conversation. Sign up instructions are in
+HW1.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="learning-outcomes" class="section level1">
+<h1>Learning Outcomes</h1>
+<p>Upon successful completion of this course, students will be able
+to:</p>
+<ul>
+<li>Prepare data for analysis by cleaning and transforming raw data in a
+reproducible manner.</li>
+<li>Apply advanced statistical analysis methodologies to complex and
+multivariate data.</li>
+<li>Build statistical models to explain and interpret the effect of
+multiple predictors on a single outcome.</li>
+<li>Use multiple measures of model fit to choose between several
+candidate models.</li>
+<li>Identify, impute, and analyze data in the presence of missing
+values.</li>
+<li>Report the results of the analysis in plain language.</li>
 </ul>
 </div>
 <div id="tentative-topic-list" class="section level1">
@@ -434,35 +509,31 @@ a R Markdown file and produce readable &amp; annotated code.</li>
 </ul></li>
 <li>Missing Data: Identification &amp; Imputation</li>
 <li>Correlated Outcomes / Hierarchical Modeling</li>
-<li>Additional Topics. 1-2 of the following topics will also be covered.
-<ul>
-<li>Cluster analysis</li>
-<li>Analysis of Survival Data</li>
-<li>Generalized linear models / modeling of count data.</li>
-<li>Bootstrap methods</li>
-</ul></li>
+<li>Special topics - Student led</li>
 </ul>
 <p>We will spend 2 weeks on each topic and do the following
 activities:</p>
 <ul>
 <li>Opening Question Formulation</li>
-<li>Homework Assignment</li>
-<li>Peer review of the Homework</li>
-<li>Contribute to a shared notes document</li>
-<li>Content knowledge Quiz</li>
+<li>Homework Assignment (Draft &amp; Final)</li>
+<li>Peer review of the Homework draft</li>
+<li>Contribute to a topic discussion board</li>
+<li>Reflections on Learning</li>
+<li>Content knowledge Quiz (Individual and Group)</li>
 </ul>
 </div>
 <div id="assignments-graded-items" class="section level1">
 <h1>Assignments / graded items</h1>
-<p>Your final grade will be a straight sum of points earned and will be
-displayed as a running total in Canvas. I use a standard grade cutoff of
-100-90%: A, 89-80%: B, 79-70%: C, 69-60%: D, 0-59%: F</p>
+<p>Your final grade will be a weighted sum of 4 content areas as
+described below. You can check your grade and do a “what if” analysis at
+anytime in Canvas. I use a standard grade cutoff of 100-90%: A, 89-80%:
+B, 79-70%: C, 69-60%: D, 0-59%: F</p>
 <div id="exams-20" class="section level4">
 <h4>Exams (20%)</h4>
 <ul>
-<li>2 Exams (midterm/final, not cumulative). <a
-href="notes/Analyzing%20exam%20errors.pdf">Error Assessment Form</a>
-available for midterm.</li>
+<li>2 Exams</li>
+<li>An Exam <a href="learning_tools.html#Exam_Error_Assessment">Error
+Assessment</a> is available for at least Exam 1.</li>
 </ul>
 </div>
 <div id="assignments-30" class="section level4">
@@ -476,7 +547,7 @@ through Canvas.</li>
 <div id="quizzes-20" class="section level4">
 <h4>Quizzes (20%)</h4>
 <ul>
-<li>Nearly weekly Individual + Group quizzes. Administered through
+<li>Individual + Group quizzes for each module. Administered through
 Google Forms. Lowest score dropped.</li>
 </ul>
 </div>
@@ -489,6 +560,8 @@ activities</a> during/outside of class.</li>
 learn.</li>
 <li>Working collaboratively with your classmates during class to solve
 problems and discuss topics.</li>
+<li>Special topic presentation/guest lecture. You get to teach class for
+a day!</li>
 <li>Attending <a href="http://bit.ly/cc_hours">Community Coding</a>
 and/or Office Hours <strong>2</strong> times. This can be to check in on
 your grade, ask clarifying questions, or chat about life and graduate
@@ -500,8 +573,26 @@ the end, you are the ones that will benefit from it the most. Don’t
 spend more than 20 min banging your head on the proverbial wall before
 you reach out and ask for help.</li>
 </ul>
-<hr />
 </div>
+</div>
+<div id="general-guidance-on-homework" class="section level1">
+<h1>General Guidance on Homework</h1>
+<ul>
+<li>Start early and do what you can. If you have any question about the
+length, or difficulty of my homework assignments and why you should
+procrastinate at your own peril, just ask any of my prior students.</li>
+<li>Ask questions! It is essential to your learning.</li>
+<li>Spell check your work, and for petes sake look at your work before
+you turn it in and imagine if you had to print it out.
+<ul>
+<li>No 100 page documents because you accidentally printed out the whole
+data set.</li>
+<li>Make sure all code is showing and readable</li>
+<li>Make sure all text is readable and not sucked into a table or
+wrapping off the page.</li>
+</ul></li>
+</ul>
+<hr />
 </div>
 <div id="class-policies-and-statements" class="section level1">
 <h1>Class Policies and statements</h1>
@@ -558,32 +649,76 @@ people for centuries.</p>
 <p>Class attendance is expected. Talk to me ahead of time if you need to
 miss a class for a planned reason. In the event of an unplanned reason,
 DM me in Discord when you can so that I know you are still alive.</p>
+<div id="covid-19" class="section level3">
+<h3>COVID-19</h3>
 <ul>
-<li>If you are not feeling well or are experiencing Covid symptoms
-<strong>DO NOT COME TO CLASS</strong>. DM me in Discord we’ll make a
-backup plan.</li>
+<li>Like it or not, it’s here to stay. We all have different levels of
+risk we are willing to take ourselves, and different risk management
+strategies.</li>
+<li>Masks will ALWAYS be welcome and respected in this classroom. No
+questions.</li>
+<li>Please keep up to date with available booster shots. You can’t learn
+if you’re ill.</li>
+<li>If you are just generally feeling unwell, please use a mask. I will
+always have some on hand.</li>
 </ul>
+<blockquote>
+<p>If you are not feeling well or are experiencing Covid symptoms DM me
+in Discord we’ll make a backup plan so you can rest while protecting
+your classmates.</p>
+</blockquote>
+</div>
 </div>
 <div id="late-work" class="section level2">
 <h2>Late work</h2>
-<ul>
-<li>You should strive to submit on time for all draft items the sake of
-your peers. Do you want your reviews back in a timely manner? You should
-show them the same courtesy and professionalism.</li>
-<li>I don’t penalize for late work, but I prioritize on time
-submissions. If you submit an assignment after i’m done grading everyone
-elses, and we’re moving on to the next topic then your assignment may
-have to wait a long time before I can get back to it.</li>
-</ul>
+<p>In general, work isn’t considered ‘Late’ until someone is waiting for
+you. This means there is little grace period for draft assignments. Do
+you want your reviews back in a timely manner? You should show them the
+same courtesy and professionalism.</p>
+<p>If I have to pester you several times to submit your work, or you
+submit your work after I’m done grading the rest of the class, not only
+will it take longer for me to get feedback to you, it will receive a 10%
+penalty.</p>
 </div>
 <div id="collaboration" class="section level2">
 <h2>Collaboration</h2>
 <p>Collaboration on assignments is encouraged. People learn better when
 they have someone else to talk through concepts with.</p>
-<div class="callout-warning">
-<p>Collaboration on exams is not allowed.</p>
+<p><strong>Collaboration on exams is not allowed.</strong></p>
 </div>
+<div id="peer-reviews" class="section level2">
+<h2>Peer Reviews</h2>
+<p>If you consistently do not turn in draft assignments that is complete
+enough for a review, or consistently provide sub-par reviews to your
+classmates, I reserve the right to stop assigning you work to review and
+stop having your work reviewed. You will not have the ability to make up
+these points.</p>
+</div>
+<div id="use-of-ai" class="section level2">
+<h2>Use of AI</h2>
+<p>As an instructor I recognize there are a variety of AI programs
+available to assist in creating text and writing code. However, I want
+to stress that, AI programs are not a replacement for human creativity,
+originality, and critical thinking. Writing (text and code) is a skill
+that you must nurture over time in order to develop your own individual
+voice, style, and view.</p>
+<p>The use of chat GPT is allowed/encouraged <strong>to help you learn
+how to code</strong> but all code used must be fully explained in text.
+We will cover what this means and how to do this when we start data
+management around week 3. <a
+href="https://www.zdnet.com/article/how-to-use-chatgpt-to-write-code/">How
+ChatGPT can help you write code</a></p>
+<p>You are responsible for fact checking the accuracy of statements
+composed by AI language models.</p>
+<div id="be-up-front" class="section level4">
+<h4>Be up front!</h4>
+<p>When presenting text written by Artificial intelligence (AI) language
+models, such as ChatGPT, you must include an appropriate citation. <a
+href="https://apastyle.apa.org/blog/how-to-cite-chatgpt">https://apastyle.apa.org/blog/how-to-cite-chatgpt</a></p>
+<p>This also goes for when you have it write code for you. You need to
+indicate when and where you used it.</p>
 <hr />
+</div>
 </div>
 </div>
 <div id="student-resources" class="section level1">
@@ -636,23 +771,6 @@ href="https://www.csuchico.edu/arc/">http://www.csuchico.edu/arc</a></p>
 </div>
 <div id="university-policies" class="section level1">
 <h1>University Policies</h1>
-<div id="covid-19" class="section level2">
-<h2>COVID-19</h2>
-<p>The CSU requires students to be fully vaccinated and boosted against
-COVID-19 by February 28th, 2022, unless you have an approved exemption.
-While Chico State has relaxed its stance on mask mandates, this is still
-a real pressing problem.<br />
-* I recognize that we all have different levels of risk we are willing
-to take ourselves, and different risk management strategies. * I
-personally am working on reducing my mask wearing, but I also have
-immunocompromised elderly mother at home. * Masks will ALWAYS be welcome
-and respected in this classroom. No questions. * I am likely to request
-masks be worn in my office. * Please keep up to date with available
-booster shots. You can’t learn if you’re ill.  * If you have COVID
-symptoms, :x: Do not come to class. I’ll turn on Zoom for the day so you
-can participate. * If you are just generally feeling unwell, please use
-a mask. I will always have some on hand.</p>
-</div>
 <div id="adding-and-dropping-the-course" class="section level2">
 <h2>Adding and Dropping the course</h2>
 <p>You are responsible for understanding the policies and procedures
@@ -686,12 +804,14 @@ class="uri">https://www.csuchico.edu/scrr/integrity.shtml</a> if you
 have questions about the meaning of these terms or the consequences of
 violating academic integrity.</p>
 <hr />
-<p><em>Last updated: Tue Jan 02 2024 4:56:57 PM</em></p>
+<p><em>Last updated: Wed Jan 03 2024 9:55:55 PM</em></p>
 </div>
 </div>
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -724,6 +844,35 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

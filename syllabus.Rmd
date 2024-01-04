@@ -3,8 +3,9 @@ title: 'Syllabus for MATH 456 - Applied Statistics II'
 author: "Spring 2023"
 output:
   pdf_document: default
-  html_document:
-    df_print: paged
+  html_document: 
+      toc: yes
+      toc_float: true
 ---
 
 # Course Description
@@ -12,45 +13,40 @@ _Advanced topics in applied statistics including multiple regression, multivaria
 
 # Logistics
 
+#### About the Instructor
 **Instructor:** Dr. Robin Donatello  (Dr. D, she/her/hers)  
 **Office Location:** Holt 202  
-**Telephone:** 898-5767    
 **E-mail:** rdonatello@csuchico.edu    
-**Office Hours:** MWF 1-2pm Holt 202, or [by appointment](https://dr-donatello.youcanbook.me/).  
-**Class days and times:** MWF 3-3:50, Holt 291  
+**Office Hours:** MF 2-3pm Holt 202, Wed 1:30-3 at [Community Coding](https://www.csuchico.edu/datascience/community-coding.shtml) or [by appointment](https://dr-donatello.youcanbook.me/)  
+**Zoom link:** In Canvas. 
+
+#### About the Course
+**Meeting pattern & location:** MWF 10-11am, Holt 171  
 **Prerequisites:** MATH 314/315/615 at Chico State or instructor permission.  
 **Course Website:** http://norcalbiostat.github.io/MATH456/  
-**Class chat** Chico State Math & Stats Discord server. Hw0 has the sign up instructions  
-**Google Drive**  You will be added to the Math 456 Google drive using your campus email. 
+**Mode of Instruction:** In Person  
+**Use of Canvas:** Due dates, assignment submission, collaborative discussions
 
-This is an in person class with no expectation for hybrid learning. Synchronous zoom room can be setup (link in Canvas) in case of illness (Please don't come to class sick), but you may miss out on in class activities. 
+## Required Materials
+* **Textbook**: _Practical Multivariate Analysis 6th Edition_. Afifi, May, Donatello, Clark ISBN-13: 978-1138702226 
+  - Several copies are available in the library. More can be made available if needed. 
+* **Reliable Laptop**: Expect to bring it daily. Contact me if this poses a problem or concern for you. 
+* **Reliable internet** connection while on and off campus. ITSS can help you get this setup. 
+* **Computer Software:** (Free) R and R Studio
+* **Accounts:** (Free) 
+    - Campus Google account. This uses your <span style="color:blue">(@mail.csuchico.edu)</span> email.
+    - Discord for class conversation. Sign up instructions are in HW0. 
 
 # Learning Outcomes
 Upon successful completion of this course, students will be able to:  
 
-* Prepare data for analysis by cleaning and transforming raw data. 
-* Perform research in a reproducible manner. 
-* Apply advanced statistical analysis methodologies to complex and multivariate data. 
-* Appropriately conduct an analysis in the presence of missing data. 
-* Report the results of the analysis in plain language. 
+-   Prepare data for analysis by cleaning and transforming raw data in a reproducible manner.
+-   Apply advanced statistical analysis methodologies to complex and multivariate data.
+-   Build statistical models to explain and interpret the effect of multiple predictors on a single outcome.
+-   Use multiple measures of model fit to choose between several candidate models.
+-   Identify, impute, and analyze data in the presence of missing values.
+-   Report the results of the analysis in plain language.
 
-
-# General Guidance on Homework
-
-* Start early and do what you can. If you have any question about the length, or difficulty of my homework assignments and why you should procrastinate at your own peril, just ask any of my prior students.
-* Ask questions! It is essential to your learning.
-* Spell check your work, and for petes sake look at your work before you turn it in and imagine if you had to print it out.
-    - No 100 page documents because you accidentally printed out the whole data set.
-    - Make sure all code is showing and readable
-    - Make sure all text is readable and not sucked into a table or wrapping off the page.
-
-# Required Materials
-* **Textbook**: _Practical Multivariate Analysis 6th Edition_. Afifi, May, Donatello, Clark ISBN-13: 978-1138702226 
-  - 6th edition is necessary
-  - Several copies are available in the library. More can be made available if needed. 
-* **Reliable Laptop**: Expect to bring often. Contact me if this poses a problem or concern for you. 
-* **Reliable internet** connection while on and off campus. ITSS can help you get this setup. 
-* **Computer Software:** Unless you have been granted an exception, all work is be done in R. Exceptions are granted on an individual basis after demonstration of proficiency in an alternate language and the ability to produce a reproducible PDF report similar to a R Markdown file and produce readable & annotated code.
 
 # Tentative topic list
 
@@ -65,41 +61,49 @@ Upon successful completion of this course, students will be able to:
     - Factor Analysis
 * Missing Data: Identification & Imputation
 * Correlated Outcomes / Hierarchical Modeling
-* Additional Topics. 1-2 of the following topics will also be covered. 
-    - Cluster analysis
-    - Analysis of Survival Data
-    - Generalized linear models / modeling of count data. 
-    - Bootstrap methods
+* Special topics - Student led
 
 We will spend 2 weeks on each topic and do the following activities: 
 
-* Opening Question Formulation 
-* Homework Assignment
-* Peer review of the Homework
-* Contribute to a shared notes document
-* Content knowledge Quiz
+-   Opening Question Formulation
+-   Homework Assignment (Draft & Final)
+-   Peer review of the Homework draft
+-   Contribute to a topic discussion board
+-   Reflections on Learning
+-   Content knowledge Quiz (Individual and Group)
 
+# Assignments / graded items
 
-# Assignments / graded items 
-Your final grade will be a straight sum of points earned and will be displayed as a running total in Canvas. 
-I use a standard grade cutoff of 100-90%: A, 89-80%: B, 79-70%: C, 69-60%: D, 0-59%: F  
+Your final grade will be a weighted sum of 4 content areas as described below. You can check your grade and do a "what if" analysis at anytime in Canvas. I use a standard grade cutoff of 100-90%: A, 89-80%: B, 79-70%: C, 69-60%: D, 0-59%: F  
 
 
 #### Exams (20%)
-* 2 Exams (midterm/final, not cumulative). [Error Assessment Form](notes/Analyzing exam errors.pdf) available for midterm. 
+* 2 Exams
+* An Exam [Error Assessment](learning_tools.html#Exam_Error_Assessment) is available for at least Exam 1. 
 
 #### Assignments (30%)
 * 6 Standard homework assignments on the topics listed above. Drafts submitted through Google Drive, Final versions for grading submitted through Canvas. 
 
 #### Quizzes (20%)
-* Nearly weekly Individual + Group quizzes. Administered through Google Forms. Lowest score dropped. 
+* Individual + Group quizzes for each module. Administered through Google Forms. Lowest score dropped. 
 
 #### Active Learning (30%)
 * Various active or reflective [learning activities](learning_tools.html) during/outside of class.
 * Peer reviews (PR) of assignments. Because helping others helps you learn. 
 * Working collaboratively with your classmates during class to solve problems and discuss topics. 
+* Special topic presentation/guest lecture. You get to teach class for a day!
 * Attending [Community Coding](http://bit.ly/cc_hours) and/or Office Hours **2** times. This can be to check in on your grade, ask clarifying questions, or chat about life and graduate school.
 * Discussion boards & Discord participation. Contributing to our learning community by asking and answering questions about assignments, code, etc in Discord is required to make this class run smoothly. And in the end, you are the ones that will benefit from it the most. Don't spend more than 20 min banging your head on the proverbial wall before you reach out and ask for help. 
+
+
+# General Guidance on Homework
+
+* Start early and do what you can. If you have any question about the length, or difficulty of my homework assignments and why you should procrastinate at your own peril, just ask any of my prior students.
+* Ask questions! It is essential to your learning.
+* Spell check your work, and for petes sake look at your work before you turn it in and imagine if you had to print it out.
+    - No 100 page documents because you accidentally printed out the whole data set.
+    - Make sure all code is showing and readable
+    - Make sure all text is readable and not sucked into a table or wrapping off the page.
 
 
 ----
@@ -128,20 +132,49 @@ Furthermore, I would like to acknowledge that Chico State stands on lands that w
 
 Class attendance is expected. Talk to me ahead of time if you need to miss a class for a planned reason. In the event of an unplanned reason, DM me in Discord when you can so that I know you are still alive. 
 
-* If you are not feeling well or are experiencing Covid symptoms **DO NOT COME TO CLASS**. DM me in Discord we'll make a backup plan. 
+
+### COVID-19 
+
+-   Like it or not, it's here to stay. We all have different levels of risk we are willing to take ourselves, and different risk management strategies.
+-   Masks will ALWAYS be welcome and respected in this classroom. No questions.
+-   Please keep up to date with available booster shots. You can't learn if you're ill.
+-   If you are just generally feeling unwell, please use a mask. I will always have some on hand.
+
+> If you are not feeling well or are experiencing Covid symptoms DM me in Discord we'll make a backup plan so you can rest while protecting your classmates. 
+
 
 
 ## Late work
-* You should strive to submit on time for all draft items the sake of your peers. Do you want your reviews back in a timely manner? You should show them the same courtesy and professionalism. 
-* I don't penalize for late work, but I prioritize on time submissions. If you submit an assignment after i'm done grading everyone elses, and we're moving on to the next topic then your assignment may have to wait a long time before I can get back to it. 
+
+In general, work isn't considered 'Late' until someone is waiting for you. This means there is little grace period for draft assignments. Do you want your reviews back in a timely manner? You should show them the same courtesy and professionalism. 
+    
+If I have to pester you several times to submit your work, or you submit your work after I'm done grading the rest of the class, not only will it take longer for me to get feedback to you, it will receive a 10% penalty.  
+
 
 ## Collaboration
 
 Collaboration on assignments is encouraged. People learn better when they have someone else to talk through concepts with. 
 
-:::{.callout-warning}
-Collaboration on exams is not allowed.
-:::
+**Collaboration on exams is not allowed.**
+
+## Peer Reviews
+
+If you consistently do not turn in draft assignments that is complete enough for a review, or consistently provide sub-par reviews to your classmates, I reserve the right to stop assigning you work to review and stop having your work reviewed. You will not have the ability to make up these points. 
+
+## Use of AI
+
+As an instructor I recognize there are a variety of AI programs available to assist in creating text and writing code. However, I want to stress that, AI programs are not a replacement for human creativity, originality, and critical thinking. Writing (text and code) is a skill that you must nurture over time in order to develop your own individual voice, style, and view.  
+
+The use of chat GPT is allowed/encouraged **to help you learn how to code** but all code used must be fully explained in text. We will cover what this means and how to do this when we start data management around week 3. [How ChatGPT can help you write code](https://www.zdnet.com/article/how-to-use-chatgpt-to-write-code/)
+
+You are responsible for fact checking the accuracy of statements composed by AI language models. 
+
+#### Be up front!
+
+When presenting text written by Artificial intelligence (AI) language models, such as ChatGPT, you must include an appropriate citation. [https://apastyle.apa.org/blog/how-to-cite-chatgpt](https://apastyle.apa.org/blog/how-to-cite-chatgpt)
+
+This also goes for when you have it write code for you. You need to indicate when and where you used it. 
+
 
 ----
 
@@ -171,17 +204,6 @@ Accessibility Resource Center 530-898-5959 Student Services Center 170 [arcdept\
 ----
 
 # University Policies
-
-## COVID-19 
-
-The CSU requires students to be fully vaccinated and boosted against COVID-19 by February 28th, 2022, unless you have an approved exemption. While Chico State has relaxed its stance on mask mandates, this is still a real pressing problem.  
-* I recognize that we all have different levels of risk we are willing to take ourselves, and different risk management strategies. 
-* I personally am working on reducing my mask wearing, but I also have immunocompromised elderly mother at home. 
-* Masks will ALWAYS be welcome and respected in this classroom. No questions.
-* I am likely to request masks be worn in my office. 
-* Please keep up to date with available booster shots. You can't learn if you're ill. 
-* If you have COVID symptoms, :x: Do not come to class. I'll turn on Zoom for the day so you can participate.
-* If you are just generally feeling unwell, please use a mask. I will always have some on hand. 
 
 
 ## Adding and Dropping the course
