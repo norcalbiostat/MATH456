@@ -1,0 +1,160 @@
+---
+title: "Marginal Effects"
+format: 
+  html:
+    toc: true
+    theme: lux
+execute: 
+  warning: false
+  message: false
+---
+
+This example uses a cleaned version of the depression data from PAM6, and the [`marginaleffects`](https://vincentarelbundock.github.io/marginaleffects/index.html) package. 
+
+
+```{r}
+library(marginaleffects); library(gtsummary)
+library(tidyverse); library(ggpubr)
+
+depress <- read.delim("C:/GitHub/AppliedStats_notes/data/depress_081217.txt")
+names(depress) <- tolower(names(depress))
+
+exa.dep <- depress %>% select(cases, age, income, sex, drink)
+```
+
+# Making Predictions
+
+In [ASCN 12.1](https://norcalbiostat.github.io/AppliedStatistics_notes/predicted-probabilities.html) we looked at making predictions using the following logistic regression model for the likelihood of depression (except I'm adding the `drink` variable here).
+
+```{r}
+dep_sex_model <- glm(cases ~ age + income + sex + drink, data=exa.dep, family="binomial")
+coef(dep_sex_model)
+```
+
+There we mentioned that to calculate the predicted probability of being depressed for a specific covariate profile: e.g. a 44 year old woman making 20.6k annually.
+
+This is also known as an "adjusted prediction", "model-based", or "regression-adjusted" prediction and is the fitted value $\hat{p}_i$ for a given combination of values $X_i$. 
+
+We then saw how we could use the model to make predictions for all observations  in the original dataset by using the `predict` function: 
+
+```{r}
+dep.predict <- predict(dep_sex_model, type = "response")
+head(dep.predict)
+```
+
+and then visualize the distribution of model predicted probabilities
+```{r}
+hist(dep.predict)
+```
+
+The `predictions()` function from the `marginaleffects` package can give us this information as well, but more readily provides the standard error with confidence interval for that single prediction, and binds it back onto the dataset used in the model. 
+
+```{r}
+dep.pred.meff <- predictions(dep_sex_model)
+data.frame(dep.pred.meff) %>% head()
+```
+
+
+# Adjusted predictions at the mean
+
+Sometimes we want to have a single estimate for the "average" prediction. First we look at the adjusted prediction for the 'average' person. This does not mean $\bar{y}$, but the prediction when all predictors are held at their mean. 
+
+```{r}
+predictions(dep_sex_model, newdata = "mean")
+```
+
+This output reports a predicted probability of depression of 0.144 (95% CI 0.104 - 0.194), for a 44 year old person making $21k a year. But what is sex=0.622 and drink= 0.79? These were categorical variables. 
+
+Because `sex` and `drink` were coded as 0/1, R treated them as numeric and thus is reporting a decimal value for the mean. However, this still makes sense because the mean of a boolean value is the proportion - so 62.2% of the individuals in this data were men, and 79.6% drank regularly. Remember, averages don't have to be values actually observed on the data. 
+
+
+# Average adjusted predictions by group
+What if my main research question is to better understand the effect of drinking on depression? Odds ratios are hard to understand, and sometimes it's better to speak (or present results) in terms of predicted probabilities. 
+
+First, a plot. 
+
+```{r}
+dep.pred.meff$reg_drinker <- factor(dep.pred.meff$drink, labels = c("No", "Yes"))
+
+ggdensity(dep.pred.meff, 
+          x = "estimate", 
+          add = "mean", rug = TRUE,
+   color = "reg_drinker", fill = "reg_drinker",
+   palette = c("#00AFBB", "#E7B800"))
+```
+
+Great, so they're different, but significantly different? Is $p_{drink} \neq p_{no drink}$? We can use the `by` argument in `predictions()` to calculate the average adjusted prediction for different subsets of the data. 
+
+```{r}
+predictions(dep_sex_model, by = "drink")
+```
+
+The predicted probability of depression for those that drink is 0.147 (95% CI 0.104 - 0.204), compared to the predicted probability of depression for someone that doesn't drink 0.133 (95% CI 0.069, 0.243). Since these two intervals overlap, there's not enough evidence to believe that they are significantly different. However, sometimes people need p-values to "enhance" conclusions such as that one (next section).
+
+
+# Comparisons
+
+## Observational level (conditional)
+
+The `comparisons` function creates predictions for each observation at different regressor values (e.g. male and female, drinking or no drinking), and then computes some measure of comparison such as a difference, ratio or odds. 
+
+```{r}
+(dep.drink.comp <- comparisons(dep_sex_model, variables = "drink"))
+```
+
+This output shows the observational level differences in predicted probability for each observation, under each value for the variable drink. Notice the contrast between regular drinking and non-drinking is different from row to row. This reflects that the impact of regular drinking has a different effect for different individuals. 
+
+We can plot these two predicted probabilities against each other (reference line in grey). 
+
+```{r}
+ggplot(dep.drink.comp, aes(predicted_hi, predicted_lo)) +
+  geom_point() +
+  geom_abline(slope = 1, intercept = 0, color ="grey") +
+  coord_fixed() + theme_bw() + 
+  labs(x = "Reg Drinking", y = "No Drinking")
+```
+
+Here we notice that the predicted probability of depression is higher for everyone if they were a regular drinker, and the difference in probabilities (potential impact of drinking on likelihood of depression) increases as the average predicted probability of depression increases. 
+
+## Average difference (marginal)
+
+By averaging these differences across all observations in our data set we get that regular drinking increases the average predicted probability of depression by 0.032 (-0.067, 0.13), a non-significant difference. 
+
+```{r}
+avg_comparisons(dep_sex_model, variables = "drink")
+```
+
+## More specific comparisons
+
+What if we're interested in something a bit more specific, such as 
+
+> Is the impact of regular drinking on depression greater for women than for men? 
+
+or
+
+> The effect of regular drinking for a 45 year old woman compared to a 45 year old man. 
+
+We can specify a `datagrid` or grid of reference values (aka predictor space) to calculate this comparison on. 
+
+```{r}
+comparisons(dep_sex_model,
+  variables = "drink",  
+  newdata = datagrid(age = 45, sex = 0:1)) 
+```
+
+* For a 45 year old male, regular drinking is associated with a 0.018 (-0.04, 0.07) increase in predicted probability of depression, 
+* For a 45 year old female, regular drinking is associated with a 0.03 (-0.08, 0.15) increase in predicted probability of depression, 
+
+Averaged across all subgroups and other variables; 
+```{r}
+avg_comparisons(dep_sex_model,                          
+  variables = "drink", 
+  newdata = datagrid(age = 45, sex = 0:1)) 
+```
+
+
+# Counterfactuals and use in Causal analysis
+
+https://vincentarelbundock.github.io/marginaleffects/articles/gformula.html
+
+

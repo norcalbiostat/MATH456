@@ -1,0 +1,114 @@
+---
+title: "Classification Worksheet"
+author: "Robin Donatello"
+date: "February 20, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE, warning=TRUE, message=TRUE}
+knitr::opts_chunk$set(echo = TRUE, warning=TRUE, message=TRUE)
+library(ggplot2)
+library(ROCR)
+library(caret)
+```
+
+# Glass Identification
+
+At the scene of a crime, the glass that is left can be used as evidence, providing it is correctly identified!
+A specific type of glass of interest is called _float glass_, most modern windows are made from this type of glass. 
+
+We will build a model to predict whether or not a piece of glass is float glass by building a logistic regression model using the chemical properties of the sampled glass. The data set was contributed to the University of Irvine Machine Learning Repository. More info available at https://archive.ics.uci.edu/ml/datasets/Glass+Identification 
+
+## Data read in and management. 
+The data can be read from the UCI website directly, but not named very well so I have provided variable names for you. If you are unfamiliar with these chemical names, the full names can be found in the **Attribute Information** portion of the website linked above. 
+
+```{r}
+glass <- read.csv("https://archive.ics.uci.edu/ml/machine-learning-databases/glass/glass.data")
+names(glass) <- c("id", "RI", "Na", "Mg", "Al", "Si", "K", "Ca", "Ba", "Fe", "type")
+```
+
+* Create a binary indicator for the glass type being float glass. 
+```{r}
+glass$float <- ifelse(glass$type %in% c(1,3), 1, 0)
+```
+
+## Build and assess a classification model
+
+1. I am going to create a logistic regression model to identify float glass using potassium, calcium and barium as predictors. 
+```{r}
+rad_model <- glm(float ~ K + Ca + Ba, data=glass, family="binomial")
+```
+
+2. Next we calculate the predicted probabilites and visualize their distribution. 
+```{r}
+mpp <- predict(rad_model, type='response')
+plot.mpp <- data.frame(prediction = mpp, 
+                       truth = factor(rad_model$y, labels=c("Not Float", "Float")))
+
+ggplot(plot.mpp, aes(x=truth, y=prediction, fill=truth)) + 
+      geom_jitter(width=.2) + geom_violin(alpha=.4) + theme_bw()
+
+```
+
+3. Decide on a cutoff point
+
+I will look at two plots side by side, so let me first setup my graphics window `par`ameters to take two plots in a 1x2 grid. 
+
+```{r}
+par(mfrow=c(1,2))
+```
+
+* Look at balance between true positive rate and false positive rate using a ROC curve
+
+```{r}
+pr <- prediction(mpp, rad_model$y)
+perf <- performance(pr, measure="tpr", x.measure="fpr")
+plot(perf, colorize=TRUE, lwd=3, print.cutoffs.at=c(seq(0,1,by=0.1)))
+abline(a=0, b=1, lty=2)
+```
+
+* Look at the accuracy of the model across cutoff values
+```{r}
+pr <- prediction(mpp, rad_model$y)
+perf <- performance(pr, measure="acc")
+plot(perf, avg="vertical", spread.estimate="boxplot", 
+     show.spread.at= seq(0.1, 0.9, by=0.1))
+  
+```
+
+I think i'll use 0.4 as my cutoff value. 
+
+4. Create a predicted class based on this cutoff. Assign class labels. 
+
+```{r}
+glass$pred.prob <- predict(rad_model, type='response')
+glass$predict.float <- ifelse(glass$pred.prob <0.4, 0, 1) 
+glass$predict.float <- factor(glass$predict.float, labels=c("Not Float","Float"))
+```
+
+
+5. **BY HAND** Calculate sensitivity, specificity and accuracy of this model.
+The labels have to be identical between predicted and true class, so I need to convert `float` to a factor. 
+```{r}
+glass$float_c <- factor(glass$float, labels=c("Not Float", "Float"))
+addmargins(table(glass$predict.float, glass$float_c, dnn=c("Predicted", "Truth")))
+```
+
+* Sensitivity: P(True + | Total +) = 83/ 86 = 96%
+* Specificity: P(True - | Total -) = 59/127 = 46%
+* Accuracy: (T+ + T-)/N = (59+83)/213 = 67%
+
+
+6. Confirm your numbers above by using the `confusionMatrix` function in the `caret` package. Report your model accuracy including the CI. 
+```{r}
+confusionMatrix(glass$predict.float, glass$float_c, positive="Float")
+```
+
+This model based on potassium, calcium and barium is 67% (60%, 73%) percent accurate in correctly predicting if a piece of glass is float glass. 
+
+----
+
+# Your turn. 
+Repeat steps 1-6 from above and improve my model. Bonus points to the group who has the best accuracy. Delete all my work from above (starting at step 1) before you knit/submit. 
+
+

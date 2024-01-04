@@ -1,0 +1,26 @@
+---
+title: 'Data Preparation Flowchart'
+output: html_document
+---
+
+# Overview
+
+Together with a partner you will brainstorm together to create a flowchart of steps that you should take to prepare data for analysis. 
+
+Use PMA6 Chapter 3 and ASCN Chapter 1 as reference guides for things to keep in mind while preparing data for analysis. 
+
+After class you will take your collaborative work, transfer this work into electronic format and make it your own personal document.  
+
+# Submission Instructions
+
+
+* Save this flowchart as a PDF File and upload to `Topic 00 Data Cleaning` Google drive folder. 
+    - Name this file: `first_last_dataprep_flowchart`. My submission would look like `robin_donatello_dataprep_flowchart`
+* This is a peer reviewed assignment.
+    - [Instructions on how to do a peer review](https://docs.google.com/document/d/1Wx9MAWLw75pnPHs0gNISMquYna9cODoNoFTBTYO23H8)
+    - [Peer review assignments](https://docs.google.com/spreadsheets/d/1fdkO0YjIc_1j-t7p4RqryW2I2zVLV_krlFG5_6Z2f-E)
+
+
+
+
+ 

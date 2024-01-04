@@ -1,0 +1,183 @@
+---
+title: "Multiple Imputation Demo"
+format: 
+  html:
+    toc: true
+    theme: lux
+execute: 
+  warning: false
+  message: false
+---
+
+# Setup
+Import data & load libraries. 
+[VIM Vignette](https://cran.r-project.org/web//packages/VIM/vignettes/VIM.html)
+
+This example uses a modified version of the Parental HIV data set. [Codebook](https://www.norcalbiostat.com/data/ParhivCodebook.txt)
+
+```{r}
+library(VIM)
+library(tidyverse)
+load("C:/Box/Teaching/456/in class worksheets/mi_example.Rdata")
+```
+
+# Identify missing
+Entire data set
+```{r}
+table(is.na(hiv)) |> prop.table()
+```
+
+Only 3.7% of all values in the data set are missing. 
+
+
+### Examine missing data patterns of scale variables. 
+The parental bonding and BSI scale variables are aggregated variables, meaning they are sums or means of a handful of component variables. That means if any one component variable is missing, the entire scale is missing. _E.g. if y = x1+x2+x3, then y is missing if any of x1, x2 or x3 are missing. _
+
+```{r}
+scale.vars <- hiv %>% select(parent_care:bsi_psycho, gender, siblings, age)
+aggr(scale.vars, sortVars=TRUE, combined=TRUE, numbers=TRUE, cex.axis=.7)
+```
+
+34.7% of records are missing both `bsi_overall` and `bsi_depress` This makes sense since `bsi_depress` is a subscale containing 9 component variables and the `bsi_overall` is an average of all 52. 
+
+Another 15.5% of records are missing `parental_overprotection`. 
+
+
+Is there a bivariate pattern between missing and observed values of `bsi_depress` and `parent_overprotection`?
+```{r}
+marginplot(hiv[,c('bsi_depress', 'parent_overprotection')])
+```
+
+When someone is missing `parent_overprotection`, they have a lower `bsi_depress` score. Those missing `bsi_depress` have a slightly lower `parental_overprotection` score. Only 4 individuals are missing both values. 
+
+# Single Imputation 
+
+Use predictive mean matching on `bsi_depress` using gender, siblings and age as predictors. Yes this model could be improved. 
+
+* Impute using functions in VIM.
+```{r}
+depress_regr_imp <- regressionImp(bsi_depress ~ gender + siblings + age, hiv)
+```
+
+> Look at the data - see which ones have been imputed. 
+
+* Visualize imputed data patterns 
+```{r}
+ggpubr::ggdensity(depress_regr_imp, x = "bsi_depress", add="mean",
+                  color = "bsi_depress_imp", fill = "bsi_depress_imp")
+```
+
+
+It seems like only values around 0.5 and 0.8 were imputed values for `bsi_depress`. The imputed values don't quite match the distribution of observed values. 
+
+
+# Multiple Imputation
+
+1. Create $m$ imputed datasets
+
+```{r}
+dep.imp1 <- regressionImp(bsi_depress ~ gender + siblings + age, hiv)
+dep.imp2 <- regressionImp(bsi_depress ~ gender + siblings + age, hiv)
+dep.imp3 <- regressionImp(bsi_depress ~ gender + siblings + age, hiv)
+```
+
+
+2. Calculate the point estimate $Q$ and the variance $U$ from each imputation. 
+
+```{r}
+# point estimate for the average bsi depression
+(dep.Q <- c(mean(dep.imp1$bsi_depress), 
+           mean(dep.imp2$bsi_depress), 
+           mean(dep.imp3$bsi_depress)))
+```
+
+They're identical! So this imputation method is the model predicted mean $\hat{\mu}_{Y|X}$. Let's add a residual to the imputed values so we're not imputing the exact same value for each missing data point. 
+
+```{r}
+# first find the rows that were imputed
+(which.imp.nomiss <- which(dep.imp1$bsi_depress_imp))
+n.imp <- length(which.imp.nomiss)
+
+# Calculate a residual e ~ N(0, sd(y|x))
+# get RMSE from linear regression as the estimate of var(y|x)
+lm.dep <- lm(bsi_depress ~ gender + siblings + age, data=hiv)
+rmse <- sqrt(summary(lm.dep)$sigma)
+
+e1 <- rnorm(n.imp, mean=0, sd=rmse)
+e2 <- rnorm(n.imp, mean=0, sd=rmse)
+e3 <- rnorm(n.imp, mean=0, sd=rmse)
+
+dep.imp1$bsi_depress[which.imp.nomiss] <- dep.imp1$bsi_depress[which.imp.nomiss] + e1
+dep.imp2$bsi_depress[which.imp.nomiss] <- dep.imp2$bsi_depress[which.imp.nomiss] + e2
+dep.imp3$bsi_depress[which.imp.nomiss] <- dep.imp3$bsi_depress[which.imp.nomiss] + e3
+
+(dep.Q <- c(mean(dep.imp1$bsi_depress), 
+           mean(dep.imp2$bsi_depress),
+           mean(dep.imp3$bsi_depress)))
+```
+
+Variance of that point estimate (the mean)
+
+```{r}
+n.d <- length(dep.imp1$bsi_depress)
+(dep.U <- c(sd(dep.imp1$bsi_depress)/sqrt(n.d), 
+            sd(dep.imp2$bsi_depress)/sqrt(n.d), 
+            sd(dep.imp3$bsi_depress)/sqrt(n.d)))
+```
+
+3. Pool estimates
+
+```{r}
+(dep.q.bar <- mean(dep.Q)) # average estimate
+dep.u.bar <- mean(dep.U)  # average variance
+dep.B <- sd(dep.Q)        # variance of averages
+(dep.T <- dep.u.bar + ((3+1)/3)*dep.B)  # Total variance of estimate
+```
+
+# Comparison of Estimates
+Calculate the estimate, SE and 95% CI for the average BSI depression score under the following frameworks. 
+
+* Complete Case
+```{r}
+dep.mean.cc <- mean(hiv$bsi_depress, na.rm=TRUE)
+dep.se.cc   <- sd(hiv$bsi_depress, na.rm=TRUE)/sqrt(length(dep.mean.cc))
+(dep.cc <- data.frame(var = "bsi_depress", method = "CC", 
+                      mean=dep.mean.cc, se = dep.se.cc, 
+                      cil = dep.mean.cc-1.96*dep.se.cc, ciu = dep.mean.cc+1.96*dep.se.cc))
+```
+
+
+* Single Imputation
+```{r}
+dep.mean.si <- mean(depress_regr_imp$bsi_depress)
+dep.se.si   <- sd(depress_regr_imp$bsi_depress)/sqrt(length(dep.mean.si))
+(dep.si <- data.frame(var = "bsi_depress", method = "SI", 
+                      mean=dep.mean.si, se = dep.se.si, 
+                      cil = dep.mean.si-1.96*dep.se.si, ciu = dep.mean.si+1.96*dep.se.si))
+```
+
+* Multiple Imputation
+
+```{r}
+(df <- 2*(1+(dep.u.bar/(4*dep.B))^2)) # degress of freedom
+t95 <- qt(.975, df) # critical value for 95% CI
+
+(dep.mi <- data.frame(var = "bsi_depress", method = "MI", 
+                      mean=dep.q.bar, 
+                      se = sqrt(dep.T), 
+                      cil = dep.q.bar-t95*sqrt(dep.T), 
+                      ciu = dep.q.bar+t95*sqrt(dep.T)))
+```
+
+
+## Summary
+Create a table and plot that compares the point estimates and intervals for the average parental overprotection. 
+
+```{r}
+(summary.dep <- rbind(true.dep, dep.cc, dep.si, dep.mi))
+
+ggplot(summary.dep, aes(x=mean, y = method, col=method)) + 
+  geom_point() + geom_errorbar(aes(xmin=cil, xmax=ciu), width=0.2) + 
+  scale_x_continuous(limits=c(-1, 3))+ 
+  theme_bw() + xlab("Average BSI Depression score") + ylab("")
+```
