@@ -39,6 +39,8 @@ navbar:
     - text: R Cookbook
       icon: fa-area-chart
       href: https://rc2e.com/
+    - text: R - Cheat Sheets
+      href: https://www.posit.co/resources/cheatsheets/
     
   
       
