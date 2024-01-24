@@ -21,7 +21,7 @@ Pay attention to the ordering & timeline of these assignments.
 
 Knowledge of R is integral to this class. A reasonable working ability with this language is required. The score on this quiz will not contribute to your class grade. However if you score below a 70% it is highly recommended that you either enroll in Math 130 this semester, or go through that course content on your own ASAP.
 
-The questions are presented in [this PDF](notes/programming_assessment.pdf), answers submitted to a link in that document.
+The questions are presented in [this PDF](programming_assessment.pdf), answers submitted to a link in that document.
 
 This pre-assessment of your R programming skills *does not count toward your grade**, but allows both of us to have an understanding about where you are at.
 
