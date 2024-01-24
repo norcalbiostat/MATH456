@@ -29,9 +29,11 @@ _Advanced topics in applied statistics including multiple regression, multivaria
 MATH 314/315/615 at Chico State, 
 or instructor permission.
 
-### Student Drop in Hours
+### Open drop-in help times
 
-**Update** on Zoom (link in Canvas)
+Mon 2-3pm Holt 202  
+Thu 1-2pm on Zoom  
+Wed 1:30-3 at [Community Coding](https://www.csuchico.edu/datascience/community-coding.shtml)
 :::
 
 ::: {.column width="33%"}
