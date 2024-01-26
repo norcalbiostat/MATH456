@@ -29,7 +29,7 @@ navbar:
     menu:
     - text: Community Coding
       icon: fa-group
-      href: http://bit.ly/cc_hours
+      href: https://www.csuchico.edu/datascience/community-coding.shtml
     - text: Posit Community
       icon: fa-comment
       href: https://community.rstudio.com/ 
