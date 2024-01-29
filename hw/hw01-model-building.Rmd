@@ -1,24 +1,22 @@
 ---
-title: "HW01 - Statistical Modeling"
+title: "HW01 - Regression Modeling"
 output:
   html_document:
     toc: yes
     toc_float: yes
 ---
 
-# Submission Instructions. 
 
-* [Right click this link to download the R Markdown template for this homework.](hw01-modeling-template.Rmd) 
+# Instructions
+
+*  This assignment uses data on lung function (`Lung`), adolescents with parents that have HIV (`Parhiv`), and the depression study (`Depress`). Read about these data sets in PMA6 Chapter 1. As part of HW0, you downloaded all the data sets and codebooks into your `MATH456/data` folder.
+* [Right click this link to download the Quarto template for this homework.](hw01_template.qmd) 
     - This template is required for this homework as it provides a demonstration on how to use markdown headers `#` and `##` to nicely format your homework to make it easy for me to find your problems. All further homework must be in a format like this (a template is not always provided.)
-    - Rename this file with your username. I.e. `hw01-modeling-template.Rmd` becomes `hw01-modeling-rdonatello.Rmd`
-* Knit/render to PDF and submit to Google Drive: `Topic 01: Statistical Modeling/Draft` folder by the due date. 
+* Render to PDF and submit to Google Drive: `Topic 01: Regression Modeling/Draft` folder by the due date. 
+* This is a peer reviewed assignment. After the PR period, you should update your assignment with corrections by your peers, and submit a final version to Canvas.
 
-* This is a peer reviewed assignment. After the PR period, you should update your assignment with corrections by your peers, and submit a final version into the `Topic 01: Statistical Modeling/Final` Google folder. 
 
-## Get Data
-* The code to get the data used for this assignment is included in the template. 
-* Download codebooks here:  [Lung Function](https://www.norcalbiostat.com/data/DepressCodebook.txt), [Parental HIV](https://www.norcalbiostat.com/data/ParhivCodebook.txt), [Depression](https://www.norcalbiostat.com/data/DepressCodebook.txt)
-
+----
 
 # Part I: Statistical Modeling
 
@@ -51,6 +49,7 @@ output:
 
 <br>
 
+----
 
 # Part II: Variable Selection
 

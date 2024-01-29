@@ -1,26 +1,23 @@
 ---
 title: "HW01 - Statistical Modeling"
 author: "STUDENT NAME"
-output:
-  pdf_document: default
-  html_document:
-    df_print: paged
+format: html
+execute:
+    warning: false
+    message: false
 ---
 
-```{r, warning=FALSE, message=FALSE}
-knitr::opts_chunk$set(warning=FALSE, message=FALSE)
+
+```{r}
 # load appropriate libraries and import data here
+library(tidyverse)
+library(performance)
 
-# For this assignment, to get you started, I have included code to directly import 
-# data sets from my website. 
-# After you create your own data management files, this approach should not be used. 
-
-fev <- read.delim("https://norcalbiostat.netlify.com/data/Lung_081217.txt", 
-                  sep="\t", header=TRUE)
-hiv <- read.delim("https://norcalbiostat.netlify.com/data/PARHIV_081217.txt", 
-                  sep="\t", stringsAsFactors = FALSE, header=TRUE)
-dep <- read.delim("https://norcalbiostat.netlify.com/data/depress_081217.txt", 
-                  sep="\t", header=TRUE)
+# This code requires you to have the data in the `data` folder, and that
+# you are using an R project to manage your files. 
+fev <- read.delim(here::here("data/Lung.txt"))
+hiv <- read.delim(here::here("data/Parhiv.txt"))
+dep <- read.delim(here::here("data/Depress.txt"))
 ```
 
 # Part I: Statistical Modeling
