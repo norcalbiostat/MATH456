@@ -65,7 +65,7 @@ No matter what you end up doing after graduation, the quality of your ideas and 
 
 ### How do I review my peers work?
 
-* Check the Peer Review Rotation spreadsheet in Google Drive to see who you are scheduled to review.
+* Check the [Peer Review Rotation](https://docs.google.com/spreadsheets/d/1M8Tbszv23U5Uqxiu3kYbmE_WZNmmZj9gyRRa70MMryM) spreadsheet in Google Drive to see who you are scheduled to review.
 * If one of your reviewees did not submit the assignment DM them in Discord first to see if they are just running a little late. 
     - If it’s getting reasonably late then just pick another person to review that doesn’t have a lot of comments so far and DM me to let me know.
 * By using comment bubbles, provide feedback to your peers.
