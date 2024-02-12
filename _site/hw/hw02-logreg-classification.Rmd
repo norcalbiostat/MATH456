@@ -8,9 +8,8 @@ output:
 
 # Submission Instructions. 
 
-* I am no longer providing homework templates. 
-* You should be using your cleaned version of the direct book data, not the version that you used in HW01.
-* Submit your draft PDF to the Google Drive: `HW02: Logistic regression and classification/Draft` folder by the due date. 
+* At this point you should be using your cleaned version of the book data
+* Submit your draft PDF to the Google Drive: `Topic 02: Logistic regression and classification/Draft` folder by the due date. 
 * Read the question carefully. Some book questions require you to use appropriate variable selection techniques. 
 
 # Part I: Logistic Regression
@@ -21,7 +20,7 @@ output:
     a. Are the measures that are important in explaining the outcome similar? 
     b. For covariates that are the same, compare the effect of that covariate on each of the outcomes. 
 4. Northridge Earthquake: (PMA6 12.22-12.29 modified). This problem use the Northridge earthquake data set. [[See here for more info about this event.]](https://www.google.com/search?client=firefox-b-1-d&q=northridge+earthquake+1994) We are interested in knowing if homeowners (`V449`) were more likely than renters to report emotional injuries (`W238`) as a result of the Northridge earthquake, controlling for age (`RAGE`), gender (`RSEX`), and ethnicity (`NEWETHN`). 
-    a. Explore all measures in question using summary tables. Comment on any unusual values. Perform necessary data management (E.g. fix any values that are out of range, plausibly incorrect, or categories with too small sample sizes -- you can use [my cleaning script](https://docs.google.com/document/d/1olSYDMK4O9iGI1583LMZcV8mF4WO0OL5z0MIhdnrl1Y) as a starter)
+    a. Download and use [my cleaning script]("hw/dm_earthquake.R") as a starter. 
     b. Fit a logistic regression model on emotional injury as the outcome using the variables listed above as predictors. Use `tbl_regression` to create a nice table of results that include odds ratios and 95% confidence intervals. See if you can figure out how to drop the intercept term from the table. 
     c. Interpret each predictor (except the intercept) in context of the problem.
     d. Are the estimated effects of home ownership upon reporting emotional injuries different for men and women, controlling for age and ethnicity? That is, is there a significant interaction effect between gender and home ownership?

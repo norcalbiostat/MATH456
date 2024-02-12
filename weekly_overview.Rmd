@@ -138,3 +138,38 @@ pander(w3$fri)
 ```
 
 </div>
+
+
+```{r}
+w4 <- details(4)
+```
+
+### <a href="#week4" data-toggle="collapse">Week 4: `r w4$Topic`</a>
+<div id="week4" class="collapse">
+
+#### Learning Objectives
+```{r}
+pander(w4$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w4$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w4$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w4$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w4$fri)
+```
+
+</div>
