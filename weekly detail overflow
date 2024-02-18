@@ -1,38 +1,4 @@
 
-
-</div>
-
-```{r}
-w6 <- details(6)
-```
-### <a href="#week6" data-toggle="collapse">Week 6: `r w6$Topic`</a>
-<div id="week6" class="collapse">
-
-#### Learning Objectives
-```{r}
-pander(w6$SLO)
-```
-
-#### How to prepare
-```{r}
-pander(w6$prep)
-```
-
-#### Monday overview
-```{r}
-pander(w6$mon)
-```
-
-#### Wednesday overview
-```{r}
-pander(w6$wed)
-```
-
-#### Friday overview
-```{r}
-pander(w6$fri)
-```
-
 </div>
 
 ```{r}

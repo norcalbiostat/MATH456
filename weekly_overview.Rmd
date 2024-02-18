@@ -176,39 +176,6 @@ pander(w4$fri)
 
 
 ```{r}
-w4 <- details(4)
-```
-### <a href="#week4" data-toggle="collapse">Week 4: `r w4$Topic`</a>
-<div id="week4" class="collapse">
-
-#### Learning Objectives
-```{r}
-pander(w4$SLO)
-```
-
-#### How to prepare
-```{r}
-pander(w4$prep)
-```
-
-#### Monday overview
-```{r}
-pander(w4$mon)
-```
-
-#### Wednesday overview
-```{r}
-pander(w4$wed)
-```
-
-#### Friday overview
-```{r}
-pander(w4$fri)
-```
-
-</div>
-
-```{r}
 w5 <- details(5)
 ```
 ### <a href="#week5" data-toggle="collapse">Week 5: `r w5$Topic`</a>
@@ -237,6 +204,40 @@ pander(w5$wed)
 #### Friday overview
 ```{r}
 pander(w5$fri)
+```
+
+
+</div>
+
+```{r}
+w6 <- details(6)
+```
+### <a href="#week6" data-toggle="collapse">Week 6: `r w6$Topic`</a>
+<div id="week6" class="collapse">
+
+#### Learning Objectives
+```{r}
+pander(w6$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w6$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w6$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w6$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w6$fri)
 ```
 
 </div>
