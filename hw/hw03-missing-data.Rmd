@@ -4,7 +4,7 @@ output: html_document
 ---
 
 
-This homework uses the modified Parental HIV data set found in Canvas under this assignment. Use [this template qmd file](hw/hw03_template.qmd). 
+This homework uses the modified Parental HIV data set found in Canvas under this assignment. Use [this template qmd file](hw03_template.qmd). 
 
 ## Part 1: Exploring Imputation Techniques
 
