@@ -3,19 +3,29 @@ title: "HW 03 - Missing Data Assignment"
 output: html_document
 ---
 
-> Use the quarto template provided in canvas.
+
+This homework uses the modified Parental HIV data set found in Canvas under this assignment. Use [this template qmd file](hw/hw03_template.qmd). 
 
 ## Part 1: Exploring Imputation Techniques
- 
-Put your work from the MI practice worksheet here. 
+
+1. Identify the amount of missing in the entire data set. 
+2. Identify the amount of missing in the 2 Parental bonding and 10 Brief Symptom Inventory scales. 
+3. Explore and describe bivariate missing patterns between the parental overprotection subscale and a different scale variable. 
+4. Single impute `parent_overprotection` using the `hotdeck(dataset, variable = "var")` function in VIM. See `vignette("donorImp")` for more information. 
+5. Multiply impute `parent_overprotection` using a non-mice based imputation method of your choice that has a random component to it. 
+    b. Calculate the point estimate $Q$ and the variance $U$ from each imputation. 
+    c. Pool estimates
+6. Comparison of Estimates. Create a summary table and plot containing the point estiamte and 95% CI parental overprotection variable under a) complete case, b) single imputation done in #4, and c) multiple imputation done in #5. Summarize your findings. 
+
 
 
 ## Part 2: Multiple Imputation using Chained Equations
 
-1. Sticking with the Parental HIV data set (the one from the practice worksheet), build a better imputation model for `parental_overprotection`. Do this by imputing the `pb01-pb25`, then recreate the `parental_overprotection` scale post-imputation. "Talk me" through your process. 
-    a. Explore missing data patterns in other (non-scale) variables before you build your model. Not all variables should be considered in the imputation models. Use tables and plots. Discuss all output.  
-    b. Multiply impute this data set between $m=5$ and $m=10$ times. Make sure the imputation models used for each variable are showing in your final output. Adjust any that may not make sense for their variable type. 
+1. Build an better imputation model for `parental_overprotection`. Do this by imputing the `pb01-pb25`, then recreate the `parental_overprotection` scale post-imputation. "Talk me" through your process. 
+    a. Explore missing data patterns in other (non-scale) variables before you build your model. Not all variables should be considered in the imputation models but be sure to include `gender` and `hookey`. Use tables and plots but ensure all output is discussed and don't create output that won't be discussed. 
+    b. Multiply impute this data set between $m=5$ and $m=10$ times using MICE. Make sure the imputation models used for each variable are showing in your final output. Adjust any that may not make sense for their variable type. 
     c. Update the summary table and plot from Part I and compare how your new model did compared to the others. 
+    
 2. After controlling for other measures, what is the effect of gender on the _odds_ a student will skip school? Adjust the model for fit or stability as needed. Report your results in a nice table and/or plot.  
     a. Fit this model on the complete cases (no imputation).
     b. Fit this model on the multiply imputed data sets from the prior problem, report the pooled estimates and intervals. 
