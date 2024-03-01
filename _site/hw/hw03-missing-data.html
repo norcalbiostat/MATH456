@@ -353,18 +353,39 @@ display: none;
 </div>
 
 
-<blockquote>
-<p>Use the quarto template provided in canvas.</p>
-</blockquote>
+<p>This homework uses the modified Parental HIV data set found in Canvas
+under this assignment. Use <a href="hw/hw03_template.qmd">this template
+qmd file</a>.</p>
 <div id="part-1-exploring-imputation-techniques" class="section level2">
 <h2>Part 1: Exploring Imputation Techniques</h2>
-<p>Put your work from the MI practice worksheet here.</p>
+<ol style="list-style-type: decimal">
+<li>Identify the amount of missing in the entire data set.</li>
+<li>Identify the amount of missing in the 2 Parental bonding and 10
+Brief Symptom Inventory scales.</li>
+<li>Explore and describe bivariate missing patterns between the parental
+overprotection subscale and a different scale variable.</li>
+<li>Single impute <code>parent_overprotection</code> using the
+<code>hotdeck(dataset, variable = &quot;var&quot;)</code> function in VIM. See
+<code>vignette(&quot;donorImp&quot;)</code> for more information.</li>
+<li>Multiply impute <code>parent_overprotection</code> using a non-mice
+based imputation method of your choice that has a random component to
+it.
+<ol start="2" style="list-style-type: lower-alpha">
+<li>Calculate the point estimate <span class="math inline">\(Q\)</span>
+and the variance <span class="math inline">\(U\)</span> from each
+imputation.</li>
+<li>Pool estimates</li>
+</ol></li>
+<li>Comparison of Estimates. Create a summary table and plot containing
+the point estiamte and 95% CI parental overprotection variable under a)
+complete case, b) single imputation done in #4, and c) multiple
+imputation done in #5. Summarize your findings.</li>
+</ol>
 </div>
 <div id="part-2-multiple-imputation-using-chained-equations" class="section level2">
 <h2>Part 2: Multiple Imputation using Chained Equations</h2>
 <ol style="list-style-type: decimal">
-<li>Sticking with the Parental HIV data set (the one from the practice
-worksheet), build a better imputation model for
+<li>Build an better imputation model for
 <code>parental_overprotection</code>. Do this by imputing the
 <code>pb01-pb25</code>, then recreate the
 <code>parental_overprotection</code> scale post-imputation. “Talk me”
@@ -372,11 +393,12 @@ through your process.
 <ol style="list-style-type: lower-alpha">
 <li>Explore missing data patterns in other (non-scale) variables before
 you build your model. Not all variables should be considered in the
-imputation models. Use tables and plots. Discuss all output.<br />
-</li>
-<li>Multiply impute this data set between <span class="math inline">\(m=5\)</span> and <span class="math inline">\(m=10\)</span> times. Make sure the imputation
-models used for each variable are showing in your final output. Adjust
-any that may not make sense for their variable type.</li>
+imputation models but be sure to include <code>gender</code> and
+<code>hookey</code>. Use tables and plots but ensure all output is
+discussed and don’t create output that won’t be discussed.</li>
+<li>Multiply impute this data set between <span class="math inline">\(m=5\)</span> and <span class="math inline">\(m=10\)</span> times using MICE. Make sure the
+imputation models used for each variable are showing in your final
+output. Adjust any that may not make sense for their variable type.</li>
 <li>Update the summary table and plot from Part I and compare how your
 new model did compared to the others.</li>
 </ol></li>
