@@ -241,3 +241,73 @@ pander(w6$fri)
 ```
 
 </div>
+
+
+```{r}
+w7 <- details(7)
+```
+### <a href="#week7" data-toggle="collapse">Week 7: `r w7$Topic`</a>
+<div id="week7" class="collapse">
+
+#### Learning Objectives
+```{r}
+pander(w7$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w7$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w7$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w7$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w7$fri)
+```
+
+</div>
+
+
+```{r}
+w8 <- details(8)
+```
+### <a href="#week8" data-toggle="collapse">Week 8: `r w8$Topic`</a>
+<div id="week8" class="collapse">
+
+#### Learning Objectives
+```{r}
+pander(w8$SLO)
+```
+
+#### How to prepare
+```{r}
+pander(w8$prep)
+```
+
+#### Monday overview
+```{r}
+pander(w8$mon)
+```
+
+#### Wednesday overview
+```{r}
+pander(w8$wed)
+```
+
+#### Friday overview
+```{r}
+pander(w8$fri)
+```
+
+</div>
+
+# Spring Break
