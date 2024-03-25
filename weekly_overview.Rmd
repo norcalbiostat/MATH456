@@ -13,7 +13,7 @@ knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE)
 
 ```{r}
 # Read in schedule
-raw_slo_detail <- googlesheets4::read_sheet("1flUYEIAqLfa13Re4gNRTsRRA13skF4Ln6rImfKb-WDTZI", 
+raw_slo_detail <- googlesheets4::read_sheet("1flUYEIAqLfa8Re4gNRTsRRA8skF4Ln6rImfKb-WDTZI", 
                                  sheet="slo_detail", 
                                  col_types = c("nDccccccc")) 
 
